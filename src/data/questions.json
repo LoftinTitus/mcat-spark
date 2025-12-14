@@ -1,0 +1,148 @@
+{
+  "freestanding": [
+    {
+      "id": "fs-1",
+      "section": "chem",
+      "question": "A buffer solution contains 0.2 M acetic acid (pKa = 4.76) and 0.3 M sodium acetate. What is the pH of this solution?",
+      "options": [
+        "4.58",
+        "4.76",
+        "4.94",
+        "5.18"
+      ],
+      "correctIndex": 2,
+      "explanation": "Using Henderson-Hasselbalch: pH = pKa + log([A⁻]/[HA]) = 4.76 + log(0.3/0.2) = 4.76 + log(1.5) = 4.76 + 0.18 = 4.94"
+    },
+    {
+      "id": "fs-2",
+      "section": "chem",
+      "question": "Which of the following will increase the rate of an enzyme-catalyzed reaction?",
+      "options": [
+        "Adding a competitive inhibitor",
+        "Increasing substrate concentration (when [S] << Km)",
+        "Decreasing temperature",
+        "Adding a non-competitive inhibitor"
+      ],
+      "correctIndex": 1,
+      "explanation": "When [S] << Km, the reaction rate is highly dependent on substrate concentration. Increasing [S] will increase the rate until the enzyme becomes saturated."
+    },
+    {
+      "id": "fs-3",
+      "section": "bio",
+      "question": "During which phase of the cell cycle does DNA replication occur?",
+      "options": [
+        "G1 phase",
+        "S phase",
+        "G2 phase",
+        "M phase"
+      ],
+      "correctIndex": 1,
+      "explanation": "S phase (Synthesis phase) is when DNA replication occurs. G1 is growth before synthesis, G2 is preparation for mitosis, and M phase is mitosis itself."
+    },
+    {
+      "id": "fs-4",
+      "section": "bio",
+      "question": "Which hormone is released in response to low blood glucose?",
+      "options": [
+        "Insulin",
+        "Glucagon",
+        "Cortisol",
+        "Both B and C"
+      ],
+      "correctIndex": 3,
+      "explanation": "Both glucagon and cortisol respond to low blood glucose. Glucagon is released from pancreatic alpha cells and promotes glycogenolysis. Cortisol promotes gluconeogenesis. Insulin is released in response to HIGH blood glucose."
+    },
+    {
+      "id": "fs-5",
+      "section": "psych",
+      "question": "A child who has learned to fear dogs after being bitten now also fears cats. This is an example of:",
+      "options": [
+        "Stimulus discrimination",
+        "Stimulus generalization",
+        "Extinction",
+        "Spontaneous recovery"
+      ],
+      "correctIndex": 1,
+      "explanation": "Stimulus generalization occurs when a conditioned response is elicited by stimuli similar to the conditioned stimulus. The fear response has generalized from dogs to cats."
+    },
+    {
+      "id": "fs-6",
+      "section": "psych",
+      "question": "According to the James-Lange theory of emotion:",
+      "options": [
+        "Emotions and physiological responses occur simultaneously",
+        "Physiological arousal precedes the emotional experience",
+        "Cognitive appraisal determines the emotion",
+        "Emotions are primarily determined by facial expressions"
+      ],
+      "correctIndex": 1,
+      "explanation": "James-Lange theory proposes that physiological arousal comes first, and we interpret this arousal as an emotion. Example: 'I'm trembling, therefore I must be afraid.'"
+    }
+  ],
+  "passages": [
+    {
+      "id": "passage-1",
+      "section": "bio",
+      "title": "Enzyme Kinetics Study",
+      "passage": "Researchers studied an enzyme that catalyzes the conversion of substrate X to product Y. They measured initial reaction velocities at various substrate concentrations in the presence and absence of an unknown inhibitor.\n\nIn the absence of inhibitor, the enzyme showed a Km of 2.5 mM and a Vmax of 100 μmol/min. When the inhibitor was added at a concentration of 1 mM, the apparent Km increased to 5.0 mM while Vmax remained unchanged at 100 μmol/min.\n\nThe researchers also noted that adding excess substrate could overcome the inhibitory effect, restoring the reaction rate to near-normal levels.",
+      "questions": [
+        {
+          "id": "passage-1-q1",
+          "question": "Based on the data, what type of inhibition is described?",
+          "options": [
+            "Competitive inhibition",
+            "Non-competitive inhibition",
+            "Uncompetitive inhibition",
+            "Mixed inhibition"
+          ],
+          "correctIndex": 0,
+          "explanation": "Competitive inhibition is characterized by increased Km (reduced apparent affinity) with unchanged Vmax. The inhibitor competes with substrate for the active site, and can be overcome by excess substrate."
+        },
+        {
+          "id": "passage-1-q2",
+          "question": "At what substrate concentration would the reaction velocity be 50% of Vmax in the presence of the inhibitor?",
+          "options": [
+            "2.5 mM",
+            "5.0 mM",
+            "7.5 mM",
+            "10.0 mM"
+          ],
+          "correctIndex": 1,
+          "explanation": "The reaction velocity equals 50% of Vmax when [S] = Km. With the inhibitor present, the apparent Km is 5.0 mM, so 50% Vmax occurs at 5.0 mM substrate."
+        }
+      ]
+    },
+    {
+      "id": "passage-2",
+      "section": "chem",
+      "title": "Acid-Base Equilibrium",
+      "passage": "A student prepared a series of buffer solutions using phosphoric acid (H₃PO₄) and its conjugates. Phosphoric acid is a triprotic acid with the following pKa values:\n\npKa1 = 2.15 (H₃PO₄/H₂PO₄⁻)\npKa2 = 7.20 (H₂PO₄⁻/HPO₄²⁻)\npKa3 = 12.35 (HPO₄²⁻/PO₄³⁻)\n\nThe student wanted to prepare a buffer at physiological pH (7.4) for use in a biochemistry experiment. She mixed appropriate amounts of sodium dihydrogen phosphate (NaH₂PO₄) and disodium hydrogen phosphate (Na₂HPO₄).",
+      "questions": [
+        {
+          "id": "passage-2-q1",
+          "question": "Which conjugate pair is most appropriate for a buffer at pH 7.4?",
+          "options": [
+            "H₃PO₄/H₂PO₄⁻",
+            "H₂PO₄⁻/HPO₄²⁻",
+            "HPO₄²⁻/PO₄³⁻",
+            "Any of the above would work equally well"
+          ],
+          "correctIndex": 1,
+          "explanation": "A buffer works best when pH is within 1 unit of pKa. The H₂PO₄⁻/HPO₄²⁻ system with pKa2 = 7.20 is closest to pH 7.4, making it the best choice for physiological buffers."
+        },
+        {
+          "id": "passage-2-q2",
+          "question": "To achieve pH 7.4, what should be the ratio of [HPO₄²⁻]/[H₂PO₄⁻]?",
+          "options": [
+            "0.63",
+            "1.0",
+            "1.58",
+            "2.51"
+          ],
+          "correctIndex": 2,
+          "explanation": "Using Henderson-Hasselbalch: 7.4 = 7.20 + log([HPO₄²⁻]/[H₂PO₄⁻]). So log(ratio) = 0.20, and ratio = 10^0.20 ≈ 1.58"
+        }
+      ]
+    }
+  ]
+}
