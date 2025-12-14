@@ -1,0 +1,110 @@
+{
+  "chem": [
+    {
+      "id": "chem-1",
+      "front": "What is the Henderson-Hasselbalch equation?",
+      "back": "pH = pKa + log([A⁻]/[HA])\n\nUsed to calculate the pH of a buffer solution. [A⁻] is the conjugate base concentration, [HA] is the weak acid concentration."
+    },
+    {
+      "id": "chem-2",
+      "front": "Define electronegativity",
+      "back": "The ability of an atom to attract electrons toward itself in a chemical bond.\n\nTrend: Increases left→right across a period, decreases down a group. Fluorine is most electronegative (4.0)."
+    },
+    {
+      "id": "chem-3",
+      "front": "What is Coulomb's Law?",
+      "back": "F = kq₁q₂/r²\n\nThe electrostatic force between two charges is proportional to the product of charges and inversely proportional to the square of distance."
+    },
+    {
+      "id": "chem-4",
+      "front": "Define enthalpy (H)",
+      "back": "The total heat content of a system at constant pressure.\n\nΔH < 0: exothermic (releases heat)\nΔH > 0: endothermic (absorbs heat)"
+    },
+    {
+      "id": "chem-5",
+      "front": "What is Le Chatelier's Principle?",
+      "back": "When a system at equilibrium is disturbed, it shifts to counteract the change.\n\n• Add reactant → shifts right\n• Remove product → shifts right\n• Increase pressure → shifts toward fewer moles of gas"
+    }
+  ],
+  "bio": [
+    {
+      "id": "bio-1",
+      "front": "What are the stages of cellular respiration?",
+      "back": "1. Glycolysis (cytoplasm): Glucose → 2 pyruvate + 2 ATP + 2 NADH\n\n2. Pyruvate oxidation: Pyruvate → Acetyl-CoA\n\n3. Citric acid cycle (matrix): 2 ATP + 6 NADH + 2 FADH₂\n\n4. ETC (inner membrane): ~34 ATP"
+    },
+    {
+      "id": "bio-2",
+      "front": "Describe the lac operon",
+      "back": "Inducible operon in E. coli for lactose metabolism.\n\n• Repressor normally blocks transcription\n• Lactose (inducer) binds repressor → releases from operator\n• Low glucose + lactose present → CAP activates transcription"
+    },
+    {
+      "id": "bio-3",
+      "front": "What is the function of the nephron?",
+      "back": "Functional unit of the kidney:\n\n1. Glomerulus: Filtration\n2. PCT: Reabsorption (glucose, amino acids, Na⁺)\n3. Loop of Henle: Concentration gradient\n4. DCT: Fine-tuning (aldosterone, ADH)\n5. Collecting duct: Final concentration"
+    },
+    {
+      "id": "bio-4",
+      "front": "Define competitive vs non-competitive inhibition",
+      "back": "Competitive: Inhibitor binds active site. ↑Km, unchanged Vmax. Overcome by ↑[S].\n\nNon-competitive: Inhibitor binds allosteric site. Unchanged Km, ↓Vmax. Cannot be overcome by ↑[S]."
+    },
+    {
+      "id": "bio-5",
+      "front": "What is the central dogma of molecular biology?",
+      "back": "DNA → RNA → Protein\n\nDNA is transcribed to mRNA in the nucleus, mRNA is translated to protein at ribosomes.\n\nExceptions: Reverse transcriptase (RNA→DNA), RNA replication in RNA viruses."
+    }
+  ],
+  "psych": [
+    {
+      "id": "psych-1",
+      "front": "What is operant conditioning?",
+      "back": "Learning through consequences (Skinner).\n\n• Positive reinforcement: Add pleasant stimulus\n• Negative reinforcement: Remove unpleasant stimulus\n• Positive punishment: Add unpleasant stimulus\n• Negative punishment: Remove pleasant stimulus"
+    },
+    {
+      "id": "psych-2",
+      "front": "Describe Piaget's stages of cognitive development",
+      "back": "1. Sensorimotor (0-2): Object permanence\n2. Preoperational (2-7): Egocentrism, symbolic thinking\n3. Concrete operational (7-11): Conservation, logical thought\n4. Formal operational (12+): Abstract reasoning"
+    },
+    {
+      "id": "psych-3",
+      "front": "What is the bystander effect?",
+      "back": "The more people present during an emergency, the less likely any individual is to help.\n\nCauses:\n• Diffusion of responsibility\n• Pluralistic ignorance\n• Evaluation apprehension"
+    },
+    {
+      "id": "psych-4",
+      "front": "Define fundamental attribution error",
+      "back": "The tendency to overattribute others' behavior to internal/dispositional factors while underestimating situational factors.\n\nExample: Assuming someone who cuts you off in traffic is a bad driver rather than having an emergency."
+    },
+    {
+      "id": "psych-5",
+      "front": "What is the difference between prejudice, discrimination, and stereotypes?",
+      "back": "Stereotype: Cognitive belief about a group (generalization)\n\nPrejudice: Affective/emotional attitude toward a group\n\nDiscrimination: Behavioral action against a group\n\nAll three are related but distinct components of bias."
+    }
+  ],
+  "cars": [
+    {
+      "id": "cars-1",
+      "front": "What is the main idea of a passage?",
+      "back": "The central argument or thesis the author is making.\n\nTo find it:\n• Read the first and last paragraphs carefully\n• Identify what claim the author is defending\n• Look for repeated concepts or themes"
+    },
+    {
+      "id": "cars-2",
+      "front": "How do you identify author's tone?",
+      "back": "Look for:\n• Word choice (positive/negative connotations)\n• Use of qualifiers (\"perhaps,\" \"certainly\")\n• Rhetorical devices\n• Treatment of opposing views\n\nCommon tones: Critical, objective, skeptical, enthusiastic, dismissive"
+    },
+    {
+      "id": "cars-3",
+      "front": "What is an inference question asking?",
+      "back": "What can be logically concluded from the passage that isn't explicitly stated.\n\nThe answer must be:\n• Supported by passage evidence\n• Not a direct quote\n• A logical extension of stated ideas"
+    },
+    {
+      "id": "cars-4",
+      "front": "How do you approach 'strengthen/weaken' questions?",
+      "back": "1. Identify the author's argument\n2. Find the conclusion and premises\n3. For strengthen: Find answer that adds support\n4. For weaken: Find answer that challenges a premise or conclusion\n\nLook for assumptions the argument relies on."
+    },
+    {
+      "id": "cars-5",
+      "front": "What is the difference between explicit and implicit information?",
+      "back": "Explicit: Directly stated in the passage. Can be found by looking back at text.\n\nImplicit: Implied but not directly stated. Requires drawing logical conclusions from what IS stated."
+    }
+  ]
+}
