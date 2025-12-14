@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/mcat-spark/",
+  base: mode === "development" ? "/" : "/mcat-spark/",
   server: {
     host: "::",
     port: 8080,
