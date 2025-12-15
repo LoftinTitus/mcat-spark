@@ -15,7 +15,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/mcat-spark">
           <Toaster />
           <Sonner />
           <Routes>
