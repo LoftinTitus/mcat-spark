@@ -1148,6 +1148,131 @@
       "id": "psych-5",
       "front": "What is the difference between prejudice, discrimination, and stereotypes?",
       "back": "Stereotype: Cognitive belief about a group (generalization)\n\nPrejudice: Affective/emotional attitude toward a group\n\nDiscrimination: Behavioral action against a group\n\nAll three are related but distinct components of bias."
+    },
+    {
+      "id": "psych-6",
+      "front": "What is classical conditioning? (Pavlov)",
+      "back": "Classical conditioning: Learning through association (Ivan Pavlov)\n\nKey terms:\n• Unconditioned stimulus (UCS): Naturally triggers response (food)\n• Unconditioned response (UCR): Natural response (salivation)\n• Conditioned stimulus (CS): Neutral → triggers response (bell)\n• Conditioned response (CR): Learned response (salivation to bell)\n\nProcess:\n1. Before: UCS → UCR (food → salivation)\n2. During: CS + UCS → UCR (bell + food → salivation)\n3. After: CS → CR (bell → salivation)\n\nPavlov's dogs: Famous experiment demonstrating this"
+    },
+    {
+      "id": "psych-7",
+      "front": "What are key phenomena in classical conditioning?",
+      "back": "Acquisition: Learning the association (CS + UCS repeatedly paired)\n\nExtinction: CR decreases when CS presented without UCS\n\nSpontaneous recovery: CR reappears after extinction period\n\nGeneralization: CR to similar stimuli (Little Albert & white objects)\n\nDiscrimination: Distinguish between similar stimuli\n\nHigher-order conditioning: CS becomes UCS for new learning\n\nExample: Bell → food (1st order), then light → bell (2nd order)"
+    },
+    {
+      "id": "psych-8",
+      "front": "What is operant conditioning in detail? (Skinner)",
+      "back": "Operant conditioning: Learning through consequences (B.F. Skinner)\n\nReinforcement: Increases behavior\n• Positive: Add pleasant stimulus (praise, food)\n• Negative: Remove aversive stimulus (turn off alarm)\n\nPunishment: Decreases behavior\n• Positive: Add aversive stimulus (spanking, shock)\n• Negative: Remove pleasant stimulus (take away phone)\n\nSkinner box: Apparatus with lever, food dispenser, shock grid\n\nKey: Timing matters! Immediate consequences most effective"
+    },
+    {
+      "id": "psych-9",
+      "front": "What are reinforcement schedules?",
+      "back": "Continuous: Every response reinforced (fast learning, fast extinction)\n\nPartial (intermittent): Some responses reinforced (slower learning, slower extinction)\n\nFixed ratio (FR): After set # of responses\n• High response rate, post-reinforcement pause\n• Example: Paid per 10 items produced\n\nVariable ratio (VR): After unpredictable # of responses\n• Highest, steadiest response rate, most resistant to extinction\n• Example: Slot machines, gambling\n\nFixed interval (FI): After set time period\n• Scalloped pattern (slow → fast as time approaches)\n• Example: Weekly paycheck\n\nVariable interval (VI): After unpredictable time\n• Steady, moderate rate\n• Example: Pop quizzes"
+    },
+    {
+      "id": "psych-10",
+      "front": "What is shaping and chaining?",
+      "back": "Shaping: Reinforcing successive approximations to desired behavior\n• Break complex behavior into steps\n• Reinforce each step closer to goal\n• Example: Teaching animal to press lever (approach → touch → press)\n\nChaining: Linking simple behaviors into complex sequence\n• Each behavior becomes cue for next\n• Backward chaining: Start with last step\n• Forward chaining: Start with first step\n• Example: Getting dressed (socks → pants → shirt)\n\nBoth used in training and behavior modification"
+    },
+    {
+      "id": "psych-11",
+      "front": "Describe Piaget's cognitive development stages in detail",
+      "back": "Jean Piaget - Stages of cognitive development:\n\n1. Sensorimotor (0-2 years):\n• Object permanence (9-12 months)\n• Learn through senses and motor actions\n• Stranger anxiety develops\n\n2. Preoperational (2-7 years):\n• Symbolic thinking, pretend play\n• Egocentrism (can't take others' perspective)\n• Lack conservation (can't understand same quantity in different forms)\n• Centration (focus on one aspect)\n• Irreversibility\n\n3. Concrete operational (7-11 years):\n• Conservation mastered\n• Logical thinking about concrete objects\n• Classification, seriation\n• Reversibility\n\n4. Formal operational (12+ years):\n• Abstract reasoning\n• Hypothetical thinking\n• Metacognition"
+    },
+    {
+      "id": "psych-12",
+      "front": "What is Erikson's psychosocial development theory?",
+      "back": "Erik Erikson - 8 stages of psychosocial development (crises):\n\n1. Trust vs Mistrust (0-1): Caregiver reliability\n2. Autonomy vs Shame/Doubt (1-3): Independence\n3. Initiative vs Guilt (3-6): Taking initiative\n4. Industry vs Inferiority (6-12): Competence\n5. Identity vs Role Confusion (12-18): Self-concept\n6. Intimacy vs Isolation (20s): Close relationships\n7. Generativity vs Stagnation (40s-50s): Contributing to society\n8. Integrity vs Despair (65+): Life reflection\n\nEach crisis must be resolved for healthy development\nUnlike Freud, focuses on social relationships across lifespan"
+    },
+    {
+      "id": "psych-13",
+      "front": "What is Kohlberg's moral development theory?",
+      "back": "Lawrence Kohlberg - 3 levels of moral reasoning (6 stages):\n\nPre-conventional (childhood):\n1. Punishment avoidance: Avoid punishment\n2. Self-interest: What's in it for me?\n\nConventional (adolescence/adult):\n3. Interpersonal accord: Please others, \"good boy/girl\"\n4. Law and order: Follow rules/authority\n\nPost-conventional (some adults):\n5. Social contract: Laws flexible, individual rights\n6. Universal principles: Abstract justice, human rights\n\nBased on Heinz dilemma (steal drug to save wife?)\nCriticism: Male-biased (Gilligan's care ethics)"
+    },
+    {
+      "id": "psych-14",
+      "front": "Describe Freud's psychoanalytic theory",
+      "back": "Sigmund Freud - Psychoanalytic theory:\n\nPersonality structure:\n• Id: Primitive, unconscious, pleasure principle (I want!)\n• Ego: Conscious, reality principle, mediator (realistic)\n• Superego: Moral conscience, internalized rules (should/shouldn't)\n\nDefense mechanisms:\n• Repression, denial, projection, displacement, sublimation, rationalization, reaction formation\n\nPsychosexual stages: Oral, anal, phallic, latency, genital\n\nUnconsciousness: Most mental processes hidden\n\nDream analysis, free association: Access unconscious\n\nCriticisms: Not empirically testable, male-focused"
+    },
+    {
+      "id": "psych-15",
+      "front": "What are Freud's psychosexual stages?",
+      "back": "Sigmund Freud - Psychosexual stages:\n\n1. Oral (0-1): Pleasure from mouth (sucking, biting)\n• Fixation: Overeating, smoking, nail-biting\n\n2. Anal (1-3): Pleasure from bowel control\n• Fixation: Anal-retentive (orderly) or anal-expulsive (messy)\n\n3. Phallic (3-6): Oedipus/Electra complex\n• Boys: Desire mother, fear father (castration anxiety)\n• Girls: Desire father, penis envy\n• Fixation: Sexual identity issues\n\n4. Latency (6-puberty): Sexual feelings dormant\n• Focus on skills, friendships\n\n5. Genital (puberty+): Mature sexual relationships\n• If earlier stages resolved, healthy sexuality\n\nFixations occur if needs unmet/over-satisfied"
+    },
+    {
+      "id": "psych-16",
+      "front": "What are Freud's defense mechanisms?",
+      "back": "Defense mechanisms: Unconscious strategies to reduce anxiety (Freud)\n\nRepression: Push threatening thoughts to unconscious (most basic)\n\nDenial: Refuse to acknowledge reality\n\nProjection: Attribute own unacceptable feelings to others\n\nDisplacement: Redirect feelings to safer target (kick dog after bad day)\n\nSublimation: Channel impulses into socially acceptable activities (most mature)\n\nRationalization: Create logical excuses for behavior\n\nReaction formation: Act opposite to true feelings\n\nRegression: Revert to childlike behaviors\n\nIntellectualization: Focus on facts to avoid emotions"
+    },
+    {
+      "id": "psych-17",
+      "front": "What is Maslow's hierarchy of needs?",
+      "back": "Abraham Maslow - Hierarchy of needs (pyramid):\n\nDeficiency needs (bottom → up):\n1. Physiological: Food, water, sleep, shelter\n2. Safety: Security, stability, protection\n3. Love/Belonging: Relationships, acceptance, intimacy\n4. Esteem: Achievement, recognition, respect\n\nGrowth needs:\n5. Self-actualization: Realize full potential, creativity, meaning\n\nKey principles:\n• Lower needs must be met before higher\n• Self-actualization: Peak experiences, acceptance, spontaneity\n• Only ~2% reach self-actualization\n\nHumanistic psychology: Focus on human potential and growth"
+    },
+    {
+      "id": "psych-18",
+      "front": "What are the Big Five personality traits?",
+      "back": "Big Five (OCEAN or CANOE):\n\nOpenness:\n• Imagination, creativity, curiosity\n• Low: Practical, conventional\n\nConscientiousness:\n• Organization, responsibility, self-discipline\n• Low: Impulsive, disorganized\n\nExtraversion:\n• Sociability, assertiveness, energy\n• Low: Introverted, reserved\n\nAgreeableness:\n• Compassion, cooperation, trust\n• Low: Competitive, skeptical\n\nNeuroticism:\n• Emotional instability, anxiety, moodiness\n• Low: Calm, stable (emotional stability)\n\nMost widely accepted trait model\nFairly stable across lifespan\nGenetic and environmental influences"
+    },
+    {
+      "id": "psych-19",
+      "front": "What was Pavlov's dogs experiment?",
+      "back": "Ivan Pavlov (1890s) - Classical conditioning:\n\nSetup:\n• Dogs naturally salivate to food (UCS → UCR)\n• Rang bell before presenting food\n• Repeated pairings\n\nResult:\n• Dogs salivated to bell alone (CS → CR)\n• Demonstrated learned associations\n\nImportance:\n• Foundation of behaviorism\n• Showed learning could be studied scientifically\n• Applied to phobias, advertising, therapy\n\nAccidental discovery: Noticed dogs salivating before food arrived"
+    },
+    {
+      "id": "psych-20",
+      "front": "What was Watson's Little Albert experiment?",
+      "back": "John B. Watson & Rosalie Rayner (1920):\n\nSetup:\n• 9-month-old Albert shown white rat (neutral)\n• Loud noise (UCS) paired with rat → fear (UCR)\n• Repeated pairings\n\nResult:\n• Albert feared rat alone (CS → CR)\n• Generalized to white rabbit, dog, fur coat, Santa beard\n• Demonstrated conditioned emotional response\n\nImportance:\n• Showed phobias can be learned\n• Led to behavior therapy\n\nEthical issues:\n• No consent, distressed child, never deconditioned\n• Would not be approved today"
+    },
+    {
+      "id": "psych-21",
+      "front": "What was Milgram's obedience study?",
+      "back": "Stanley Milgram (1961) - Obedience to authority:\n\nSetup:\n• Participant = \"teacher,\" confederate = \"learner\"\n• Teacher gives shocks for wrong answers (fake shocks)\n• Experimenter prods teacher to continue\n• Shocks increased to 450V (\"XXX Danger\")\n\nResults:\n• 65% went to maximum voltage\n• Many protested but continued when told to\n\nConclusion:\n• People obey authority even against conscience\n• Situational factors > personality\n\nRelevance: Understanding Holocaust, Abu Ghraib\n\nEthical concerns: Deception, psychological distress"
+    },
+    {
+      "id": "psych-22",
+      "front": "What was Zimbardo's Stanford Prison Experiment?",
+      "back": "Philip Zimbardo (1971) - Power of social roles:\n\nSetup:\n• Basement transformed into mock prison\n• 24 students randomly assigned: guards or prisoners\n• Planned for 2 weeks\n\nResults:\n• Guards became abusive, prisoners passive/distressed\n• Stopped after 6 days due to ethical concerns\n• Some guards sadistic, prisoners had breakdowns\n\nConclusion:\n• Social situations powerfully shape behavior\n• Good people can do bad things in certain roles\n• Deindividuation: Loss of self-awareness in groups\n\nRelevance: Prison reform, military behavior\n\nControversies: Ethical issues, demand characteristics"
+    },
+    {
+      "id": "psych-23",
+      "front": "What was Asch's conformity study?",
+      "back": "Solomon Asch (1951) - Conformity to group pressure:\n\nSetup:\n• Line judgment task (obviously different lengths)\n• 1 real participant, 7 confederates\n• Confederates gave wrong answers\n\nResults:\n• 75% conformed at least once\n• 37% average conformity rate\n• Control: <1% error when alone\n\nFactors increasing conformity:\n• Group size (up to 3-4 people)\n• Unanimity (one dissenter drastically reduces conformity)\n• Public response\n• Difficult task\n\nConclusion:\n• People conform to avoid rejection (normative influence)\n• Even when obviously wrong"
+    },
+    {
+      "id": "psych-24",
+      "front": "What was Bandura's Bobo doll experiment?",
+      "back": "Albert Bandura (1961) - Observational learning/social learning:\n\nSetup:\n• Children watched adult model interact with Bobo doll\n• Aggressive group: Model hit, kicked doll\n• Non-aggressive group: Model played calmly\n• Control: No model\n\nResults:\n• Aggressive group imitated aggression\n• Reproduced specific behaviors and words\n• Boys more physically aggressive\n\nConclusion:\n• Learning occurs through observation (not just reinforcement)\n• Children imitate adult behavior\n• Challenged behaviorism (internal mental processes matter)\n\nImplications: Media violence effects, modeling in education"
+    },
+    {
+      "id": "psych-25",
+      "front": "What was Harlow's monkey study?",
+      "back": "Harry Harlow (1950s-60s) - Attachment and contact comfort:\n\nSetup:\n• Infant rhesus monkeys separated from mothers\n• Two surrogate mothers: Wire (with food) vs cloth (no food)\n• Observed preference and behavior\n\nResults:\n• Monkeys preferred cloth mother despite wire having food\n• Clung to cloth mother when frightened\n• Used cloth mother as secure base\n\nConclusion:\n• Contact comfort > food for attachment\n• Challenged Freudian view (attachment based on feeding)\n• Importance of touch for development\n\nLong-term effects:\n• Isolated monkeys: Social deficits, abnormal behavior\n• Critical periods for social development\n\nEthical issues: Animal suffering"
+    },
+    {
+      "id": "psych-26",
+      "front": "What are the major schools of psychology?",
+      "back": "Structuralism (Wundt, Titchener):\n• Elements of consciousness via introspection\n• First psychology lab (1879)\n\nFunctionalism (James):\n• How mental processes help adapt\n• Influenced by Darwin\n\nBehaviorism (Watson, Skinner):\n• Observable behavior only\n• Classical and operant conditioning\n\nPsychoanalytic (Freud):\n• Unconscious processes, childhood\n\nHumanistic (Maslow, Rogers):\n• Human potential, self-actualization\n• Free will, personal growth\n\nCognitive:\n• Mental processes (memory, thinking)\n• Information processing\n\nBiological/Neuroscience:\n• Brain, genes, neurotransmitters"
+    },
+    {
+      "id": "psych-27",
+      "front": "What is Carl Rogers' person-centered theory?",
+      "back": "Carl Rogers - Person-centered/humanistic approach:\n\nKey concepts:\n• Self-concept: How we view ourselves\n• Ideal self: Who we want to be\n• Congruence: Match between self and ideal self\n• Incongruence: Mismatch causes anxiety\n\nUnconditional positive regard:\n• Accept person without judgment\n• Essential for growth and self-actualization\n\nActualizing tendency:\n• Innate drive toward growth and potential\n• Healthy when not blocked\n\nTherapy approach:\n• Empathy, genuineness, unconditional positive regard\n• Client-centered (not directive)\n• Reflective listening\n\nVs Freud: Optimistic, conscious > unconscious, present > past"
+    },
+    {
+      "id": "psych-28",
+      "front": "Compare nature vs nurture perspectives",
+      "back": "Nature (nativist, biological):\n• Genetics, heredity, evolution\n• Instincts, maturation\n• Examples: Chomsky (language), evolutionary psychology\n\nNurture (empiricist, environmental):\n• Experience, learning, culture\n• Environment shapes development\n• Examples: Behaviorism (Skinner), social learning (Bandura)\n\nModern view: Interaction (both/and):\n• Genes and environment interact\n• Epigenetics: Environment affects gene expression\n• Diathesis-stress model: Genetic predisposition + environment\n• Twin studies, adoption studies separate influences\n\nMost traits: Heritability estimates (e.g., IQ ~50%, schizophrenia ~80%)"
+    },
+    {
+      "id": "psych-29",
+      "front": "What is Vygotsky's sociocultural theory?",
+      "back": "Lev Vygotsky - Sociocultural cognitive development:\n\nZone of Proximal Development (ZPD):\n• Gap between: What child can do alone vs with guidance\n• Learning occurs in this zone\n\nScaffolding:\n• Temporary support from more knowledgeable other\n• Gradually removed as child masters skill\n• Like building scaffold\n\nPrivate speech:\n• Self-talk to guide behavior\n• Becomes internalized as thought\n\nCultural tools:\n• Language, symbols, technology\n• Culture shapes cognition\n\nVs Piaget:\n• Social interaction crucial (not individual discovery)\n• Continuous (not stages)\n• Culture-specific development"
+    },
+    {
+      "id": "psych-30",
+      "front": "What is attachment theory? (Bowlby & Ainsworth)",
+      "back": "John Bowlby - Attachment theory:\n• Evolutionary basis: Survival\n• Critical period: First 2 years\n• Secure base for exploration\n\nMary Ainsworth - Strange Situation procedure:\n\nSecure attachment (65%):\n• Distressed when mother leaves\n• Comforted by her return\n• Uses as secure base\n• Parent: Responsive, consistent\n\nInsecure-avoidant (20%):\n• Little distress when mother leaves\n• Avoids/ignores upon return\n• Parent: Unresponsive, rejecting\n\nInsecure-resistant/ambivalent (10-15%):\n• Very distressed when mother leaves\n• Resists comfort but seeks proximity\n• Parent: Inconsistent\n\nDisorganized (5-10%):\n• Contradictory behaviors, confusion\n• Parent: Frightening, abusive"
     }
   ],
   "cars": [
