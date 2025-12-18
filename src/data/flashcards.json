@@ -24,6 +24,181 @@
       "id": "chem-5",
       "front": "What is Le Chatelier's Principle?",
       "back": "When a system at equilibrium is disturbed, it shifts to counteract the change.\n\n• Add reactant → shifts right\n• Remove product → shifts right\n• Increase pressure → shifts toward fewer moles of gas"
+    },
+    {
+      "id": "chem-6",
+      "front": "What are the SUVAT kinematic equations?",
+      "back": "For constant acceleration:\n\n1. v = u + at\n2. s = ut + ½at²\n3. v² = u² + 2as\n4. s = ½(u + v)t\n\nWhere: s = displacement, u = initial velocity, v = final velocity, a = acceleration, t = time"
+    },
+    {
+      "id": "chem-7",
+      "front": "State Newton's Three Laws of Motion",
+      "back": "1st Law (Inertia): An object at rest stays at rest, and an object in motion stays in motion at constant velocity unless acted upon by a net force.\n\n2nd Law: F = ma (Force equals mass times acceleration)\n\n3rd Law: For every action, there is an equal and opposite reaction."
+    },
+    {
+      "id": "chem-8",
+      "front": "Define work, energy, and power",
+      "back": "Work (W): Energy transfer by a force. W = Fd cosθ (Joules)\n\nEnergy (E): Capacity to do work (Joules)\n• KE = ½mv²\n• PE = mgh\n\nPower (P): Rate of doing work. P = W/t or P = Fv (Watts = J/s)"
+    },
+    {
+      "id": "chem-9",
+      "front": "What is the Law of Conservation of Energy?",
+      "back": "Energy cannot be created or destroyed, only transformed from one form to another.\n\nTotal mechanical energy: E = KE + PE = constant (in absence of friction)\n\nmgh₁ + ½mv₁² = mgh₂ + ½mv₂²"
+    },
+    {
+      "id": "chem-10",
+      "front": "What are the SI units for key mechanics quantities?",
+      "back": "• Distance/displacement: meter (m)\n• Velocity: m/s\n• Acceleration: m/s²\n• Force: Newton (N) = kg·m/s²\n• Work/Energy: Joule (J) = N·m\n• Power: Watt (W) = J/s\n• Mass: kilogram (kg)"
+    },
+    {
+      "id": "chem-11",
+      "front": "What is the work-energy theorem?",
+      "back": "The net work done on an object equals its change in kinetic energy.\n\nW_net = ΔKE = ½mv_f² - ½mv_i²\n\nIf only conservative forces act: W_net = -ΔPE"
+    },
+    {
+      "id": "chem-12",
+      "front": "Define momentum and impulse",
+      "back": "Momentum: p = mv (kg·m/s)\n\nImpulse: J = Δp = FΔt\n\nConservation of momentum: In isolated system, total momentum before = total momentum after\n\nm₁v₁ᵢ + m₂v₂ᵢ = m₁v₁f + m₂v₂f"
+    },
+    {
+      "id": "chem-13",
+      "front": "What is the equation for pressure in static fluids?",
+      "back": "P = ρgh\n\nWhere:\n• P = pressure (Pa or N/m²)\n• ρ = fluid density (kg/m³)\n• g = gravitational acceleration (9.8 m/s²)\n• h = depth below surface (m)\n\nTotal pressure: P_total = P_atm + ρgh"
+    },
+    {
+      "id": "chem-14",
+      "front": "State Bernoulli's equation",
+      "back": "P + ½ρv² + ρgh = constant\n\nFor horizontal flow (h constant):\nP₁ + ½ρv₁² = P₂ + ½ρv₂²\n\nKey insight: Higher velocity → lower pressure\n\nApplies to: Ideal, incompressible, non-viscous fluid flow"
+    },
+    {
+      "id": "chem-15",
+      "front": "What is the continuity equation for fluid flow?",
+      "back": "A₁v₁ = A₂v₂ (for incompressible fluids)\n\nOr: Q = Av = constant\n\nWhere:\n• A = cross-sectional area\n• v = flow velocity\n• Q = volumetric flow rate\n\nSmaller area → higher velocity"
+    },
+    {
+      "id": "chem-16",
+      "front": "State Poiseuille's law for viscous flow",
+      "back": "Q = πr⁴ΔP / 8ηL\n\nWhere:\n• Q = flow rate\n• r = radius (most important: r⁴!)\n• ΔP = pressure difference\n• η = viscosity\n• L = length\n\nKey: Flow rate ∝ r⁴ (doubling radius increases flow 16×)"
+    },
+    {
+      "id": "chem-17",
+      "front": "State Archimedes' Principle",
+      "back": "Buoyant force equals the weight of displaced fluid.\n\nF_b = ρ_fluid × V_displaced × g\n\nFloating: F_b = weight of object\nSinking: F_b < weight of object\nRising: F_b > weight of object\n\nρ_object < ρ_fluid → object floats"
+    },
+    {
+      "id": "chem-18",
+      "front": "When do you use each fluid mechanics equation?",
+      "back": "P = ρgh: Static fluids, depth problems\n\nBernoulli: Energy conservation in flowing fluids, relates P, v, and h\n\nContinuity: Conservation of mass, changing pipe diameter\n\nPoiseuille: Viscous flow in tubes, resistance to flow\n\nArchimedes: Buoyancy, floating/sinking problems"
+    },
+    {
+      "id": "chem-19",
+      "front": "State Ohm's Law and the power law",
+      "back": "Ohm's Law: V = IR\n• V = voltage (volts)\n• I = current (amperes)\n• R = resistance (ohms, Ω)\n\nPower: P = IV = I²R = V²/R\n• P = power (watts)\n\nEnergy: E = Pt = IVt (joules)"
+    },
+    {
+      "id": "chem-20",
+      "front": "How do resistors combine in series vs parallel?",
+      "back": "Series (same current):\nR_total = R₁ + R₂ + R₃ + ...\n\nParallel (same voltage):\n1/R_total = 1/R₁ + 1/R₂ + 1/R₃ + ...\n\nFor two in parallel:\nR_total = (R₁R₂)/(R₁ + R₂)"
+    },
+    {
+      "id": "chem-21",
+      "front": "How do capacitors combine in series vs parallel?",
+      "back": "Capacitors are OPPOSITE of resistors:\n\nParallel (same voltage):\nC_total = C₁ + C₂ + C₃ + ...\n\nSeries (same charge):\n1/C_total = 1/C₁ + 1/C₂ + 1/C₃ + ...\n\nCapacitor energy: U = ½CV² = ½QV"
+    },
+    {
+      "id": "chem-22",
+      "front": "What is Coulomb's constant and when is it used?",
+      "back": "k = 9.0 × 10⁹ N·m²/C²\n\nUsed in Coulomb's Law:\nF = kq₁q₂/r²\n\nAlso in electric field:\nE = kq/r²\n\nElectric potential:\nV = kq/r"
+    },
+    {
+      "id": "chem-23",
+      "front": "What is Faraday's constant?",
+      "back": "F = 96,485 C/mol e⁻ (≈ 96,500 C/mol)\n\nRepresents charge per mole of electrons.\n\nUsed in electrochemistry:\n• Q = nF (charge = moles e⁻ × Faraday constant)\n• ΔG° = -nFE°_cell\n• In Nernst equation"
+    },
+    {
+      "id": "chem-24",
+      "front": "State the Nernst equation",
+      "back": "E_cell = E°_cell - (RT/nF)ln(Q)\n\nOr at 25°C:\nE_cell = E°_cell - (0.0592/n)log(Q)\n\nWhere:\n• E°_cell = standard cell potential\n• n = moles of electrons transferred\n• Q = reaction quotient\n\nAt equilibrium: E_cell = 0, Q = K"
+    },
+    {
+      "id": "chem-25",
+      "front": "What are key electrochemistry relationships?",
+      "back": "ΔG° = -nFE°_cell\n• Positive E°_cell → negative ΔG° → spontaneous\n\nE°_cell = E°_cathode - E°_anode\n• Reduction at cathode (gains e⁻)\n• Oxidation at anode (loses e⁻)\n\nCurrent and mass:\nm = (It × M)/(nF)"
+    },
+    {
+      "id": "chem-26",
+      "front": "What is the wave equation?",
+      "back": "v = fλ\n\nWhere:\n• v = wave speed (m/s)\n• f = frequency (Hz)\n• λ = wavelength (m)\n\nFor all waves: light, sound, water, etc.\n\nSpeed of light: c = 3.0 × 10⁸ m/s\nSpeed of sound in air: ~340 m/s"
+    },
+    {
+      "id": "chem-27",
+      "front": "What is the decibel scale for sound intensity?",
+      "back": "β = 10 log(I/I₀)\n\nWhere:\n• β = sound level (dB)\n• I = intensity (W/m²)\n• I₀ = 10⁻¹² W/m² (threshold of hearing)\n\nKey: Every 10 dB increase = 10× intensity increase\nEvery 3 dB increase ≈ 2× intensity increase"
+    },
+    {
+      "id": "chem-28",
+      "front": "State the Doppler effect formula",
+      "back": "f_observed = f_source × [(v ± v_observer)/(v ∓ v_source)]\n\nApproaching:\n• Observer moving toward source: + in numerator\n• Source moving toward observer: - in denominator\n• Result: higher frequency\n\nReceding: opposite signs, lower frequency"
+    },
+    {
+      "id": "chem-29",
+      "front": "State Snell's Law for refraction",
+      "back": "n₁sinθ₁ = n₂sinθ₂\n\nWhere:\n• n = index of refraction (n = c/v)\n• θ = angle from normal\n\nBending toward normal: n₁ < n₂ (e.g., air → water)\nBending away from normal: n₁ > n₂\n\nCritical angle: sinθ_c = n₂/n₁"
+    },
+    {
+      "id": "chem-30",
+      "front": "What is the mirror/lens equation?",
+      "back": "1/f = 1/d_o + 1/d_i\n\nWhere:\n• f = focal length\n• d_o = object distance\n• d_i = image distance\n\nSign conventions:\n• f: + for converging (concave mirror/convex lens), - for diverging\n• d_i: + for real image, - for virtual image"
+    },
+    {
+      "id": "chem-31",
+      "front": "What is the magnification equation?",
+      "back": "m = -d_i/d_o = h_i/h_o\n\nWhere:\n• m = magnification\n• h_i = image height\n• h_o = object height\n\nm > 0: upright image\nm < 0: inverted image\n|m| > 1: enlarged\n|m| < 1: reduced"
+    },
+    {
+      "id": "chem-32",
+      "front": "What are the key optics sign conventions?",
+      "back": "Focal length (f):\n• Concave mirror (converging): +\n• Convex mirror (diverging): -\n• Convex lens (converging): +\n• Concave lens (diverging): -\n\nImage distance (d_i):\n• Real image (same side as light): +\n• Virtual image (opposite side): -\n\nMagnification:\n• Upright: +\n• Inverted: -"
+    },
+    {
+      "id": "chem-33",
+      "front": "What are key physical constants?",
+      "back": "Speed of light: c = 3.0 × 10⁸ m/s\n\nPlanck's constant: h = 6.626 × 10⁻³⁴ J·s\n\nAvogadro's number: NA = 6.022 × 10²³ mol⁻¹\n\nGas constant: R = 8.314 J/(mol·K) = 0.0821 L·atm/(mol·K)\n\nGravity: g = 9.8 m/s²"
+    },
+    {
+      "id": "chem-34",
+      "front": "What is the photon energy equation?",
+      "back": "E = hf = hc/λ\n\nWhere:\n• E = energy (joules)\n• h = Planck's constant (6.626 × 10⁻³⁴ J·s)\n• f = frequency (Hz)\n• λ = wavelength (m)\n\nHigher frequency/shorter wavelength → higher energy"
+    },
+    {
+      "id": "chem-35",
+      "front": "Define atomic number and mass number",
+      "back": "Atomic number (Z):\n• Number of protons\n• Defines the element\n• Equals number of electrons in neutral atom\n\nMass number (A):\n• Total protons + neutrons\n• A = Z + N\n\nIsotopes: Same Z, different A (different neutrons)"
+    },
+    {
+      "id": "chem-36",
+      "front": "What are the periodic trends for electronegativity?",
+      "back": "Electronegativity (ability to attract electrons):\n\nIncreases: left → right across period\nDecreases: down a group\n\nMost electronegative: F (4.0)\nLeast electronegative: Fr, Cs\n\nTrend follows: F > O > N > Cl"
+    },
+    {
+      "id": "chem-37",
+      "front": "What are the periodic trends for ionization energy?",
+      "back": "Ionization energy (energy to remove an electron):\n\nIncreases: left → right across period\nDecreases: down a group\n\nHighest: Noble gases (He, Ne)\nLowest: Alkali metals (Li, Na, K)\n\nExceptions: Groups 3 & 6 slightly lower than expected"
+    },
+    {
+      "id": "chem-38",
+      "front": "What are the types of radioactive decay?",
+      "back": "Alpha (α): ⁴₂He nucleus emitted\n• Mass decreases by 4, atomic # by 2\n• Low penetration (paper stops it)\n\nBeta (β⁻): Electron emitted, neutron → proton\n• Mass unchanged, atomic # increases by 1\n\nBeta (β⁺): Positron emitted, proton → neutron\n• Mass unchanged, atomic # decreases by 1\n\nGamma (γ): High-energy photon\n• No change in mass or atomic #\n• High penetration (lead needed)"
+    },
+    {
+      "id": "chem-39",
+      "front": "What is the half-life decay law?",
+      "back": "N = N₀e⁻λt  or  N = N₀(½)^(t/t₁/₂)\n\nWhere:\n• N = amount remaining\n• N₀ = initial amount\n• λ = decay constant\n• t = time elapsed\n• t₁/₂ = half-life\n\nRelationship: t₁/₂ = ln(2)/λ ≈ 0.693/λ\n\nAfter n half-lives: N = N₀/(2ⁿ)"
+    },
+    {
+      "id": "chem-40",
+      "front": "What are other key periodic trends?",
+      "back": "Atomic radius:\n• Decreases left → right (more protons pull electrons closer)\n• Increases down group (more electron shells)\n\nElectron affinity:\n• Generally increases left → right\n• Noble gases near zero (stable)\n\nMetallic character:\n• Decreases left → right\n• Increases down group"
     }
   ],
   "bio": [
