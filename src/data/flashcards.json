@@ -204,28 +204,923 @@
   "bio": [
     {
       "id": "bio-1",
-      "front": "What are the stages of cellular respiration?",
-      "back": "1. Glycolysis (cytoplasm): Glucose → 2 pyruvate + 2 ATP + 2 NADH\n\n2. Pyruvate oxidation: Pyruvate → Acetyl-CoA\n\n3. Citric acid cycle (matrix): 2 ATP + 6 NADH + 2 FADH₂\n\n4. ETC (inner membrane): ~34 ATP"
+      "front": "List all 20 amino acids with 1-letter and 3-letter codes",
+      "back": "Nonpolar: G-Gly, A-Ala, V-Val, L-Leu, I-Ile, M-Met, P-Pro, F-Phe, W-Trp\n\nPolar: S-Ser, T-Thr, C-Cys, Y-Tyr, N-Asn, Q-Gln\n\nAcidic: D-Asp, E-Glu\n\nBasic: K-Lys, R-Arg, H-His\n\nMnemonic: GAVLIMPFW / STCYNQ / DE / KRH"
     },
     {
       "id": "bio-2",
+      "front": "Classify amino acids: Nonpolar (hydrophobic)",
+      "back": "Glycine (G): Smallest, most flexible\nAlanine (A): Simple methyl side chain\nValine (V): Branched, hydrophobic\nLeucine (L): Branched, hydrophobic\nIsoleucine (I): Branched, hydrophobic\nMethionine (M): Contains sulfur, hydrophobic\nProline (P): Cyclic, helix breaker\nPhenylalanine (F): Aromatic ring\nTryptophan (W): Largest, aromatic, UV absorbing"
+    },
+    {
+      "id": "bio-3",
+      "front": "Classify amino acids: Polar (uncharged)",
+      "back": "Serine (S): -OH group, can be phosphorylated\nThreonine (T): -OH group, can be phosphorylated\nCysteine (C): -SH group, forms disulfide bonds\nTyrosine (Y): Aromatic with -OH, can be phosphorylated, UV absorbing\nAsparagine (N): Amide side chain\nGlutamine (Q): Amide side chain, longer than Asn\n\nAll have polar groups but are uncharged at pH 7"
+    },
+    {
+      "id": "bio-4",
+      "front": "Classify amino acids: Acidic (negatively charged)",
+      "back": "Aspartate/Aspartic acid (D):\n• Side chain: -COO⁻ at pH 7\n• pKa ~3.9\n• Negatively charged in physiological pH\n\nGlutamate/Glutamic acid (E):\n• Side chain: -COO⁻ at pH 7\n• pKa ~4.2\n• One carbon longer than Asp\n• Negatively charged in physiological pH"
+    },
+    {
+      "id": "bio-5",
+      "front": "Classify amino acids: Basic (positively charged)",
+      "back": "Lysine (K):\n• -NH₃⁺ at pH 7, pKa ~10.5\n• Positively charged at physiological pH\n\nArginine (R):\n• Guanidinium group, pKa ~12.5\n• Always positively charged\n• Strongest base\n\nHistidine (H):\n• Imidazole ring, pKa ~6.0\n• Can be + or neutral near pH 7\n• Important in enzyme active sites"
+    },
+    {
+      "id": "bio-6",
+      "front": "What are special properties of Proline?",
+      "back": "• Cyclic structure: Side chain bonds back to backbone N\n• Restricts rotation → reduces flexibility\n• Helix breaker: Cannot form proper α-helix\n• Beta-turn former: Common in loops/turns\n• Creates kinks in protein structure\n• Only amino acid where backbone N is part of ring (imino acid)"
+    },
+    {
+      "id": "bio-7",
+      "front": "What are special properties of Cysteine?",
+      "back": "• Contains thiol (-SH) group\n• Forms disulfide bonds (Cys-S-S-Cys)\n• Stabilizes tertiary/quaternary structure\n• Oxidation of 2 Cys → cystine (disulfide bridge)\n• Important for protein stability\n• Can be oxidized/reduced\n• pKa ~8.3"
+    },
+    {
+      "id": "bio-8",
+      "front": "What are special properties of Glycine?",
+      "back": "• Smallest amino acid (R = H)\n• Most flexible: No side chain restricts rotation\n• Achiral: No stereocenter\n• Fits in tight spaces\n• Common in collagen (every 3rd position)\n• Not hydrophobic despite being nonpolar\n• Allows tight turns in protein structure"
+    },
+    {
+      "id": "bio-9",
+      "front": "What amino acids absorb UV light at 280 nm?",
+      "back": "Aromatic amino acids:\n\nTryptophan (W): Strongest absorber\nTyrosine (Y): Moderate absorber\nPhenylalanine (F): Weak absorber\n\nUsed to:\n• Measure protein concentration (A280)\n• Track proteins in chromatography\n• Detect aromatic residues\n\nW > Y >> F in absorption strength"
+    },
+    {
+      "id": "bio-10",
+      "front": "What are key pKa values for amino acids?",
+      "back": "α-COOH: ~2.2 (all amino acids)\nα-NH₃⁺: ~9.5 (all amino acids)\n\nSide chains:\nAsp (D): ~3.9\nGlu (E): ~4.2\nHis (H): ~6.0 (critical!)\nCys (C): ~8.3\nLys (K): ~10.5\nArg (R): ~12.5\n\nHistidine's pKa near pH 7 makes it key in catalysis!"
+    },
+    {
+      "id": "bio-11",
+      "front": "What is the isoelectric point (pI)?",
+      "back": "pI: pH where amino acid has net charge of zero\n\nCalculation:\n• Neutral AA: pI = (pKa₁ + pKa₂)/2\n• Acidic AA: pI = (pKa₁ + pKa_R)/2 (lower pI)\n• Basic AA: pI = (pKa₂ + pKa_R)/2 (higher pI)\n\nAt pH < pI: net positive charge\nAt pH > pI: net negative charge\nAt pH = pI: zwitterion, no net charge"
+    },
+    {
+      "id": "bio-12",
+      "front": "Which amino acids can be phosphorylated?",
+      "back": "Serine (S) - most common\nThreonine (T)\nTyrosine (Y)\n\nAll have -OH groups on side chains\n\nPhosphorylation:\n• Adds negative charge (PO₄²⁻)\n• Regulates protein activity\n• Key in signal transduction\n• Reversible (kinases add, phosphatases remove)\n• Changes protein conformation"
+    },
+    {
+      "id": "bio-13",
+      "front": "What are the four levels of protein structure?",
+      "back": "Primary (1°): Amino acid sequence (peptide bonds)\n\nSecondary (2°): Local folding\n• α-helix, β-sheet, turns\n• H-bonds between backbone atoms\n\nTertiary (3°): Overall 3D shape\n• Interactions between side chains\n• Disulfide bonds, hydrophobic interactions\n\nQuaternary (4°): Multiple subunits\n• Hemoglobin (4 subunits)"
+    },
+    {
+      "id": "bio-14",
+      "front": "What stabilizes protein structure?",
+      "back": "Primary: Peptide bonds (covalent)\n\nSecondary: H-bonds (backbone C=O to N-H)\n\nTertiary:\n• Disulfide bonds (Cys-Cys, covalent)\n• Hydrophobic interactions (nonpolar AA)\n• H-bonds (polar AA)\n• Ionic/salt bridges (charged AA)\n• Van der Waals forces\n\nQuaternary: Same as tertiary between subunits"
+    },
+    {
+      "id": "bio-15",
+      "front": "Describe α-helix structure",
+      "back": "• Right-handed coil\n• 3.6 residues per turn\n• H-bonds: C=O of residue n to N-H of residue n+4\n• R groups point outward\n• Proline breaks helices\n• Common in transmembrane proteins\n• Stabilized by backbone H-bonds\n• Compact, rod-like structure"
+    },
+    {
+      "id": "bio-16",
+      "front": "Describe β-sheet structure",
+      "back": "• Extended zigzag strands\n• H-bonds between adjacent strands\n• R groups alternate up/down\n\nParallel: N→C same direction\n• Less stable\n\nAntiparallel: N→C opposite directions\n• More stable\n• Stronger H-bonds\n\nFound in silk fibroin, immunoglobulins"
+    },
+    {
+      "id": "bio-17",
+      "front": "What determines amino acid properties at different pH?",
+      "back": "At low pH (<2):\n• All groups protonated\n• Net positive charge\n\nAt physiological pH (~7):\n• COO⁻ and NH₃⁺ (zwitterion)\n• Side chains depend on pKa\n\nAt high pH (>11):\n• All groups deprotonated\n• Net negative charge\n\npH < pKa: protonated\npH > pKa: deprotonated"
+    },
+    {
+      "id": "bio-18",
+      "front": "What are essential vs non-essential amino acids?",
+      "back": "Essential (must be obtained from diet):\nPVT TIM HALL\n• Phe, Val, Thr, Trp, Ile, Met, His, Arg*, Leu, Lys\n\n*Arg: conditionally essential\n\nNon-essential (body can synthesize):\n• Ala, Asn, Asp, Cys, Glu, Gln, Gly, Pro, Ser, Tyr\n\nDeficiency of essential AA → protein malnutrition"
+    },
+    {
+      "id": "bio-19",
+      "front": "What are aromatic amino acids and their properties?",
+      "back": "Phenylalanine (F):\n• Benzene ring\n• Hydrophobic\n• Essential\n\nTyrosine (Y):\n• Benzene with -OH\n• Polar, can H-bond\n• Phosphorylation site\n• Precursor to dopamine, epinephrine\n\nTryptophan (W):\n• Indole ring (largest AA)\n• Hydrophobic\n• Essential\n• Precursor to serotonin, melatonin\n• Strongest UV absorber"
+    },
+    {
+      "id": "bio-20",
+      "front": "What causes protein denaturation?",
+      "back": "Factors:\n• Heat: Disrupts H-bonds, hydrophobic interactions\n• pH extremes: Changes ionization states\n• Chemicals: Urea, detergents disrupt interactions\n• Heavy metals: React with side chains\n\nResult:\n• Loss of 2°, 3°, 4° structure\n• Primary structure intact\n• Loss of function\n• Usually irreversible (e.g., cooking egg)\n• Sometimes reversible (renaturation)"
+    },
+    {
+      "id": "bio-21",
       "front": "Describe the lac operon",
       "back": "Inducible operon in E. coli for lactose metabolism.\n\n• Repressor normally blocks transcription\n• Lactose (inducer) binds repressor → releases from operator\n• Low glucose + lactose present → CAP activates transcription"
     },
     {
-      "id": "bio-3",
+      "id": "bio-22",
       "front": "What is the function of the nephron?",
       "back": "Functional unit of the kidney:\n\n1. Glomerulus: Filtration\n2. PCT: Reabsorption (glucose, amino acids, Na⁺)\n3. Loop of Henle: Concentration gradient\n4. DCT: Fine-tuning (aldosterone, ADH)\n5. Collecting duct: Final concentration"
     },
     {
-      "id": "bio-4",
-      "front": "Define competitive vs non-competitive inhibition",
-      "back": "Competitive: Inhibitor binds active site. ↑Km, unchanged Vmax. Overcome by ↑[S].\n\nNon-competitive: Inhibitor binds allosteric site. Unchanged Km, ↓Vmax. Cannot be overcome by ↑[S]."
+      "id": "bio-23",
+      "front": "What is the Michaelis-Menten equation?",
+      "back": "v = (Vmax[S]) / (Km + [S])\n\nWhere:\n• v = reaction velocity\n• Vmax = maximum velocity\n• [S] = substrate concentration\n• Km = Michaelis constant\n\nAt [S] = Km: v = Vmax/2\nAt [S] >> Km: v ≈ Vmax (zero-order)\nAt [S] << Km: v ≈ (Vmax/Km)[S] (first-order)"
     },
     {
-      "id": "bio-5",
+      "id": "bio-24",
+      "front": "What is Vmax in enzyme kinetics?",
+      "back": "Vmax: Maximum reaction velocity when enzyme is saturated with substrate\n\nCharacteristics:\n• All active sites occupied\n• Rate plateaus, no longer increases with [S]\n• Depends on [enzyme]\n• Vmax = kcat[E]total\n• Units: typically μmol/min or mM/s\n\nReached when [S] >> Km"
+    },
+    {
+      "id": "bio-25",
+      "front": "What is Km in enzyme kinetics?",
+      "back": "Km: Michaelis constant, substrate concentration at half Vmax\n\nInterpretation:\n• Measure of enzyme-substrate affinity\n• Low Km = high affinity (enzyme binds substrate easily)\n• High Km = low affinity (need more substrate)\n• Units: concentration (mM, μM)\n\nKm ≈ (k-1 + kcat)/k1 for simple reactions"
+    },
+    {
+      "id": "bio-26",
+      "front": "What is kcat (turnover number)?",
+      "back": "kcat: Number of substrate molecules converted per enzyme per unit time at saturation\n\nkcat = Vmax / [E]total\n\nCharacteristics:\n• Measure of catalytic efficiency\n• Units: s⁻¹ (per second)\n• Independent of enzyme concentration\n\nCatalytic efficiency: kcat/Km\n• Higher = better enzyme\n• Units: M⁻¹s⁻¹"
+    },
+    {
+      "id": "bio-27",
+      "front": "What is the Lineweaver-Burk plot?",
+      "back": "Double reciprocal plot: 1/v vs 1/[S]\n\n1/v = (Km/Vmax)(1/[S]) + 1/Vmax\n\nKey features:\n• y-intercept = 1/Vmax\n• x-intercept = -1/Km\n• Slope = Km/Vmax\n\nAdvantage: Linear, easier to determine Vmax and Km\nDisadvantage: Distorts error at low [S]"
+    },
+    {
+      "id": "bio-28",
+      "front": "Define competitive inhibition",
+      "back": "Inhibitor competes with substrate for active site\n\nEffects:\n• ↑ Km (appears lower affinity)\n• Vmax unchanged\n• Can be overcome by ↑[S]\n\nLineweaver-Burk:\n• Same y-intercept\n• Different x-intercept (less negative)\n• Increased slope\n\nExample: Statins compete with HMG-CoA"
+    },
+    {
+      "id": "bio-29",
+      "front": "Define noncompetitive inhibition",
+      "back": "Inhibitor binds allosteric site, works whether substrate is bound or not\n\nEffects:\n• Km unchanged (affinity same)\n• ↓ Vmax (fewer functional enzymes)\n• Cannot be overcome by ↑[S]\n\nLineweaver-Burk:\n• Same x-intercept\n• Different y-intercept (higher)\n• Increased slope\n\nExample: Heavy metals binding to enzyme"
+    },
+    {
+      "id": "bio-30",
+      "front": "Define uncompetitive inhibition",
+      "back": "Inhibitor binds only to enzyme-substrate complex (ES)\n\nEffects:\n• ↓ Km (appears higher affinity)\n• ↓ Vmax\n• Cannot be overcome by ↑[S]\n• Km/Vmax ratio stays constant\n\nLineweaver-Burk:\n• Parallel lines (same slope)\n• Different intercepts\n\nLess common, seen in multi-substrate reactions"
+    },
+    {
+      "id": "bio-31",
+      "front": "Define irreversible (suicide) inhibition",
+      "back": "Inhibitor covalently binds and permanently inactivates enzyme\n\nCharacteristics:\n• Time-dependent\n• Cannot be overcome by ↑[S]\n• ↓ Vmax (permanently reduces active enzyme)\n• Requires new enzyme synthesis\n\nExamples:\n• Aspirin (irreversibly inhibits COX)\n• Penicillin (inhibits transpeptidase)\n• Organophosphates (inhibit acetylcholinesterase)"
+    },
+    {
+      "id": "bio-32",
+      "front": "Compare all inhibition types: Effects on Km and Vmax",
+      "back": "Competitive:\n• Km: ↑ (lower apparent affinity)\n• Vmax: unchanged\n• Overcome by ↑[S]\n\nNoncompetitive:\n• Km: unchanged\n• Vmax: ↓\n• Cannot overcome\n\nUncompetitive:\n• Km: ↓\n• Vmax: ↓\n• Parallel L-B lines\n\nIrreversible:\n• Km: unchanged\n• Vmax: ↓\n• Permanent"
+    },
+    {
+      "id": "bio-33",
+      "front": "What are Lineweaver-Burk plot changes for each inhibitor?",
+      "back": "No inhibitor: Normal line\n\nCompetitive:\n• Same y-intercept (1/Vmax)\n• Different x-intercept (less negative)\n• Lines intersect on y-axis\n\nNoncompetitive:\n• Different y-intercept (higher)\n• Same x-intercept (-1/Km)\n• Lines intersect on x-axis\n\nUncompetitive:\n• Parallel lines\n• Different intercepts on both axes"
+    },
+    {
+      "id": "bio-34",
+      "front": "What are the 6 major enzyme classes?",
+      "back": "1. Oxidoreductases: Redox reactions (e.g., dehydrogenases, oxidases)\n\n2. Transferases: Transfer functional groups (e.g., kinases, transaminases)\n\n3. Hydrolases: Break bonds with water (e.g., peptidases, lipases)\n\n4. Lyases: Add/remove groups to form double bonds (e.g., decarboxylases)\n\n5. Isomerases: Rearrange atoms (e.g., racemases, mutases)\n\n6. Ligases: Form bonds with ATP (e.g., DNA ligase, synthetases)"
+    },
+    {
+      "id": "bio-35",
+      "front": "What are examples of oxidoreductases?",
+      "back": "Function: Catalyze oxidation-reduction reactions\n\nExamples:\n• Dehydrogenases: Remove H (lactate dehydrogenase)\n• Reductases: Add electrons (ribonucleotide reductase)\n• Oxidases: Use O₂ as electron acceptor (cytochrome oxidase)\n• Peroxidases: Use H₂O₂ (glutathione peroxidase)\n\nCofactors: NAD⁺, NADP⁺, FAD, FMN\n\nEC class: 1.x.x.x"
+    },
+    {
+      "id": "bio-36",
+      "front": "What are examples of transferases?",
+      "back": "Function: Transfer functional groups between molecules\n\nExamples:\n• Kinases: Transfer phosphate groups (hexokinase, protein kinases)\n• Transaminases: Transfer amino groups (ALT, AST)\n• Methyltransferases: Transfer methyl groups\n• Acyltransferases: Transfer acyl groups\n\nOften use ATP or coenzymes\n\nEC class: 2.x.x.x"
+    },
+    {
+      "id": "bio-37",
+      "front": "What are examples of hydrolases?",
+      "back": "Function: Cleave bonds using water\n\nExamples:\n• Peptidases/proteases: Break peptide bonds (trypsin, pepsin)\n• Lipases: Break ester bonds in lipids\n• Nucleases: Break phosphodiester bonds in DNA/RNA\n• Phosphatases: Remove phosphate groups\n• Glycosidases: Break glycosidic bonds\n\nEC class: 3.x.x.x"
+    },
+    {
+      "id": "bio-38",
+      "front": "What are examples of lyases?",
+      "back": "Function: Add or remove groups to form/break double bonds (non-hydrolytic)\n\nExamples:\n• Decarboxylases: Remove CO₂ (pyruvate decarboxylase)\n• Aldolases: Aldol cleavage (fructose-1,6-bisphosphate aldolase)\n• Synthases: Form double bonds (citrate synthase)*\n• Dehydratases: Remove H₂O (enolase)\n\n*Note: Synthases (lyases) ≠ Synthetases (ligases)\n\nEC class: 4.x.x.x"
+    },
+    {
+      "id": "bio-39",
+      "front": "What are examples of isomerases?",
+      "back": "Function: Rearrange atoms within a molecule\n\nExamples:\n• Racemases: Interconvert stereoisomers\n• Epimerases: Change configuration at one carbon\n• Mutases: Move functional groups (phosphoglucomutase)\n• Isomerases: Structural rearrangements (glucose-6-phosphate isomerase)\n\nNo net change in molecular formula\n\nEC class: 5.x.x.x"
+    },
+    {
+      "id": "bio-40",
+      "front": "What are examples of ligases?",
+      "back": "Function: Form bonds using ATP energy\n\nExamples:\n• Synthetases: Join molecules (aminoacyl-tRNA synthetase, ATP synthase*)\n• Carboxylases: Add CO₂ (pyruvate carboxylase)\n• DNA ligase: Join DNA fragments\n• RNA ligase: Join RNA fragments\n\nRequire ATP (or GTP) hydrolysis\n\n*ATP synthase is actually a special case\n\nEC class: 6.x.x.x"
+    },
+    {
+      "id": "bio-41",
+      "front": "What factors affect enzyme activity?",
+      "back": "Temperature:\n• ↑ temp → ↑ rate (up to optimum ~37°C)\n• Too high → denaturation\n\npH:\n• Each enzyme has optimal pH\n• Extremes denature or change ionization\n\nSubstrate concentration:\n• Follows Michaelis-Menten kinetics\n\nEnzyme concentration:\n• Directly proportional to rate\n\nCofactors/Coenzymes:\n• Required for activity\n\nInhibitors/Activators:\n• Regulate activity"
+    },
+    {
+      "id": "bio-42",
+      "front": "What is allosteric regulation?",
+      "back": "Binding of molecule at site other than active site changes enzyme activity\n\nPositive regulation:\n• Activator binds → ↑ activity\n• Shifts curve left (↓ Km)\n\nNegative regulation:\n• Inhibitor binds → ↓ activity\n• Shifts curve right (↑ Km)\n\nCooperativity:\n• Sigmoidal curve (not hyperbolic)\n• Binding of one substrate affects others\n\nExample: Hemoglobin, phosphofructokinase"
+    },
+    {
+      "id": "bio-43",
       "front": "What is the central dogma of molecular biology?",
       "back": "DNA → RNA → Protein\n\nDNA is transcribed to mRNA in the nucleus, mRNA is translated to protein at ribosomes.\n\nExceptions: Reverse transcriptase (RNA→DNA), RNA replication in RNA viruses."
+    },
+    {
+      "id": "bio-44",
+      "front": "What are purines vs pyrimidines?",
+      "back": "Purines (double ring, larger):\n• Adenine (A)\n• Guanine (G)\n\nPyrimidines (single ring, smaller):\n• Cytosine (C)\n• Thymine (T) - DNA only\n• Uracil (U) - RNA only\n\nMnemonic: PURe As Gold (purines), CUT the PY (pyrimidines)"
+    },
+    {
+      "id": "bio-45",
+      "front": "What are the base-pairing rules and hydrogen bonds?",
+      "back": "DNA/RNA base pairing:\n• A-T (DNA): 2 hydrogen bonds\n• A-U (RNA): 2 hydrogen bonds\n• G-C: 3 hydrogen bonds\n\nKey points:\n• G-C pairs are stronger (3 H-bonds vs 2)\n• Higher G-C content → higher melting temperature\n• Complementary and antiparallel strands"
+    },
+    {
+      "id": "bio-46",
+      "front": "Compare DNA vs RNA structure",
+      "back": "DNA:\n• Double-stranded helix\n• Deoxyribose sugar (no 2'-OH)\n• Thymine (T)\n• More stable\n• Stores genetic info\n\nRNA:\n• Usually single-stranded\n• Ribose sugar (has 2'-OH)\n• Uracil (U) instead of T\n• Less stable (2'-OH reactive)\n• Various functions (mRNA, tRNA, rRNA)"
+    },
+    {
+      "id": "bio-47",
+      "front": "What is DNA replication and when does it occur?",
+      "back": "Process: DNA → DNA (making identical copies)\n\nWhen: S phase of cell cycle\n\nKey features:\n• Semi-conservative (each new DNA has 1 old + 1 new strand)\n• Bidirectional from origin\n• 5' → 3' synthesis only\n• Requires RNA primer\n• Leading strand continuous, lagging strand discontinuous (Okazaki fragments)"
+    },
+    {
+      "id": "bio-48",
+      "front": "What is the role of DNA helicase?",
+      "back": "Function: Unwinds and separates double helix by breaking H-bonds between base pairs\n\nCreates:\n• Replication fork\n• Two template strands\n• Single-stranded DNA for polymerase\n\nWorks with:\n• SSB proteins (stabilize single strands)\n• Topoisomerase (relieves tension)"
+    },
+    {
+      "id": "bio-49",
+      "front": "What is the role of DNA polymerase?",
+      "back": "Function: Synthesizes new DNA strand\n\nKey properties:\n• Adds nucleotides 5' → 3' direction only\n• Requires 3'-OH group (can't start de novo)\n• Needs RNA primer to begin\n• Has 3' → 5' exonuclease activity (proofreading)\n\nTypes:\n• DNA pol III (main synthesis in prokaryotes)\n• DNA pol I (removes primers, fills gaps)"
+    },
+    {
+      "id": "bio-50",
+      "front": "Why is an RNA primer needed for DNA replication?",
+      "back": "DNA polymerase CANNOT start synthesis de novo\n\nReason:\n• DNA pol requires existing 3'-OH group\n• Can only extend, not initiate\n\nSolution:\n• Primase synthesizes short RNA primer (~10 nt)\n• Provides 3'-OH for DNA pol to extend\n• RNA primer later removed by DNA pol I\n• Gap filled and sealed by ligase\n\nHigh-yield: DNA pol limitation!"
+    },
+    {
+      "id": "bio-51",
+      "front": "What is the role of DNA ligase?",
+      "back": "Function: Seals breaks in sugar-phosphate backbone\n\nSpecifically:\n• Joins Okazaki fragments on lagging strand\n• Seals gaps after RNA primer removal\n• Forms phosphodiester bonds\n• Requires ATP (in eukaryotes) or NAD⁺ (in prokaryotes)\n\nEssential for completing replication"
+    },
+    {
+      "id": "bio-52",
+      "front": "What is the role of topoisomerase?",
+      "back": "Function: Relieves tension from unwinding DNA helix\n\nMechanism:\n• Cuts one or both DNA strands temporarily\n• Allows strand rotation\n• Relieves supercoiling ahead of replication fork\n• Re-ligates strands\n\nWithout it: DNA would become too tangled to replicate\n\nTarget of antibiotics (e.g., fluoroquinolones)"
+    },
+    {
+      "id": "bio-53",
+      "front": "What are leading vs lagging strands?",
+      "back": "Leading strand:\n• Synthesized continuously 5' → 3'\n• Same direction as replication fork movement\n• Only one RNA primer needed\n\nLagging strand:\n• Synthesized discontinuously 5' → 3'\n• Opposite direction to fork movement\n• Multiple RNA primers needed\n• Creates Okazaki fragments (~100-200 nt)\n• Fragments joined by ligase"
+    },
+    {
+      "id": "bio-54",
+      "front": "What is transcription and where does it occur?",
+      "back": "Process: DNA → RNA (making RNA copy)\n\nLocation: Nucleus (eukaryotes), cytoplasm (prokaryotes)\n\nSteps:\n1. Initiation: RNA pol binds promoter\n2. Elongation: RNA synthesized 5' → 3'\n3. Termination: Release at terminator sequence\n\nKey: Only one DNA strand transcribed (template/antisense strand)"
+    },
+    {
+      "id": "bio-55",
+      "front": "What is the role of RNA polymerase?",
+      "back": "Function: Synthesizes RNA from DNA template\n\nKey properties:\n• Does NOT require primer (unlike DNA pol!)\n• Synthesizes 5' → 3'\n• Unwinds DNA locally\n• No proofreading (higher error rate)\n• Uses ribonucleotides (A, U, G, C)\n• Reads template strand 3' → 5'\n\nEukaryotes: RNA pol II for mRNA"
+    },
+    {
+      "id": "bio-56",
+      "front": "What are promoters and their function?",
+      "back": "Promoter: DNA sequence where transcription begins\n\nProkaryotes:\n• -10 box (TATAAT) - Pribnow box\n• -35 box\n• Recognized by sigma factor + RNA pol\n\nEukaryotes:\n• TATA box (~-25)\n• CAAT box, GC box\n• Recognized by transcription factors + RNA pol II\n\nUpstream of gene, not transcribed"
+    },
+    {
+      "id": "bio-57",
+      "front": "What is RNA splicing (post-transcriptional processing)?",
+      "back": "Process: Removing introns and joining exons from pre-mRNA\n\nSteps:\n1. Pre-mRNA contains exons + introns\n2. Spliceosome removes introns\n3. Exons ligated together → mature mRNA\n4. Also: 5' cap added, 3' poly-A tail added\n\nKey:\n• Only in eukaryotes\n• Introns removed, exons expressed\n• Alternative splicing → multiple proteins from one gene"
+    },
+    {
+      "id": "bio-58",
+      "front": "What are introns vs exons?",
+      "back": "Exons:\n• EXpressed sequences\n• Remain in mature mRNA\n• Code for protein\n\nIntrons:\n• INtervening sequences\n• Removed during splicing\n• Not translated\n\nMnemonic: EXons are EXpressed, INtrons are IN the trash\n\nAlternative splicing: Different exon combinations → protein diversity"
+    },
+    {
+      "id": "bio-59",
+      "front": "What is translation and where does it occur?",
+      "back": "Process: mRNA → Protein\n\nLocation: Ribosomes (cytoplasm or ER)\n\nSteps:\n1. Initiation: Ribosome binds mRNA at start codon\n2. Elongation: Amino acids added one by one\n3. Termination: Stop codon reached, protein released\n\nKey: Codons read 5' → 3', protein synthesized N → C terminus"
+    },
+    {
+      "id": "bio-60",
+      "front": "What are the ribosome sites (A, P, E)?",
+      "back": "A site (Aminoacyl):\n• Accepts incoming charged tRNA\n• New amino acid enters here\n\nP site (Peptidyl):\n• Holds tRNA with growing peptide chain\n• Peptide bond forms between P and A\n\nE site (Exit):\n• Discharged tRNA exits here\n\nFlow: tRNA enters A → moves to P → exits through E"
+    },
+    {
+      "id": "bio-61",
+      "front": "What are start and stop codons?",
+      "back": "Start codon:\n• AUG (codes for Methionine)\n• Translation begins here\n• All proteins start with Met (often removed later)\n\nStop codons (no tRNA binds):\n• UAA, UAG, UGA\n• Signal translation termination\n• Release factors bind instead\n\nMnemonic: U Are Away, U Are Gone, U Go Away"
+    },
+    {
+      "id": "bio-62",
+      "front": "What is the genetic code and its properties?",
+      "back": "Genetic code: 64 codons (4³) code for 20 amino acids\n\nProperties:\n• Universal (nearly all organisms use same code)\n• Degenerate/redundant (multiple codons per AA)\n• Unambiguous (each codon = only 1 AA)\n• Non-overlapping (read in triplets)\n• Wobble at 3rd position (relaxed base pairing)\n\n61 sense codons, 3 stop codons"
+    },
+    {
+      "id": "bio-63",
+      "front": "Compare transcription vs translation",
+      "back": "Transcription (DNA → RNA):\n• In nucleus (eukaryotes)\n• RNA polymerase\n• No primer needed\n• Template: DNA\n• Product: mRNA\n\nTranslation (RNA → Protein):\n• At ribosome\n• Ribosome + tRNA\n• Requires start codon\n• Template: mRNA\n• Product: polypeptide\n\nBoth 5' → 3' synthesis direction"
+    },
+    {
+      "id": "bio-64",
+      "front": "What is a Punnett square and how do you use it?",
+      "back": "Tool to predict offspring genotypes from parental crosses\n\nSteps:\n1. Write one parent's alleles on top\n2. Write other parent's alleles on side\n3. Fill boxes by combining alleles\n4. Count ratios\n\nExample: Aa × Aa\n→ 1 AA : 2 Aa : 1 aa (genotype)\n→ 3 dominant : 1 recessive (phenotype)\n\nMonohybrid: 3:1 ratio; Dihybrid: 9:3:3:1 ratio"
+    },
+    {
+      "id": "bio-65",
+      "front": "What are dominant vs recessive inheritance patterns?",
+      "back": "Dominant:\n• Expressed with one copy (Aa or AA)\n• Capital letter (A)\n• Masks recessive allele\n• Example: Huntington's disease\n\nRecessive:\n• Requires two copies (aa) to be expressed\n• Lowercase letter (a)\n• Masked by dominant\n• Example: Cystic fibrosis, sickle cell\n\nHeterozygote (Aa): Carrier for recessive trait"
+    },
+    {
+      "id": "bio-66",
+      "front": "What is incomplete dominance?",
+      "back": "Neither allele is fully dominant; heterozygote shows intermediate phenotype\n\nExample: Flower color\n• RR = red\n• WW = white\n• RW = pink (blend)\n\nCross RW × RW:\n→ 1 RR : 2 RW : 1 WW\n→ 1 red : 2 pink : 1 white (1:2:1 ratio)\n\nGenotype ratio = phenotype ratio"
+    },
+    {
+      "id": "bio-67",
+      "front": "What is codominance?",
+      "back": "Both alleles fully expressed in heterozygote (no blending)\n\nExample: ABO blood type\n• Iᴬ and Iᴮ both expressed\n• Iᴬ Iᴮ = AB blood type (both antigens)\n\nOther example: Roan coat in cattle (red + white patches)\n\nDifference from incomplete dominance:\n• Codominance: Both traits visible\n• Incomplete: Blended/intermediate trait"
+    },
+    {
+      "id": "bio-68",
+      "front": "What is the monohybrid cross ratio?",
+      "back": "Cross: Heterozygote × Heterozygote (Aa × Aa)\n\nGenotype ratio: 1:2:1\n• 1 AA : 2 Aa : 1 aa\n\nPhenotype ratio: 3:1\n• 3 dominant : 1 recessive\n\nProbabilities:\n• Dominant phenotype: 3/4 (75%)\n• Recessive phenotype: 1/4 (25%)\n• Heterozygote: 1/2 (50%)"
+    },
+    {
+      "id": "bio-69",
+      "front": "What is the dihybrid cross ratio?",
+      "back": "Cross: AaBb × AaBb (two traits, both heterozygous)\n\nPhenotype ratio: 9:3:3:1\n• 9 both dominant (A_B_)\n• 3 first dominant, second recessive (A_bb)\n• 3 first recessive, second dominant (aaB_)\n• 1 both recessive (aabb)\n\nRequires: Independent assortment of genes\n\nGenotype: 16 possible combinations"
+    },
+    {
+      "id": "bio-70",
+      "front": "What is a test cross?",
+      "back": "Cross an unknown genotype with homozygous recessive (aa)\n\nPurpose: Determine if unknown is AA or Aa\n\nResults:\n• If all offspring dominant → unknown was AA\n• If ~50% dominant, 50% recessive → unknown was Aa\n\nExample:\n• A_ × aa\n• If AA × aa → all Aa (dominant)\n• If Aa × aa → 1 Aa : 1 aa"
+    },
+    {
+      "id": "bio-71",
+      "front": "State the Hardy-Weinberg equation",
+      "back": "Allele frequencies: p + q = 1\n• p = frequency of dominant allele (A)\n• q = frequency of recessive allele (a)\n\nGenotype frequencies: p² + 2pq + q² = 1\n• p² = frequency of AA\n• 2pq = frequency of Aa\n• q² = frequency of aa\n\nUsed to calculate allele/genotype frequencies in populations"
+    },
+    {
+      "id": "bio-72",
+      "front": "What are the Hardy-Weinberg assumptions?",
+      "back": "Population must have:\n1. No mutations (no new alleles)\n2. Random mating (no mate preference)\n3. No gene flow (no migration in/out)\n4. Large population (no genetic drift)\n5. No natural selection (all genotypes equal fitness)\n\nIf assumptions met → allele frequencies constant\nIf violated → evolution occurs"
+    },
+    {
+      "id": "bio-73",
+      "front": "How do you use Hardy-Weinberg to calculate carrier frequency?",
+      "back": "For recessive trait:\n\nGiven: Disease frequency (q²)\n1. Calculate q = √(q²)\n2. Calculate p = 1 - q\n3. Carrier frequency = 2pq\n\nExample: Disease affects 1/10,000\n• q² = 0.0001\n• q = 0.01\n• p = 0.99\n• 2pq = 2(0.99)(0.01) ≈ 0.02 or 1/50\n\nCarriers much more common than affected!"
+    },
+    {
+      "id": "bio-74",
+      "front": "What is sex-linked inheritance?",
+      "back": "Genes on sex chromosomes (usually X chromosome)\n\nX-linked recessive:\n• Males (XY) need only 1 copy to be affected\n• Females (XX) need 2 copies (rare)\n• Affected males > affected females\n• Example: Hemophilia, color blindness\n\nPattern:\n• Carrier mother × normal father\n• 50% sons affected, 50% daughters carriers"
+    },
+    {
+      "id": "bio-75",
+      "front": "What causes sickle cell disease (classic MCAT example)?",
+      "back": "Single amino acid mutation in β-globin gene:\n• Position 6: Glu → Val\n• GAG → GTG (DNA)\n• Glutamic acid (polar, negative) → Valine (nonpolar)\n\nResult:\n• Abnormal hemoglobin (HbS)\n• Hydrophobic patch → aggregation\n• RBCs sickle-shaped\n• Vascular occlusion, pain, anemia\n\nInheritance: Autosomal recessive\nHeterozygote advantage: Protection from malaria"
+    },
+    {
+      "id": "bio-76",
+      "front": "What is the heterozygote advantage in sickle cell?",
+      "back": "Genotypes:\n• HbA/HbA: Normal, susceptible to malaria\n• HbA/HbS: Carrier, mild sickling, resistant to malaria\n• HbS/HbS: Sickle cell disease, severe\n\nHeterozygote (carrier) has advantage:\n• Protection from malaria\n• No severe sickle cell\n• Higher fitness in malaria-endemic regions\n\nExplains high frequency in Africa\nExample of balancing selection"
+    },
+    {
+      "id": "bio-77",
+      "front": "Compare DNA replication, transcription, and translation enzymes",
+      "back": "Replication (DNA → DNA):\n• Helicase, DNA polymerase, primase, ligase, topoisomerase\n• Needs primer, 5' → 3'\n\nTranscription (DNA → RNA):\n• RNA polymerase\n• No primer needed, 5' → 3'\n\nTranslation (RNA → Protein):\n• Ribosome, tRNA, aminoacyl-tRNA synthetase\n• Start codon needed\n\nAll synthesize 5' → 3' (or N → C for protein)"
+    },
+    {
+      "id": "bio-78",
+      "front": "What is the key difference between DNA and RNA polymerase?",
+      "back": "DNA polymerase:\n• REQUIRES 3'-OH (needs primer)\n• Cannot start de novo\n• Has proofreading (3' → 5' exonuclease)\n• Lower error rate\n• Synthesizes DNA\n\nRNA polymerase:\n• Does NOT require primer\n• Can start de novo\n• No proofreading\n• Higher error rate\n• Synthesizes RNA\n\nHigh-yield: DNA pol needs primer, RNA pol doesn't!"
+    },
+    {
+      "id": "bio-79",
+      "front": "What is glycolysis and where does it occur?",
+      "back": "Glycolysis: Breakdown of glucose (6C) into 2 pyruvate (3C)\n\nLocation: Cytosol\n\nConditions: Aerobic or anaerobic\n\nNet yield per glucose:\n• 2 ATP (4 produced - 2 invested)\n• 2 NADH\n• 2 pyruvate\n\nPhases:\n1. Energy investment (uses 2 ATP)\n2. Energy payoff (produces 4 ATP, 2 NADH)"
+    },
+    {
+      "id": "bio-80",
+      "front": "What are the 10 steps of glycolysis?",
+      "back": "Energy investment phase:\n1. Glucose → G6P (hexokinase, uses ATP)\n2. G6P → F6P (phosphoglucose isomerase)\n3. F6P → F-1,6-BP (phosphofructokinase-1, uses ATP, RATE-LIMITING)\n4. F-1,6-BP → DHAP + G3P (aldolase)\n5. DHAP → G3P (triose phosphate isomerase)\n\nEnergy payoff phase (×2):\n6. G3P → 1,3-BPG (G3P dehydrogenase, makes NADH)\n7. 1,3-BPG → 3PG (phosphoglycerate kinase, makes ATP)\n8. 3PG → 2PG (phosphoglycerate mutase)\n9. 2PG → PEP (enolase)\n10. PEP → pyruvate (pyruvate kinase, makes ATP)"
+    },
+    {
+      "id": "bio-81",
+      "front": "What is the rate-limiting step of glycolysis?",
+      "back": "Step 3: Fructose-6-phosphate → Fructose-1,6-bisphosphate\n\nEnzyme: Phosphofructokinase-1 (PFK-1)\n\nRegulation:\nActivated by:\n• AMP, ADP (low energy)\n• Fructose-2,6-bisphosphate\n\nInhibited by:\n• ATP (high energy)\n• Citrate (abundant TCA intermediates)\n• H⁺ (low pH)\n\nMost important regulatory step!"
+    },
+    {
+      "id": "bio-82",
+      "front": "What are the irreversible steps of glycolysis?",
+      "back": "3 irreversible steps (kinases using ATP):\n\n1. Glucose → G6P\n• Hexokinase (or glucokinase in liver/pancreas)\n\n2. F6P → F-1,6-BP\n• Phosphofructokinase-1 (PFK-1, rate-limiting)\n\n3. PEP → Pyruvate\n• Pyruvate kinase\n\nThese are also the regulated steps!\nGluconeogenesis bypasses these with different enzymes."
+    },
+    {
+      "id": "bio-83",
+      "front": "What is the fate of pyruvate?",
+      "back": "Depends on oxygen availability:\n\nAerobic conditions:\n• Pyruvate → Acetyl-CoA (in mitochondria)\n• Pyruvate dehydrogenase complex\n• Produces NADH, CO₂\n• Enters TCA cycle\n\nAnaerobic conditions:\n• Pyruvate → Lactate (muscle, RBCs)\n• Lactate dehydrogenase\n• Regenerates NAD⁺ for glycolysis\n\nOr:\n• Pyruvate → Ethanol (yeast fermentation)"
+    },
+    {
+      "id": "bio-84",
+      "front": "What is the TCA cycle (Krebs cycle) and where does it occur?",
+      "back": "TCA cycle: Oxidizes acetyl-CoA to CO₂, generates electron carriers\n\nLocation: Mitochondrial matrix\n\nPer acetyl-CoA:\n• 3 NADH\n• 1 FADH₂\n• 1 GTP (or ATP)\n• 2 CO₂\n\nPer glucose (2 acetyl-CoA):\n• 6 NADH\n• 2 FADH₂\n• 2 GTP\n• 4 CO₂\n\nRequires oxygen (aerobic only)"
+    },
+    {
+      "id": "bio-85",
+      "front": "What are the 8 steps of the TCA cycle?",
+      "back": "Mnemonic: \"Citrate Is Krebs' Starting Substrate For Making Oxaloacetate\"\n\n1. Acetyl-CoA + Oxaloacetate → Citrate (citrate synthase)\n2. Citrate → Isocitrate (aconitase)\n3. Isocitrate → α-Ketoglutarate (isocitrate dehydrogenase, NADH, CO₂)\n4. α-Ketoglutarate → Succinyl-CoA (α-ketoglutarate dehydrogenase, NADH, CO₂)\n5. Succinyl-CoA → Succinate (succinyl-CoA synthetase, GTP)\n6. Succinate → Fumarate (succinate dehydrogenase, FADH₂)\n7. Fumarate → Malate (fumarase)\n8. Malate → Oxaloacetate (malate dehydrogenase, NADH)"
+    },
+    {
+      "id": "bio-86",
+      "front": "What are the rate-limiting steps of the TCA cycle?",
+      "back": "3 key regulatory enzymes:\n\n1. Isocitrate dehydrogenase (Step 3)\n• Activated by: ADP, Ca²⁺\n• Inhibited by: ATP, NADH\n\n2. α-Ketoglutarate dehydrogenase (Step 4)\n• Inhibited by: Succinyl-CoA, NADH, ATP\n\n3. Citrate synthase (Step 1)\n• Inhibited by: Citrate, ATP, NADH\n\nAll respond to energy status!"
+    },
+    {
+      "id": "bio-87",
+      "front": "What is the pyruvate dehydrogenase complex?",
+      "back": "Function: Converts pyruvate → acetyl-CoA (links glycolysis to TCA)\n\nLocation: Mitochondrial matrix\n\nReaction:\nPyruvate + CoA + NAD⁺ → Acetyl-CoA + NADH + CO₂\n\nIrreversible and highly regulated!\n\nActivated by:\n• Ca²⁺, ADP, NAD⁺, CoA\n\nInhibited by:\n• Acetyl-CoA, NADH, ATP\n\nCofactors: TPP (B₁), lipoic acid, CoA (B₅), FAD (B₂), NAD⁺ (B₃)"
+    },
+    {
+      "id": "bio-88",
+      "front": "What is the electron transport chain and where is it located?",
+      "back": "ETC: Series of protein complexes that transfer electrons and pump protons\n\nLocation: Inner mitochondrial membrane\n\nComplexes:\n• Complex I: NADH dehydrogenase (pumps 4 H⁺)\n• Complex II: Succinate dehydrogenase (no pumping)\n• Complex III: Cytochrome bc₁ (pumps 4 H⁺)\n• Complex IV: Cytochrome c oxidase (pumps 2 H⁺)\n\nElectron carriers: NADH, FADH₂ → O₂ (final acceptor)\n\nCreates proton gradient for ATP synthesis"
+    },
+    {
+      "id": "bio-89",
+      "front": "What is oxidative phosphorylation?",
+      "back": "Process: ATP synthesis using proton gradient from ETC\n\nEnzyme: ATP synthase (Complex V)\n\nLocation: Inner mitochondrial membrane\n\nMechanism:\n• Protons flow down gradient through ATP synthase\n• Drives phosphorylation: ADP + Pi → ATP\n\nYield:\n• 1 NADH → ~2.5 ATP\n• 1 FADH₂ → ~1.5 ATP\n\nRequires O₂ as final electron acceptor!"
+    },
+    {
+      "id": "bio-90",
+      "front": "What is the total ATP yield from glucose oxidation?",
+      "back": "Complete oxidation of 1 glucose:\n\nGlycolysis: 2 ATP + 2 NADH\nPyruvate → Acetyl-CoA: 2 NADH\nTCA cycle: 2 GTP + 6 NADH + 2 FADH₂\n\nTotal electron carriers:\n• 10 NADH × 2.5 ATP = 25 ATP\n• 2 FADH₂ × 1.5 ATP = 3 ATP\n• 4 ATP (substrate-level)\n\nTheoretical max: ~32 ATP\nActual yield: ~30-32 ATP\n\n(Old estimate was 38, now adjusted for transport costs)"
+    },
+    {
+      "id": "bio-91",
+      "front": "Where do metabolic pathways occur? (cytosol vs mitochondria)",
+      "back": "Cytosol:\n• Glycolysis\n• Pentose phosphate pathway\n• Fatty acid synthesis\n• Gluconeogenesis\n\nMitochondrial matrix:\n• TCA cycle\n• Pyruvate dehydrogenase\n• β-oxidation\n• Ketogenesis\n\nInner mitochondrial membrane:\n• ETC\n• ATP synthase\n• Fatty acid transport (carnitine shuttle)"
+    },
+    {
+      "id": "bio-92",
+      "front": "What is gluconeogenesis and where does it occur?",
+      "back": "Gluconeogenesis: Synthesis of glucose from non-carbohydrate sources\n\nLocation: Liver (primarily), kidney, small intestine\n\nSubstrates:\n• Lactate (Cori cycle)\n• Amino acids (except Leu, Lys)\n• Glycerol (from fat)\n• Propionyl-CoA\n\nNOT from: Acetyl-CoA (fatty acids) - irreversible\n\nCost: 6 ATP per glucose\n\nOccurs during: Fasting, starvation, exercise"
+    },
+    {
+      "id": "bio-93",
+      "front": "How does gluconeogenesis bypass glycolysis irreversible steps?",
+      "back": "Glycolysis vs Gluconeogenesis enzymes:\n\n1. Pyruvate → PEP:\n• Bypass: Pyruvate carboxylase + PEPCK\n• (2 steps, uses ATP and GTP)\n\n2. F-1,6-BP → F6P:\n• Bypass: Fructose-1,6-bisphosphatase\n\n3. G6P → Glucose:\n• Bypass: Glucose-6-phosphatase\n• (Only in liver/kidney - allows glucose release)\n\n7 of 10 steps shared, 3 require new enzymes!"
+    },
+    {
+      "id": "bio-94",
+      "front": "How are glycolysis and gluconeogenesis regulated?",
+      "back": "Reciprocal regulation (opposite effects):\n\nKey regulator: Fructose-2,6-bisphosphate (F-2,6-BP)\n\nFed state (high insulin):\n• ↑ F-2,6-BP\n• Activates PFK-1 (glycolysis)\n• Inhibits F-1,6-BPase (gluconeogenesis)\n\nFasting state (high glucagon):\n• ↓ F-2,6-BP\n• Inhibits PFK-1\n• Activates F-1,6-BPase\n\nPrevents futile cycles!"
+    },
+    {
+      "id": "bio-95",
+      "front": "What is β-oxidation and where does it occur?",
+      "back": "β-oxidation: Breakdown of fatty acids to acetyl-CoA\n\nLocation: Mitochondrial matrix\n\nProcess:\n• Fatty acid (cytosol) → Acyl-CoA\n• Carnitine shuttle into mitochondria\n• Repeated cycles remove 2C as acetyl-CoA\n\n4 steps per cycle: \"Cut Fat Every Meal\"\n1. Oxidation (FAD → FADH₂)\n2. Hydration\n3. Oxidation (NAD⁺ → NADH)\n4. Thiolysis (release acetyl-CoA)\n\nFor 16C palmitate: 7 cycles, 8 acetyl-CoA"
+    },
+    {
+      "id": "bio-96",
+      "front": "What is the ATP yield from β-oxidation?",
+      "back": "Example: Palmitate (16C fatty acid)\n\nβ-oxidation:\n• 7 cycles (for 16C)\n• 8 acetyl-CoA\n• 7 FADH₂ × 1.5 = 10.5 ATP\n• 7 NADH × 2.5 = 17.5 ATP\n\nTCA cycle (8 acetyl-CoA):\n• 8 × 12 = 96 ATP\n\nTotal: ~129 ATP\nMinus 2 ATP for activation = ~127 ATP\n\nFats yield MORE ATP per carbon than glucose!"
+    },
+    {
+      "id": "bio-97",
+      "front": "What is the carnitine shuttle?",
+      "back": "Function: Transports long-chain fatty acids into mitochondria\n\nSteps:\n1. Fatty acid + CoA → Acyl-CoA (cytosol)\n2. Acyl-CoA + Carnitine → Acyl-carnitine (CPT I)\n3. Transport across inner membrane\n4. Acyl-carnitine → Acyl-CoA + Carnitine (CPT II, matrix)\n\nKey enzyme: CPT I (carnitine palmitoyltransferase I)\n• Inhibited by malonyl-CoA (fatty acid synthesis marker)\n• Prevents simultaneous synthesis and breakdown\n\nDeficiency: Cannot oxidize fats, hypoglycemia"
+    },
+    {
+      "id": "bio-98",
+      "front": "What is the pentose phosphate pathway (PPP)?",
+      "back": "PPP: Alternative glucose oxidation pathway\n\nLocation: Cytosol\n\nPurposes:\n1. Produce NADPH (reducing power)\n• Fatty acid synthesis\n• Detoxification (glutathione)\n• Respiratory burst in phagocytes\n\n2. Produce ribose-5-phosphate\n• Nucleotide synthesis\n\nNo ATP produced!\n\nPhases:\n• Oxidative (irreversible, makes NADPH)\n• Non-oxidative (reversible, rearranges sugars)"
+    },
+    {
+      "id": "bio-99",
+      "front": "What is the oxidative phase of the PPP?",
+      "back": "Oxidative phase: G6P → Ribulose-5-P + 2 NADPH + CO₂\n\nKey steps:\n1. G6P → 6-Phosphogluconolactone\n• G6P dehydrogenase (rate-limiting!)\n• Produces NADPH\n\n2. 6-Phosphogluconolactone → 6-Phosphogluconate\n\n3. 6-Phosphogluconate → Ribulose-5-P\n• Produces NADPH + CO₂\n\nRegulation: G6P dehydrogenase\n• Inhibited by NADPH (product inhibition)\n• Activated by NADP⁺"
+    },
+    {
+      "id": "bio-100",
+      "front": "What is the difference between NADH and NADPH?",
+      "back": "Both are electron carriers, different roles:\n\nNADH (from NAD⁺):\n• Used in catabolism (breakdown)\n• Glycolysis, TCA cycle, β-oxidation\n• Oxidized in ETC to make ATP\n• Energy production\n\nNADPH (from NADP⁺):\n• Used in anabolism (synthesis)\n• Fatty acid synthesis, cholesterol synthesis\n• Detoxification (glutathione, P450)\n• Reducing power for biosynthesis\n\nSource of NADPH: PPP, malic enzyme"
+    },
+    {
+      "id": "bio-101",
+      "front": "Compare key regulatory enzymes across metabolic pathways",
+      "back": "Glycolysis:\n• Phosphofructokinase-1 (PFK-1) - rate-limiting\n\nGluconeogenesis:\n• Fructose-1,6-bisphosphatase\n\nTCA cycle:\n• Isocitrate dehydrogenase\n• α-Ketoglutarate dehydrogenase\n\nβ-oxidation:\n• Carnitine palmitoyltransferase I (CPT I)\n\nPPP:\n• G6P dehydrogenase\n\nFatty acid synthesis:\n• Acetyl-CoA carboxylase\n\nAll respond to energy/substrate availability!"
+    },
+    {
+      "id": "bio-102",
+      "front": "What is substrate-level vs oxidative phosphorylation?",
+      "back": "Substrate-level phosphorylation:\n• Direct transfer of Pi to ADP\n• Enzyme-catalyzed\n• Independent of O₂\n• Examples:\n  - Glycolysis: PGK, pyruvate kinase\n  - TCA: Succinyl-CoA synthetase\n\nOxidative phosphorylation:\n• Uses ETC proton gradient\n• ATP synthase\n• Requires O₂\n• Most ATP made this way\n\nGlycolysis uses substrate-level; ETC uses oxidative"
+    },
+    {
+      "id": "bio-103",
+      "front": "What are key cofactors in metabolism?",
+      "back": "Vitamin-derived cofactors:\n\nNAD⁺/NADH: B₃ (niacin)\n• Glycolysis, TCA, ETC\n\nFAD/FADH₂: B₂ (riboflavin)\n• TCA, ETC, β-oxidation\n\nCoA: B₅ (pantothenic acid)\n• Acetyl-CoA, fatty acid metabolism\n\nTPP: B₁ (thiamine)\n• Pyruvate dehydrogenase, α-ketoglutarate DH\n\nBiotin: B₇\n• Carboxylation reactions (pyruvate carboxylase)\n\nB vitamins are essential for energy metabolism!"
+    },
+    {
+      "id": "bio-104",
+      "front": "What happens in anaerobic conditions?",
+      "back": "Without O₂:\n\nGlycolysis continues:\n• Makes 2 ATP (substrate-level)\n• Makes 2 NADH\n\nNADH cannot be oxidized in ETC:\n• Must regenerate NAD⁺ for glycolysis\n• Pyruvate → Lactate (lactate dehydrogenase)\n• NADH → NAD⁺\n\nLactate buildup:\n• Lowers pH (lactic acidosis)\n• Causes muscle fatigue\n• Cori cycle transports to liver\n\nTCA and ETC shut down (need O₂)"
+    },
+    {
+      "id": "bio-105",
+      "front": "What is the Cori cycle?",
+      "back": "Function: Recycle lactate from muscle to glucose in liver\n\nSteps:\n1. Muscle: Glucose → Lactate (anaerobic glycolysis)\n2. Lactate transported to liver via blood\n3. Liver: Lactate → Pyruvate → Glucose (gluconeogenesis)\n4. Glucose returned to muscle via blood\n\nImportance:\n• Prevents lactate buildup\n• Maintains glucose supply during exercise\n• Net cost: 4 ATP (2 made in muscle, 6 used in liver)\n\nSimilar: Alanine cycle (uses amino acids)"
+    },
+    {
+      "id": "bio-106",
+      "front": "What are peptide vs steroid hormones?",
+      "back": "Peptide hormones (water-soluble):\n• Made from amino acids\n• Cannot cross membrane\n• Bind surface receptors\n• Use second messengers (cAMP, IP₃, Ca²⁺)\n• Fast action (seconds-minutes)\n• Examples: Insulin, glucagon, ACTH, growth hormone\n\nSteroid hormones (lipid-soluble):\n• Derived from cholesterol\n• Cross membrane easily\n• Bind intracellular receptors\n• Affect gene transcription\n• Slow action (hours-days)\n• Examples: Cortisol, testosterone, estrogen, aldosterone, vitamin D"
+    },
+    {
+      "id": "bio-107",
+      "front": "What are the major second messenger systems?",
+      "back": "cAMP pathway:\n• G-protein coupled receptor (GPCR)\n• Activates adenylyl cyclase\n• ATP → cAMP → activates protein kinase A (PKA)\n• Examples: Glucagon, epinephrine (β-receptors)\n\nIP₃/DAG pathway:\n• GPCR activates phospholipase C\n• PIP₂ → IP₃ + DAG\n• IP₃ releases Ca²⁺ from ER\n• DAG activates protein kinase C (PKC)\n• Examples: Epinephrine (α₁-receptors), oxytocin\n\nCa²⁺: Universal messenger, triggers many responses"
+    },
+    {
+      "id": "bio-108",
+      "front": "Describe insulin: source, type, target, effects",
+      "back": "Source: Pancreatic β-cells (islets of Langerhans)\n\nType: Peptide hormone\n\nTrigger: High blood glucose (fed state)\n\nTargets: Liver, muscle, adipose tissue\n\nEffects (anabolic - storage):\n• ↑ Glucose uptake (GLUT4 in muscle/adipose)\n• ↑ Glycogen synthesis (liver, muscle)\n• ↑ Fatty acid synthesis\n• ↑ Protein synthesis\n• ↓ Gluconeogenesis\n• ↓ Glycogenolysis\n\nResult: ↓ Blood glucose"
+    },
+    {
+      "id": "bio-109",
+      "front": "Describe glucagon: source, type, target, effects",
+      "back": "Source: Pancreatic α-cells (islets of Langerhans)\n\nType: Peptide hormone\n\nTrigger: Low blood glucose (fasting state)\n\nTarget: Primarily liver\n\nEffects (catabolic - mobilization):\n• ↑ Glycogenolysis (breaks down glycogen)\n• ↑ Gluconeogenesis\n• ↑ Lipolysis (fat breakdown)\n• ↑ Ketogenesis\n• ↓ Glycogen synthesis\n• ↓ Glycolysis\n\nMechanism: cAMP pathway\n\nResult: ↑ Blood glucose"
+    },
+    {
+      "id": "bio-110",
+      "front": "Compare insulin vs glucagon effects",
+      "back": "Insulin (fed state):\n• ↓ Blood glucose\n• Anabolic (storage)\n• ↑ Glycogen synthesis\n• ↑ Fat synthesis\n• ↑ Protein synthesis\n• ↓ Gluconeogenesis\n\nGlucagon (fasting state):\n• ↑ Blood glucose\n• Catabolic (mobilization)\n• ↑ Glycogenolysis\n• ↑ Gluconeogenesis\n• ↑ Lipolysis\n• ↑ Ketogenesis\n\nOpposite effects - maintain glucose homeostasis!"
+    },
+    {
+      "id": "bio-111",
+      "front": "Describe cortisol: source, type, target, effects",
+      "back": "Source: Adrenal cortex (zona fasciculata)\n\nType: Steroid hormone (glucocorticoid)\n\nTrigger: Stress, low blood glucose, ACTH\n\nTargets: Widespread (liver, muscle, adipose, immune)\n\nEffects:\n• ↑ Blood glucose (gluconeogenesis)\n• ↑ Protein breakdown (muscle)\n• ↑ Lipolysis\n• Anti-inflammatory (↓ immune response)\n• ↓ Bone formation\n• ↑ Stress response\n\nRegulation: HPA axis (hypothalamus-pituitary-adrenal)"
+    },
+    {
+      "id": "bio-112",
+      "front": "Describe epinephrine: source, type, target, effects",
+      "back": "Source: Adrenal medulla\n\nType: Catecholamine (amino acid derivative, acts like peptide)\n\nTrigger: Stress, fight-or-flight\n\nTargets: Heart, blood vessels, liver, muscle, lungs\n\nEffects:\n• ↑ Heart rate and contractility\n• ↑ Blood pressure\n• ↑ Glycogenolysis (liver, muscle)\n• ↑ Gluconeogenesis\n• ↑ Lipolysis\n• Bronchodilation\n• Vasodilation (muscle) / vasoconstriction (GI)\n\nMechanism: cAMP (β-receptors), IP₃ (α-receptors)\n\nResult: ↑ Blood glucose, ↑ energy availability"
+    },
+    {
+      "id": "bio-113",
+      "front": "Describe thyroid hormones (T3/T4): source, type, effects",
+      "back": "Source: Thyroid gland (follicular cells)\n\nType: Amino acid derivative (acts like steroid)\n• T4 (thyroxine): 4 iodines, more abundant\n• T3 (triiodothyronine): 3 iodines, more active\n\nTrigger: TSH from pituitary\n\nTargets: Nearly all cells\n\nEffects:\n• ↑ Basal metabolic rate (BMR)\n• ↑ O₂ consumption\n• ↑ Heat production\n• ↑ Heart rate\n• Essential for growth and development\n• CNS development in fetus\n\nRegulation: HPT axis (hypothalamus-pituitary-thyroid)"
+    },
+    {
+      "id": "bio-114",
+      "front": "What is the hypothalamic-pituitary-thyroid (HPT) axis?",
+      "back": "Hypothalamus:\n→ TRH (thyrotropin-releasing hormone)\n\nAnterior pituitary:\n→ TSH (thyroid-stimulating hormone)\n\nThyroid gland:\n→ T3/T4 (thyroid hormones)\n\nNegative feedback:\n• T3/T4 ↓ TRH and TSH release\n• Maintains thyroid hormone levels\n\nDisorders:\n• Hypothyroidism: Low T3/T4, high TSH\n• Hyperthyroidism: High T3/T4, low TSH (unless pituitary tumor)"
+    },
+    {
+      "id": "bio-115",
+      "front": "What is the hypothalamic-pituitary-adrenal (HPA) axis?",
+      "back": "Hypothalamus:\n→ CRH (corticotropin-releasing hormone)\n\nAnterior pituitary:\n→ ACTH (adrenocorticotropic hormone)\n\nAdrenal cortex:\n→ Cortisol (glucocorticoid)\n\nNegative feedback:\n• Cortisol ↓ CRH and ACTH release\n• Circadian rhythm (peaks in morning)\n\nStress response:\n• HPA axis activated\n• ↑ Cortisol for sustained stress response\n• Complements epinephrine (acute stress)"
+    },
+    {
+      "id": "bio-116",
+      "front": "What is the hypothalamic-pituitary-gonadal (HPG) axis?",
+      "back": "Hypothalamus:\n→ GnRH (gonadotropin-releasing hormone)\n\nAnterior pituitary:\n→ FSH and LH (follicle-stimulating hormone, luteinizing hormone)\n\nGonads:\n→ Sex steroids (testosterone, estrogen, progesterone)\n\nNegative feedback:\n• Sex steroids ↓ GnRH, FSH, LH\n\nMales:\n• FSH → spermatogenesis\n• LH → testosterone production\n\nFemales:\n• FSH → follicle development\n• LH → ovulation, progesterone production"
+    },
+    {
+      "id": "bio-117",
+      "front": "Describe growth hormone (GH): source, type, effects",
+      "back": "Source: Anterior pituitary (somatotrophs)\n\nType: Peptide hormone\n\nTrigger: GHRH (growth hormone-releasing hormone)\n\nTargets: Liver, bone, muscle, adipose\n\nDirect effects:\n• ↑ Lipolysis\n• ↑ Blood glucose (anti-insulin)\n\nIndirect effects (via IGF-1 from liver):\n• ↑ Bone growth\n• ↑ Muscle growth\n• ↑ Protein synthesis\n\nRegulation:\n• GHRH stimulates\n• Somatostatin (GHIH) inhibits\n• Negative feedback by IGF-1"
+    },
+    {
+      "id": "bio-118",
+      "front": "Describe prolactin: source, type, effects",
+      "back": "Source: Anterior pituitary (lactotrophs)\n\nType: Peptide hormone\n\nTargets: Mammary glands\n\nEffects:\n• ↑ Milk production (lactation)\n• ↓ GnRH (suppresses reproduction during breastfeeding)\n\nRegulation (unique!):\n• Inhibited by dopamine from hypothalamus\n• Stimulated by TRH, suckling\n\nNote: Only anterior pituitary hormone primarily under inhibitory control"
+    },
+    {
+      "id": "bio-119",
+      "front": "What hormones are released by the posterior pituitary?",
+      "back": "Posterior pituitary stores and releases (made in hypothalamus):\n\nOxytocin:\n• Uterine contractions during labor\n• Milk ejection reflex\n• Social bonding\n• Positive feedback loop in labor\n\nADH (Vasopressin):\n• ↑ Water reabsorption (collecting duct)\n• ↑ Blood pressure (vasoconstriction at high doses)\n• Released when: dehydration, ↓ blood volume, ↑ osmolarity\n• Target: V2 receptors in kidney\n\nBoth are peptide hormones"
+    },
+    {
+      "id": "bio-120",
+      "front": "Describe aldosterone: source, type, target, effects",
+      "back": "Source: Adrenal cortex (zona glomerulosa)\n\nType: Steroid hormone (mineralocorticoid)\n\nTrigger: Low blood pressure, angiotensin II, high K⁺\n\nTarget: Kidney (distal tubule, collecting duct)\n\nEffects:\n• ↑ Na⁺ reabsorption\n• ↑ K⁺ excretion\n• ↑ H⁺ excretion\n• ↑ Water reabsorption (follows Na⁺)\n\nResult: ↑ Blood volume, ↑ blood pressure\n\nRegulation: RAAS (renin-angiotensin-aldosterone system)"
+    },
+    {
+      "id": "bio-121",
+      "front": "What is the RAAS system?",
+      "back": "Renin-Angiotensin-Aldosterone System:\n\nLow blood pressure detected:\n→ Kidney releases renin\n→ Renin converts angiotensinogen → angiotensin I\n→ ACE (lungs) converts angiotensin I → angiotensin II\n\nAngiotensin II effects:\n• Vasoconstriction (↑ blood pressure)\n• Stimulates aldosterone release\n• Stimulates ADH release\n• ↑ Thirst\n\nAldosterone:\n• ↑ Na⁺/water reabsorption\n• ↑ Blood volume\n\nResult: Restored blood pressure"
+    },
+    {
+      "id": "bio-122",
+      "front": "Describe parathyroid hormone (PTH): source, target, effects",
+      "back": "Source: Parathyroid glands (chief cells)\n\nType: Peptide hormone\n\nTrigger: Low blood Ca²⁺\n\nTargets: Bone, kidney, intestine (indirect)\n\nEffects:\n• ↑ Blood Ca²⁺\n• ↓ Blood phosphate\n\nMechanism:\n• Bone: ↑ osteoclast activity (Ca²⁺ release)\n• Kidney: ↑ Ca²⁺ reabsorption, ↓ PO₄³⁻ reabsorption\n• Kidney: ↑ Vitamin D activation\n• Intestine: ↑ Ca²⁺ absorption (via vitamin D)\n\nOpposite of calcitonin"
+    },
+    {
+      "id": "bio-123",
+      "front": "Describe calcitonin: source, target, effects",
+      "back": "Source: Thyroid gland (parafollicular C cells)\n\nType: Peptide hormone\n\nTrigger: High blood Ca²⁺\n\nTarget: Bone\n\nEffects:\n• ↓ Blood Ca²⁺\n• ↓ Osteoclast activity\n• ↑ Ca²⁺ deposition in bone\n\nNote: Less important than PTH in humans\n\nMnemonic: Calci-TONE-in TONES down calcium\n\nOpposite of PTH"
+    },
+    {
+      "id": "bio-124",
+      "front": "Compare PTH vs Calcitonin vs Vitamin D",
+      "back": "PTH (↑ when Ca²⁺ low):\n• ↑ Bone resorption\n• ↑ Kidney Ca²⁺ reabsorption\n• ↑ Vitamin D activation\n• Result: ↑ Blood Ca²⁺\n\nCalcitonin (↑ when Ca²⁺ high):\n• ↓ Bone resorption\n• Result: ↓ Blood Ca²⁺\n\nVitamin D (active form: calcitriol):\n• ↑ Intestinal Ca²⁺ absorption\n• ↑ Bone resorption (with PTH)\n• Result: ↑ Blood Ca²⁺\n\nAll regulate Ca²⁺ homeostasis"
+    },
+    {
+      "id": "bio-125",
+      "front": "Describe testosterone: source, type, effects",
+      "back": "Source: Testes (Leydig cells)\n\nType: Steroid hormone (androgen)\n\nTrigger: LH from pituitary\n\nTargets: Multiple tissues\n\nEffects:\n• Male secondary sexual characteristics\n• Spermatogenesis (with FSH)\n• ↑ Muscle mass\n• ↑ Bone density\n• ↑ Libido\n• Deepening voice\n• Facial/body hair\n\nConversion: Can be converted to:\n• DHT (dihydrotestosterone, more potent)\n• Estradiol (aromatase in adipose)"
+    },
+    {
+      "id": "bio-126",
+      "front": "Describe estrogen and progesterone: source, type, effects",
+      "back": "Estrogen (estradiol):\nSource: Ovaries (follicles), adipose\nType: Steroid\nEffects:\n• Female secondary sexual characteristics\n• Endometrial growth (proliferative phase)\n• Bone density\n• LH surge (positive feedback at high levels)\n\nProgesterone:\nSource: Corpus luteum (after ovulation)\nType: Steroid\nEffects:\n• Maintains endometrium (secretory phase)\n• ↑ Basal body temperature\n• Inhibits uterine contractions\n• Prepares for pregnancy\n\nBoth regulated by HPG axis"
+    },
+    {
+      "id": "bio-127",
+      "front": "What are the phases of the menstrual cycle?",
+      "back": "Follicular phase (Days 1-14):\n• FSH stimulates follicle development\n• Follicle produces estrogen\n• Endometrium proliferates\n• Ends with LH surge\n\nOvulation (Day 14):\n• LH surge triggers ovulation\n• Follicle releases egg\n\nLuteal phase (Days 15-28):\n• Corpus luteum forms from follicle\n• Produces progesterone (and estrogen)\n• Endometrium becomes secretory\n• If no pregnancy: corpus luteum degenerates\n• Hormone drop → menstruation\n\nMenstruation: Shedding of endometrium"
+    },
+    {
+      "id": "bio-128",
+      "front": "What is negative vs positive feedback in hormones?",
+      "back": "Negative feedback (most common):\n• Hormone inhibits its own production\n• Maintains homeostasis\n• Examples:\n  - T3/T4 ↓ TSH\n  - Cortisol ↓ ACTH\n  - Testosterone ↓ LH\n  - High glucose ↓ glucagon\n\nPositive feedback (rare):\n• Hormone enhances its own production\n• Amplifies response\n• Examples:\n  - Oxytocin in labor (stronger contractions → more oxytocin)\n  - Estrogen LH surge (ovulation)\n\nPositive feedback is self-limiting (ends when stimulus removed)"
+    },
+    {
+      "id": "bio-129",
+      "front": "What are the major hormones from the anterior pituitary?",
+      "back": "Mnemonic: FLAT PEG\n\nFSH: Follicle-stimulating hormone\n• Gonads (spermatogenesis, follicle development)\n\nLH: Luteinizing hormone\n• Gonads (testosterone, ovulation, progesterone)\n\nACTH: Adrenocorticotropic hormone\n• Adrenal cortex (cortisol)\n\nTSH: Thyroid-stimulating hormone\n• Thyroid (T3/T4)\n\nProlactin:\n• Mammary glands (milk production)\n\nEndorphins:\n• Pain relief, pleasure\n\nGH: Growth hormone\n• Liver (IGF-1), bone, muscle\n\nAll peptide hormones!"
+    },
+    {
+      "id": "bio-130",
+      "front": "What hormones does the adrenal gland produce?",
+      "back": "Adrenal cortex (steroid hormones):\nMnemonic: \"GFR\" for zones (superficial → deep)\n\nZona Glomerulosa: Mineralocorticoids\n• Aldosterone (Na⁺/K⁺ balance)\n\nZona Fasciculata: Glucocorticoids\n• Cortisol (stress, glucose metabolism)\n\nZona Reticularis: Androgens\n• DHEA, androstenedione (sex hormones)\n\nAdrenal medulla (catecholamines):\n• Epinephrine (80%)\n• Norepinephrine (20%)\n• Fight-or-flight response\n\nMnemonic: \"Salt, Sugar, Sex\" = Aldosterone, Cortisol, Androgens"
+    },
+    {
+      "id": "bio-131",
+      "front": "Compare endocrine vs paracrine vs autocrine signaling",
+      "back": "Endocrine:\n• Hormone released into bloodstream\n• Acts on distant target cells\n• Systemic effects\n• Examples: Insulin, thyroid hormones\n\nParacrine:\n• Signaling molecule acts on nearby cells\n• Local effects only\n• Examples: Histamine, growth factors, neurotransmitters (at synapse)\n\nAutocrine:\n• Cell signals itself\n• Same cell produces and responds\n• Examples: IL-2 in T cells, prostaglandins\n\nAll use receptors and signaling cascades"
+    },
+    {
+      "id": "bio-132",
+      "front": "What are key hormone receptor types?",
+      "back": "G-protein coupled receptors (GPCRs):\n• Peptide hormones\n• 7 transmembrane domains\n• Second messengers (cAMP, IP₃)\n• Examples: Glucagon, epinephrine, ADH\n\nReceptor tyrosine kinases (RTKs):\n• Growth factors\n• Autophosphorylation\n• Examples: Insulin, IGF-1, EGF\n\nIntracellular receptors:\n• Steroid/thyroid hormones\n• In cytoplasm or nucleus\n• Act as transcription factors\n• Examples: Cortisol, estrogen, T3/T4\n\nIon channel receptors:\n• Neurotransmitters"
+    },
+    {
+      "id": "bio-133",
+      "front": "What are the key differences between prokaryotes and eukaryotes?",
+      "back": "Prokaryotes (bacteria, archaea):\n• No nucleus (nucleoid region)\n• No membrane-bound organelles\n• Smaller ribosomes (70S: 30S + 50S)\n• Circular DNA\n• No histones (usually)\n• Cell wall (peptidoglycan in bacteria)\n• Simpler, smaller (1-10 μm)\n\nEukaryotes (animals, plants, fungi, protists):\n• Membrane-bound nucleus\n• Membrane-bound organelles\n• Larger ribosomes (80S: 40S + 60S)\n• Linear DNA with histones\n• Larger, more complex (10-100 μm)"
+    },
+    {
+      "id": "bio-134",
+      "front": "What is the structure and function of the nucleus?",
+      "back": "Structure:\n• Double membrane (nuclear envelope)\n• Nuclear pores (transport in/out)\n• Nucleolus (ribosome assembly)\n• Chromatin (DNA + histones)\n\nFunction:\n• Houses genetic material (DNA)\n• Site of transcription (DNA → RNA)\n• Site of ribosome assembly (nucleolus)\n• Protects DNA\n\nNuclear pores:\n• Allow mRNA, tRNA, ribosomes out\n• Allow transcription factors, histones in\n\nONLY in eukaryotes!"
+    },
+    {
+      "id": "bio-135",
+      "front": "What is the structure and function of mitochondria?",
+      "back": "Structure:\n• Double membrane (outer + inner)\n• Inner membrane: cristae (folds) with ETC\n• Matrix: contains TCA cycle enzymes\n• Own circular DNA (maternal inheritance)\n• Own 70S ribosomes\n\nFunction:\n• Cellular respiration\n• ATP production (oxidative phosphorylation)\n• TCA cycle (matrix)\n• ETC and ATP synthase (inner membrane)\n\nEndosymbiotic theory: Evolved from bacteria\n\nFound in ALL eukaryotic cells"
+    },
+    {
+      "id": "bio-136",
+      "front": "What is the structure and function of the endoplasmic reticulum?",
+      "back": "Rough ER (RER):\n• Studded with ribosomes\n• Protein synthesis and modification\n• Makes membrane proteins and secreted proteins\n• Post-translational modifications\n\nSmooth ER (SER):\n• No ribosomes\n• Lipid synthesis (phospholipids, steroids)\n• Ca²⁺ storage (sarcoplasmic reticulum in muscle)\n• Detoxification (liver)\n• Carbohydrate metabolism\n\nBoth continuous with nuclear envelope\nONLY in eukaryotes"
+    },
+    {
+      "id": "bio-137",
+      "front": "What is the structure and function of the Golgi apparatus?",
+      "back": "Structure:\n• Stacks of flattened membrane sacs (cisternae)\n• Cis face (receives from ER)\n• Trans face (ships to destinations)\n\nFunction:\n• Modifies proteins from ER\n• Glycosylation (adds sugars)\n• Sorts and packages proteins\n• Forms vesicles for transport\n• Makes lysosomes\n\nPathway: RER → Golgi → Vesicles → Destination\n\nDestinations: Plasma membrane, secretion, lysosomes"
+    },
+    {
+      "id": "bio-138",
+      "front": "What is the structure and function of lysosomes?",
+      "back": "Structure:\n• Membrane-bound vesicle\n• Contains hydrolytic enzymes (acid hydrolases)\n• Acidic interior (pH ~5)\n\nFunction:\n• Intracellular digestion\n• Break down: Damaged organelles, pathogens, macromolecules\n• Autophagy (recycle cell components)\n• Apoptosis (programmed cell death)\n\nFormation: Budded from trans-Golgi\n\nStorage diseases: Deficient lysosomal enzymes (Tay-Sachs, Gaucher)\n\nONLY in animal cells (plants use vacuoles)"
+    },
+    {
+      "id": "bio-139",
+      "front": "What is the structure and function of peroxisomes?",
+      "back": "Structure:\n• Single membrane-bound organelle\n• Contains oxidative enzymes\n\nFunction:\n• Break down fatty acids (β-oxidation)\n• Detoxification (alcohol, toxins)\n• H₂O₂ production and breakdown\n  - Oxidase enzymes produce H₂O₂\n  - Catalase breaks down H₂O₂ → H₂O + O₂\n• Synthesize plasmalogens (lipids)\n\nKey enzyme: Catalase (very fast, breaks down H₂O₂)\n\nFound in liver and kidney (high detox activity)"
+    },
+    {
+      "id": "bio-140",
+      "front": "What is the structure and function of ribosomes?",
+      "back": "Structure:\n• RNA + protein complex\n• Two subunits (large + small)\n\nProkaryotes: 70S (30S + 50S)\nEukaryotes: 80S (40S + 60S)\n• Cytoplasmic (free): 80S\n• ER-bound: 80S\n• Mitochondria/chloroplasts: 70S (prokaryotic origin)\n\nFunction:\n• Protein synthesis (translation)\n• Links amino acids via peptide bonds\n• Reads mRNA codons\n\nFree ribosomes: Cytoplasmic proteins\nBound ribosomes: Membrane/secreted proteins"
+    },
+    {
+      "id": "bio-141",
+      "front": "What is the structure and function of the cytoskeleton?",
+      "back": "Three main components:\n\nMicrofilaments (actin, 7 nm):\n• Cell shape and movement\n• Muscle contraction\n• Cytokinesis (cleavage furrow)\n\nIntermediate filaments (8-10 nm):\n• Structural support\n• Anchor organelles\n• Examples: Keratin, neurofilaments\n\nMicrotubules (tubulin, 25 nm):\n• Cell shape, intracellular transport\n• Chromosome separation (spindle fibers)\n• Cilia and flagella movement\n• Tracks for motor proteins (kinesin, dynein)\n\nONLY in eukaryotes (prokaryotes have simpler proteins)"
+    },
+    {
+      "id": "bio-142",
+      "front": "What are centrioles and centrosomes?",
+      "back": "Centrioles:\n• Cylinder of 9 triplet microtubules\n• Two perpendicular centrioles = centrosome\n\nCentrosome:\n• Microtubule organizing center (MTOC)\n• Duplicates before cell division\n• Moves to opposite poles\n• Forms mitotic spindle\n\nFunction:\n• Organize microtubules\n• Form spindle apparatus in mitosis\n• Template for cilia/flagella (basal bodies)\n\nFound in animal cells (most plants lack centrioles)"
+    },
+    {
+      "id": "bio-143",
+      "front": "What are cilia and flagella?",
+      "back": "Structure:\n• 9+2 arrangement: 9 doublet microtubules + 2 central\n• Basal body (9 triplets, like centriole)\n• Motor protein: Dynein (ATP-powered)\n• Plasma membrane covering\n\nCilia:\n• Short, numerous\n• Coordinated beating\n• Examples: Respiratory tract, fallopian tubes\n\nFlagella:\n• Long, few (usually 1-2)\n• Whip-like motion\n• Example: Sperm\n\nProkaryotic flagella: Different! Made of flagellin protein, rotates"
+    },
+    {
+      "id": "bio-144",
+      "front": "What is the structure and function of chloroplasts?",
+      "back": "Structure:\n• Double membrane (outer + inner)\n• Thylakoids: Membrane sacs (light reactions)\n• Grana: Stacks of thylakoids\n• Stroma: Fluid (Calvin cycle)\n• Own circular DNA, 70S ribosomes\n\nFunction:\n• Photosynthesis\n• Light reactions (thylakoid membrane): ATP, NADPH\n• Calvin cycle (stroma): Fixes CO₂ → glucose\n\nEndosymbiotic theory: Evolved from cyanobacteria\n\nONLY in plants and algae"
+    },
+    {
+      "id": "bio-145",
+      "front": "What is the structure and function of vacuoles?",
+      "back": "Structure:\n• Large membrane-bound sac\n• Filled with cell sap (water + dissolved substances)\n\nCentral vacuole (plants):\n• Very large (up to 90% of cell volume)\n• Turgor pressure (keeps plant rigid)\n• Storage (water, ions, pigments, toxins)\n• Waste disposal (like lysosome)\n• Growth (cell enlargement)\n\nContractile vacuole (protists):\n• Pumps out excess water\n• Osmoregulation\n\nFood vacuole:\n• Temporary, digestion"
+    },
+    {
+      "id": "bio-146",
+      "front": "What is the structure and function of the cell wall?",
+      "back": "Plant cell wall:\n• Made of cellulose (polysaccharide)\n• Rigid, provides structural support\n• Prevents osmotic lysis\n• Primary wall (thin, flexible)\n• Secondary wall (thick, rigid, lignin)\n• Plasmodesmata: Channels between cells\n\nBacterial cell wall:\n• Made of peptidoglycan\n• Gram-positive: Thick peptidoglycan\n• Gram-negative: Thin peptidoglycan + outer membrane\n\nFungal cell wall:\n• Made of chitin\n\nNo cell wall in animal cells!"
+    },
+    {
+      "id": "bio-147",
+      "front": "What is the plasma membrane structure?",
+      "back": "Fluid mosaic model:\n\nPhospholipid bilayer:\n• Hydrophilic heads (outside)\n• Hydrophobic tails (inside)\n• Selectively permeable\n• Fluid (lipids move laterally)\n\nEmbedded proteins:\n• Integral proteins: Span membrane (channels, transporters)\n• Peripheral proteins: Surface (signaling, support)\n\nCholesterol (animals):\n• Modulates fluidity\n• ↓ Fluidity at high temp, ↑ at low temp\n\nCarbohydrates:\n• Glycoproteins, glycolipids (cell recognition)"
+    },
+    {
+      "id": "bio-148",
+      "front": "Compare passive vs active transport",
+      "back": "Passive transport (no ATP):\n• Down concentration gradient\n• Simple diffusion: Small, nonpolar (O₂, CO₂)\n• Facilitated diffusion: Channels/carriers (glucose, ions)\n• Osmosis: Water movement\n\nActive transport (requires ATP):\n• Against concentration gradient\n• Primary: Direct ATP use (Na⁺/K⁺-ATPase)\n• Secondary: Uses gradient from primary (Na⁺-glucose cotransporter)\n\nBulk transport:\n• Endocytosis: Into cell (phagocytosis, pinocytosis)\n• Exocytosis: Out of cell (secretion)"
+    },
+    {
+      "id": "bio-149",
+      "front": "What is the Na⁺/K⁺-ATPase pump?",
+      "back": "Function: Maintains ion gradients across plasma membrane\n\nMechanism:\n• 3 Na⁺ out, 2 K⁺ in (per ATP)\n• Electrogenic (creates charge difference)\n• Primary active transport\n\nResult:\n• High K⁺ inside, high Na⁺ outside\n• Maintains resting potential (-70 mV)\n• Creates gradients for secondary active transport\n\nImportance:\n• Nerve impulses\n• Muscle contraction\n• Cell volume regulation\n• Secondary active transport\n\nUses ~30% of cell's ATP!"
+    },
+    {
+      "id": "bio-150",
+      "front": "What are the types of cell junctions?",
+      "back": "Tight junctions (animals):\n• Seal cells together\n• Prevent leakage between cells\n• Example: Intestinal epithelium\n\nDesmosomes (anchoring junctions):\n• Anchor cells together\n• Provide mechanical strength\n• Intermediate filaments\n• Example: Skin, heart muscle\n\nGap junctions (animals):\n• Allow communication between cells\n• Small molecules, ions pass through\n• Connexon proteins\n• Example: Heart muscle (coordinated contraction)\n\nPlasmodesmata (plants):\n• Channels through cell walls\n• Cytoplasm continuous between cells"
+    },
+    {
+      "id": "bio-151",
+      "front": "What is the endomembrane system?",
+      "back": "Integrated system of organelles:\n\nComponents:\n• Nuclear envelope\n• Endoplasmic reticulum (RER, SER)\n• Golgi apparatus\n• Lysosomes\n• Vesicles\n• Plasma membrane\n\nFunction:\n• Synthesize, modify, package, transport proteins and lipids\n\nPathway for secreted proteins:\n1. Ribosomes → RER (synthesis)\n2. RER → Golgi (vesicles)\n3. Golgi → modification\n4. Trans-Golgi → vesicles\n5. Vesicles → plasma membrane (exocytosis)\n\nExcludes: Mitochondria, chloroplasts, peroxisomes"
+    },
+    {
+      "id": "bio-152",
+      "front": "What is the secretory pathway?",
+      "back": "Pathway for protein secretion:\n\n1. Signal sequence on mRNA\n2. Ribosome binds signal recognition particle (SRP)\n3. SRP directs ribosome to RER\n4. Protein synthesized into ER lumen\n5. Signal sequence cleaved\n6. Protein folded and modified in ER\n7. Vesicles bud from ER → Golgi\n8. Golgi modifies (glycosylation)\n9. Vesicles bud from trans-Golgi\n10. Vesicles fuse with plasma membrane\n11. Exocytosis releases protein\n\nExamples: Antibodies, insulin, digestive enzymes"
+    },
+    {
+      "id": "bio-153",
+      "front": "What is endosymbiotic theory?",
+      "back": "Theory: Mitochondria and chloroplasts evolved from prokaryotes\n\nEvidence:\n• Double membrane (from engulfing)\n• Own circular DNA (like bacteria)\n• 70S ribosomes (prokaryotic type)\n• Binary fission (divide independently)\n• Own transcription/translation machinery\n• Similar size to bacteria\n\nOrigin:\n• Mitochondria: From aerobic bacteria (α-proteobacteria)\n• Chloroplasts: From cyanobacteria\n\nProcess: Endocytosis of bacteria → symbiotic relationship → organelle"
+    },
+    {
+      "id": "bio-154",
+      "front": "What organelles are found in plant vs animal cells?",
+      "back": "Plant cells ONLY:\n• Cell wall (cellulose)\n• Central vacuole (large)\n• Chloroplasts (photosynthesis)\n• Plasmodesmata\n\nAnimal cells ONLY:\n• Centrioles\n• Lysosomes (plants use vacuole)\n\nBoth have:\n• Nucleus, mitochondria, ER, Golgi\n• Ribosomes, plasma membrane\n• Cytoskeleton, peroxisomes\n\nKey difference: Plants are autotrophs (make own food), animals are heterotrophs"
+    },
+    {
+      "id": "bio-155",
+      "front": "What are the stages of the cell cycle?",
+      "back": "Interphase (90% of cycle):\n• G1: Cell growth, normal functions\n• S: DNA synthesis (replication)\n• G2: Preparation for mitosis, organelle replication\n\nM phase (mitosis + cytokinesis):\n• Prophase\n• Metaphase\n• Anaphase\n• Telophase\n• Cytokinesis\n\nG0 (quiescent):\n• Non-dividing state\n• Some cells permanently (neurons)\n• Some re-enter (liver cells)\n\nCheckpoints: G1/S, G2/M, metaphase (ensure proper division)"
+    },
+    {
+      "id": "bio-156",
+      "front": "What are the phases of mitosis?",
+      "back": "Prophase:\n• Chromatin condenses → chromosomes (2 sister chromatids)\n• Centrioles move to poles\n• Nuclear envelope breaks down\n• Spindle apparatus forms\n\nMetaphase:\n• Chromosomes align at cell equator (metaphase plate)\n• Kinetochores attach to spindle fibers\n• Checkpoint: All attached?\n\nAnaphase:\n• Sister chromatids separate → opposite poles\n• Spindle fibers shorten\n\nTelophase:\n• Chromosomes decondense\n• Nuclear envelopes reform\n• Spindle disappears\n\nCytokinesis:\n• Cleavage furrow (animals) or cell plate (plants)\n• Cytoplasm divides"
+    },
+    {
+      "id": "bio-157",
+      "front": "Compare mitosis vs meiosis",
+      "back": "Mitosis:\n• 1 division → 2 diploid (2n) cells\n• Genetically identical to parent\n• Somatic cells (body cells)\n• Growth, repair, asexual reproduction\n\nMeiosis:\n• 2 divisions → 4 haploid (n) cells\n• Genetically different (crossing over, independent assortment)\n• Gametes (sex cells)\n• Sexual reproduction\n\nMeiosis I: Homologous pairs separate (reductional)\nMeiosis II: Sister chromatids separate (like mitosis)\n\nIncreases genetic diversity!"
+    },
+    {
+      "id": "bio-158",
+      "front": "What is apoptosis?",
+      "back": "Apoptosis: Programmed cell death (controlled)\n\nCharacteristics:\n• Cell shrinks\n• Chromatin condenses\n• DNA fragmentation\n• Membrane blebs\n• Apoptotic bodies formed\n• Phagocytosed (no inflammation)\n\nTriggers:\n• Developmental signals\n• DNA damage (p53 pathway)\n• Lack of growth signals\n• Caspases (proteases) execute\n\nVs Necrosis (uncontrolled):\n• Cell swells and bursts\n• Inflammation\n• Pathological"
+    },
+    {
+      "id": "bio-159",
+      "front": "What are viruses and their basic structure?",
+      "back": "Viruses: Obligate intracellular parasites (NOT cells, not alive)\n\nBasic structure:\n• Nucleic acid core (DNA or RNA, never both)\n• Protein coat (capsid)\n• Some have envelope (lipid membrane from host)\n\nKey features:\n• Cannot reproduce independently\n• No ribosomes, no metabolism\n• Must infect host cell to replicate\n• Very small (20-300 nm)\n\nClassification:\n• DNA vs RNA\n• Single-stranded (ss) vs double-stranded (ds)\n• Enveloped vs non-enveloped\n• (+) sense vs (-) sense RNA"
+    },
+    {
+      "id": "bio-160",
+      "front": "What is the lytic vs lysogenic cycle?",
+      "back": "Lytic cycle (virulent):\n1. Attachment (bind host receptors)\n2. Penetration (inject DNA)\n3. Biosynthesis (hijack host machinery)\n4. Assembly (new virions formed)\n5. Lysis (cell bursts, viruses released)\n\nResult: Host cell destroyed\n\nLysogenic cycle (temperate):\n1. Virus integrates into host chromosome (prophage)\n2. Replicated with host DNA\n3. Can remain dormant for generations\n4. Triggered to enter lytic cycle (stress, UV)\n\nExample: Lambda phage, HIV (provirus)\n\nLysogenic → Lytic when induced"
+    },
+    {
+      "id": "bio-161",
+      "front": "What are retroviruses?",
+      "back": "Retroviruses: RNA viruses that reverse transcribe into DNA\n\nKey features:\n• (+) sense ssRNA genome\n• Reverse transcriptase enzyme\n• Integrase enzyme\n• Enveloped\n\nReplication:\n1. RNA genome enters cell\n2. Reverse transcriptase: RNA → DNA\n3. Integrase: DNA integrates into host chromosome (provirus)\n4. Host transcribes viral genes\n5. New virions assembled and bud off\n\nExample: HIV (Human Immunodeficiency Virus)\n\nChallenge: High mutation rate, drug resistance"
+    },
+    {
+      "id": "bio-162",
+      "front": "What is HIV and how does it work?",
+      "back": "HIV: Retrovirus that infects CD4⁺ T cells\n\nStructure:\n• (+) ssRNA (2 copies)\n• Reverse transcriptase\n• Envelope with gp120 (binds CD4)\n\nLife cycle:\n1. gp120 binds CD4 and co-receptor (CCR5/CXCR4)\n2. Fusion and entry\n3. Reverse transcription (RNA → DNA)\n4. Integration into host genome\n5. Transcription and translation\n6. Assembly and budding\n\nProgression:\n• HIV → AIDS (when CD4⁺ count drops)\n• Opportunistic infections\n\nTreatment: HAART (antiretrovirals)"
+    },
+    {
+      "id": "bio-163",
+      "front": "Compare DNA viruses vs RNA viruses",
+      "back": "DNA viruses:\n• Usually dsDNA\n• Replicate in nucleus (use host DNA pol)\n• More stable, lower mutation rate\n• Examples: Herpes, Pox, Adeno, Papilloma\n\nRNA viruses:\n• Can be ssRNA or dsRNA\n• Usually replicate in cytoplasm\n• RNA-dependent RNA polymerase (error-prone)\n• High mutation rate\n• Examples: Influenza, polio, hepatitis C, SARS-CoV-2, HIV\n\nException: Poxvirus (DNA, replicates in cytoplasm)\n\nRNA viruses mutate faster → hard to develop vaccines/drugs"
+    },
+    {
+      "id": "bio-164",
+      "front": "What are (+) sense vs (-) sense RNA viruses?",
+      "back": "(+) sense RNA:\n• Can be directly translated by ribosomes\n• Acts like mRNA\n• Examples: Polio, Hepatitis A, C, SARS-CoV-2, HIV\n\n(-) sense RNA:\n• Complementary to mRNA\n• Must be transcribed to (+) sense first\n• Must carry RNA polymerase\n• Examples: Influenza, measles, Ebola, rabies\n\nMnemonic: (+) = Positive = can Proceed to translation\n(-) = Negative = Needs conversion first"
+    },
+    {
+      "id": "bio-165",
+      "front": "What are prions?",
+      "back": "Prions: Infectious proteins (NO nucleic acid!)\n\nStructure:\n• Misfolded protein (PrP^Sc)\n• Normal form: PrP^C (cellular)\n• Infectious form: PrP^Sc (scrapie)\n\nMechanism:\n• PrP^Sc induces PrP^C to misfold\n• Chain reaction of misfolding\n• Accumulates in brain tissue\n• Forms plaques\n\nDiseases:\n• Creutzfeldt-Jakob disease (CJD)\n• Mad cow disease (BSE)\n• Kuru (human)\n• Fatal familial insomnia\n\nCharacteristics:\n• Not destroyed by heat, radiation, proteases\n• Very slow progression (years)\n• Always fatal"
+    },
+    {
+      "id": "bio-166",
+      "front": "What are viroids?",
+      "back": "Viroids: Infectious RNA (NO protein coat!)\n\nStructure:\n• Small, circular ssRNA\n• No capsid, no envelope\n• 200-400 nucleotides\n\nCharacteristics:\n• Smallest known infectious agents\n• Infect ONLY plants\n• Replicate using host enzymes\n• Cause disease by unknown mechanism\n• May interfere with gene regulation\n\nExamples:\n• Potato spindle tuber viroid\n• Citrus exocortis viroid\n\nDifferent from: Viruses (have protein), prions (protein only)"
+    },
+    {
+      "id": "bio-167",
+      "front": "What are plasmids?",
+      "back": "Plasmids: Extra-chromosomal DNA in bacteria\n\nCharacteristics:\n• Small, circular dsDNA\n• Replicate independently of chromosome\n• Not essential for survival (usually)\n• Can be transferred between bacteria\n\nTypes:\n• Resistance (R) plasmids: Antibiotic resistance genes\n• Fertility (F) plasmids: Enable conjugation\n• Virulence plasmids: Toxins, adhesion factors\n\nImportance:\n• Horizontal gene transfer\n• Antibiotic resistance spread\n• Genetic engineering (cloning vectors)\n\nConjugation: F⁺ donor → F⁻ recipient via pilus"
+    },
+    {
+      "id": "bio-168",
+      "front": "What are transposons?",
+      "back": "Transposons: \"Jumping genes\" - mobile DNA elements\n\nTypes:\n• Simple (insertion sequences): Only transposase gene\n• Complex (composite): Carry other genes (e.g., antibiotic resistance)\n\nMechanism:\n1. Transposase enzyme cuts DNA\n2. Transposon moves to new location\n3. Inserts into genome\n\nEffects:\n• Can disrupt genes\n• Cause mutations\n• Chromosomal rearrangements\n• Spread antibiotic resistance\n\nFound in: Prokaryotes and eukaryotes\n\nBarbara McClintock: Discovered in corn (Nobel Prize)"
+    },
+    {
+      "id": "bio-169",
+      "front": "What are the key structures of bacterial cells?",
+      "back": "Essential structures:\n• Cell wall (peptidoglycan)\n• Plasma membrane\n• Cytoplasm\n• Nucleoid (circular DNA)\n• Ribosomes (70S)\n\nAdditional structures:\n• Capsule: Polysaccharide layer (protection, virulence)\n• Flagella: Motility (flagellin protein)\n• Pili/Fimbriae: Adhesion, conjugation\n• Plasmids: Extra DNA\n• Endospores: Dormant, heat-resistant\n\nNo nucleus, no membrane-bound organelles!"
+    },
+    {
+      "id": "bio-170",
+      "front": "What is the bacterial cell wall structure?",
+      "back": "Peptidoglycan (murein):\n• Sugars: NAM and NAG alternating\n• Cross-linked by peptide bridges\n• Provides rigidity, shape\n• Prevents osmotic lysis\n\nGram-positive:\n• Thick peptidoglycan layer (20-80 nm)\n• Teichoic acids\n• No outer membrane\n• Purple/blue with Gram stain\n\nGram-negative:\n• Thin peptidoglycan (2-3 nm)\n• Outer membrane (lipopolysaccharide, LPS)\n• Periplasmic space\n• Pink/red with Gram stain\n• LPS = endotoxin (triggers immune response)"
+    },
+    {
+      "id": "bio-171",
+      "front": "What are bacterial endospores?",
+      "back": "Endospores: Dormant, highly resistant bacterial structures\n\nFormed by: Some Gram-positive bacteria (Bacillus, Clostridium)\n\nStructure:\n• Thick protein coat\n• Low water content\n• DNA protected\n• Metabolically inactive\n\nResistance to:\n• Heat (boiling, autoclaving needed: 121°C)\n• Desiccation\n• Radiation\n• Chemicals\n• Extreme pH\n\nGermination: Returns to vegetative state when conditions favorable\n\nExamples:\n• Bacillus anthracis (anthrax)\n• Clostridium tetani (tetanus)\n• Clostridium botulinum (botulism)"
+    },
+    {
+      "id": "bio-172",
+      "front": "What are the phases of bacterial growth?",
+      "back": "Batch culture growth curve:\n\n1. Lag phase:\n• Adaptation to environment\n• Synthesize enzymes\n• Little/no cell division\n\n2. Log (exponential) phase:\n• Rapid, constant division\n• Maximum growth rate\n• Cells most vulnerable to antibiotics\n\n3. Stationary phase:\n• Growth rate = death rate\n• Nutrient depletion\n• Waste accumulation\n• Secondary metabolites produced\n\n4. Death phase:\n• Death rate > growth rate\n• Nutrients exhausted\n• Toxic waste buildup\n\nGeneration time: Time for population to double"
+    },
+    {
+      "id": "bio-173",
+      "front": "What are bacterial nutritional requirements?",
+      "back": "Energy source:\n• Phototrophs: Light\n• Chemotrophs: Chemical oxidation\n\nCarbon source:\n• Autotrophs: CO₂\n• Heterotrophs: Organic compounds\n\nCombinations:\n• Photoautotrophs: Light + CO₂ (cyanobacteria)\n• Photoheterotrophs: Light + organics (some bacteria)\n• Chemoautotrophs: Chemicals + CO₂ (some bacteria)\n• Chemoheterotrophs: Organics for both (most bacteria, animals)\n\nOxygen requirements:\n• Obligate aerobes: Require O₂\n• Obligate anaerobes: Killed by O₂\n• Facultative anaerobes: O₂ preferred but not required\n• Aerotolerant: Don't use O₂ but tolerate it\n• Microaerophiles: Low O₂ required"
+    },
+    {
+      "id": "bio-174",
+      "front": "What is bacterial conjugation?",
+      "back": "Conjugation: Horizontal gene transfer between bacteria\n\nRequirements:\n• Donor cell (F⁺, has F plasmid)\n• Recipient cell (F⁻, no F plasmid)\n• Sex pilus\n\nProcess:\n1. Pilus extends from F⁺ to F⁻\n2. Cells brought together\n3. F plasmid copied (rolling circle replication)\n4. Copy transferred through pilus\n5. F⁻ becomes F⁺\n\nHfr strains:\n• F plasmid integrated into chromosome\n• Can transfer chromosomal DNA\n• Allows genetic mapping\n\nImportance: Spreads antibiotic resistance!"
+    },
+    {
+      "id": "bio-175",
+      "front": "What is bacterial transformation?",
+      "back": "Transformation: Uptake of naked DNA from environment\n\nNatural competence:\n• Some bacteria naturally take up DNA\n• Examples: Streptococcus, Bacillus, Haemophilus\n\nProcess:\n1. DNA released from dead/lysed bacteria\n2. Competent cell binds DNA\n3. DNA enters cell\n4. Integrates into chromosome OR\n5. Remains as plasmid\n\nArtificial transformation:\n• Heat shock or electroporation\n• Used in genetic engineering\n\nGriffith's experiment (1928):\n• First demonstration with Streptococcus pneumoniae\n• Smooth (S) vs Rough (R) strains"
+    },
+    {
+      "id": "bio-176",
+      "front": "What is bacterial transduction?",
+      "back": "Transduction: DNA transfer via bacteriophage (virus)\n\nGeneralized transduction:\n• Random bacterial DNA packaged into phage\n• Phage injects DNA into new host\n• Can transfer any gene\n• Lytic cycle error\n\nSpecialized transduction:\n• Specific genes near prophage integration site\n• Lysogenic cycle\n• Prophage excision takes adjacent genes\n• Only genes near integration site\n\nImportance:\n• Horizontal gene transfer\n• Can transfer virulence genes\n• Used in genetic research\n\nExample: Diphtheria toxin transferred by phage"
+    },
+    {
+      "id": "bio-177",
+      "front": "Compare the three types of bacterial gene transfer",
+      "back": "Transformation:\n• Uptake of naked DNA from environment\n• Cell must be competent\n• Can be natural or artificial\n\nConjugation:\n• Direct cell-to-cell contact\n• Requires pilus (F plasmid)\n• Transfers plasmids or chromosomal DNA\n• \"Bacterial sex\"\n\nTransduction:\n• DNA transfer via bacteriophage\n• Generalized (random) or specialized (specific)\n• Phage carries bacterial DNA\n\nAll three:\n• Horizontal gene transfer\n• Increase genetic diversity\n• Spread antibiotic resistance"
+    },
+    {
+      "id": "bio-178",
+      "front": "What is quorum sensing in bacteria?",
+      "back": "Quorum sensing: Cell density-dependent gene regulation\n\nMechanism:\n1. Bacteria produce signaling molecules (autoinducers)\n2. At low density: Signals diffuse away\n3. At high density: Signals accumulate\n4. Signals bind receptors\n5. Triggers gene expression changes\n\nRegulated behaviors:\n• Biofilm formation\n• Bioluminescence (Vibrio)\n• Virulence factor production\n• Sporulation\n• Antibiotic production\n\nImportance:\n• Coordinated group behavior\n• Pathogenesis\n• Potential antibiotic targets\n\nExample: Pseudomonas biofilms in cystic fibrosis"
+    },
+    {
+      "id": "bio-179",
+      "front": "What are biofilms?",
+      "back": "Biofilms: Communities of bacteria encased in polysaccharide matrix\n\nFormation:\n1. Attachment to surface\n2. Colonization (growth)\n3. Matrix production (extracellular polymeric substance, EPS)\n4. Maturation (3D structure, water channels)\n5. Dispersal (release bacteria to colonize elsewhere)\n\nCharacteristics:\n• Extremely resistant to antibiotics (1000× more)\n• Protected from immune system\n• Nutrient gradients create diverse microenvironments\n• Cell-to-cell communication (quorum sensing)\n\nClinical importance:\n• Chronic infections (cystic fibrosis, UTIs)\n• Medical devices (catheters, implants)\n• Dental plaque\n• ~80% of chronic bacterial infections"
+    },
+    {
+      "id": "bio-180",
+      "front": "What is bacterial chemotaxis?",
+      "back": "Chemotaxis: Directed movement toward/away from chemicals\n\nMechanism:\n1. Chemoreceptors detect attractants or repellents\n2. Signal transduction pathway\n3. Controls flagellar rotation\n\nFlagellar motion:\n• Counterclockwise: Run (straight movement)\n• Clockwise: Tumble (random reorientation)\n\nBehavior:\nToward attractant (food):\n• Longer runs, fewer tumbles\n• Net movement toward source\n\nAway from repellent (toxin):\n• Shorter runs, more tumbles\n• Net movement away\n\nExample: E. coli moving toward glucose"
+    },
+    {
+      "id": "bio-181",
+      "front": "What are bacterial virulence factors?",
+      "back": "Virulence factors: Molecules that help bacteria cause disease\n\nAdhesion factors:\n• Pili, fimbriae\n• Attach to host cells\n\nInvasion factors:\n• Enzymes that break down tissues\n• Example: Collagenase, hyaluronidase\n\nToxins:\n• Exotoxins: Secreted proteins (botulinum, diphtheria)\n• Endotoxins: LPS from Gram-negative cell wall\n\nImmune evasion:\n• Capsule (prevents phagocytosis)\n• Protein A (binds antibodies backwards)\n• Antigenic variation\n\nSiderophores:\n• Scavenge iron from host\n\nBiofilm formation:\n• Protection from antibiotics/immunity"
+    },
+    {
+      "id": "bio-182",
+      "front": "Compare exotoxins vs endotoxins",
+      "back": "Exotoxins (secreted):\n• Proteins\n• Both Gram-positive and Gram-negative\n• Heat-labile (destroyed by heat)\n• Highly toxic (small amounts)\n• Specific effects\n• Can be converted to toxoids (vaccines)\n• Examples: Botulinum, tetanus, diphtheria, cholera\n\nEndotoxins (cell wall component):\n• Lipopolysaccharide (LPS)\n• Gram-negative ONLY\n• Heat-stable\n• Less toxic (large amounts needed)\n• General effects (fever, shock)\n• No toxoid possible\n• Released when bacteria die\n• Triggers massive immune response (septic shock)"
+    },
+    {
+      "id": "bio-183",
+      "front": "What are antibiotics and their mechanisms?",
+      "back": "Cell wall synthesis inhibitors:\n• Penicillins, cephalosporins (β-lactams): Block peptidoglycan cross-linking\n• Vancomycin: Blocks peptidoglycan assembly\n• Target: Actively growing bacteria\n\nProtein synthesis inhibitors:\n• Aminoglycosides (30S): Streptomycin\n• Tetracyclines (30S)\n• Chloramphenicol (50S)\n• Macrolides (50S): Erythromycin\n\nNucleic acid synthesis:\n• Fluoroquinolones: DNA gyrase (topoisomerase)\n• Rifampin: RNA polymerase\n\nMetabolic pathways:\n• Sulfonamides: Folic acid synthesis\n• Trimethoprim: Folic acid synthesis\n\nBactericidal: Kill bacteria\nBacteriostatic: Inhibit growth"
+    },
+    {
+      "id": "bio-184",
+      "front": "What are mechanisms of antibiotic resistance?",
+      "back": "Enzymatic degradation:\n• β-lactamases: Destroy β-lactam antibiotics\n• Aminoglycoside-modifying enzymes\n\nTarget modification:\n• Alter ribosomal binding site\n• Alter penicillin-binding proteins (PBPs)\n• Methylate rRNA (macrolide resistance)\n\nReduced permeability:\n• Decreased porin expression\n• Gram-negative outer membrane\n\nEfflux pumps:\n• Pump antibiotic out of cell\n• Multiple drug resistance (MDR) pumps\n\nBypass pathways:\n• Alternative metabolic pathway\n• Sulfonamide resistance\n\nAcquisition:\n• Plasmids (conjugation)\n• Transformation, transduction\n• Mutations\n\nPrevention: Appropriate use, combination therapy"
     }
   ],
   "psych": [
