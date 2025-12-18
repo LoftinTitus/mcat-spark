@@ -280,6 +280,156 @@
       "id": "cars-5",
       "front": "What is the difference between explicit and implicit information?",
       "back": "Explicit: Directly stated in the passage. Can be found by looking back at text.\n\nImplicit: Implied but not directly stated. Requires drawing logical conclusions from what IS stated."
+    },
+    {
+      "id": "cars-6",
+      "front": "What are Main Idea questions and their clue words?",
+      "back": "What they ask: The central thesis or primary purpose of the passage.\n\nClue words:\n• \"main idea\"\n• \"primary purpose\"\n• \"central thesis\"\n• \"author's main point\"\n• \"passage is primarily about\"\n\nStrategy: Focus on intro/conclusion, identify what author is arguing overall."
+    },
+    {
+      "id": "cars-7",
+      "front": "What are Detail questions and their clue words?",
+      "back": "What they ask: Specific information explicitly stated in the passage.\n\nClue words:\n• \"according to the passage\"\n• \"the author states\"\n• \"the passage indicates\"\n• \"which of the following is mentioned\"\n• Line/paragraph references\n\nStrategy: Scan back to relevant section, find exact match."
+    },
+    {
+      "id": "cars-8",
+      "front": "What are Inference questions and their clue words?",
+      "back": "What they ask: What is implied but NOT explicitly stated.\n\nClue words:\n• \"infer\"\n• \"suggest\"\n• \"imply\"\n• \"most likely\"\n• \"probably\"\n• \"it can be concluded\"\n\nStrategy: Answer must be supported by passage but not directly quoted. Look for logical extensions."
+    },
+    {
+      "id": "cars-9",
+      "front": "What are Tone/Attitude questions and their clue words?",
+      "back": "What they ask: The author's attitude or emotional stance toward the subject.\n\nClue words:\n• \"author's tone\"\n• \"author's attitude\"\n• \"author views\"\n• \"author would describe as\"\n\nStrategy: Analyze word choice, qualifiers, treatment of opposing views. Avoid extreme answers."
+    },
+    {
+      "id": "cars-10",
+      "front": "What are Strengthen/Weaken questions and their clue words?",
+      "back": "What they ask: Which answer would support or undermine the author's argument.\n\nClue words:\n• \"strengthen\"\n• \"support\"\n• \"weaken\"\n• \"undermine\"\n• \"challenge\"\n• \"which would most call into question\"\n\nStrategy: Identify the argument's assumptions and key premises."
+    },
+    {
+      "id": "cars-11",
+      "front": "What are Function questions and their clue words?",
+      "back": "What they ask: Why the author included a specific detail or paragraph.\n\nClue words:\n• \"in order to\"\n• \"the purpose of\"\n• \"the author mentions X to\"\n• \"function of\"\n• \"serves to\"\n\nStrategy: Look at context before/after. How does it relate to main argument?"
+    },
+    {
+      "id": "cars-12",
+      "front": "What are Application questions and their clue words?",
+      "back": "What they ask: Apply passage concepts to new situations.\n\nClue words:\n• \"similar to\"\n• \"analogous to\"\n• \"would be most like\"\n• \"consistent with\"\n• \"which scenario\"\n\nStrategy: Identify the principle/pattern in passage, find answer matching that pattern."
+    },
+    {
+      "id": "cars-13",
+      "front": "What are Structure questions and their clue words?",
+      "back": "What they ask: How the passage is organized or how paragraphs relate.\n\nClue words:\n• \"organization\"\n• \"structure\"\n• \"relationship between paragraphs\"\n• \"author's method\"\n• \"passage proceeds by\"\n\nStrategy: Map the passage flow. Note transitions and how ideas build."
+    },
+    {
+      "id": "cars-14",
+      "front": "How do you quickly identify question types?",
+      "back": "Look for key verbs:\n• States/mentions → Detail\n• Infer/suggest/imply → Inference\n• Main/primary/central → Main Idea\n• Tone/attitude → Tone\n• Strengthen/weaken → Strengthen/Weaken\n• In order to/purpose → Function\n• Similar/analogous → Application\n\nFirst word/phrase usually signals the type!"
+    },
+    {
+      "id": "cars-15",
+      "front": "What's the difference between Inference and Detail questions?",
+      "back": "Detail: Answer IS in the passage\n• Look for direct match\n• Often has line references\n• \"According to passage\"\n\nInference: Answer is NOT directly stated\n• Must be logically derived\n• Supported but implicit\n• \"Passage suggests/implies\"\n\nKey: If you can quote it directly → Detail. If you must interpret → Inference."
+    },
+    {
+      "id": "cars-16",
+      "front": "Define argument, premise, and conclusion",
+      "back": "Argument: A claim supported by reasoning.\n\nPremise: Evidence or reasons supporting the conclusion. Look for \"because,\" \"since,\" \"given that.\"\n\nConclusion: The main claim being argued. Look for \"therefore,\" \"thus,\" \"consequently,\" \"it follows that.\"\n\nExample: \"Since exercise improves health (premise), people should exercise regularly (conclusion).\""
+    },
+    {
+      "id": "cars-17",
+      "front": "What is an assumption in an argument?",
+      "back": "An unstated premise that must be true for the argument to work.\n\nTo find assumptions:\n• Identify the gap between premises and conclusion\n• Ask: \"What must be true for this to make sense?\"\n• Negation test: If assumption is false, does argument fall apart?\n\nExample: \"John is tall, so he plays basketball\" assumes tall people play basketball."
+    },
+    {
+      "id": "cars-18",
+      "front": "What is an analogy as a rhetorical device?",
+      "back": "Comparing two things to explain or support a point.\n\nPurpose:\n• Clarify complex ideas\n• Persuade by showing similarity\n• Make abstract concrete\n\nExample: \"The brain is like a computer\" suggests similar processing functions.\n\nWeakness: Analogies can oversimplify or have limited applicability."
+    },
+    {
+      "id": "cars-19",
+      "front": "What is a counterargument?",
+      "back": "Acknowledging and addressing opposing viewpoints.\n\nSignals:\n• \"Critics argue...\"\n• \"Some claim...\"\n• \"However...\"\n• \"On the other hand...\"\n\nPurpose:\n• Show awareness of other perspectives\n• Strengthen own argument by refuting alternatives\n• Demonstrate fairness\n\nStrong arguments address counterarguments."
+    },
+    {
+      "id": "cars-20",
+      "front": "What is irony as a rhetorical device?",
+      "back": "Expressing meaning opposite to literal words, or when outcome contradicts expectations.\n\nTypes:\n• Verbal: Saying opposite of what you mean (sarcasm)\n• Situational: Outcome opposite of what's expected\n• Dramatic: Reader knows something character doesn't\n\nPurpose: Highlight contradictions, create emphasis, critique."
+    },
+    {
+      "id": "cars-21",
+      "front": "How do you identify author's tone through word choice?",
+      "back": "Positive tone words:\n• Optimistic, enthusiastic, supportive, admiring, praiseworthy\n\nNegative tone words:\n• Critical, skeptical, dismissive, cynical, condescending\n\nNeutral tone words:\n• Objective, analytical, informative, descriptive\n\nLook for:\n• Adjectives (\"remarkable\" vs \"questionable\")\n• Qualifiers (\"certainly\" vs \"allegedly\")\n• Loaded language vs neutral terms"
+    },
+    {
+      "id": "cars-22",
+      "front": "What are common rhetorical strategies for persuasion?",
+      "back": "Ethos (credibility):\n• Cite experts, credentials\n• Build trust\n\nPathos (emotion):\n• Appeal to feelings, values\n• Use vivid examples\n\nLogos (logic):\n• Use facts, statistics, reasoning\n• Build logical chain\n\nAlso: Repetition, rhetorical questions, appeals to authority, emotional language."
+    },
+    {
+      "id": "cars-23",
+      "front": "How do you detect bias in a passage?",
+      "back": "Look for:\n• One-sided presentation (ignores alternatives)\n• Loaded language (emotional words)\n• Overgeneralizations (\"always,\" \"never\")\n• Cherry-picked evidence\n• Unstated assumptions\n• Dismissive treatment of opposing views\n\nNeutral passages:\n• Present multiple viewpoints\n• Use objective language\n• Acknowledge limitations"
+    },
+    {
+      "id": "cars-24",
+      "front": "What are transition words and why do they matter?",
+      "back": "Contrast: however, but, yet, although, despite\n→ Signals shift or opposing view\n\nSupport: furthermore, moreover, additionally, also\n→ Adds evidence\n\nCause/Effect: therefore, thus, consequently, because, since\n→ Shows logical relationship\n\nExample: for instance, such as, specifically\n→ Provides illustration\n\nTransitions guide you through argument structure!"
+    },
+    {
+      "id": "cars-25",
+      "front": "What is point of view and how does it affect meaning?",
+      "back": "First person (I/we): Personal, subjective, possibly biased\n\nSecond person (you): Direct, instructional, engaging\n\nThird person (he/she/they): More objective, distanced\n\nEffect on meaning:\n• \"I believe X\" = personal opinion\n• \"Studies show X\" = objective claim\n• \"You should X\" = directive\n\nAuthor's choice reveals stance and intended relationship with reader."
+    },
+    {
+      "id": "cars-26",
+      "front": "Define: Ambiguous, Anachronism, Antithesis",
+      "back": "Ambiguous: Unclear, having multiple possible meanings\n• \"The statement was ambiguous and open to interpretation.\"\n\nAnachronism: Something out of its proper time period\n• \"A cellphone in a medieval painting is an anachronism.\"\n\nAntithesis: Direct opposite or contrast\n• \"Love is the antithesis of hate.\""
+    },
+    {
+      "id": "cars-27",
+      "front": "Define: Arbitrary, Candid, Categorical",
+      "back": "Arbitrary: Based on random choice rather than reason\n• \"The decision seemed arbitrary and without justification.\"\n\nCandid: Frank, honest, straightforward\n• \"She gave a candid assessment of the situation.\"\n\nCategorical: Absolute, unqualified, without exceptions\n• \"He gave a categorical denial of the allegations.\""
+    },
+    {
+      "id": "cars-28",
+      "front": "Define: Corollary, Dichotomy, Discrepancy",
+      "back": "Corollary: A natural consequence or result\n• \"Higher taxes are a corollary of increased government spending.\"\n\nDichotomy: Division into two contrasting parts\n• \"The dichotomy between theory and practice.\"\n\nDiscrepancy: Difference or inconsistency between things\n• \"There was a discrepancy between the two accounts.\""
+    },
+    {
+      "id": "cars-29",
+      "front": "Define: Dogmatic, Empirical, Erudite",
+      "back": "Dogmatic: Asserting opinions as facts, inflexible\n• \"His dogmatic approach left no room for debate.\"\n\nEmpirical: Based on observation or experiment, not theory\n• \"Empirical evidence supports the hypothesis.\"\n\nErudite: Scholarly, showing great knowledge\n• \"The erudite professor quoted extensively from classical texts.\""
+    },
+    {
+      "id": "cars-30",
+      "front": "Define: Esoteric, Inherent, Juxtapose",
+      "back": "Esoteric: Understood by few, specialized, obscure\n• \"The paper contained esoteric terminology.\"\n\nInherent: Existing as a natural or essential part\n• \"Risk is inherent in any investment.\"\n\nJuxtapose: Place side by side for contrast\n• \"The author juxtaposes wealth and poverty.\""
+    },
+    {
+      "id": "cars-31",
+      "front": "Define: Negligible, Normative, Paradox",
+      "back": "Negligible: So small as to be insignificant\n• \"The effect was negligible and hardly worth noting.\"\n\nNormative: Establishing a standard or norm\n• \"The study took a normative approach to ethics.\"\n\nParadox: Self-contradictory statement that may be true\n• \"The paradox of choice: more options can make decision harder.\""
+    },
+    {
+      "id": "cars-32",
+      "front": "Define: Pragmatic, Precedent, Preclude",
+      "back": "Pragmatic: Practical, focused on results rather than theory\n• \"She took a pragmatic approach to solving the problem.\"\n\nPrecedent: An earlier event serving as an example\n• \"The case set a legal precedent.\"\n\nPreclude: Make impossible, prevent\n• \"His injury precluded him from competing.\""
+    },
+    {
+      "id": "cars-33",
+      "front": "Define: Redundant, Salient, Specious",
+      "back": "Redundant: Unnecessary repetition, superfluous\n• \"The phrase was redundant and could be removed.\"\n\nSalient: Most noticeable or important\n• \"The salient feature of the argument was its simplicity.\"\n\nSpecious: Superficially plausible but actually wrong\n• \"His specious reasoning was full of logical flaws.\""
+    },
+    {
+      "id": "cars-34",
+      "front": "Define: Substantiate, Tenuous, Ubiquitous",
+      "back": "Substantiate: Provide evidence to support a claim\n• \"The theory was substantiated by multiple studies.\"\n\nTenuous: Weak, flimsy, not well-established\n• \"The connection between the two events was tenuous.\"\n\nUbiquitous: Present everywhere, widespread\n• \"Smartphones are ubiquitous in modern society.\""
+    },
+    {
+      "id": "cars-35",
+      "front": "Define: Viable, Vindicate, Zealous",
+      "back": "Viable: Capable of working successfully, feasible\n• \"The plan was economically viable.\"\n\nVindicate: Clear of blame, prove to be right\n• \"New evidence vindicated his theory.\"\n\nZealous: Showing great enthusiasm or devotion\n• \"She was a zealous advocate for the cause.\""
     }
   ]
 }
