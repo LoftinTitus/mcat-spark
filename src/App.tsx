@@ -12,12 +12,10 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 function App() {
-  const basename = import.meta.env.MODE === 'production' ? '/mcat-spark' : '/';
-  
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <BrowserRouter basename={basename}>
+        <BrowserRouter>
           <Toaster />
           <Sonner />
           <Routes>
