@@ -4,22 +4,22 @@ import { cn } from "@/lib/utils";
 interface FlashCardProps {
   front: string;
   back: string;
+  isFlipped: boolean;
+  onFlip: (flipped: boolean) => void;
 }
 
-export function FlashCard({ front, back }: FlashCardProps) {
-  const [isFlipped, setIsFlipped] = useState(false);
-
+export function FlashCard({ front, back, isFlipped, onFlip }: FlashCardProps) {
   return (
     <div
       className="perspective w-full cursor-pointer"
-      onClick={() => setIsFlipped(!isFlipped)}
+      onClick={() => onFlip(!isFlipped)}
       role="button"
       aria-label={isFlipped ? "Show question" : "Show answer"}
       tabIndex={0}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
-          setIsFlipped(!isFlipped);
+          onFlip(!isFlipped);
         }
       }}
     >

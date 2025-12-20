@@ -17,6 +17,7 @@ const Flashcards = () => {
   const [section, setSection] = useState<Section>("chem");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [shuffled, setShuffled] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false);
 
   const cards = useMemo(() => {
     const sectionCards = flashcardsData[section] as FlashcardItem[];
@@ -34,10 +35,12 @@ const Flashcards = () => {
   };
 
   const handlePrevious = () => {
+    setIsFlipped(false);
     setCurrentIndex((prev) => (prev > 0 ? prev - 1 : cards.length - 1));
   };
 
   const handleNext = () => {
+    setIsFlipped(false);
     setCurrentIndex((prev) => (prev < cards.length - 1 ? prev + 1 : 0));
   };
 
@@ -72,7 +75,13 @@ const Flashcards = () => {
 
         {/* Card */}
         {currentCard && (
-          <FlashCard front={currentCard.front} back={currentCard.back} />
+          <FlashCard 
+            key={`${section}-${currentIndex}`}
+            front={currentCard.front} 
+            back={currentCard.back}
+            isFlipped={isFlipped}
+            onFlip={setIsFlipped}
+          />
         )}
 
         {/* Navigation */}
