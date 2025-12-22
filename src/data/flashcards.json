@@ -1121,6 +1121,111 @@
       "id": "bio-184",
       "front": "What are mechanisms of antibiotic resistance?",
       "back": "Enzymatic degradation:\n• β-lactamases: Destroy β-lactam antibiotics\n• Aminoglycoside-modifying enzymes\n\nTarget modification:\n• Alter ribosomal binding site\n• Alter penicillin-binding proteins (PBPs)\n• Methylate rRNA (macrolide resistance)\n\nReduced permeability:\n• Decreased porin expression\n• Gram-negative outer membrane\n\nEfflux pumps:\n• Pump antibiotic out of cell\n• Multiple drug resistance (MDR) pumps\n\nBypass pathways:\n• Alternative metabolic pathway\n• Sulfonamide resistance\n\nAcquisition:\n• Plasmids (conjugation)\n• Transformation, transduction\n• Mutations\n\nPrevention: Appropriate use, combination therapy"
+    },
+    {
+      "id": "bio-185",
+      "front": "What is the A band, and in what tissues do they appear?",
+      "back": "The A band is a dark region in striated muscle fibers, primarily composed of thick myosin filaments and overlapping thin actin filaments. It appears in skeletal and cardiac muscle tissues and gives the striated appearance."
+    },
+    {
+      "id": "bio-186",
+      "front": "What is the I band, and in what tissues do they appear?",
+      "back": "The I band is a light region in striated muscle fibers, primarily composed of thin actin filaments. It appears in skeletal and cardiac muscle tissues and contributes to the striated appearance."
+    },
+    {
+      "id": "bio-187",
+      "front": "Define absolute refractory period",
+      "back": "The absolute refractory period is the time during which a neuron cannot fire another action potential, regardless of the strength of the stimulus. This period occurs during the depolarization and repolarization phases of the action potential, primarily due to the inactivation of voltage-gated sodium channels."
+    },
+    {
+      "id": "bio-188",
+      "front": "Define relative refractory period",
+      "back": "The relative refractory period is the time following the absolute refractory period during which a neuron can fire another action potential, but only if a stronger-than-normal stimulus is applied. This period occurs during the hyperpolarization phase of the action potential, when some voltage-gated sodium channels have returned to their resting state, but potassium channels are still open."
+    },
+    {
+      "id": "bio-189",
+      "front": "What is the role of calcium in muscle contraction?",
+      "back": "Calcium ions (Ca²⁺) play a crucial role in muscle contraction by binding to troponin, a regulatory protein on the thin actin filaments. This binding causes a conformational change that moves tropomyosin away from the myosin-binding sites on actin, allowing myosin heads to attach to actin and initiate the cross-bridge cycle, leading to muscle contraction."
+    },
+    {
+      "id": "bio-190",
+      "front": "What is the sliding filament theory?",
+      "back": "The sliding filament theory explains muscle contraction as the process where thin actin filaments slide past thick myosin filaments, resulting in the shortening of the sarcomere. During contraction, myosin heads bind to actin, forming cross-bridges, and pull the actin filaments toward the center of the sarcomere through a series of power strokes fueled by ATP hydrolysis."
+    },
+    {
+      "id": "bio-191",
+      "front": "What are the three accessory glands in the male reproductive system and their functions?",
+      "back": "The three accessory glands in the male reproductive system are the seminal vesicles, prostate gland, and bulbourethral glands (Cowper's glands).\n\n1. Seminal vesicles: Produce a viscous fluid rich in fructose that nourishes sperm and forms a significant portion of semen.\n2. Prostate gland: Secretes a milky fluid that contains enzymes and buffers to enhance sperm motility and protect sperm from the acidic environment of the female reproductive tract.\n3. Bulbourethral glands: Produce a pre-ejaculatory fluid that lubricates the urethra and neutralizes any acidity before ejaculation."
+    }
+    {
+      "id": "bio-192",
+      "front": "What are the accessory organs of the GI tract and their functions?",
+      "back": "The accessory organs of the gastrointestinal (GI) tract include the salivary glands, liver, gallbladder, and pancreas.\n\n1. Salivary glands: Produce saliva, which contains enzymes that begin the digestion of carbohydrates and lubricate food for easier swallowing.\n2. Liver: Produces bile, which helps emulsify fats and aids in their digestion and absorption. The liver also processes nutrients absorbed from the intestines.\n3. Gallbladder: Stores and concentrates bile produced by the liver, releasing it into the small intestine to assist in fat digestion.\n4. Pancreas: Produces digestive enzymes and bicarbonate, which are released into the small intestine to aid in the digestion of proteins, fats, and carbohydrates."
+    },
+    {
+      "id": "bio-193",
+      "front": "What is the role of the liver in metabolism?",
+      "back": "The liver plays a central role in metabolism by regulating blood glucose levels, synthesizing proteins, and processing lipids. It stores glycogen and releases glucose during fasting, produces plasma proteins like albumin and clotting factors, and synthesizes cholesterol and triglycerides. The liver also detoxifies harmful substances and metabolizes drugs."
+    },
+    {
+      "id": "bio-194",
+      "front": "What are the main functions of the kidneys?",
+      "back": "The main functions of the kidneys include:\n\n1. Filtration: Removing waste products and excess substances from the blood to form urine.\n2. Reabsorption: Returning essential nutrients, water, and electrolytes back into the bloodstream.\n3. Secretion: Actively transporting additional waste products and ions into the urine.\n4. Regulation: Maintaining fluid and electrolyte balance, acid-base balance, and blood pressure through the renin-angiotensin-aldosterone system.\n5. Hormone production: Producing erythropoietin (stimulates red blood cell production) and activating vitamin D."
+    },
+    {
+      "id": "bio-195",
+      "front": "What is the nephron and its components?",
+      "back": "The nephron is the functional unit of the kidney responsible for filtering blood and forming urine. It consists of several components:\n\n1. Glomerulus: A network of capillaries where blood filtration occurs.\n2. Bowman's capsule: A cup-like structure that surrounds the glomerulus and collects the filtrate.\n3. Proximal convoluted tubule: The first segment of the nephron where reabsorption of water, ions, and nutrients occurs.\n4. Loop of Henle: A U-shaped segment that concentrates urine by reabsorbing water and salts.\n5. Distal convoluted tubule: The segment where further reabsorption and secretion take place, regulated by hormones.\n6. Collecting duct: The final segment that collects urine from multiple nephrons and transports it to the renal pelvis."
+    },
+    {
+      "id": "bio-196",
+      "front": "What is acetylcholine and its function throughout the body?",
+      "back": "Acetylcholine is a neurotransmitter that plays a crucial role in the nervous system. It is involved in transmitting signals between nerve cells and muscles, as well as within the brain. Functions of acetylcholine include:\n\n1. Muscle contraction: Acetylcholine is released at the neuromuscular junction, binding to receptors on muscle cells and triggering contraction.\n2. Autonomic nervous system: It regulates involuntary functions such as heart rate, digestion, and respiratory rate by acting on smooth and cardiac muscles.\n3. Cognitive function: Acetylcholine is important for attention, learning, and memory, with deficits linked to Alzheimer's disease."
+    },
+    {
+      "id": "bio-197",
+      "front": "What are the main types of muscle tissue?",
+      "back": "The main types of muscle tissue are:\n\n1. Skeletal muscle: Voluntary muscle attached to bones, responsible for body movement. It is striated and multinucleated.\n2. Cardiac muscle: Involuntary muscle found in the heart, responsible for pumping blood. It is striated and has intercalated discs for synchronized contraction.\n3. Smooth muscle: Involuntary muscle found in walls of hollow organs (e.g., intestines, blood vessels). It is non-striated and controls functions like digestion and blood flow."
+      },
+    {
+      "id": "bio-198",
+      "front": "What are acinar cells?",
+      "back": "Acinar cells are specialized exocrine cells found in the pancreas and salivary glands. In the pancreas, they are responsible for producing and secreting digestive enzymes (e.g., amylase, lipase, proteases) into the small intestine to aid in digestion. In the salivary glands, acinar cells produce saliva, which contains enzymes that begin the process of digestion in the mouth."
+    },
+    {
+      "id": "bio-199",
+      "front": "What is the adrenal medulla and its function?",
+      "back": "The adrenal medulla is the inner part of the adrenal glands, located on top of the kidneys. It produces and secretes catecholamines, primarily adrenaline (epinephrine) and norepinephrine, in response to stress. These hormones prepare the body for 'fight or flight' responses by increasing heart rate, blood pressure, and energy availability."
+    },
+    {
+      "id": "bio-200",
+      "front": "What is the adrenal cortex and its function?",
+      "back": "The adrenal cortex is the outer layer of the adrenal glands, responsible for producing steroid hormones. It has three main zones:\n\n1. Zona glomerulosa: Produces mineralocorticoids (e.g., aldosterone) that regulate sodium and potassium balance and blood pressure.\n2. Zona fasciculata: Produces glucocorticoids (e.g., cortisol) that regulate metabolism, immune response, and stress adaptation.\n3. Zona reticularis: Produces androgens (e.g., dehydroepiandrosterone, DHEA) that contribute to secondary sexual characteristics."
+    },
+    {
+      "id": "bio-201",
+      "front": "Explain albumin and how it regulates processes in the body.",
+      "back": "Albumin is a protein produced by the liver that plays a crucial role in maintaining oncotic pressure (the pressure exerted by proteins in blood plasma) and regulating blood volume. It binds to various substances, including hormones, drugs, and fatty acids, facilitating their transport in the bloodstream. Additionally, albumin acts as a buffer, helping to maintain pH balance. Low albumin levels can lead to edema (swelling) and other complications."
+    },
+    {
+      "id": "bio-202",
+      "front": "What is the role of hemoglobin in the body?",
+      "back": "Hemoglobin is a protein found in red blood cells responsible for transporting oxygen from the lungs to tissues and organs throughout the body. It cooperatively binds oxygen molecules in the lungs, forming oxyhemoglobin, and releases them in tissues where oxygen levels are low. Hemoglobin also plays a role in transporting carbon dioxide, a waste product, from tissues back to the lungs for exhalation."
+    },
+    {
+      "id": "bio-203",
+      "front": "What is myoglobin and its function?",
+      "back": "Myoglobin is a protein found in muscle tissue that binds and stores oxygen. It has a higher affinity for oxygen than hemoglobin, allowing it to effectively capture oxygen released from hemoglobin in the bloodstream. Myoglobin provides a reserve supply of oxygen for muscle cells during periods of intense activity, helping to sustain aerobic metabolism and delay fatigue."
+    },
+    {
+      "id": "bio-204",
+      "front": "What are the main components of blood?",
+      "back": "The main components of blood are:\n\n1. Plasma: The liquid portion, making up about 55% of blood volume, containing water, electrolytes, proteins (e.g., albumin, globulins, fibrinogen), hormones, and waste products.\n2. Red blood cells (erythrocytes): Responsible for oxygen transport via hemoglobin; they make up about 45% of blood volume.\n3. White blood cells (leukocytes): Involved in immune response; they include neutrophils, lymphocytes, monocytes, eosinophils, and basophils.\n4. Platelets (thrombocytes): Cell fragments that play a key role in blood clotting and wound healing."
+    },
+    {
+      "id": "bio-205",
+      "front": "What is aldosterone and its function?",
+      "back": "Aldosterone is a steroid hormone produced by the adrenal cortex that plays a key role in regulating blood pressure and electrolyte balance. It promotes sodium reabsorption and potassium excretion in the kidneys, leading to increased blood volume and pressure. Aldosterone is part of the renin-angiotensin-aldosterone system (RAAS), which is activated in response to low blood pressure or low blood sodium levels."
     }
   ],
   "psych": [
