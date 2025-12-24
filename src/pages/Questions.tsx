@@ -37,23 +37,39 @@ const Questions = () => {
   const [freestandingIndex, setFreestandingIndex] = useState(0);
   const [passageIndex, setPassageIndex] = useState(0);
   const [passageQuestionIndex, setPassageQuestionIndex] = useState(0);
+  const [selectedSection, setSelectedSection] = useState<
+    "all" | "chem" | "bio" | "psych" | "cars"
+  >("all");
+  const [isCategoryMenuOpen, setIsCategoryMenuOpen] = useState(false);
 
   const freestandingQuestions = questionsData.freestanding as FreestandingQuestion[];
   const passages = questionsData.passages as Passage[];
 
-  const currentFreestanding = freestandingQuestions[freestandingIndex];
-  const currentPassage = passages[passageIndex];
+  const filteredFreestandingQuestions =
+    selectedSection === "all"
+      ? freestandingQuestions
+      : freestandingQuestions.filter(
+          (q) => q.section === selectedSection
+        );
+
+  const filteredPassages =
+    selectedSection === "all"
+      ? passages
+      : passages.filter((p) => p.section === selectedSection);
+
+  const currentFreestanding = filteredFreestandingQuestions[freestandingIndex];
+  const currentPassage = filteredPassages[passageIndex];
   const currentPassageQuestion = currentPassage?.questions[passageQuestionIndex];
 
   const handleNextFreestanding = () => {
     setFreestandingIndex((prev) =>
-      prev < freestandingQuestions.length - 1 ? prev + 1 : 0
+      prev < filteredFreestandingQuestions.length - 1 ? prev + 1 : 0
     );
   };
 
   const handlePrevFreestanding = () => {
     setFreestandingIndex((prev) =>
-      prev > 0 ? prev - 1 : freestandingQuestions.length - 1
+      prev > 0 ? prev - 1 : filteredFreestandingQuestions.length - 1
     );
   };
 
@@ -81,116 +97,173 @@ const Questions = () => {
     }
   };
 
+  const handleSectionChange = (section: "all" | "chem" | "bio" | "psych" | "cars") => {
+    setSelectedSection(section);
+    setFreestandingIndex(0);
+    setPassageIndex(0);
+    setPassageQuestionIndex(0);
+  };
+
+  const toggleCategoryMenu = () => {
+    setIsCategoryMenuOpen((prev) => !prev);
+  };
+
+  const handleBadgeClick = (section: "all" | "chem" | "bio" | "psych" | "cars") => {
+    handleSectionChange(section);
+    setIsCategoryMenuOpen(false);
+  };
+
   return (
     <PageLayout title="Question Bank" subtitle="Practice MCAT-style questions">
-      <div className="max-w-lg mx-auto space-y-6">
-        {/* Mode Selector */}
-        <div className="flex rounded-lg border border-border overflow-hidden">
-          <button
-            onClick={() => setMode("freestanding")}
-            className={`flex-1 py-2.5 text-sm font-medium transition-colors ${
-              mode === "freestanding"
-                ? "bg-primary text-primary-foreground"
-                : "bg-card hover:bg-accent"
-            }`}
-          >
-            Freestanding
-          </button>
-          <button
-            onClick={() => setMode("passages")}
-            className={`flex-1 py-2.5 text-sm font-medium transition-colors ${
-              mode === "passages"
-                ? "bg-primary text-primary-foreground"
-                : "bg-card hover:bg-accent"
-            }`}
-          >
-            Passage-Based
-          </button>
+      <div className="max-w-5xl mx-auto space-y-6">
+        {/* Main Content */}
+        <div className="space-y-6">
+          {/* Mode Selector */}
+          <div className="flex rounded-lg border border-border overflow-hidden">
+            <button
+              onClick={() => setMode("freestanding")}
+              className={`flex-1 py-2.5 text-sm font-medium transition-colors ${
+                mode === "freestanding"
+                  ? "bg-primary text-primary-foreground"
+                  : "bg-card hover:bg-accent"
+              }`}
+            >
+              Freestanding
+            </button>
+            <button
+              onClick={() => setMode("passages")}
+              className={`flex-1 py-2.5 text-sm font-medium transition-colors ${
+                mode === "passages"
+                  ? "bg-primary text-primary-foreground"
+                  : "bg-card hover:bg-accent"
+              }`}
+            >
+              Passage-Based
+            </button>
+          </div>
+
+          {/* Freestanding Mode */}
+          {mode === "freestanding" && currentFreestanding && (
+            <>
+              <div className="relative flex items-center justify-between">
+                <div className="relative">
+                  <button
+                    onClick={toggleCategoryMenu}
+                    className="px-3 py-1.5 rounded-full bg-primary text-primary-foreground text-xs font-medium"
+                  >
+                    {selectedSection === "all"
+                      ? "All"
+                      : selectedSection === "chem"
+                      ? "Chem/Phys"
+                      : selectedSection === "bio"
+                      ? "Bio/Biochem"
+                      : selectedSection === "psych"
+                      ? "Psych/Soc"
+                      : "CARS"}
+                  </button>
+                  {isCategoryMenuOpen && (
+                    <div className="absolute left-0 mt-2 w-40 rounded-lg border border-border bg-card shadow-lg">
+                      {[
+                        { label: "All", value: "all" },
+                        { label: "Chem/Phys", value: "chem" },
+                        { label: "Bio/Biochem", value: "bio" },
+                        { label: "Psych/Soc", value: "psych" },
+                        { label: "CARS", value: "cars" },
+                      ].map((section) => (
+                        <button
+                          key={section.value}
+                          onClick={() => handleBadgeClick(section.value as "all" | "chem" | "bio" | "psych" | "cars")}
+                          className={`w-full text-left px-4 py-2 text-sm font-medium transition-colors ${
+                            selectedSection === section.value
+                              ? "bg-primary text-primary-foreground"
+                              : "hover:bg-accent"
+                          }`}
+                        >
+                          {section.label}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                <span className="text-sm text-muted-foreground">
+                  {freestandingIndex + 1} / {filteredFreestandingQuestions.length}
+                </span>
+              </div>
+
+              <QuestionCard
+                key={currentFreestanding.id}
+                question={currentFreestanding.question}
+                options={currentFreestanding.options}
+                correctIndex={currentFreestanding.correctIndex}
+                explanation={currentFreestanding.explanation}
+              />
+
+              <div className="flex items-center justify-between gap-4">
+                <button
+                  onClick={handlePrevFreestanding}
+                  className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl border border-border bg-card hover:bg-accent transition-colors"
+                >
+                  <ChevronLeft className="h-5 w-5" />
+                  <span className="font-medium">Previous</span>
+                </button>
+                <button
+                  onClick={handleNextFreestanding}
+                  className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl border border-border bg-card hover:bg-accent transition-colors"
+                >
+                  <span className="font-medium">Next</span>
+                  <ChevronRight className="h-5 w-5" />
+                </button>
+              </div>
+            </>
+          )}
+
+          {/* Passage Mode */}
+          {mode === "passages" && currentPassage && currentPassageQuestion && (
+            <>
+              <div className="flex items-center justify-between">
+                <SectionBadge section={currentPassage.section} />
+                <span className="text-sm text-muted-foreground">
+                  Passage {passageIndex + 1}, Q{passageQuestionIndex + 1}
+                </span>
+              </div>
+
+              {/* Passage Text */}
+              <div className="rounded-xl border border-border bg-card p-5">
+                <h3 className="font-semibold font-serif mb-3">
+                  {currentPassage.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-wrap">
+                  {currentPassage.passage}
+                </p>
+              </div>
+
+              <QuestionCard
+                key={currentPassageQuestion.id}
+                question={currentPassageQuestion.question}
+                options={currentPassageQuestion.options}
+                correctIndex={currentPassageQuestion.correctIndex}
+                explanation={currentPassageQuestion.explanation}
+              />
+
+              <div className="flex items-center justify-between gap-4">
+                <button
+                  onClick={handlePrevPassageQuestion}
+                  className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl border border-border bg-card hover:bg-accent transition-colors"
+                >
+                  <ChevronLeft className="h-5 w-5" />
+                  <span className="font-medium">Previous</span>
+                </button>
+                <button
+                  onClick={handleNextPassageQuestion}
+                  className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl border border-border bg-card hover:bg-accent transition-colors"
+                >
+                  <span className="font-medium">Next</span>
+                  <ChevronRight className="h-5 w-5" />
+                </button>
+              </div>
+            </>
+          )}
         </div>
-
-        {/* Freestanding Mode */}
-        {mode === "freestanding" && currentFreestanding && (
-          <>
-            <div className="flex items-center justify-between">
-              <SectionBadge section={currentFreestanding.section} />
-              <span className="text-sm text-muted-foreground">
-                {freestandingIndex + 1} / {freestandingQuestions.length}
-              </span>
-            </div>
-
-            <QuestionCard
-              key={currentFreestanding.id}
-              question={currentFreestanding.question}
-              options={currentFreestanding.options}
-              correctIndex={currentFreestanding.correctIndex}
-              explanation={currentFreestanding.explanation}
-            />
-
-            <div className="flex items-center justify-between gap-4">
-              <button
-                onClick={handlePrevFreestanding}
-                className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl border border-border bg-card hover:bg-accent transition-colors"
-              >
-                <ChevronLeft className="h-5 w-5" />
-                <span className="font-medium">Previous</span>
-              </button>
-              <button
-                onClick={handleNextFreestanding}
-                className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl border border-border bg-card hover:bg-accent transition-colors"
-              >
-                <span className="font-medium">Next</span>
-                <ChevronRight className="h-5 w-5" />
-              </button>
-            </div>
-          </>
-        )}
-
-        {/* Passage Mode */}
-        {mode === "passages" && currentPassage && currentPassageQuestion && (
-          <>
-            <div className="flex items-center justify-between">
-              <SectionBadge section={currentPassage.section} />
-              <span className="text-sm text-muted-foreground">
-                Passage {passageIndex + 1}, Q{passageQuestionIndex + 1}
-              </span>
-            </div>
-
-            {/* Passage Text */}
-            <div className="rounded-xl border border-border bg-card p-5">
-              <h3 className="font-semibold font-serif mb-3">
-                {currentPassage.title}
-              </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-wrap">
-                {currentPassage.passage}
-              </p>
-            </div>
-
-            <QuestionCard
-              key={currentPassageQuestion.id}
-              question={currentPassageQuestion.question}
-              options={currentPassageQuestion.options}
-              correctIndex={currentPassageQuestion.correctIndex}
-              explanation={currentPassageQuestion.explanation}
-            />
-
-            <div className="flex items-center justify-between gap-4">
-              <button
-                onClick={handlePrevPassageQuestion}
-                className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl border border-border bg-card hover:bg-accent transition-colors"
-              >
-                <ChevronLeft className="h-5 w-5" />
-                <span className="font-medium">Previous</span>
-              </button>
-              <button
-                onClick={handleNextPassageQuestion}
-                className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl border border-border bg-card hover:bg-accent transition-colors"
-              >
-                <span className="font-medium">Next</span>
-                <ChevronRight className="h-5 w-5" />
-              </button>
-            </div>
-          </>
-        )}
       </div>
     </PageLayout>
   );
