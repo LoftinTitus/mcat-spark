@@ -77,6 +77,253 @@
       ],
       "correctIndex": 1,
       "explanation": "James-Lange theory proposes that physiological arousal comes first, and we interpret this arousal as an emotion. Example: 'I'm trembling, therefore I must be afraid.'"
+    },
+    {
+      "id": "fs-7",
+      "section": "bio",
+      "question": "A mutation replaces a hydrophobic amino acid in the core of a globular protein with a charged amino acid. What is the most likely consequence of this mutation?",
+      "options": [
+        "The protein's core becomes more stable due to new ionic interactions.",
+        "The protein's structure is destabilized due to unfavorable interactions with water.",
+        "The mutation has no effect on the protein's structure.",
+        "The protein's surface becomes more hydrophobic."
+      ],
+      "correctIndex": 1,
+      "explanation": "Replacing a hydrophobic amino acid in the core with a charged amino acid introduces unfavorable interactions with water, destabilizing the protein's structure."
+    },
+    {
+      "id": "fs-8",
+      "section": "bio",
+      "question": "Two proteins with similar molecular weights are separated by size-exclusion chromatography. Protein A elutes earlier than Protein B. What does this suggest about their structures?",
+      "options": [
+        "Protein A is more compact than Protein B.",
+        "Protein A is less compact than Protein B.",
+        "Protein A has a higher charge density than Protein B.",
+        "Protein A has a lower charge density than Protein B."
+      ],
+      "correctIndex": 1,
+      "explanation": "In size-exclusion chromatography, less compact proteins elute earlier because they are excluded from the pores of the stationary phase more effectively."
+    },
+    {
+      "id": "fs-9",
+      "section": "bio",
+      "question": "An enzyme exhibits a sigmoidal velocity vs. substrate concentration curve. What does this suggest about the enzyme's mechanism?",
+      "options": [
+        "The enzyme follows Michaelis-Menten kinetics.",
+        "The enzyme is allosteric and exhibits cooperative binding.",
+        "The enzyme is inhibited by its substrate.",
+        "The enzyme operates at a constant rate regardless of substrate concentration."
+      ],
+      "correctIndex": 1,
+      "explanation": "A sigmoidal curve indicates cooperative binding, which is characteristic of allosteric enzymes. Substrate binding at one site affects binding at other sites."
+    },
+    {
+      "id": "fs-10",
+      "section": "bio",
+      "question": "A metabolic pathway is regulated by feedback inhibition. Which of the following is most likely true about the inhibitor?",
+      "options": [
+        "The inhibitor binds to the active site of the first enzyme in the pathway.",
+        "The inhibitor is structurally unrelated to the pathway's intermediates.",
+        "The inhibitor binds to an allosteric site on an enzyme in the pathway.",
+        "The inhibitor increases the pathway's overall flux."
+      ],
+      "correctIndex": 2,
+      "explanation": "Feedback inhibition typically involves the end product of a pathway binding to an allosteric site on an enzyme earlier in the pathway, reducing its activity."
+    },
+    {
+      "id": "fs-11",
+      "section": "bio",
+      "question": "A DNA molecule is found to have a higher melting temperature than another. What is the most likely explanation?",
+      "options": [
+        "It has a higher proportion of adenine and thymine bases.",
+        "It has a higher proportion of guanine and cytosine bases.",
+        "It is shorter in length.",
+        "It has fewer hydrogen bonds between base pairs."
+      ],
+      "correctIndex": 1,
+      "explanation": "Guanine and cytosine form three hydrogen bonds, compared to the two formed by adenine and thymine. A higher GC content increases the melting temperature."
+    },
+    {
+      "id": "fs-12",
+      "section": "bio",
+      "question": "During DNA replication, what is the role of DNA polymerase?",
+      "options": [
+        "It unwinds the DNA double helix.",
+        "It synthesizes RNA primers.",
+        "It adds nucleotides to the growing DNA strand in the 5' to 3' direction.",
+        "It joins Okazaki fragments on the lagging strand."
+      ],
+      "correctIndex": 2,
+      "explanation": "DNA polymerase adds nucleotides to the growing DNA strand in the 5' to 3' direction, using the template strand as a guide."
+    },
+    {
+      "id": "fs-13",
+      "section": "bio",
+      "question": "A mutation in a gene's promoter region is found to reduce transcription. What is the most likely explanation?",
+      "options": [
+        "The mutation disrupts the start codon.",
+        "The mutation prevents RNA polymerase from binding effectively.",
+        "The mutation introduces a premature stop codon.",
+        "The mutation alters the splicing of the mRNA."
+      ],
+      "correctIndex": 1,
+      "explanation": "The promoter region is where RNA polymerase binds to initiate transcription. A mutation here can reduce the enzyme's ability to bind, lowering transcription levels."
+    },
+    {
+      "id": "fs-14",
+      "section": "bio",
+      "question": "Which of the following best explains why eukaryotic mRNA undergoes splicing?",
+      "options": [
+        "To remove exons that are not needed.",
+        "To remove introns and join exons, creating a continuous coding sequence.",
+        "To add a 5' cap and poly-A tail.",
+        "To ensure the mRNA is exported from the nucleus."
+      ],
+      "correctIndex": 1,
+      "explanation": "Splicing removes non-coding introns and joins coding exons to create a continuous sequence that can be translated into a protein."
+    },
+    {
+      "id": "fs-15",
+      "section": "bio",
+      "question": "Histone acetylation is associated with which of the following?",
+      "options": [
+        "Tighter DNA winding and reduced gene expression.",
+        "Looser DNA winding and increased gene expression.",
+        "DNA methylation and gene silencing.",
+        "Formation of heterochromatin."
+      ],
+      "correctIndex": 1,
+      "explanation": "Histone acetylation reduces the positive charge on histones, loosening their interaction with negatively charged DNA. This makes the DNA more accessible for transcription, increasing gene expression."
+    },
+    {
+      "id": "fs-16",
+      "section": "bio",
+      "question": "In a dihybrid cross between two heterozygous individuals (AaBb), what is the probability of obtaining an offspring with the genotype AABb?",
+      "options": [
+        "1/16",
+        "1/8",
+        "1/4",
+        "1/2"
+      ],
+      "correctIndex": 1,
+      "explanation": "The probability of AA is 1/4, and the probability of Bb is 1/2. Since these events are independent, the combined probability is (1/4) × (1/2) = 1/8."
+    },
+    {
+      "id": "fs-17",
+      "section": "bio",
+      "question": "During meiosis, what is the primary purpose of crossing over?",
+      "options": [
+        "To ensure equal distribution of chromosomes to daughter cells.",
+        "To increase genetic diversity by exchanging genetic material between homologous chromosomes.",
+        "To separate sister chromatids during anaphase II.",
+        "To repair DNA damage before cell division."
+      ],
+      "correctIndex": 1,
+      "explanation": "Crossing over occurs during prophase I of meiosis and increases genetic diversity by exchanging genetic material between homologous chromosomes."
+    },
+    {
+      "id": "fs-18",
+      "section": "bio",
+      "question": "A point mutation changes a codon from UGG (tryptophan) to UGA (stop codon). What type of mutation is this?",
+      "options": [
+        "Silent mutation",
+        "Missense mutation",
+        "Nonsense mutation",
+        "Frameshift mutation"
+      ],
+      "correctIndex": 2,
+      "explanation": "A nonsense mutation introduces a premature stop codon, leading to truncated protein synthesis."
+    },
+    {
+      "id": "fs-19",
+      "section": "bio",
+      "question": "Which of the following techniques is most appropriate for detecting a specific DNA sequence in a sample?",
+      "options": [
+        "Western blot",
+        "Northern blot",
+        "Southern blot",
+        "ELISA"
+      ],
+      "correctIndex": 2,
+      "explanation": "Southern blotting is used to detect specific DNA sequences in a sample by hybridizing a labeled probe to the target DNA."
+    },
+    {
+      "id": "fs-20",
+      "section": "bio",
+      "question": "Which of the following best explains the concept of natural selection?",
+      "options": [
+        "Organisms evolve traits in response to their needs.",
+        "Individuals with advantageous traits are more likely to survive and reproduce, passing those traits to the next generation.",
+        "Mutations occur to ensure the survival of the species.",
+        "All members of a population have an equal chance of survival and reproduction."
+      ],
+      "correctIndex": 1,
+      "explanation": "Natural selection favors individuals with advantageous traits, increasing their likelihood of survival and reproduction. These traits become more common in the population over time."
+    },
+    {
+      "id": "fs-21",
+      "section": "bio",
+      "question": "Which of the following best describes the role of ATP in cellular metabolism?",
+      "options": [
+        "ATP stores energy in its nitrogenous base.",
+        "ATP provides energy by transferring its phosphate groups to other molecules.",
+        "ATP is consumed only during catabolic reactions.",
+        "ATP is synthesized exclusively in the mitochondria."
+      ],
+      "correctIndex": 1,
+      "explanation": "ATP provides energy by transferring its high-energy phosphate groups to other molecules, driving endergonic reactions."
+    },
+    {
+      "id": "fs-22",
+      "section": "bio",
+      "question": "Which of the following is a key structural difference between glycogen and cellulose?",
+      "options": [
+        "Glycogen is composed of glucose monomers, while cellulose is composed of fructose monomers.",
+        "Glycogen has α-1,4 and α-1,6 linkages, while cellulose has β-1,4 linkages.",
+        "Glycogen is linear, while cellulose is highly branched.",
+        "Glycogen is found in plants, while cellulose is found in animals."
+      ],
+      "correctIndex": 1,
+      "explanation": "Glycogen has α-1,4 linkages for linear chains and α-1,6 linkages for branching, while cellulose has β-1,4 linkages, making it a rigid structure."
+    },
+    {
+      "id": "fs-23",
+      "section": "bio",
+      "question": "Which of the following is true about β-oxidation of fatty acids?",
+      "options": [
+        "It occurs in the cytoplasm.",
+        "It produces acetyl-CoA, NADH, and FADH₂.",
+        "It requires ATP to generate NADH.",
+        "It directly produces glucose."
+      ],
+      "correctIndex": 1,
+      "explanation": "β-oxidation occurs in the mitochondria and breaks down fatty acids into acetyl-CoA, NADH, and FADH₂, which enter the citric acid cycle and electron transport chain."
+    },
+    {
+      "id": "fs-24",
+      "section": "bio",
+      "question": "Which step of carbohydrate metabolism generates the most ATP?",
+      "options": [
+        "Glycolysis",
+        "Pyruvate oxidation",
+        "Citric acid cycle",
+        "Electron transport chain and oxidative phosphorylation"
+      ],
+      "correctIndex": 3,
+      "explanation": "The electron transport chain and oxidative phosphorylation generate the most ATP by using the proton gradient created by NADH and FADH₂ to drive ATP synthase."
+    },
+    {
+      "id": "fs-25",
+      "section": "bio",
+      "question": "What is the primary regulatory enzyme of glycolysis?",
+      "options": [
+        "Hexokinase",
+        "Phosphofructokinase-1 (PFK-1)",
+        "Pyruvate kinase",
+        "Glucose-6-phosphatase"
+      ],
+      "correctIndex": 1,
+      "explanation": "Phosphofructokinase-1 (PFK-1) is the rate-limiting enzyme of glycolysis and is regulated by ATP, AMP, and citrate."
     }
   ],
   "passages": [
