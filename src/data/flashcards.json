@@ -1306,6 +1306,81 @@
       "id": "bio-221",
       "front": "What are the main types of white blood cells and their functions?",
       "back": "The main types of white blood cells (leukocytes) and their functions are:\n\n1. Neutrophils: Phagocytose and destroy bacteria and fungi; first responders to infection.\n2. Lymphocytes: Include B cells (produce antibodies) and T cells (kill infected cells, regulate immune response).\n3. Monocytes: Differentiate into macrophages and dendritic cells; phagocytose pathogens and present antigens.\n4. Eosinophils: Combat parasitic infections and contribute to allergic reactions.\n5. Basophils: Release histamine during allergic reactions, promoting inflammation."
+    },
+    {
+      "id": "bio-222",
+      "front": "What is the role of the hypothalamus?",
+      "back": "The hypothalamus is a small region of the brain that plays a crucial role in maintaining homeostasis by regulating various autonomic functions. Its functions include:\n\n1. Temperature regulation: Acts as the body's thermostat.\n2. Hunger and thirst: Regulates appetite and fluid balance.\n3. Sleep-wake cycles: Influences circadian rhythms.\n4. Hormone release: Controls the pituitary gland, affecting growth, metabolism, and stress responses."
+    },
+    {
+      "id": "bio-223",
+      "front": "What is the role of the medulla oblongata?",
+      "back": "The medulla oblongata is a part of the brainstem that controls vital autonomic functions necessary for survival. Its functions include:\n\n1. Regulating heart rate and blood pressure.\n2. Controlling respiratory rate and rhythm.\n3. Managing reflexes such as coughing, sneezing, swallowing, and vomiting.\n4. Serving as a relay station for nerve signals between the brain and spinal cord."
+    },
+    {
+      "id": "bio-224",
+      "front": "What is the role of the cerebellum?",
+      "back": "The cerebellum is a region of the brain that plays a key role in motor control. Its functions include:\n\n1. Coordinating voluntary movements: Ensures smooth and balanced muscle activity.\n2. Maintaining posture and balance: Adjusts body position during movement.\n3. Motor learning: Involved in learning new motor skills through practice.\n4. Cognitive functions: Contributes to attention, language, and emotional regulation."
+    },
+    {
+      "id": "bio-225",
+      "front": "What is the role of the corpus callosum?",
+      "back": "The corpus callosum is a thick band of nerve fibers that connects the left and right hemispheres of the brain. Its primary role is to facilitate communication and coordination between the two hemispheres, allowing for the integration of sensory, motor, and cognitive functions."
+    },
+    {
+      "id": "bio-226",
+      "front": "What is the role of the hippocampus?",
+      "back": "The hippocampus is a critical region of the brain involved in the formation, organization, and storage of new memories. It plays a key role in converting short-term memories into long-term memories and is also important for spatial navigation and learning."
+    },
+    {
+      "id": "bio-227",
+      "front": "What is the role of the amygdala?",
+      "back": "The amygdala is an almond-shaped structure in the brain that is primarily involved in processing emotions, particularly fear and pleasure. It plays a key role in emotional learning, memory formation related to emotional events, and the regulation of social behaviors."
+    },
+    {
+      "id": "bio-228",
+      "front": "What are brush border enzymes and their functions?",
+      "back": "Brush border enzymes are a group of enzymes located on the microvilli of the intestinal epithelial cells. They play a crucial role in the final stages of digestion by breaking down complex carbohydrates and proteins into simpler forms that can be easily absorbed. Key functions include:\n\n1. Carbohydrate digestion: Enzymes like maltase, sucrase, and lactase break down disaccharides into monosaccharides.\n2. Protein digestion: Peptidases hydrolyze peptides into amino acids.\n3. Nucleotide digestion: Nucleotidases and nucleosidases break down nucleotides into nitrogenous bases, sugars, and phosphates."
+    },
+    {
+      "id": "bio-229",
+      "front": "What are all the water-soluble vitamins and their functions?",
+      "back": "Water-soluble vitamins are a group of vitamins that dissolve in water and are not stored in the body. They must be consumed regularly in the diet. Key water-soluble vitamins include:\n\n1. Vitamin B1 (Thiamine): Supports energy metabolism and nerve function.\n2. Vitamin B2 (Riboflavin): Involved in energy production and skin health.\n3. Vitamin B3 (Niacin): Supports metabolism and DNA repair.\n4. Vitamin B5 (Pantothenic acid): Essential for fatty acid synthesis and energy production.\n5. Vitamin B6 (Pyridoxine): Important for amino acid metabolism and neurotransmitter synthesis.\n6. Vitamin B7 (Biotin): Supports carbohydrate and fat metabolism.\n7. Vitamin B9 (Folate): Crucial for DNA synthesis and cell division, especially during pregnancy.\n8. Vitamin B12 (Cobalamin): Essential for red blood cell formation and neurological function.\n9. Vitamin C (Ascorbic acid): Acts as an antioxidant, supports immune function, and aids in collagen synthesis."
+    },
+    {
+      "id": "bio-230",
+      "front": "What are fat-soluble vitamins and their functions?",
+      "back": "Fat-soluble vitamins are vitamins that dissolve in fats and oils and can be stored in the body's fatty tissues and liver. The main fat-soluble vitamins include:\n\n1. Vitamin A: Important for vision, immune function, and skin health.\n2. Vitamin D: Regulates calcium and phosphorus metabolism, promoting bone health.\n3. Vitamin E: Acts as an antioxidant, protecting cells from oxidative damage.\n4. Vitamin K: Essential for blood clotting and bone metabolism."
+    },
+    {
+      "id": "bio-231",
+      "front": "What hormones are released by the anterior pituitary?",
+      "back": "The anterior pituitary releases several key hormones that regulate various bodily functions. These hormones include:\n\n1. Adrenocorticotropic hormone (ACTH): Stimulates the adrenal glands to produce cortisol.\n2. Thyroid-stimulating hormone (TSH): Stimulates the thyroid gland to produce thyroid hormones.\n3. Luteinizing hormone (LH): Triggers ovulation and stimulates testosterone production.\n4. Follicle-stimulating hormone (FSH): Stimulates the growth of ovarian follicles and sperm production.\n5. Prolactin: Promotes milk production in breastfeeding women.\n6. Growth hormone (GH): Stimulates growth, cell reproduction, and regeneration."
+    },
+    {
+      "id": "bio-232",
+      "front": "What hormones are released by the posterior pituitary?",
+      "back": "The posterior pituitary releases two main hormones:\n\n1. Antidiuretic hormone (ADH), also known as vasopressin: Regulates water balance in the body by promoting water reabsorption in the kidneys.\n2. Oxytocin: Stimulates uterine contractions during childbirth and promotes milk ejection during breastfeeding."
+    },
+    {
+      "id": "bio-233",
+      "front": "What hormones are secreted by the thyroid and parathyroid?",
+      "back": "The thyroid gland secretes several key hormones, including:\n\n1. Thyroxine (T4) and Triiodothyronine (T3): Regulate metabolism, energy production, and growth.\n2. Calcitonin: Helps lower blood calcium levels by inhibiting osteoclast activity in bones.\n\nThe parathyroid glands secrete parathyroid hormone (PTH), which increases blood calcium levels by stimulating osteoclasts, increasing intestinal calcium absorption, and promoting kidney reabsorption of calcium."
+    },
+    {
+      "id": "bio-234",
+      "front": "What hormones are secreted by the adrenal cortex?",
+      "back": "The adrenal cortex secretes several important hormones:\n\n1. Glucocorticoids (e.g., cortisol): Regulate metabolism, immune response, and stress adaptation.\n2. Mineralocorticoids (e.g., aldosterone): Regulate sodium and potassium balance and blood pressure.\n3. Androgens: Contribute to secondary sexual characteristics."
+    },
+    {
+      "id": "bio-235",
+      "front": "What hormones are secreted by the adrenal medulla?",
+      "back": "The adrenal medulla secretes catecholamines, primarily:\n\n1. Epinephrine (adrenaline): Increases heart rate, blood pressure, and energy availability during 'fight or flight' responses.\n2. Norepinephrine (noradrenaline): Works alongside epinephrine to enhance the body's response to stress by constricting blood vessels and increasing blood flow to muscles."
+    },
+    {
+      "id": "bio-236",
+      "front": "What hormones are secreted by the pancreas?",
+      "back": "The pancreas secretes several important hormones, including:\n\n1. Insulin: Lowers blood glucose levels by promoting the uptake of glucose into cells and stimulating glycogen synthesis in the liver.\n2. Glucagon: Raises blood glucose levels by stimulating glycogen breakdown and gluconeogenesis in the liver.\n3. Somatostatin: Inhibits the release of both insulin and glucagon, as well as slowing down digestive processes."
     }
   ],
   "psych": [
