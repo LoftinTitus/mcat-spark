@@ -1381,6 +1381,36 @@
       "id": "bio-236",
       "front": "What hormones are secreted by the pancreas?",
       "back": "The pancreas secretes several important hormones, including:\n\n1. Insulin: Lowers blood glucose levels by promoting the uptake of glucose into cells and stimulating glycogen synthesis in the liver.\n2. Glucagon: Raises blood glucose levels by stimulating glycogen breakdown and gluconeogenesis in the liver.\n3. Somatostatin: Inhibits the release of both insulin and glucagon, as well as slowing down digestive processes."
+    },
+    {
+      "id": "bio-237",
+      "front": "What are the types of cartilage and their functions?",
+      "back": "There are three main types of cartilage, each with distinct functions:\n\n1. Hyaline cartilage: Provides support and flexibility; found in the nose, trachea, and at the ends of long bones.\n2. Elastic cartilage: Maintains shape while allowing flexibility; found in the ear and epiglottis.\n3. Fibrocartilage: Provides tensile strength and absorbs compressive shock; found in intervertebral discs and the pubic symphysis."
+    },
+    {
+      "id": "bio-238",
+      "front": "What are the different types of RNA and their functions?",
+      "back": "There are three main types of RNA, each with distinct functions:\n\n1. Messenger RNA (mRNA): Carries genetic information from DNA to the ribosome, where proteins are synthesized.\n2. Transfer RNA (tRNA): Brings amino acids to the ribosome during protein synthesis, matching them to the appropriate codons on the mRNA.\n3. Ribosomal RNA (rRNA): Combines with proteins to form ribosomes, the cellular machinery for protein synthesis."
+    },
+    {
+      "id": "bio-239",
+      "front": "What are the different phenotypes and their ratios in dihybrid crosses? What are the different scenarios that can occur? (Think like codominance, incomplete dominance, etc.)",
+      "back": "In a dihybrid cross involving two traits, the phenotypic ratio of the offspring can be predicted using a Punnett square. For example, in a cross between two heterozygous individuals (AaBb x AaBb), the expected phenotypic ratio is:\n\n1. 9: Dominant for both traits (A_B_)\n2. 3: Dominant for the first trait, recessive for the second (A_bb)\n3. 3: Recessive for the first trait, dominant for the second (aaB_)\n4. 1: Recessive for both traits (aabb)\n\nThis results in a 9:3:3:1 ratio."
+    },
+    {
+      "id": "bio-240",
+      "front": "What are the different types of mutations?",
+      "back": "There are several types of mutations that can occur in DNA:\n\n1. Point mutations: Changes in a single nucleotide (e.g., substitution, insertion, deletion).\n2. Frameshift mutations: Insertions or deletions that shift the reading frame, altering all downstream amino acids.\n3. Silent mutations: Changes that do not affect the amino acid sequence (often due to redundancy in the genetic code).\n4. Missense mutations: Changes that result in a different amino acid being incorporated into the protein.\n5. Nonsense mutations: Changes that create a premature stop codon, leading to truncated proteins."
+    },
+    {
+      "id": "bio-241",
+      "front": "What are the four types of basic tissues in the human body?",
+      "back": "The four basic types of tissues in the human body are:\n\n1. Epithelial tissue: Covers body surfaces and lines cavities. Functions include protection, absorption, and secretion.\n2. Connective tissue: Supports and binds other tissues. Types include loose connective tissue, dense connective tissue, adipose tissue, blood, and bone.\n3. Muscle tissue: Responsible for movement. Types include skeletal muscle (voluntary), cardiac muscle (involuntary, heart), and smooth muscle (involuntary, walls of organs).\n4. Nervous tissue: Composed of neurons and glial cells. Responsible for transmitting electrical signals and processing information."
+    },
+    {
+      "id": "bio-242",
+      "front": "What are the basic steps to cell signaling?",
+      "back": "Cell signaling involves several key steps:\n\n1. Reception: The target cell detects a signaling molecule (ligand) from the environment.\n2. Transduction: The signal is converted into a form that can bring about a cellular response. This often involves a series of protein modifications (e.g., phosphorylation).\n3. Response: The cell responds to the signal, which may involve changes in gene expression, enzyme activity, or cell behavior.\n4. Termination: The signal is terminated to prevent overreaction, often through the action of enzymes that degrade the signaling molecule or by removing receptors from the cell surface."
     }
   ],
   "psych": [
