@@ -41,6 +41,8 @@ export function AddStudySessionModal({
 }: AddStudySessionModalProps) {
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
+  const [syncToCalendar, setSyncToCalendar] = useState(false);
+  const [isCalendarAuthorized, setIsCalendarAuthorized] = useState(false);
   const [formData, setFormData] = useState({
     topic: "",
     section: "bio",
@@ -49,6 +51,13 @@ export function AddStudySessionModal({
     duration: "",
     notes: "",
   });
+
+  // Check calendar authorization when modal opens
+  useEffect(() => {
+    if (open) {
+      setIsCalendarAuthorized(isGoogleCalendarAuthorized());
+    }
+  }, [open]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -77,10 +86,35 @@ export function AddStudySessionModal({
       );
 
       if (result) {
-        toast({
-          title: "Session Added",
-          description: "Your study session has been added to the calendar.",
-        });
+        // Try to sync to calendar if enabled and authorized
+        if (syncToCalendar && isCalendarAuthorized) {
+          const calendarSuccess = await createCalendarEvent(
+            formData.topic,
+            formData.section,
+            formData.date,
+            formData.time || "00:00",
+            parseInt(formData.duration) || 60,
+            formData.notes
+          );
+
+          if (calendarSuccess) {
+            toast({
+              title: "Session Added & Synced",
+              description: "Your study session has been added and synced to Google Calendar.",
+            });
+          } else {
+            toast({
+              title: "Session Added",
+              description: "Session added, but calendar sync failed. Check your connection in Settings.",
+              variant: "default",
+            });
+          }
+        } else {
+          toast({
+            title: "Session Added",
+            description: "Your study session has been added to the calendar.",
+          });
+        }
 
         // Reset form
         setFormData({
@@ -91,6 +125,7 @@ export function AddStudySessionModal({
           duration: "",
           notes: "",
         });
+        setSyncToCalendar(false);
 
         // Close modal and refresh
         onOpenChange(false);
@@ -233,6 +268,41 @@ export function AddStudySessionModal({
               rows={3}
             />
           </div>
+
+          {/* Google Calendar Sync */}
+          {isCalendarAuthorized && (
+            <div className="flex items-start space-x-3 rounded-lg border border-border p-3 bg-muted/50">
+              <Checkbox
+                id="syncCalendar"
+                checked={syncToCalendar}
+                onCheckedChange={(checked) => setSyncToCalendar(checked as boolean)}
+                disabled={loading}
+              />
+              <div className="flex-1 space-y-1">
+                <Label
+                  htmlFor="syncCalendar"
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer flex items-center gap-2"
+                >
+                  <Calendar className="h-4 w-4" />
+                  Sync to Google Calendar
+                  <CheckCircle2 className="h-3 w-3 text-green-500" />
+                </Label>
+                <p className="text-xs text-muted-foreground">
+                  Automatically add this session to your Google Calendar.
+                </p>
+              </div>
+            </div>
+          )}
+
+          {!isCalendarAuthorized && (
+            <div className="rounded-lg border border-muted p-3 bg-muted/30">
+              <p className="text-sm text-muted-foreground">
+                <Calendar className="h-4 w-4 inline mr-1" />
+                Connect Google Calendar in{" "}
+                <span className="font-medium text-foreground">Settings</span> to enable automatic sync.
+              </p>
+            </div>
+          )}
 
           <DialogFooter>
             <Button

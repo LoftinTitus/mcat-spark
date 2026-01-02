@@ -21,7 +21,8 @@ import {
   Brain,
   Clock,
   Award,
-  AlertCircle
+  AlertCircle,
+  Settings as SettingsIcon
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
@@ -224,10 +225,21 @@ const Dashboard = () => {
                   </CardDescription>
                 </div>
               </div>
-              <Button variant="outline" size="sm" onClick={handleSignOut} className="gap-2">
-                <LogOut className="h-4 w-4" />
-                Sign Out
-              </Button>
+              <div className="flex items-center gap-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => navigate("/settings")}
+                  className="gap-2"
+                >
+                  <SettingsIcon className="h-4 w-4" />
+                  Settings
+                </Button>
+                <Button variant="outline" size="sm" onClick={handleSignOut} className="gap-2">
+                  <LogOut className="h-4 w-4" />
+                  Sign Out
+                </Button>
+              </div>
             </div>
           </CardHeader>
         </Card>
