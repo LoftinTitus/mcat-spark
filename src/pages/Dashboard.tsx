@@ -3,16 +3,63 @@ import { useNavigate } from "react-router-dom";
 import { PageLayout } from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Progress } from "@/components/ui/progress";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { supabase } from "@/lib/supabase";
 import { useToast } from "@/hooks/use-toast";
-import { Layers, HelpCircle, BookOpen, LogOut, User } from "lucide-react";
+import { 
+  Layers, 
+  HelpCircle, 
+  BookOpen, 
+  LogOut, 
+  User, 
+  Calendar,
+  TrendingUp,
+  Target,
+  Brain,
+  Clock,
+  Award,
+  AlertCircle
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const [user, setUser] = useState<any>(null);
   const [loading, setLoading] = useState(true);
+  const [activeTab, setActiveTab] = useState("overview");
   const navigate = useNavigate();
   const { toast } = useToast();
+
+  // Mock data for study insights (in production, this would come from a database)
+  const [studyStats] = useState({
+    cardsReviewed: 147,
+    questionsAnswered: 89,
+    topicsStudied: 24,
+    studyStreak: 7,
+    totalStudyTime: 12.5, // hours
+    avgAccuracy: 78,
+  });
+
+  const [weakCategories] = useState([
+    { name: "Enzyme Kinetics", section: "bio", accuracy: 65, questionsAttempted: 12 },
+    { name: "Acids & Bases", section: "chem", accuracy: 68, questionsAttempted: 15 },
+    { name: "Emotion & Motivation", section: "psych", accuracy: 72, questionsAttempted: 8 },
+    { name: "Metabolism", section: "bio", accuracy: 74, questionsAttempted: 18 },
+  ]);
+
+  const [strongCategories] = useState([
+    { name: "Genetics", section: "bio", accuracy: 92, questionsAttempted: 14 },
+    { name: "Mechanics", section: "chem", accuracy: 89, questionsAttempted: 16 },
+    { name: "Learning & Conditioning", section: "psych", accuracy: 88, questionsAttempted: 10 },
+  ]);
+
+  const [studyPlan] = useState([
+    { date: "2026-01-01", topic: "Enzyme Kinetics Review", time: "2:00 PM", duration: "1 hour", section: "bio" },
+    { date: "2026-01-01", topic: "Acids & Bases Practice", time: "4:00 PM", duration: "45 mins", section: "chem" },
+    { date: "2026-01-02", topic: "Metabolism Deep Dive", time: "10:00 AM", duration: "2 hours", section: "bio" },
+    { date: "2026-01-03", topic: "Full-Length Practice Test", time: "9:00 AM", duration: "6 hours", section: "all" },
+  ]);
 
   useEffect(() => {
     // Check if user is logged in
@@ -64,6 +111,7 @@ const Dashboard = () => {
       title: "Flashcards",
       description: "Review key concepts with tap-to-flip cards",
       color: "text-blue-500",
+      bgColor: "bg-blue-500/10",
     },
     {
       to: "/questions",
@@ -71,6 +119,7 @@ const Dashboard = () => {
       title: "Question Bank",
       description: "Practice with MCAT-style questions",
       color: "text-green-500",
+      bgColor: "bg-green-500/10",
     },
     {
       to: "/summaries",
@@ -78,8 +127,27 @@ const Dashboard = () => {
       title: "Quick Review",
       description: "High-yield topic summaries",
       color: "text-yellow-500",
+      bgColor: "bg-yellow-500/10",
     },
   ];
+
+  const getSectionColor = (section: string) => {
+    switch (section) {
+      case "bio": return "bg-green-500";
+      case "chem": return "bg-blue-500";
+      case "psych": return "bg-purple-500";
+      default: return "bg-gray-500";
+    }
+  };
+
+  const getSectionBadgeColor = (section: string) => {
+    switch (section) {
+      case "bio": return "bg-green-500/10 text-green-700 dark:text-green-400";
+      case "chem": return "bg-blue-500/10 text-blue-700 dark:text-blue-400";
+      case "psych": return "bg-purple-500/10 text-purple-700 dark:text-purple-400";
+      default: return "bg-gray-500/10 text-gray-700 dark:text-gray-400";
+    }
+  };
 
   if (loading) {
     return (
@@ -93,7 +161,7 @@ const Dashboard = () => {
 
   return (
     <PageLayout>
-      <div className="max-w-3xl mx-auto mt-8 space-y-6">
+      <div className="max-w-6xl mx-auto mt-8 space-y-6">
         {/* User Profile Card */}
         <Card>
           <CardHeader>
@@ -117,87 +185,378 @@ const Dashboard = () => {
           </CardHeader>
         </Card>
 
-        {/* Study Tools Section */}
-        <div>
-          <h2 className="text-lg font-semibold mb-4">Study Tools</h2>
-          <div className="grid gap-4 md:grid-cols-3">
-            {features.map((feature) => (
-              <Link
-                key={feature.to}
-                to={feature.to}
-                className="group"
-              >
-                <Card className="h-full transition-all hover:shadow-md hover:border-primary">
-                  <CardContent className="pt-6">
-                    <div className={`w-12 h-12 rounded-lg bg-muted flex items-center justify-center mb-4 ${feature.color} group-hover:scale-110 transition-transform`}>
-                      <feature.icon className="h-6 w-6" />
-                    </div>
-                    <h3 className="font-semibold mb-2">{feature.title}</h3>
-                    <p className="text-sm text-muted-foreground">
-                      {feature.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
+        {/* Study Stats Overview */}
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <Card>
+            <CardContent className="pt-6">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Study Streak</p>
+                  <p className="text-2xl font-bold">{studyStats.studyStreak} days</p>
+                </div>
+                <div className="w-12 h-12 rounded-lg bg-orange-500/10 flex items-center justify-center">
+                  <Award className="h-6 w-6 text-orange-500" />
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Avg Accuracy</p>
+                  <p className="text-2xl font-bold">{studyStats.avgAccuracy}%</p>
+                </div>
+                <div className="w-12 h-12 rounded-lg bg-green-500/10 flex items-center justify-center">
+                  <Target className="h-6 w-6 text-green-500" />
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Study Time</p>
+                  <p className="text-2xl font-bold">{studyStats.totalStudyTime}h</p>
+                </div>
+                <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center">
+                  <Clock className="h-6 w-6 text-blue-500" />
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Topics Studied</p>
+                  <p className="text-2xl font-bold">{studyStats.topicsStudied}</p>
+                </div>
+                <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center">
+                  <Brain className="h-6 w-6 text-purple-500" />
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
-        {/* Study Statistics (Placeholder for future implementation) */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-lg">Your Progress</CardTitle>
-            <CardDescription>
-              Track your study progress across all sections
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-3 gap-4 text-center">
-              <div>
-                <p className="text-2xl font-bold">0</p>
-                <p className="text-sm text-muted-foreground">Cards Reviewed</p>
-              </div>
-              <div>
-                <p className="text-2xl font-bold">0</p>
-                <p className="text-sm text-muted-foreground">Questions Answered</p>
-              </div>
-              <div>
-                <p className="text-2xl font-bold">0</p>
-                <p className="text-sm text-muted-foreground">Topics Studied</p>
-              </div>
-            </div>
-            <p className="text-xs text-muted-foreground text-center mt-4">
-              Coming soon: Track your progress and study streaks!
-            </p>
-          </CardContent>
-        </Card>
+        {/* Main Tabs */}
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-4">
+          <TabsList className="grid w-full grid-cols-4">
+            <TabsTrigger value="overview">Overview</TabsTrigger>
+            <TabsTrigger value="insights">Insights</TabsTrigger>
+            <TabsTrigger value="calendar">Study Plan</TabsTrigger>
+            <TabsTrigger value="review">Quick Review</TabsTrigger>
+          </TabsList>
 
-        {/* Quick Actions */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-lg">Quick Actions</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            <Link to="/flashcards">
-              <Button variant="outline" className="w-full justify-start">
-                <Layers className="h-4 w-4 mr-2" />
-                Continue studying flashcards
-              </Button>
-            </Link>
-            <Link to="/questions">
-              <Button variant="outline" className="w-full justify-start">
-                <HelpCircle className="h-4 w-4 mr-2" />
-                Practice questions
-              </Button>
-            </Link>
-            <Link to="/summaries">
-              <Button variant="outline" className="w-full justify-start">
-                <BookOpen className="h-4 w-4 mr-2" />
-                Review summaries
-              </Button>
-            </Link>
-          </CardContent>
-        </Card>
+          {/* Overview Tab */}
+          <TabsContent value="overview" className="space-y-4">
+            <div className="grid gap-4 md:grid-cols-3">
+              {features.map((feature) => (
+                <Link
+                  key={feature.to}
+                  to={feature.to}
+                  className="group"
+                >
+                  <Card className="h-full transition-all hover:shadow-md hover:border-primary">
+                    <CardContent className="pt-6">
+                      <div className={`w-12 h-12 rounded-lg ${feature.bgColor} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                        <feature.icon className={`h-6 w-6 ${feature.color}`} />
+                      </div>
+                      <h3 className="font-semibold mb-2">{feature.title}</h3>
+                      <p className="text-sm text-muted-foreground">
+                        {feature.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Your Progress</CardTitle>
+                <CardDescription>
+                  Track your study progress across all sections
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-3 gap-4 text-center">
+                  <div>
+                    <p className="text-2xl font-bold">{studyStats.cardsReviewed}</p>
+                    <p className="text-sm text-muted-foreground">Cards Reviewed</p>
+                  </div>
+                  <div>
+                    <p className="text-2xl font-bold">{studyStats.questionsAnswered}</p>
+                    <p className="text-sm text-muted-foreground">Questions Answered</p>
+                  </div>
+                  <div>
+                    <p className="text-2xl font-bold">{studyStats.topicsStudied}</p>
+                    <p className="text-sm text-muted-foreground">Topics Studied</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          {/* Insights Tab */}
+          <TabsContent value="insights" className="space-y-4">
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-2">
+                  <AlertCircle className="h-5 w-5 text-orange-500" />
+                  <CardTitle className="text-lg">Areas to Focus On</CardTitle>
+                </div>
+                <CardDescription>
+                  Topics where you could use more practice
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                {weakCategories.map((category, index) => (
+                  <div key={index} className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <span className="font-medium">{category.name}</span>
+                        <Badge className={getSectionBadgeColor(category.section)} variant="secondary">
+                          {category.section === "bio" ? "Bio/Biochem" : 
+                           category.section === "chem" ? "Chem/Phys" : "Psych/Soc"}
+                        </Badge>
+                      </div>
+                      <span className="text-sm text-muted-foreground">
+                        {category.accuracy}% ({category.questionsAttempted} questions)
+                      </span>
+                    </div>
+                    <Progress value={category.accuracy} className="h-2" />
+                    <Link to={`/questions?subcategory=${encodeURIComponent(category.name)}`}>
+                      <Button variant="outline" size="sm" className="w-full mt-2">
+                        Practice {category.name}
+                      </Button>
+                    </Link>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-2">
+                  <TrendingUp className="h-5 w-5 text-green-500" />
+                  <CardTitle className="text-lg">Strong Areas</CardTitle>
+                </div>
+                <CardDescription>
+                  Topics where you're performing well
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                {strongCategories.map((category, index) => (
+                  <div key={index} className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <span className="font-medium">{category.name}</span>
+                        <Badge className={getSectionBadgeColor(category.section)} variant="secondary">
+                          {category.section === "bio" ? "Bio/Biochem" : 
+                           category.section === "chem" ? "Chem/Phys" : "Psych/Soc"}
+                        </Badge>
+                      </div>
+                      <span className="text-sm text-muted-foreground">
+                        {category.accuracy}% ({category.questionsAttempted} questions)
+                      </span>
+                    </div>
+                    <Progress value={category.accuracy} className="h-2" />
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          {/* Study Plan Tab */}
+          <TabsContent value="calendar" className="space-y-4">
+            <Card>
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="h-5 w-5" />
+                    <CardTitle className="text-lg">Upcoming Study Sessions</CardTitle>
+                  </div>
+                  <Button size="sm">
+                    <Calendar className="h-4 w-4 mr-2" />
+                    Add Session
+                  </Button>
+                </div>
+                <CardDescription>
+                  Plan and organize your MCAT preparation
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  {studyPlan.map((session, index) => (
+                    <div key={index} className="flex items-start gap-4 p-4 rounded-lg border border-border hover:bg-accent/50 transition-colors">
+                      <div className="flex flex-col items-center min-w-[60px]">
+                        <span className="text-xs font-medium text-muted-foreground uppercase">
+                          {new Date(session.date).toLocaleDateString('en-US', { month: 'short' })}
+                        </span>
+                        <span className="text-2xl font-bold">
+                          {new Date(session.date).getDate()}
+                        </span>
+                      </div>
+                      <div className="flex-1 space-y-1">
+                        <div className="flex items-center gap-2">
+                          <h4 className="font-semibold">{session.topic}</h4>
+                          {session.section !== "all" && (
+                            <span className={`w-2 h-2 rounded-full ${getSectionColor(session.section)}`} />
+                          )}
+                        </div>
+                        <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                          <span className="flex items-center gap-1">
+                            <Clock className="h-3 w-3" />
+                            {session.time}
+                          </span>
+                          <span>{session.duration}</span>
+                        </div>
+                      </div>
+                      <Button variant="ghost" size="sm">
+                        Edit
+                      </Button>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Study Tips</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-2 text-sm text-muted-foreground">
+                <p>• Break study sessions into 25-50 minute blocks with short breaks</p>
+                <p>• Focus on weak areas while maintaining strong ones</p>
+                <p>• Mix different question types and topics for better retention</p>
+                <p>• Review explanations for both correct and incorrect answers</p>
+                <p>• Take full-length practice tests regularly under timed conditions</p>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          {/* Quick Review Tab */}
+          <TabsContent value="review" className="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Concepts to Review</CardTitle>
+                <CardDescription>
+                  Quick access to topics that need attention
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                {weakCategories.map((category, index) => (
+                  <div key={index} className="flex items-center justify-between p-3 rounded-lg border border-border hover:bg-accent/50 transition-colors">
+                    <div className="flex items-center gap-3">
+                      <div className={`w-10 h-10 rounded-lg ${getSectionColor(category.section)}/10 flex items-center justify-center`}>
+                        <BookOpen className={`h-5 w-5 ${category.section === "bio" ? "text-green-500" : category.section === "chem" ? "text-blue-500" : "text-purple-500"}`} />
+                      </div>
+                      <div>
+                        <p className="font-medium">{category.name}</p>
+                        <p className="text-xs text-muted-foreground">
+                          {category.section === "bio" ? "Bio/Biochem" : 
+                           category.section === "chem" ? "Chem/Phys" : "Psych/Soc"}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Link to={`/summaries?section=${category.section}`}>
+                        <Button variant="outline" size="sm">
+                          <BookOpen className="h-4 w-4 mr-1" />
+                          Read
+                        </Button>
+                      </Link>
+                      <Link to={`/flashcards?subcategory=${encodeURIComponent(category.name)}`}>
+                        <Button variant="outline" size="sm">
+                          <Layers className="h-4 w-4 mr-1" />
+                          Cards
+                        </Button>
+                      </Link>
+                      <Link to={`/questions?subcategory=${encodeURIComponent(category.name)}`}>
+                        <Button variant="outline" size="sm">
+                          <HelpCircle className="h-4 w-4 mr-1" />
+                          Quiz
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+
+            <div className="grid gap-4 md:grid-cols-2">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">Daily Goals</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between text-sm">
+                      <span>Review 20 flashcards</span>
+                      <span className="text-muted-foreground">12/20</span>
+                    </div>
+                    <Progress value={60} className="h-2" />
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between text-sm">
+                      <span>Answer 10 questions</span>
+                      <span className="text-muted-foreground">7/10</span>
+                    </div>
+                    <Progress value={70} className="h-2" />
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between text-sm">
+                      <span>Study for 2 hours</span>
+                      <span className="text-muted-foreground">1.5/2h</span>
+                    </div>
+                    <Progress value={75} className="h-2" />
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">Recent Activity</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3 text-sm">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center">
+                      <HelpCircle className="h-4 w-4 text-green-500" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="font-medium">Answered 5 Bio questions</p>
+                      <p className="text-xs text-muted-foreground">2 hours ago</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center">
+                      <Layers className="h-4 w-4 text-blue-500" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="font-medium">Reviewed 15 Chem flashcards</p>
+                      <p className="text-xs text-muted-foreground">4 hours ago</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-purple-500/10 flex items-center justify-center">
+                      <BookOpen className="h-4 w-4 text-purple-500" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="font-medium">Read Psych summary</p>
+                      <p className="text-xs text-muted-foreground">Yesterday</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </TabsContent>
+        </Tabs>
       </div>
     </PageLayout>
   );
