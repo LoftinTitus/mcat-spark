@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import Flashcards from "./pages/Flashcards";
 import Questions from "./pages/Questions";
 import Summaries from "./pages/Summaries";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +25,8 @@ function App() {
             <Route path="/flashcards" element={<Flashcards />} />
             <Route path="/questions" element={<Questions />} />
             <Route path="/summaries" element={<Summaries />} />
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="/signup" element={<SignUp />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
