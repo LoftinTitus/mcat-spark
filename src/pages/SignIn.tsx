@@ -82,15 +82,30 @@ const SignIn = () => {
                 {loading ? "Signing in..." : "Sign In"}
               </Button>
             </form>
-            <div className="mt-4 text-center text-sm text-muted-foreground">
-              Don't have an account?{" "}
-              <button
+            
+            <div className="mt-4 space-y-3">
+              <div className="relative">
+                <div className="absolute inset-0 flex items-center">
+                  <span className="w-full border-t" />
+                </div>
+                <div className="relative flex justify-center text-xs uppercase">
+                  <span className="bg-card px-2 text-muted-foreground">
+                    Or
+                  </span>
+                </div>
+              </div>
+              
+              <Button
+                type="button"
+                variant="outline"
+                className="w-full"
                 onClick={() => navigate("/signup")}
-                className="text-primary hover:underline"
               >
-                Sign up
-              </button>
+                Create New Account
+              </Button>
             </div>
+            
+
           </CardContent>
         </Card>
       </div>

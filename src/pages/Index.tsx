@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { PageLayout } from "@/components/PageLayout";
-import { Layers, HelpCircle, BookOpen, Heart } from "lucide-react";
+import { Layers, HelpCircle, BookOpen, Heart, UserCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const features = [
   {
@@ -30,6 +31,16 @@ const Index = () => {
   return (
     <PageLayout>
       <div className="max-w-lg mx-auto">
+        {/* Sign In Button */}
+        <div className="flex justify-end mb-4">
+          <Link to="/signin">
+            <Button variant="outline" size="sm" className="gap-2">
+              <UserCircle className="h-4 w-4" />
+              Sign In
+            </Button>
+          </Link>
+        </div>
+
         {/* Header */}
         <div className="text-center py-8">
           <h1 className="text-3xl font-bold font-serif mb-2">MCAT Prep</h1>
