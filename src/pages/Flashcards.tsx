@@ -3,6 +3,7 @@ import { PageLayout } from "@/components/PageLayout";
 import { FlashCard } from "@/components/FlashCard";
 import { SectionSelector } from "@/components/SectionSelector";
 import { ChevronLeft, ChevronRight, Shuffle } from "lucide-react";
+import { trackFlashcardReview } from "@/lib/analytics";
 import flashcardsData from "@/data/flashcards.json";
 
 type Section = "chem" | "bio" | "psych" | "cars";
@@ -20,6 +21,7 @@ const Flashcards = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [shuffled, setShuffled] = useState(false);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [reviewedCards, setReviewedCards] = useState<Set<string>>(new Set());
 
   // Get available subcategories for current section
   const subcategories = useMemo(() => {
@@ -50,12 +52,28 @@ const Flashcards = () => {
     setSubcategory("all");
     setCurrentIndex(0);
     setIsFlipped(false);
+    setReviewedCards(new Set());
   };
 
   const handleSubcategoryChange = (newSubcategory: string) => {
     setSubcategory(newSubcategory);
     setCurrentIndex(0);
     setIsFlipped(false);
+    setReviewedCards(new Set());
+  };
+
+  const handleFlip = async (flipped: boolean) => {
+    setIsFlipped(flipped);
+    
+    // Track card review when flipped to back (first time only)
+    if (flipped && currentCard && !reviewedCards.has(currentCard.id)) {
+      await trackFlashcardReview(
+        currentCard.id,
+        section,
+        currentCard.subcategory
+      );
+      setReviewedCards(prev => new Set([...prev, currentCard.id]));
+    }
   };
 
   const handlePrevious = () => {
@@ -126,7 +144,7 @@ const Flashcards = () => {
             front={currentCard.front} 
             back={currentCard.back}
             isFlipped={isFlipped}
-            onFlip={setIsFlipped}
+            onFlip={handleFlip}
           />
         )}
 

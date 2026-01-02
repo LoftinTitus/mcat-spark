@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Check, X } from "lucide-react";
 
@@ -7,6 +7,7 @@ interface QuestionCardProps {
   options: string[];
   correctIndex: number;
   explanation: string;
+  onAnswerSubmit?: (isCorrect: boolean, timeSpent: number) => void;
 }
 
 export function QuestionCard({
@@ -14,14 +15,23 @@ export function QuestionCard({
   options,
   correctIndex,
   explanation,
+  onAnswerSubmit,
 }: QuestionCardProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [showResult, setShowResult] = useState(false);
+  const [startTime] = useState(Date.now());
 
   const handleSelect = (index: number) => {
     if (showResult) return;
     setSelectedIndex(index);
     setShowResult(true);
+
+    // Track the answer
+    if (onAnswerSubmit) {
+      const timeSpent = Math.floor((Date.now() - startTime) / 1000); // in seconds
+      const isCorrect = index === correctIndex;
+      onAnswerSubmit(isCorrect, timeSpent);
+    }
   };
 
   const reset = () => {

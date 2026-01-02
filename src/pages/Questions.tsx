@@ -3,6 +3,7 @@ import { PageLayout } from "@/components/PageLayout";
 import { QuestionCard } from "@/components/QuestionCard";
 import { SectionBadge } from "@/components/SectionBadge";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { trackQuestionAttempt } from "@/lib/analytics";
 import questionsData from "@/data/questions.json";
 
 type QuestionMode = "freestanding" | "passages";
@@ -239,6 +240,15 @@ const Questions = () => {
                 options={currentFreestanding.options}
                 correctIndex={currentFreestanding.correctIndex}
                 explanation={currentFreestanding.explanation}
+                onAnswerSubmit={async (isCorrect, timeSpent) => {
+                  await trackQuestionAttempt(
+                    currentFreestanding.id,
+                    currentFreestanding.section,
+                    currentFreestanding.subcategory,
+                    isCorrect,
+                    timeSpent
+                  );
+                }}
               />
 
               <div className="flex items-center justify-between gap-4">
@@ -286,6 +296,15 @@ const Questions = () => {
                 options={currentPassageQuestion.options}
                 correctIndex={currentPassageQuestion.correctIndex}
                 explanation={currentPassageQuestion.explanation}
+                onAnswerSubmit={async (isCorrect, timeSpent) => {
+                  await trackQuestionAttempt(
+                    currentPassageQuestion.id,
+                    currentPassage.section,
+                    currentPassageQuestion.subcategory || currentPassage.subcategory,
+                    isCorrect,
+                    timeSpent
+                  );
+                }}
               />
 
               <div className="flex items-center justify-between gap-4">

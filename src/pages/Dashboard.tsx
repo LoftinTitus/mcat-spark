@@ -23,6 +23,17 @@ import {
   AlertCircle
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import {
+  getUserStats,
+  getWeakCategories,
+  getStrongCategories,
+  getStudyPlan,
+  getRecentActivity,
+  initializeUserProgress,
+  type UserStats,
+  type CategoryPerformance,
+  type StudySession,
+} from "@/lib/analytics";
 
 const Dashboard = () => {
   const [user, setUser] = useState<any>(null);
@@ -31,49 +42,52 @@ const Dashboard = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
 
-  // Mock data for study insights (in production, this would come from a database)
-  const [studyStats] = useState({
-    cardsReviewed: 147,
-    questionsAnswered: 89,
-    topicsStudied: 24,
-    studyStreak: 7,
-    totalStudyTime: 12.5, // hours
-    avgAccuracy: 78,
+  // Real data from Supabase
+  const [studyStats, setStudyStats] = useState<UserStats>({
+    cardsReviewed: 0,
+    questionsAnswered: 0,
+    topicsStudied: 0,
+    studyStreak: 0,
+    totalStudyTime: 0,
+    avgAccuracy: 0,
   });
-
-  const [weakCategories] = useState([
-    { name: "Enzyme Kinetics", section: "bio", accuracy: 65, questionsAttempted: 12 },
-    { name: "Acids & Bases", section: "chem", accuracy: 68, questionsAttempted: 15 },
-    { name: "Emotion & Motivation", section: "psych", accuracy: 72, questionsAttempted: 8 },
-    { name: "Metabolism", section: "bio", accuracy: 74, questionsAttempted: 18 },
-  ]);
-
-  const [strongCategories] = useState([
-    { name: "Genetics", section: "bio", accuracy: 92, questionsAttempted: 14 },
-    { name: "Mechanics", section: "chem", accuracy: 89, questionsAttempted: 16 },
-    { name: "Learning & Conditioning", section: "psych", accuracy: 88, questionsAttempted: 10 },
-  ]);
-
-  const [studyPlan] = useState([
-    { date: "2026-01-01", topic: "Enzyme Kinetics Review", time: "2:00 PM", duration: "1 hour", section: "bio" },
-    { date: "2026-01-01", topic: "Acids & Bases Practice", time: "4:00 PM", duration: "45 mins", section: "chem" },
-    { date: "2026-01-02", topic: "Metabolism Deep Dive", time: "10:00 AM", duration: "2 hours", section: "bio" },
-    { date: "2026-01-03", topic: "Full-Length Practice Test", time: "9:00 AM", duration: "6 hours", section: "all" },
-  ]);
+  const [weakCategories, setWeakCategories] = useState<CategoryPerformance[]>([]);
+  const [strongCategories, setStrongCategories] = useState<CategoryPerformance[]>([]);
+  const [studyPlan, setStudyPlan] = useState<StudySession[]>([]);
+  const [recentActivity, setRecentActivity] = useState<any[]>([]);
 
   useEffect(() => {
-    // Check if user is logged in
-    const getUser = async () => {
+    // Check if user is logged in and load data
+    const loadDashboardData = async () => {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) {
         navigate("/signin");
-      } else {
-        setUser(user);
+        return;
       }
+
+      setUser(user);
+
+      // Initialize user progress if needed
+      await initializeUserProgress(user.id);
+
+      // Load all dashboard data
+      const [stats, weak, strong, plan, activity] = await Promise.all([
+        getUserStats(),
+        getWeakCategories(),
+        getStrongCategories(),
+        getStudyPlan(),
+        getRecentActivity(10),
+      ]);
+
+      if (stats) setStudyStats(stats);
+      setWeakCategories(weak);
+      setStrongCategories(strong);
+      setStudyPlan(plan);
+      setRecentActivity(activity);
       setLoading(false);
     };
 
-    getUser();
+    loadDashboardData();
 
     // Listen for auth changes
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
@@ -81,6 +95,7 @@ const Dashboard = () => {
         navigate("/signin");
       } else {
         setUser(session.user);
+        loadDashboardData();
       }
     });
 
@@ -147,6 +162,20 @@ const Dashboard = () => {
       case "psych": return "bg-purple-500/10 text-purple-700 dark:text-purple-400";
       default: return "bg-gray-500/10 text-gray-700 dark:text-gray-400";
     }
+  };
+
+  const getTimeAgo = (date: Date) => {
+    const now = new Date();
+    const diff = now.getTime() - date.getTime();
+    const minutes = Math.floor(diff / 60000);
+    const hours = Math.floor(minutes / 60);
+    const days = Math.floor(hours / 24);
+
+    if (minutes < 1) return "Just now";
+    if (minutes < 60) return `${minutes} min${minutes > 1 ? 's' : ''} ago`;
+    if (hours < 24) return `${hours} hour${hours > 1 ? 's' : ''} ago`;
+    if (days === 1) return "Yesterday";
+    return `${days} days ago`;
   };
 
   if (loading) {
@@ -316,7 +345,12 @@ const Dashboard = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                {weakCategories.map((category, index) => (
+                {weakCategories.length === 0 ? (
+                  <p className="text-muted-foreground text-center py-8">
+                    Answer at least 3 questions per topic to see insights on areas that need attention.
+                  </p>
+                ) : (
+                  weakCategories.map((category, index) => (
                   <div key={index} className="space-y-2">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
@@ -337,7 +371,8 @@ const Dashboard = () => {
                       </Button>
                     </Link>
                   </div>
-                ))}
+                ))
+                )}
               </CardContent>
             </Card>
 
@@ -352,7 +387,12 @@ const Dashboard = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                {strongCategories.map((category, index) => (
+                {strongCategories.length === 0 ? (
+                  <p className="text-muted-foreground text-center py-8">
+                    Keep practicing! Strong areas will appear here once you score 80%+ on at least 3 questions per topic.
+                  </p>
+                ) : (
+                  strongCategories.map((category, index) => (
                   <div key={index} className="space-y-2">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
@@ -368,7 +408,8 @@ const Dashboard = () => {
                     </div>
                     <Progress value={category.accuracy} className="h-2" />
                   </div>
-                ))}
+                ))
+                )}
               </CardContent>
             </Card>
           </TabsContent>
@@ -393,7 +434,14 @@ const Dashboard = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  {studyPlan.map((session, index) => (
+                  {studyPlan.length === 0 ? (
+                    <div className="text-center py-8">
+                      <p className="text-muted-foreground mb-4">
+                        No study sessions scheduled yet. Click "Add Session" to start planning!
+                      </p>
+                    </div>
+                  ) : (
+                    studyPlan.map((session, index) => (
                     <div key={index} className="flex items-start gap-4 p-4 rounded-lg border border-border hover:bg-accent/50 transition-colors">
                       <div className="flex flex-col items-center min-w-[60px]">
                         <span className="text-xs font-medium text-muted-foreground uppercase">
@@ -422,7 +470,8 @@ const Dashboard = () => {
                         Edit
                       </Button>
                     </div>
-                  ))}
+                  ))
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -525,33 +574,38 @@ const Dashboard = () => {
                   <CardTitle className="text-lg">Recent Activity</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3 text-sm">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center">
-                      <HelpCircle className="h-4 w-4 text-green-500" />
-                    </div>
-                    <div className="flex-1">
-                      <p className="font-medium">Answered 5 Bio questions</p>
-                      <p className="text-xs text-muted-foreground">2 hours ago</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center">
-                      <Layers className="h-4 w-4 text-blue-500" />
-                    </div>
-                    <div className="flex-1">
-                      <p className="font-medium">Reviewed 15 Chem flashcards</p>
-                      <p className="text-xs text-muted-foreground">4 hours ago</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-full bg-purple-500/10 flex items-center justify-center">
-                      <BookOpen className="h-4 w-4 text-purple-500" />
-                    </div>
-                    <div className="flex-1">
-                      <p className="font-medium">Read Psych summary</p>
-                      <p className="text-xs text-muted-foreground">Yesterday</p>
-                    </div>
-                  </div>
+                  {recentActivity.length === 0 ? (
+                    <p className="text-muted-foreground text-center py-4">
+                      No activity yet. Start studying to see your progress!
+                    </p>
+                  ) : (
+                    recentActivity.slice(0, 5).map((activity, index) => {
+                      const timeAgo = getTimeAgo(new Date(activity.timestamp));
+                      const sectionColor = activity.section === "bio" ? "green" : 
+                                          activity.section === "chem" ? "blue" : "purple";
+                      
+                      return (
+                        <div key={index} className="flex items-center gap-3">
+                          <div className={`w-8 h-8 rounded-full bg-${sectionColor}-500/10 flex items-center justify-center`}>
+                            {activity.type === 'question' ? (
+                              <HelpCircle className={`h-4 w-4 text-${sectionColor}-500`} />
+                            ) : (
+                              <Layers className={`h-4 w-4 text-${sectionColor}-500`} />
+                            )}
+                          </div>
+                          <div className="flex-1">
+                            <p className="font-medium">
+                              {activity.type === 'question' 
+                                ? `Answered ${activity.subcategory || 'question'}${activity.isCorrect ? ' ✓' : ' ✗'}`
+                                : `Reviewed ${activity.subcategory || 'flashcard'}`
+                              }
+                            </p>
+                            <p className="text-xs text-muted-foreground">{timeAgo}</p>
+                          </div>
+                        </div>
+                      );
+                    })
+                  )}
                 </CardContent>
               </Card>
             </div>
