@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -18,9 +18,15 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 import { addStudySession } from "@/lib/analytics";
-import { Calendar, Clock } from "lucide-react";
+import {
+  isGoogleCalendarAuthorized,
+  authorizeGoogleCalendar,
+  createCalendarEvent,
+} from "@/lib/googleCalendar";
+import { Calendar, Clock, CheckCircle2 } from "lucide-react";
 
 interface AddStudySessionModalProps {
   open: boolean;
