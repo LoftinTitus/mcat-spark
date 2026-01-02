@@ -11,7 +11,8 @@
         "5.18"
       ],
       "correctIndex": 2,
-      "explanation": "Using Henderson-Hasselbalch: pH = pKa + log([A⁻]/[HA]) = 4.76 + log(0.3/0.2) = 4.76 + log(1.5) = 4.76 + 0.18 = 4.94"
+      "explanation": "Using Henderson-Hasselbalch: pH = pKa + log([A⁻]/[HA]) = 4.76 + log(0.3/0.2) = 4.76 + log(1.5) = 4.76 + 0.18 = 4.94",
+      "subcategory": "Acids & Bases"
     },
     {
       "id": "fs-2",
@@ -24,7 +25,8 @@
         "Adding a non-competitive inhibitor"
       ],
       "correctIndex": 1,
-      "explanation": "When [S] << Km, the reaction rate is highly dependent on substrate concentration. Increasing [S] will increase the rate until the enzyme becomes saturated."
+      "explanation": "When [S] << Km, the reaction rate is highly dependent on substrate concentration. Increasing [S] will increase the rate until the enzyme becomes saturated.",
+      "subcategory": "Enzyme Kinetics"
     },
     {
       "id": "fs-3",
@@ -37,7 +39,8 @@
         "M phase"
       ],
       "correctIndex": 1,
-      "explanation": "S phase (Synthesis phase) is when DNA replication occurs. G1 is growth before synthesis, G2 is preparation for mitosis, and M phase is mitosis itself."
+      "explanation": "S phase (Synthesis phase) is when DNA replication occurs. G1 is growth before synthesis, G2 is preparation for mitosis, and M phase is mitosis itself.",
+      "subcategory": "Cell Biology"
     },
     {
       "id": "fs-4",
@@ -50,7 +53,8 @@
         "Both B and C"
       ],
       "correctIndex": 3,
-      "explanation": "Both glucagon and cortisol respond to low blood glucose. Glucagon is released from pancreatic alpha cells and promotes glycogenolysis. Cortisol promotes gluconeogenesis. Insulin is released in response to HIGH blood glucose."
+      "explanation": "Both glucagon and cortisol respond to low blood glucose. Glucagon is released from pancreatic alpha cells and promotes glycogenolysis. Cortisol promotes gluconeogenesis. Insulin is released in response to HIGH blood glucose.",
+      "subcategory": "Endocrine System"
     },
     {
       "id": "fs-5",
@@ -63,7 +67,8 @@
         "Spontaneous recovery"
       ],
       "correctIndex": 1,
-      "explanation": "Stimulus generalization occurs when a conditioned response is elicited by stimuli similar to the conditioned stimulus. The fear response has generalized from dogs to cats."
+      "explanation": "Stimulus generalization occurs when a conditioned response is elicited by stimuli similar to the conditioned stimulus. The fear response has generalized from dogs to cats.",
+      "subcategory": "Learning & Conditioning"
     },
     {
       "id": "fs-6",
@@ -76,7 +81,8 @@
         "Emotions are primarily determined by facial expressions"
       ],
       "correctIndex": 1,
-      "explanation": "James-Lange theory proposes that physiological arousal comes first, and we interpret this arousal as an emotion. Example: 'I'm trembling, therefore I must be afraid.'"
+      "explanation": "James-Lange theory proposes that physiological arousal comes first, and we interpret this arousal as an emotion. Example: 'I'm trembling, therefore I must be afraid.'",
+      "subcategory": "Emotion & Motivation"
     },
     {
       "id": "fs-7",
@@ -89,7 +95,8 @@
         "The protein's surface becomes more hydrophobic."
       ],
       "correctIndex": 1,
-      "explanation": "Replacing a hydrophobic amino acid in the core with a charged amino acid introduces unfavorable interactions with water, destabilizing the protein's structure."
+      "explanation": "Replacing a hydrophobic amino acid in the core with a charged amino acid introduces unfavorable interactions with water, destabilizing the protein's structure.",
+      "subcategory": "Amino Acids & Proteins"
     },
     {
       "id": "fs-8",
@@ -102,7 +109,8 @@
         "Protein A has a lower charge density than Protein B."
       ],
       "correctIndex": 1,
-      "explanation": "In size-exclusion chromatography, less compact proteins elute earlier because they are excluded from the pores of the stationary phase more effectively."
+      "explanation": "In size-exclusion chromatography, less compact proteins elute earlier because they are excluded from the pores of the stationary phase more effectively.",
+      "subcategory": "Amino Acids & Proteins"
     },
     {
       "id": "fs-9",
@@ -115,7 +123,8 @@
         "The enzyme operates at a constant rate regardless of substrate concentration."
       ],
       "correctIndex": 1,
-      "explanation": "A sigmoidal curve indicates cooperative binding, which is characteristic of allosteric enzymes. Substrate binding at one site affects binding at other sites."
+      "explanation": "A sigmoidal curve indicates cooperative binding, which is characteristic of allosteric enzymes. Substrate binding at one site affects binding at other sites.",
+      "subcategory": "Enzyme Kinetics"
     },
     {
       "id": "fs-10",
@@ -128,7 +137,8 @@
         "The inhibitor increases the pathway's overall flux."
       ],
       "correctIndex": 2,
-      "explanation": "Feedback inhibition typically involves the end product of a pathway binding to an allosteric site on an enzyme earlier in the pathway, reducing its activity."
+      "explanation": "Feedback inhibition typically involves the end product of a pathway binding to an allosteric site on an enzyme earlier in the pathway, reducing its activity.",
+      "subcategory": "Metabolism"
     },
     {
       "id": "fs-11",
@@ -141,7 +151,8 @@
         "It has fewer hydrogen bonds between base pairs."
       ],
       "correctIndex": 1,
-      "explanation": "Guanine and cytosine form three hydrogen bonds, compared to the two formed by adenine and thymine. A higher GC content increases the melting temperature."
+      "explanation": "Guanine and cytosine form three hydrogen bonds, compared to the two formed by adenine and thymine. A higher GC content increases the melting temperature.",
+      "subcategory": "DNA & RNA"
     },
     {
       "id": "fs-12",
@@ -154,7 +165,8 @@
         "It joins Okazaki fragments on the lagging strand."
       ],
       "correctIndex": 2,
-      "explanation": "DNA polymerase adds nucleotides to the growing DNA strand in the 5' to 3' direction, using the template strand as a guide."
+      "explanation": "DNA polymerase adds nucleotides to the growing DNA strand in the 5' to 3' direction, using the template strand as a guide.",
+      "subcategory": "DNA Replication"
     },
     {
       "id": "fs-13",
@@ -167,7 +179,8 @@
         "The mutation alters the splicing of the mRNA."
       ],
       "correctIndex": 1,
-      "explanation": "The promoter region is where RNA polymerase binds to initiate transcription. A mutation here can reduce the enzyme's ability to bind, lowering transcription levels."
+      "explanation": "The promoter region is where RNA polymerase binds to initiate transcription. A mutation here can reduce the enzyme's ability to bind, lowering transcription levels.",
+      "subcategory": "Gene Expression"
     },
     {
       "id": "fs-14",
@@ -180,7 +193,8 @@
         "To ensure the mRNA is exported from the nucleus."
       ],
       "correctIndex": 1,
-      "explanation": "Splicing removes non-coding introns and joins coding exons to create a continuous sequence that can be translated into a protein."
+      "explanation": "Splicing removes non-coding introns and joins coding exons to create a continuous sequence that can be translated into a protein.",
+      "subcategory": "Gene Expression"
     },
     {
       "id": "fs-15",
@@ -193,7 +207,8 @@
         "Formation of heterochromatin."
       ],
       "correctIndex": 1,
-      "explanation": "Histone acetylation reduces the positive charge on histones, loosening their interaction with negatively charged DNA. This makes the DNA more accessible for transcription, increasing gene expression."
+      "explanation": "Histone acetylation reduces the positive charge on histones, loosening their interaction with negatively charged DNA. This makes the DNA more accessible for transcription, increasing gene expression.",
+      "subcategory": "Gene Expression"
     },
     {
       "id": "fs-16",
@@ -206,7 +221,8 @@
         "1/2"
       ],
       "correctIndex": 1,
-      "explanation": "The probability of AA is 1/4, and the probability of Bb is 1/2. Since these events are independent, the combined probability is (1/4) × (1/2) = 1/8."
+      "explanation": "The probability of AA is 1/4, and the probability of Bb is 1/2. Since these events are independent, the combined probability is (1/4) × (1/2) = 1/8.",
+      "subcategory": "Genetics"
     },
     {
       "id": "fs-17",
@@ -219,7 +235,8 @@
         "To repair DNA damage before cell division."
       ],
       "correctIndex": 1,
-      "explanation": "Crossing over occurs during prophase I of meiosis and increases genetic diversity by exchanging genetic material between homologous chromosomes."
+      "explanation": "Crossing over occurs during prophase I of meiosis and increases genetic diversity by exchanging genetic material between homologous chromosomes.",
+      "subcategory": "Genetics"
     },
     {
       "id": "fs-18",
@@ -232,7 +249,8 @@
         "Frameshift mutation"
       ],
       "correctIndex": 2,
-      "explanation": "A nonsense mutation introduces a premature stop codon, leading to truncated protein synthesis."
+      "explanation": "A nonsense mutation introduces a premature stop codon, leading to truncated protein synthesis.",
+      "subcategory": "Genetics"
     },
     {
       "id": "fs-19",
@@ -245,7 +263,8 @@
         "ELISA"
       ],
       "correctIndex": 2,
-      "explanation": "Southern blotting is used to detect specific DNA sequences in a sample by hybridizing a labeled probe to the target DNA."
+      "explanation": "Southern blotting is used to detect specific DNA sequences in a sample by hybridizing a labeled probe to the target DNA.",
+      "subcategory": "Molecular Biology Techniques"
     },
     {
       "id": "fs-20",
@@ -258,7 +277,8 @@
         "All members of a population have an equal chance of survival and reproduction."
       ],
       "correctIndex": 1,
-      "explanation": "Natural selection favors individuals with advantageous traits, increasing their likelihood of survival and reproduction. These traits become more common in the population over time."
+      "explanation": "Natural selection favors individuals with advantageous traits, increasing their likelihood of survival and reproduction. These traits become more common in the population over time.",
+      "subcategory": "Evolution"
     },
     {
       "id": "fs-21",
@@ -271,7 +291,8 @@
         "ATP is synthesized exclusively in the mitochondria."
       ],
       "correctIndex": 1,
-      "explanation": "ATP provides energy by transferring its high-energy phosphate groups to other molecules, driving endergonic reactions."
+      "explanation": "ATP provides energy by transferring its high-energy phosphate groups to other molecules, driving endergonic reactions.",
+      "subcategory": "Metabolism"
     },
     {
       "id": "fs-22",
@@ -284,7 +305,8 @@
         "Glycogen is found in plants, while cellulose is found in animals."
       ],
       "correctIndex": 1,
-      "explanation": "Glycogen has α-1,4 linkages for linear chains and α-1,6 linkages for branching, while cellulose has β-1,4 linkages, making it a rigid structure."
+      "explanation": "Glycogen has α-1,4 linkages for linear chains and α-1,6 linkages for branching, while cellulose has β-1,4 linkages, making it a rigid structure.",
+      "subcategory": "Carbohydrates"
     },
     {
       "id": "fs-23",
@@ -297,7 +319,8 @@
         "It directly produces glucose."
       ],
       "correctIndex": 1,
-      "explanation": "β-oxidation occurs in the mitochondria and breaks down fatty acids into acetyl-CoA, NADH, and FADH₂, which enter the citric acid cycle and electron transport chain."
+      "explanation": "β-oxidation occurs in the mitochondria and breaks down fatty acids into acetyl-CoA, NADH, and FADH₂, which enter the citric acid cycle and electron transport chain.",
+      "subcategory": "Metabolism"
     },
     {
       "id": "fs-24",
@@ -310,7 +333,8 @@
         "Electron transport chain and oxidative phosphorylation"
       ],
       "correctIndex": 3,
-      "explanation": "The electron transport chain and oxidative phosphorylation generate the most ATP by using the proton gradient created by NADH and FADH₂ to drive ATP synthase."
+      "explanation": "The electron transport chain and oxidative phosphorylation generate the most ATP by using the proton gradient created by NADH and FADH₂ to drive ATP synthase.",
+      "subcategory": "Metabolism"
     },
     {
       "id": "fs-25",
@@ -323,7 +347,8 @@
         "Glucose-6-phosphatase"
       ],
       "correctIndex": 1,
-      "explanation": "Phosphofructokinase-1 (PFK-1) is the rate-limiting enzyme of glycolysis and is regulated by ATP, AMP, and citrate."
+      "explanation": "Phosphofructokinase-1 (PFK-1) is the rate-limiting enzyme of glycolysis and is regulated by ATP, AMP, and citrate.",
+      "subcategory": "Metabolism"
     }
   ],
   "passages": [
@@ -343,7 +368,8 @@
             "Mixed inhibition"
           ],
           "correctIndex": 0,
-          "explanation": "Competitive inhibition is characterized by increased Km (reduced apparent affinity) with unchanged Vmax. The inhibitor competes with substrate for the active site, and can be overcome by excess substrate."
+          "explanation": "Competitive inhibition is characterized by increased Km (reduced apparent affinity) with unchanged Vmax. The inhibitor competes with substrate for the active site, and can be overcome by excess substrate.",
+          "subcategory": "Enzyme Kinetics"
         },
         {
           "id": "passage-1-q2",
@@ -355,9 +381,11 @@
             "10.0 mM"
           ],
           "correctIndex": 1,
-          "explanation": "The reaction velocity equals 50% of Vmax when [S] = Km. With the inhibitor present, the apparent Km is 5.0 mM, so 50% Vmax occurs at 5.0 mM substrate."
+          "explanation": "The reaction velocity equals 50% of Vmax when [S] = Km. With the inhibitor present, the apparent Km is 5.0 mM, so 50% Vmax occurs at 5.0 mM substrate.",
+          "subcategory": "Enzyme Kinetics"
         }
-      ]
+      ],
+      "subcategory": "Enzyme Kinetics"
     },
     {
       "id": "passage-2",
@@ -375,7 +403,8 @@
             "Any of the above would work equally well"
           ],
           "correctIndex": 1,
-          "explanation": "A buffer works best when pH is within 1 unit of pKa. The H₂PO₄⁻/HPO₄²⁻ system with pKa2 = 7.20 is closest to pH 7.4, making it the best choice for physiological buffers."
+          "explanation": "A buffer works best when pH is within 1 unit of pKa. The H₂PO₄⁻/HPO₄²⁻ system with pKa2 = 7.20 is closest to pH 7.4, making it the best choice for physiological buffers.",
+          "subcategory": "Acids & Bases"
         },
         {
           "id": "passage-2-q2",
@@ -387,9 +416,11 @@
             "2.51"
           ],
           "correctIndex": 2,
-          "explanation": "Using Henderson-Hasselbalch: 7.4 = 7.20 + log([HPO₄²⁻]/[H₂PO₄⁻]). So log(ratio) = 0.20, and ratio = 10^0.20 ≈ 1.58"
+          "explanation": "Using Henderson-Hasselbalch: 7.4 = 7.20 + log([HPO₄²⁻]/[H₂PO₄⁻]). So log(ratio) = 0.20, and ratio = 10^0.20 ≈ 1.58",
+          "subcategory": "Acids & Bases"
         }
-      ]
+      ],
+      "subcategory": "Acids & Bases"
     }
   ]
 }

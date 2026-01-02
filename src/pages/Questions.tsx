@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { PageLayout } from "@/components/PageLayout";
 import { QuestionCard } from "@/components/QuestionCard";
 import { SectionBadge } from "@/components/SectionBadge";
@@ -14,6 +14,7 @@ interface FreestandingQuestion {
   options: string[];
   correctIndex: number;
   explanation: string;
+  subcategory?: string;
 }
 
 interface PassageQuestion {
@@ -22,6 +23,7 @@ interface PassageQuestion {
   options: string[];
   correctIndex: number;
   explanation: string;
+  subcategory?: string;
 }
 
 interface Passage {
@@ -30,6 +32,7 @@ interface Passage {
   title: string;
   passage: string;
   questions: PassageQuestion[];
+  subcategory?: string;
 }
 
 const Questions = () => {
@@ -40,22 +43,51 @@ const Questions = () => {
   const [selectedSection, setSelectedSection] = useState<
     "all" | "chem" | "bio" | "psych" | "cars"
   >("all");
-  const [isCategoryMenuOpen, setIsCategoryMenuOpen] = useState(false);
+  const [selectedSubcategory, setSelectedSubcategory] = useState<string>("all");
 
   const freestandingQuestions = questionsData.freestanding as FreestandingQuestion[];
   const passages = questionsData.passages as Passage[];
 
-  const filteredFreestandingQuestions =
-    selectedSection === "all"
-      ? freestandingQuestions
-      : freestandingQuestions.filter(
-          (q) => q.section === selectedSection
-        );
+  // Get available subcategories for current mode and section
+  const availableSubcategories = useMemo(() => {
+    if (mode === "freestanding") {
+      const filtered = selectedSection === "all"
+        ? freestandingQuestions
+        : freestandingQuestions.filter((q) => q.section === selectedSection);
+      const cats = new Set(filtered.map(q => q.subcategory || "General"));
+      return ["all", ...Array.from(cats).sort()];
+    } else {
+      const filtered = selectedSection === "all"
+        ? passages
+        : passages.filter((p) => p.section === selectedSection);
+      const cats = new Set(filtered.map(p => p.subcategory || "General"));
+      return ["all", ...Array.from(cats).sort()];
+    }
+  }, [mode, selectedSection, freestandingQuestions, passages]);
 
-  const filteredPassages =
-    selectedSection === "all"
+  const filteredFreestandingQuestions = useMemo(() => {
+    let filtered = selectedSection === "all"
+      ? freestandingQuestions
+      : freestandingQuestions.filter((q) => q.section === selectedSection);
+    
+    if (selectedSubcategory !== "all") {
+      filtered = filtered.filter((q) => q.subcategory === selectedSubcategory);
+    }
+    
+    return filtered;
+  }, [selectedSection, selectedSubcategory, freestandingQuestions]);
+
+  const filteredPassages = useMemo(() => {
+    let filtered = selectedSection === "all"
       ? passages
       : passages.filter((p) => p.section === selectedSection);
+    
+    if (selectedSubcategory !== "all") {
+      filtered = filtered.filter((p) => p.subcategory === selectedSubcategory);
+    }
+    
+    return filtered;
+  }, [selectedSection, selectedSubcategory, passages]);
 
   const currentFreestanding = filteredFreestandingQuestions[freestandingIndex];
   const currentPassage = filteredPassages[passageIndex];
@@ -99,18 +131,17 @@ const Questions = () => {
 
   const handleSectionChange = (section: "all" | "chem" | "bio" | "psych" | "cars") => {
     setSelectedSection(section);
+    setSelectedSubcategory("all");
     setFreestandingIndex(0);
     setPassageIndex(0);
     setPassageQuestionIndex(0);
   };
 
-  const toggleCategoryMenu = () => {
-    setIsCategoryMenuOpen((prev) => !prev);
-  };
-
-  const handleBadgeClick = (section: "all" | "chem" | "bio" | "psych" | "cars") => {
-    handleSectionChange(section);
-    setIsCategoryMenuOpen(false);
+  const handleSubcategoryChange = (subcategory: string) => {
+    setSelectedSubcategory(subcategory);
+    setFreestandingIndex(0);
+    setPassageIndex(0);
+    setPassageQuestionIndex(0);
   };
 
   return (
@@ -142,49 +173,61 @@ const Questions = () => {
             </button>
           </div>
 
+          {/* Section Filter */}
+          <div className="space-y-2">
+            <label className="text-sm font-medium text-muted-foreground">
+              Section Filter
+            </label>
+            <div className="flex flex-wrap gap-2">
+              {[
+                { label: "All", value: "all" },
+                { label: "Chem/Phys", value: "chem" },
+                { label: "Bio/Biochem", value: "bio" },
+                { label: "Psych/Soc", value: "psych" },
+                { label: "CARS", value: "cars" },
+              ].map((section) => (
+                <button
+                  key={section.value}
+                  onClick={() => handleSectionChange(section.value as "all" | "chem" | "bio" | "psych" | "cars")}
+                  className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
+                    selectedSection === section.value
+                      ? "border-primary bg-primary text-primary-foreground"
+                      : "border-border hover:border-muted-foreground"
+                  }`}
+                >
+                  {section.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Subcategory Filter */}
+          <div className="space-y-2">
+            <label className="text-sm font-medium text-muted-foreground">
+              Topic Filter
+            </label>
+            <div className="flex flex-wrap gap-2">
+              {availableSubcategories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => handleSubcategoryChange(cat)}
+                  className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
+                    selectedSubcategory === cat
+                      ? "border-primary bg-primary text-primary-foreground"
+                      : "border-border hover:border-muted-foreground"
+                  }`}
+                >
+                  {cat === "all" ? "All Topics" : cat}
+                </button>
+              ))}
+            </div>
+          </div>
+
           {/* Freestanding Mode */}
           {mode === "freestanding" && currentFreestanding && (
             <>
-              <div className="relative flex items-center justify-between">
-                <div className="relative">
-                  <button
-                    onClick={toggleCategoryMenu}
-                    className="px-3 py-1.5 rounded-full bg-primary text-primary-foreground text-xs font-medium"
-                  >
-                    {selectedSection === "all"
-                      ? "All"
-                      : selectedSection === "chem"
-                      ? "Chem/Phys"
-                      : selectedSection === "bio"
-                      ? "Bio/Biochem"
-                      : selectedSection === "psych"
-                      ? "Psych/Soc"
-                      : "CARS"}
-                  </button>
-                  {isCategoryMenuOpen && (
-                    <div className="absolute left-0 mt-2 w-40 rounded-lg border border-border bg-card shadow-lg">
-                      {[
-                        { label: "All", value: "all" },
-                        { label: "Chem/Phys", value: "chem" },
-                        { label: "Bio/Biochem", value: "bio" },
-                        { label: "Psych/Soc", value: "psych" },
-                        { label: "CARS", value: "cars" },
-                      ].map((section) => (
-                        <button
-                          key={section.value}
-                          onClick={() => handleBadgeClick(section.value as "all" | "chem" | "bio" | "psych" | "cars")}
-                          className={`w-full text-left px-4 py-2 text-sm font-medium transition-colors ${
-                            selectedSection === section.value
-                              ? "bg-primary text-primary-foreground"
-                              : "hover:bg-accent"
-                          }`}
-                        >
-                          {section.label}
-                        </button>
-                      ))}
-                    </div>
-                  )}
-                </div>
+              <div className="flex items-center justify-between">
+                <SectionBadge section={currentFreestanding.section} />
                 <span className="text-sm text-muted-foreground">
                   {freestandingIndex + 1} / {filteredFreestandingQuestions.length}
                 </span>

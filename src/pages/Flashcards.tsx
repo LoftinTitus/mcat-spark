@@ -11,27 +11,51 @@ interface FlashcardItem {
   id: string;
   front: string;
   back: string;
+  subcategory?: string;
 }
 
 const Flashcards = () => {
   const [section, setSection] = useState<Section>("chem");
+  const [subcategory, setSubcategory] = useState<string>("all");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [shuffled, setShuffled] = useState(false);
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const cards = useMemo(() => {
+  // Get available subcategories for current section
+  const subcategories = useMemo(() => {
     const sectionCards = flashcardsData[section] as FlashcardItem[];
+    const cats = new Set(sectionCards.map(card => card.subcategory || "General"));
+    return ["all", ...Array.from(cats).sort()];
+  }, [section]);
+
+  const cards = useMemo(() => {
+    let sectionCards = flashcardsData[section] as FlashcardItem[];
+    
+    // Filter by subcategory
+    if (subcategory !== "all") {
+      sectionCards = sectionCards.filter(card => card.subcategory === subcategory);
+    }
+    
+    // Shuffle if needed
     if (shuffled) {
       return [...sectionCards].sort(() => Math.random() - 0.5);
     }
     return sectionCards;
-  }, [section, shuffled]);
+  }, [section, subcategory, shuffled]);
 
   const currentCard = cards[currentIndex];
 
   const handleSectionChange = (newSection: Section) => {
     setSection(newSection);
+    setSubcategory("all");
     setCurrentIndex(0);
+    setIsFlipped(false);
+  };
+
+  const handleSubcategoryChange = (newSubcategory: string) => {
+    setSubcategory(newSubcategory);
+    setCurrentIndex(0);
+    setIsFlipped(false);
   };
 
   const handlePrevious = () => {
@@ -55,6 +79,28 @@ const Flashcards = () => {
         {/* Section Selector */}
         <SectionSelector value={section} onChange={handleSectionChange} />
 
+        {/* Subcategory Filter */}
+        <div className="space-y-2">
+          <label className="text-sm font-medium text-muted-foreground">
+            Topic Filter
+          </label>
+          <div className="flex flex-wrap gap-2">
+            {subcategories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => handleSubcategoryChange(cat)}
+                className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
+                  subcategory === cat
+                    ? "border-primary bg-primary text-primary-foreground"
+                    : "border-border hover:border-muted-foreground"
+                }`}
+              >
+                {cat === "all" ? "All Topics" : cat}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Progress */}
         <div className="flex items-center justify-between text-sm text-muted-foreground">
           <span>
@@ -76,7 +122,7 @@ const Flashcards = () => {
         {/* Card */}
         {currentCard && (
           <FlashCard 
-            key={`${section}-${currentIndex}`}
+            key={`${section}-${subcategory}-${currentIndex}`}
             front={currentCard.front} 
             back={currentCard.back}
             isFlipped={isFlipped}
