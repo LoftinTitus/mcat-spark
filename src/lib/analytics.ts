@@ -334,7 +334,8 @@ export async function addStudySession(
   section: string,
   date: string,
   time: string,
-  duration: number
+  duration: number,
+  notes?: string
 ) {
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) return null;
@@ -348,6 +349,7 @@ export async function addStudySession(
       scheduled_date: date,
       scheduled_time: time,
       duration,
+      notes: notes || null,
     })
     .select()
     .single();

@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { AddStudySessionModal } from "@/components/AddStudySessionModal";
 import { supabase } from "@/lib/supabase";
 import { useToast } from "@/hooks/use-toast";
 import { 
@@ -39,6 +40,7 @@ const Dashboard = () => {
   const [user, setUser] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("overview");
+  const [isAddSessionModalOpen, setIsAddSessionModalOpen] = useState(false);
   const navigate = useNavigate();
   const { toast } = useToast();
 
@@ -101,6 +103,22 @@ const Dashboard = () => {
 
     return () => subscription.unsubscribe();
   }, [navigate]);
+
+  const refreshDashboard = async () => {
+    const [stats, weak, strong, plan, activity] = await Promise.all([
+      getUserStats(),
+      getWeakCategories(),
+      getStrongCategories(),
+      getStudyPlan(),
+      getRecentActivity(10),
+    ]);
+
+    if (stats) setStudyStats(stats);
+    setWeakCategories(weak);
+    setStrongCategories(strong);
+    setStudyPlan(plan);
+    setRecentActivity(activity);
+  };
 
   const handleSignOut = async () => {
     try {
@@ -423,7 +441,7 @@ const Dashboard = () => {
                     <Calendar className="h-5 w-5" />
                     <CardTitle className="text-lg">Upcoming Study Sessions</CardTitle>
                   </div>
-                  <Button size="sm">
+                  <Button size="sm" onClick={() => setIsAddSessionModalOpen(true)}>
                     <Calendar className="h-4 w-4 mr-2" />
                     Add Session
                   </Button>
@@ -611,6 +629,13 @@ const Dashboard = () => {
             </div>
           </TabsContent>
         </Tabs>
+
+        {/* Add Study Session Modal */}
+        <AddStudySessionModal
+          open={isAddSessionModalOpen}
+          onOpenChange={setIsAddSessionModalOpen}
+          onSessionAdded={refreshDashboard}
+        />
       </div>
     </PageLayout>
   );
