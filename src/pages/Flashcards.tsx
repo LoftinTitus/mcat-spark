@@ -2,15 +2,17 @@ import { useState, useMemo, useEffect } from "react";
 import { PageLayout } from "@/components/PageLayout";
 import { FlashCard } from "@/components/FlashCard";
 import { SectionSelector } from "@/components/SectionSelector";
-import { ChevronLeft, ChevronRight, Shuffle } from "lucide-react";
+import { ChevronLeft, ChevronRight, Shuffle, Calendar } from "lucide-react";
 import { trackFlashcardReview } from "@/lib/analytics";
 import { 
   recordFlashcardReview, 
   getFlashcardReview,
+  getFlashcardsDueToday,
   DifficultyRating 
 } from "@/lib/spacedRepetition";
 import { useToast } from "@/hooks/use-toast";
 import flashcardsData from "@/data/flashcards.json";
+import { supabase } from "@/lib/supabase";
 
 type Section = "chem" | "bio" | "psych" | "cars";
 
@@ -29,6 +31,8 @@ const Flashcards = () => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [reviewedCards, setReviewedCards] = useState<Set<string>>(new Set());
   const [currentReview, setCurrentReview] = useState<any>(null);
+  const [spacedRepetition, setSpacedRepetition] = useState(true);
+  const [allReviews, setAllReviews] = useState<Map<string, any>>(new Map());
   const { toast } = useToast();
 
   // Get available subcategories for current section
@@ -38,6 +42,28 @@ const Flashcards = () => {
     return ["all", ...Array.from(cats).sort()];
   }, [section]);
 
+  // Load all review data when section/subcategory changes
+  useEffect(() => {
+    const loadAllReviews = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) return;
+
+      const { data, error } = await supabase
+        .from('flashcard_reviews')
+        .select('*')
+        .eq('user_id', user.id);
+
+      if (!error && data) {
+        const reviewMap = new Map();
+        data.forEach(review => {
+          reviewMap.set(review.flashcard_id, review);
+        });
+        setAllReviews(reviewMap);
+      }
+    };
+    loadAllReviews();
+  }, [section, subcategory]);
+
   const cards = useMemo(() => {
     let sectionCards = flashcardsData[section] as FlashcardItem[];
     
@@ -46,12 +72,41 @@ const Flashcards = () => {
       sectionCards = sectionCards.filter(card => card.subcategory === subcategory);
     }
     
+    // Apply spaced repetition ordering
+    if (spacedRepetition && !shuffled) {
+      const today = new Date().toISOString().split('T')[0];
+      
+      return [...sectionCards].sort((a, b) => {
+        const reviewA = allReviews.get(a.id);
+        const reviewB = allReviews.get(b.id);
+        
+        // Priority 1: Cards due today (overdue first)
+        const isDueA = !reviewA || reviewA.next_review_date <= today;
+        const isDueB = !reviewB || reviewB.next_review_date <= today;
+        
+        if (isDueA && !isDueB) return -1;
+        if (!isDueA && isDueB) return 1;
+        
+        // Priority 2: Never seen cards
+        if (!reviewA && reviewB) return -1;
+        if (reviewA && !reviewB) return 1;
+        
+        // Priority 3: Sort by next review date (oldest first)
+        if (reviewA && reviewB) {
+          return reviewA.next_review_date.localeCompare(reviewB.next_review_date);
+        }
+        
+        return 0;
+      });
+    }
+    
     // Shuffle if needed
     if (shuffled) {
       return [...sectionCards].sort(() => Math.random() - 0.5);
     }
+    
     return sectionCards;
-  }, [section, subcategory, shuffled]);
+  }, [section, subcategory, shuffled, spacedRepetition, allReviews]);
 
   const currentCard = cards[currentIndex];
 
@@ -72,6 +127,7 @@ const Flashcards = () => {
     setCurrentIndex(0);
     setIsFlipped(false);
     setReviewedCards(new Set());
+    setAllReviews(new Map());
   };
 
   const handleSubcategoryChange = (newSubcategory: string) => {
@@ -117,6 +173,23 @@ const Flashcards = () => {
         title: "Review recorded!",
         description: difficultyLabels[difficulty],
       });
+      
+      // Reload reviews to update ordering
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user) {
+        const { data } = await supabase
+          .from('flashcard_reviews')
+          .select('*')
+          .eq('user_id', user.id);
+
+        if (data) {
+          const reviewMap = new Map();
+          data.forEach(review => {
+            reviewMap.set(review.flashcard_id, review);
+          });
+          setAllReviews(reviewMap);
+        }
+      }
       
       // Move to next card
       handleNext();
@@ -177,17 +250,30 @@ const Flashcards = () => {
           <span>
             Card {currentIndex + 1} of {cards.length}
           </span>
-          <button
-            onClick={handleShuffle}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border transition-colors ${
-              shuffled
-                ? "border-primary text-primary"
-                : "border-border hover:border-muted-foreground"
-            }`}
-          >
-            <Shuffle className="h-4 w-4" />
-            <span>Shuffle</span>
-          </button>
+          <div className="flex gap-2">
+            <button
+              onClick={() => setSpacedRepetition(!spacedRepetition)}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border transition-colors ${
+                spacedRepetition
+                  ? "border-primary text-primary"
+                  : "border-border hover:border-muted-foreground"
+              }`}
+            >
+              <Calendar className="h-4 w-4" />
+              <span>Smart Order</span>
+            </button>
+            <button
+              onClick={handleShuffle}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border transition-colors ${
+                shuffled
+                  ? "border-primary text-primary"
+                  : "border-border hover:border-muted-foreground"
+              }`}
+            >
+              <Shuffle className="h-4 w-4" />
+              <span>Shuffle</span>
+            </button>
+          </div>
         </div>
 
         {/* Card */}
