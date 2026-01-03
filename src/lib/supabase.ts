@@ -9,7 +9,11 @@ console.log('Environment check:', {
   hasUrl: !!supabaseUrl,
   hasKey: !!supabaseAnonKey,
   url: supabaseUrl,
-  allEnvVars: Object.keys(import.meta.env)
+  keyLength: supabaseAnonKey?.length,
+  allEnvVars: import.meta.env,
+  mode: import.meta.env.MODE,
+  dev: import.meta.env.DEV,
+  prod: import.meta.env.PROD
 })
 
 // Validate environment variables
