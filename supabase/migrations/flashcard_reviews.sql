@@ -1,8 +1,14 @@
 -- MCAT Spark Spaced Repetition System
 -- This creates a smart review system that shows flashcards at optimal intervals
 
+-- Drop existing objects if they exist (for clean reinstall)
+DROP VIEW IF EXISTS user_flashcard_stats;
+DROP TRIGGER IF EXISTS update_flashcard_reviews_timestamp ON flashcard_reviews;
+DROP FUNCTION IF EXISTS update_flashcard_reviews_updated_at();
+DROP TABLE IF EXISTS flashcard_reviews;
+
 -- Table to track individual flashcard reviews for each user
-CREATE TABLE IF NOT EXISTS flashcard_reviews (
+CREATE TABLE flashcard_reviews (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
   flashcard_id TEXT NOT NULL,  -- The unique identifier from your flashcards.json
@@ -27,8 +33,8 @@ CREATE TABLE IF NOT EXISTS flashcard_reviews (
 );
 
 -- Index for efficient queries
-CREATE INDEX IF NOT EXISTS idx_flashcard_reviews_user_next ON flashcard_reviews(user_id, next_review_date);
-CREATE INDEX IF NOT EXISTS idx_flashcard_reviews_user_flashcard ON flashcard_reviews(user_id, flashcard_id);
+CREATE INDEX idx_flashcard_reviews_user_next ON flashcard_reviews(user_id, next_review_date);
+CREATE INDEX idx_flashcard_reviews_user_flashcard ON flashcard_reviews(user_id, flashcard_id);
 
 -- Enable Row Level Security
 ALTER TABLE flashcard_reviews ENABLE ROW LEVEL SECURITY;
