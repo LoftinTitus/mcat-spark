@@ -38,14 +38,36 @@ interface GoogleCalendarEvent {
 /**
  * Load the Google API client library
  */
+let gapiInitialized = false;
+
 export async function loadGoogleAPI(): Promise<void> {
   return new Promise((resolve, reject) => {
-    // Check if already loaded
-    if (typeof window !== 'undefined' && (window as any).gapi) {
+    // Check if already loaded and initialized
+    if (gapiInitialized && typeof window !== 'undefined' && (window as any).gapi?.client) {
       resolve();
       return;
     }
 
+    // Check if script exists but not initialized
+    if (typeof window !== 'undefined' && (window as any).gapi) {
+      const gapiObj = (window as any).gapi;
+      gapiObj.load('client', async () => {
+        try {
+          await gapiObj.client.init({
+            apiKey: GOOGLE_API_KEY,
+            discoveryDocs: [DISCOVERY_DOC],
+          });
+          gapiInitialized = true;
+          resolve();
+        } catch (error) {
+          console.error('Failed to init gapi client:', error);
+          reject(error);
+        }
+      });
+      return;
+    }
+
+    // Load script for the first time
     const script = document.createElement('script');
     script.src = 'https://apis.google.com/js/api.js';
     script.onload = () => {
@@ -57,8 +79,10 @@ export async function loadGoogleAPI(): Promise<void> {
               apiKey: GOOGLE_API_KEY,
               discoveryDocs: [DISCOVERY_DOC],
             });
+            gapiInitialized = true;
             resolve();
           } catch (error) {
+            console.error('Failed to init gapi client:', error);
             reject(error);
           }
         });
@@ -66,7 +90,10 @@ export async function loadGoogleAPI(): Promise<void> {
         reject(new Error('gapi not loaded'));
       }
     };
-    script.onerror = reject;
+    script.onerror = (error) => {
+      console.error('Failed to load gapi script:', error);
+      reject(error);
+    };
     document.head.appendChild(script);
   });
 }
@@ -117,17 +144,30 @@ export function isGoogleCalendarAuthorized(): boolean {
  */
 export async function authorizeGoogleCalendar(): Promise<boolean> {
   try {
+    // Check if credentials are configured
+    if (!GOOGLE_CLIENT_ID || GOOGLE_CLIENT_ID.includes('your-google-client-id')) {
+      console.error('Google Calendar credentials not configured. Please add them to .env file.');
+      throw new Error('Google Calendar not configured. Please add credentials to .env file and restart the server.');
+    }
+
     await initGoogleCalendar();
 
-    return new Promise((resolve) => {
+    return new Promise((resolve, reject) => {
       const googleObj = (window as any).google;
+      
+      if (!googleObj?.accounts?.oauth2) {
+        console.error('Google Identity Services not loaded');
+        reject(new Error('Google Identity Services not loaded'));
+        return;
+      }
+
       const client = googleObj.accounts.oauth2.initTokenClient({
         client_id: GOOGLE_CLIENT_ID,
         scope: SCOPES,
         callback: (response: any) => {
           if (response.error) {
             console.error('Authorization error:', response.error);
-            resolve(false);
+            reject(new Error(response.error));
             return;
           }
 
@@ -138,7 +178,9 @@ export async function authorizeGoogleCalendar(): Promise<boolean> {
           
           // Set the token for gapi
           const gapiObj = (window as any).gapi;
-          gapiObj.client.setToken({ access_token: response.access_token });
+          if (gapiObj?.client) {
+            gapiObj.client.setToken({ access_token: response.access_token });
+          }
           
           resolve(true);
         },
@@ -146,9 +188,9 @@ export async function authorizeGoogleCalendar(): Promise<boolean> {
 
       client.requestAccessToken();
     });
-  } catch (error) {
+  } catch (error: any) {
     console.error('Failed to authorize Google Calendar:', error);
-    return false;
+    throw error;
   }
 }
 
@@ -200,7 +242,7 @@ export async function createCalendarEvent(
     // Check authorization
     if (!isGoogleCalendarAuthorized()) {
       console.warn('Not authorized for Google Calendar');
-      return false;
+      throw new Error('Not authorized. Please connect Google Calendar in Settings.');
     }
 
     // Ensure API is loaded and token is set
@@ -208,6 +250,12 @@ export async function createCalendarEvent(
     setAccessToken();
 
     const gapiObj = (window as any).gapi;
+    
+    // Verify gapi client is ready
+    if (!gapiObj?.client?.calendar) {
+      console.error('Google Calendar API not loaded');
+      throw new Error('Google Calendar API not loaded. Please try again.');
+    }
 
     // Create date-time strings
     const startDateTime = new Date(`${date}T${time}`);

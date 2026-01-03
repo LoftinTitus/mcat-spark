@@ -88,24 +88,33 @@ export function AddStudySessionModal({
       if (result) {
         // Try to sync to calendar if enabled and authorized
         if (syncToCalendar && isCalendarAuthorized) {
-          const calendarSuccess = await createCalendarEvent(
-            formData.topic,
-            formData.section,
-            formData.date,
-            formData.time || "00:00",
-            parseInt(formData.duration) || 60,
-            formData.notes
-          );
+          try {
+            const calendarSuccess = await createCalendarEvent(
+              formData.topic,
+              formData.section,
+              formData.date,
+              formData.time || "00:00",
+              parseInt(formData.duration) || 60,
+              formData.notes
+            );
 
-          if (calendarSuccess) {
-            toast({
-              title: "Session Added & Synced",
-              description: "Your study session has been added and synced to Google Calendar.",
-            });
-          } else {
+            if (calendarSuccess) {
+              toast({
+                title: "Session Added & Synced",
+                description: "Your study session has been added and synced to Google Calendar.",
+              });
+            } else {
+              toast({
+                title: "Session Added",
+                description: "Session added, but calendar sync failed. Check your connection in Settings.",
+                variant: "default",
+              });
+            }
+          } catch (calendarError: any) {
+            console.error('Calendar sync error:', calendarError);
             toast({
               title: "Session Added",
-              description: "Session added, but calendar sync failed. Check your connection in Settings.",
+              description: `Session added, but sync failed: ${calendarError.message || 'Unknown error'}`,
               variant: "default",
             });
           }

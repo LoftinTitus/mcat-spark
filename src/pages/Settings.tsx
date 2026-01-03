@@ -82,12 +82,14 @@ const Settings = () => {
           variant: "destructive",
         });
       }
-    } catch (error) {
+    } catch (error: any) {
+      const errorMessage = error.message || "An error occurred while connecting to Google Calendar.";
       toast({
-        title: "Error",
-        description: "An error occurred while connecting to Google Calendar.",
+        title: "Connection Error",
+        description: errorMessage,
         variant: "destructive",
       });
+      console.error('Calendar connection error:', error);
     } finally {
       setConnectingCalendar(false);
     }
