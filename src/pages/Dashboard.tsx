@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { PageLayout } from "@/components/PageLayout";
+import { LoadingScreen } from "@/components/LoadingScreen";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -200,9 +201,10 @@ const Dashboard = () => {
   if (loading) {
     return (
       <PageLayout>
-        <div className="max-w-3xl mx-auto mt-8">
-          <p className="text-center text-muted-foreground">Loading...</p>
-        </div>
+        <LoadingScreen 
+          title="Loading Dashboard" 
+          description="Fetching your study progress..." 
+        />
       </PageLayout>
     );
   }

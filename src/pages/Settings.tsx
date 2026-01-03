@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { PageLayout } from "@/components/PageLayout";
+import { LoadingScreen } from "@/components/LoadingScreen";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
@@ -9,6 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
+import { useTheme } from "@/components/ThemeProvider";
 import { supabase } from "@/lib/supabase";
 import {
   isGoogleCalendarAuthorized,
@@ -37,13 +39,12 @@ const Settings = () => {
   const [connectingCalendar, setConnectingCalendar] = useState(false);
   const navigate = useNavigate();
   const { toast } = useToast();
+  const { theme, setTheme, isDarkMode } = useTheme();
 
-  // Settings state
-  const [settings, setSettings] = useState({
-    emailNotifications: true,
-    studyReminders: true,
-    darkMode: false,
-    autoSync: true,
+  // Settings state - load from localStorage
+  const [notificationsEnabled, setNotificationsEnabled] = useState(() => {
+    const saved = localStorage.getItem('mcat-spark-notifications');
+    return saved !== null ? JSON.parse(saved) : true;
   });
 
   useEffect(() => {
@@ -106,6 +107,17 @@ const Settings = () => {
     });
   };
 
+  const handleNotificationsToggle = (checked: boolean) => {
+    setNotificationsEnabled(checked);
+    localStorage.setItem('mcat-spark-notifications', JSON.stringify(checked));
+    toast({
+      title: checked ? "Notifications Enabled" : "Notifications Disabled",
+      description: checked 
+        ? "You'll receive study reminders and progress updates."
+        : "You won't receive any notifications.",
+    });
+  };
+
   const handleSignOut = async () => {
     await supabase.auth.signOut();
     navigate("/");
@@ -132,12 +144,10 @@ const Settings = () => {
   if (loading) {
     return (
       <PageLayout>
-        <div className="flex items-center justify-center min-h-[60vh]">
-          <div className="text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
-            <p className="text-muted-foreground">Loading settings...</p>
-          </div>
-        </div>
+        <LoadingScreen 
+          title="Loading Settings" 
+          description="Preparing your preferences..." 
+        />
       </PageLayout>
     );
   }
@@ -281,43 +291,38 @@ const Settings = () => {
               Notifications
             </CardTitle>
             <CardDescription>
-              Manage how you receive updates and reminders
+              Manage study reminders and progress updates
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="flex items-center justify-between">
               <div className="space-y-1">
-                <Label htmlFor="email-notifications">Email Notifications</Label>
+                <Label htmlFor="notifications">Enable Notifications</Label>
                 <p className="text-sm text-muted-foreground">
-                  Receive study progress updates via email
+                  {notificationsEnabled 
+                    ? "Receive reminders for study sessions and progress updates"
+                    : "All notifications are currently disabled"}
                 </p>
               </div>
               <Switch
-                id="email-notifications"
-                checked={settings.emailNotifications}
-                onCheckedChange={(checked) =>
-                  setSettings({ ...settings, emailNotifications: checked })
-                }
+                id="notifications"
+                checked={notificationsEnabled}
+                onCheckedChange={handleNotificationsToggle}
               />
             </div>
 
-            <Separator />
-
-            <div className="flex items-center justify-between">
-              <div className="space-y-1">
-                <Label htmlFor="study-reminders">Study Reminders</Label>
-                <p className="text-sm text-muted-foreground">
-                  Get reminders for scheduled study sessions
-                </p>
-              </div>
-              <Switch
-                id="study-reminders"
-                checked={settings.studyReminders}
-                onCheckedChange={(checked) =>
-                  setSettings({ ...settings, studyReminders: checked })
-                }
-              />
-            </div>
+            {notificationsEnabled && (
+              <Alert>
+                <Bell className="h-4 w-4" />
+                <AlertDescription>
+                  <p className="text-sm">You'll be notified about:</p>
+                  <ul className="list-disc list-inside text-sm mt-2 space-y-1 ml-2">
+                    <li>Daily study streak reminders</li>
+                    <li>Weekly progress summaries</li>
+                  </ul>
+                </AlertDescription>
+              </Alert>
+            )}
           </CardContent>
         </Card>
 
@@ -337,16 +342,19 @@ const Settings = () => {
               <div className="space-y-1">
                 <Label htmlFor="dark-mode">Dark Mode</Label>
                 <p className="text-sm text-muted-foreground">
-                  Switch to a darker theme (coming soon)
+                  {isDarkMode ? "Currently using dark theme" : "Currently using light theme"}
                 </p>
               </div>
               <Switch
                 id="dark-mode"
-                checked={settings.darkMode}
-                onCheckedChange={(checked) =>
-                  setSettings({ ...settings, darkMode: checked })
-                }
-                disabled
+                checked={isDarkMode}
+                onCheckedChange={(checked) => {
+                  setTheme(checked ? "dark" : "light");
+                  toast({
+                    title: checked ? "Dark Mode Enabled" : "Light Mode Enabled",
+                    description: `Switched to ${checked ? "dark" : "light"} theme.`,
+                  });
+                }}
               />
             </div>
           </CardContent>
