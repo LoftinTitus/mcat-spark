@@ -349,6 +349,776 @@
       "correctIndex": 1,
       "explanation": "Phosphofructokinase-1 (PFK-1) is the rate-limiting enzyme of glycolysis and is regulated by ATP, AMP, and citrate.",
       "subcategory": "Metabolism"
+    },
+    {
+      "id": "fs-26",
+      "section": "chem",
+      "question": "A ball is thrown vertically upward with an initial velocity of 20 m/s. What is the maximum height reached by the ball? (Assume g = 10 m/s²)",
+      "options": [
+        "10 m",
+        "20 m",
+        "40 m",
+        "200 m"
+      ],
+      "correctIndex": 1,
+      "explanation": "Using v² = v₀² + 2aΔy, at max height v = 0. So 0 = (20)² + 2(-10)Δy. Solving: 400 = 20Δy, so Δy = 20 m.",
+      "subcategory": "Kinematics"
+    },
+    {
+      "id": "fs-27",
+      "section": "chem",
+      "question": "A car accelerates uniformly from rest to 25 m/s in 5 seconds. What is the car's acceleration?",
+      "options": [
+        "2.5 m/s²",
+        "5 m/s²",
+        "10 m/s²",
+        "125 m/s²"
+      ],
+      "correctIndex": 1,
+      "explanation": "Using a = (v - v₀)/t = (25 - 0)/5 = 5 m/s². This is uniform acceleration from rest.",
+      "subcategory": "Kinematics"
+    },
+    {
+      "id": "fs-28",
+      "section": "chem",
+      "question": "A projectile is launched horizontally from a cliff 80 m high with an initial velocity of 30 m/s. How long does it take to reach the ground? (Assume g = 10 m/s²)",
+      "options": [
+        "2 s",
+        "4 s",
+        "6 s",
+        "8 s"
+      ],
+      "correctIndex": 1,
+      "explanation": "For vertical motion: Δy = v₀t + ½at². Since launched horizontally, v₀(vertical) = 0. So 80 = ½(10)t², giving t² = 16, and t = 4 s. Horizontal velocity doesn't affect fall time.",
+      "subcategory": "Kinematics"
+    },
+    {
+      "id": "fs-29",
+      "section": "chem",
+      "question": "An object moving at constant velocity travels 150 m in 30 seconds. What is its velocity?",
+      "options": [
+        "0.2 m/s",
+        "5 m/s",
+        "20 m/s",
+        "4500 m/s"
+      ],
+      "correctIndex": 1,
+      "explanation": "For constant velocity, v = Δx/Δt = 150 m / 30 s = 5 m/s. At constant velocity, there is zero acceleration.",
+      "subcategory": "Kinematics"
+    },
+    {
+      "id": "fs-30",
+      "section": "chem",
+      "question": "A ball is dropped from rest and falls freely under gravity. After 3 seconds, what is its velocity? (Assume g = 10 m/s²)",
+      "options": [
+        "3 m/s",
+        "10 m/s",
+        "30 m/s",
+        "90 m/s"
+      ],
+      "correctIndex": 2,
+      "explanation": "Using v = v₀ + at, where v₀ = 0 (dropped from rest) and a = g = 10 m/s². So v = 0 + (10)(3) = 30 m/s downward.",
+      "subcategory": "Kinematics"
+    },
+    {
+      "id": "fs-31",
+      "section": "chem",
+      "question": "A projectile is launched at 45° above the horizontal with an initial speed of 40 m/s. What is the horizontal component of its initial velocity?",
+      "options": [
+        "20 m/s",
+        "28.3 m/s",
+        "34.6 m/s",
+        "40 m/s"
+      ],
+      "correctIndex": 1,
+      "explanation": "The horizontal component is v₀ₓ = v₀cos(θ) = 40 × cos(45°) = 40 × (√2/2) ≈ 40 × 0.707 = 28.3 m/s. At 45°, horizontal and vertical components are equal.",
+      "subcategory": "Kinematics"
+    },
+    {
+      "id": "fs-32",
+      "section": "chem",
+      "question": "A car traveling at 20 m/s brakes with constant deceleration and comes to rest in 50 m. What is the magnitude of the car's acceleration?",
+      "options": [
+        "2 m/s²",
+        "4 m/s²",
+        "8 m/s²",
+        "10 m/s²"
+      ],
+      "correctIndex": 1,
+      "explanation": "Using v² = v₀² + 2aΔx, where v = 0 (final), v₀ = 20 m/s, and Δx = 50 m. So 0 = 400 + 2a(50), giving 100a = -400, and a = -4 m/s². The magnitude is 4 m/s².",
+      "subcategory": "Kinematics"
+    },
+    {
+      "id": "fs-33",
+      "section": "chem",
+      "question": "A 10 kg block rests on a horizontal surface with a coefficient of static friction of 0.5. What is the minimum horizontal force required to initiate motion? (Assume g = 10 m/s²)",
+      "options": [
+        "5 N",
+        "25 N",
+        "50 N",
+        "100 N"
+      ],
+      "correctIndex": 2,
+      "explanation": "The maximum static friction force is fs(max) = μsN = μsmg = (0.5)(10)(10) = 50 N. The applied force must exceed this to overcome static friction and initiate motion.",
+      "subcategory": "Mechanics"
+    },
+    {
+      "id": "fs-34",
+      "section": "chem",
+      "question": "A 5 kg block slides down a frictionless inclined plane at 30° to the horizontal. What is the acceleration of the block? (Assume g = 10 m/s²)",
+      "options": [
+        "2.5 m/s²",
+        "5 m/s²",
+        "8.7 m/s²",
+        "10 m/s²"
+      ],
+      "correctIndex": 1,
+      "explanation": "On a frictionless incline, a = gsin(θ) = 10 × sin(30°) = 10 × 0.5 = 5 m/s². The mass cancels out. The component of gravity parallel to the incline is mgsin(θ).",
+      "subcategory": "Mechanics"
+    },
+    {
+      "id": "fs-35",
+      "section": "chem",
+      "question": "Two blocks with masses 3 kg and 7 kg are connected by a light string over a frictionless pulley. When released, what is the acceleration of the system? (Assume g = 10 m/s²)",
+      "options": [
+        "1 m/s²",
+        "4 m/s²",
+        "7 m/s²",
+        "10 m/s²"
+      ],
+      "correctIndex": 1,
+      "explanation": "For an Atwood machine, a = (m₂ - m₁)g/(m₂ + m₁) = (7 - 3)(10)/(7 + 3) = 40/10 = 4 m/s². The heavier mass accelerates downward while the lighter mass accelerates upward.",
+      "subcategory": "Mechanics"
+    },
+    {
+      "id": "fs-36",
+      "section": "chem",
+      "question": "A 20 kg crate is pushed across a horizontal floor with a force of 100 N. If the coefficient of kinetic friction is 0.3, what is the acceleration of the crate? (Assume g = 10 m/s²)",
+      "options": [
+        "0.5 m/s²",
+        "2 m/s²",
+        "5 m/s²",
+        "8 m/s²"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fnet = Fapplied - fk = ma. The kinetic friction is fk = μkN = μkmg = (0.3)(20)(10) = 60 N. So 100 - 60 = 20a, giving a = 40/20 = 2 m/s².",
+      "subcategory": "Mechanics"
+    },
+    {
+      "id": "fs-37",
+      "section": "chem",
+      "question": "A 4 kg block rests on a 37° inclined plane. If the coefficient of static friction is 0.75, will the block slide? (sin 37° ≈ 0.6, cos 37° ≈ 0.8, g = 10 m/s²)",
+      "options": [
+        "Yes, because the component of gravity parallel to the plane exceeds maximum static friction",
+        "No, because maximum static friction exceeds the component of gravity parallel to the plane",
+        "Yes, because the normal force is zero",
+        "No, because kinetic friction prevents motion"
+      ],
+      "correctIndex": 1,
+      "explanation": "The parallel component is mgsin(37°) = 4(10)(0.6) = 24 N. Maximum static friction is fs(max) = μsN = μsmgcos(37°) = (0.75)(4)(10)(0.8) = 24 N. Since fs(max) ≥ parallel force, the block remains stationary.",
+      "subcategory": "Mechanics"
+    },
+    {
+      "id": "fs-38",
+      "section": "chem",
+      "question": "A 50 kg person stands in an elevator that accelerates upward at 2 m/s². What is the normal force exerted by the floor on the person? (Assume g = 10 m/s²)",
+      "options": [
+        "400 N",
+        "500 N",
+        "600 N",
+        "700 N"
+      ],
+      "correctIndex": 2,
+      "explanation": "Using Newton's second law: N - mg = ma. So N = m(g + a) = 50(10 + 2) = 50(12) = 600 N. The person feels heavier when the elevator accelerates upward.",
+      "subcategory": "Mechanics"
+    },
+    {
+      "id": "fs-39",
+      "section": "chem",
+      "question": "A 2 kg block is pulled up a 30° incline by a force parallel to the incline. If the block moves at constant velocity and the coefficient of kinetic friction is 0.2, what force is applied? (Assume g = 10 m/s²)",
+      "options": [
+        "10 N",
+        "13.5 N",
+        "20 N",
+        "23.5 N"
+      ],
+      "correctIndex": 1,
+      "explanation": "At constant velocity, a = 0, so Fnet = 0. F = mgsin(θ) + fk = mgsin(30°) + μkmgcos(30°) = mg[sin(30°) + μkcos(30°)] = 2(10)[0.5 + 0.2(0.87)] = 20[0.5 + 0.174] ≈ 13.5 N.",
+      "subcategory": "Mechanics"
+    },
+    {
+      "id": "fs-40",
+      "section": "chem",
+      "question": "A 5 kg object is lifted vertically upward at constant velocity through a height of 10 m. How much work is done by the lifting force? (Assume g = 10 m/s²)",
+      "options": [
+        "50 J",
+        "250 J",
+        "500 J",
+        "1000 J"
+      ],
+      "correctIndex": 2,
+      "explanation": "At constant velocity, the lifting force equals the weight. Work = Fd = mgh = (5)(10)(10) = 500 J. Positive work is done because force and displacement are in the same direction.",
+      "subcategory": "Work & Energy"
+    },
+    {
+      "id": "fs-41",
+      "section": "chem",
+      "question": "A spring with spring constant k = 200 N/m is compressed by 0.5 m. How much elastic potential energy is stored in the spring?",
+      "options": [
+        "12.5 J",
+        "25 J",
+        "50 J",
+        "100 J"
+      ],
+      "correctIndex": 1,
+      "explanation": "Elastic potential energy is PE = ½kx² = ½(200)(0.5)² = ½(200)(0.25) = 25 J. The energy stored is proportional to the square of the compression.",
+      "subcategory": "Work & Energy"
+    },
+    {
+      "id": "fs-42",
+      "section": "chem",
+      "question": "A 2 kg ball is dropped from a height of 20 m. What is its kinetic energy just before it hits the ground? (Neglect air resistance, g = 10 m/s²)",
+      "options": [
+        "20 J",
+        "40 J",
+        "200 J",
+        "400 J"
+      ],
+      "correctIndex": 3,
+      "explanation": "Using conservation of energy: PE(initial) = KE(final). So mgh = KE = (2)(10)(20) = 400 J. All gravitational potential energy converts to kinetic energy.",
+      "subcategory": "Work & Energy"
+    },
+    {
+      "id": "fs-43",
+      "section": "chem",
+      "question": "A 10 kg block slides 5 m across a horizontal surface with coefficient of kinetic friction 0.4. How much work is done by friction? (Assume g = 10 m/s²)",
+      "options": [
+        "-200 J",
+        "-100 J",
+        "100 J",
+        "200 J"
+      ],
+      "correctIndex": 0,
+      "explanation": "Work by friction = -fk × d = -μkmgd = -(0.4)(10)(10)(5) = -200 J. The work is negative because friction opposes motion, removing mechanical energy from the system.",
+      "subcategory": "Work & Energy"
+    },
+    {
+      "id": "fs-44",
+      "section": "chem",
+      "question": "A force of 20 N is applied at 60° to the horizontal to move a box 4 m horizontally. How much work is done by this force?",
+      "options": [
+        "10 J",
+        "20 J",
+        "40 J",
+        "80 J"
+      ],
+      "correctIndex": 2,
+      "explanation": "Work = Fdcos(θ) = (20)(4)cos(60°) = 80(0.5) = 40 J. Only the horizontal component of force (Fcos60°) does work in the direction of displacement.",
+      "subcategory": "Work & Energy"
+    },
+    {
+      "id": "fs-45",
+      "section": "chem",
+      "question": "A roller coaster car of mass 500 kg starts from rest at the top of a 30 m hill. If 20% of the mechanical energy is lost to friction, what is the car's speed at the bottom? (Assume g = 10 m/s²)",
+      "options": [
+        "12 m/s",
+        "16 m/s",
+        "20 m/s",
+        "24 m/s"
+      ],
+      "correctIndex": 2,
+      "explanation": "Initial PE = mgh = (500)(10)(30) = 150,000 J. After 20% loss, KE = 0.8(150,000) = 120,000 J. Using KE = ½mv²: 120,000 = ½(500)v², so v² = 480 and v ≈ 22 m/s ≈ 20 m/s (closest answer).",
+      "subcategory": "Work & Energy"
+    },
+    {
+      "id": "fs-46",
+      "section": "chem",
+      "question": "A 3 kg object moving at 8 m/s collides with a stationary 5 kg object. They stick together after collision. What is the velocity of the combined mass after collision?",
+      "options": [
+        "1 m/s",
+        "2 m/s",
+        "3 m/s",
+        "4 m/s"
+      ],
+      "correctIndex": 2,
+      "explanation": "Using conservation of momentum: m₁v₁ + m₂v₂ = (m₁ + m₂)vf. So (3)(8) + (5)(0) = (3 + 5)vf, giving 24 = 8vf, and vf = 3 m/s. This is a perfectly inelastic collision.",
+      "subcategory": "Work & Energy"
+    },
+    {
+      "id": "fs-47",
+      "section": "chem",
+      "question": "A gas undergoes an isothermal expansion. Which of the following statements is true?",
+      "options": [
+        "The internal energy of the gas increases",
+        "No heat is exchanged with the surroundings",
+        "The temperature of the gas remains constant",
+        "No work is done by the gas"
+      ],
+      "correctIndex": 2,
+      "explanation": "Isothermal means constant temperature. For an ideal gas, internal energy depends only on temperature, so ΔU = 0. By the first law (ΔU = Q - W), Q = W, meaning heat absorbed equals work done.",
+      "subcategory": "Thermodynamics"
+    },
+    {
+      "id": "fs-48",
+      "section": "chem",
+      "question": "A system absorbs 500 J of heat and does 300 J of work on its surroundings. What is the change in internal energy of the system?",
+      "options": [
+        "-200 J",
+        "200 J",
+        "500 J",
+        "800 J"
+      ],
+      "correctIndex": 1,
+      "explanation": "Using the first law of thermodynamics: ΔU = Q - W = 500 - 300 = 200 J. The system's internal energy increases because more heat is absorbed than work is done.",
+      "subcategory": "Thermodynamics"
+    },
+    {
+      "id": "fs-49",
+      "section": "chem",
+      "question": "Which process represents an adiabatic compression?",
+      "options": [
+        "A gas is compressed rapidly in an insulated cylinder",
+        "A gas expands slowly while in thermal contact with a heat reservoir",
+        "A gas expands at constant pressure",
+        "A gas is heated at constant volume"
+      ],
+      "correctIndex": 0,
+      "explanation": "Adiabatic means no heat exchange (Q = 0). Rapid compression in an insulated cylinder prevents heat transfer. During adiabatic compression, temperature increases as work is done on the gas.",
+      "subcategory": "Thermodynamics"
+    },
+    {
+      "id": "fs-50",
+      "section": "chem",
+      "question": "A heat engine operates between a hot reservoir at 600 K and a cold reservoir at 300 K. What is the maximum theoretical efficiency of this engine?",
+      "options": [
+        "25%",
+        "33%",
+        "50%",
+        "67%"
+      ],
+      "correctIndex": 2,
+      "explanation": "The maximum efficiency is the Carnot efficiency: η = 1 - (Tc/Th) = 1 - (300/600) = 1 - 0.5 = 0.5 = 50%. No real heat engine can exceed this theoretical limit.",
+      "subcategory": "Thermodynamics"
+    },
+    {
+      "id": "fs-51",
+      "section": "chem",
+      "question": "During an isobaric expansion of an ideal gas, which of the following must be true?",
+      "options": [
+        "The temperature decreases",
+        "The volume remains constant",
+        "Work is done by the gas",
+        "No heat is transferred"
+      ],
+      "correctIndex": 2,
+      "explanation": "Isobaric means constant pressure. During expansion, the gas does positive work (W = PΔV > 0). For an ideal gas expanding isobarically, temperature increases, and heat must be added to maintain constant pressure.",
+      "subcategory": "Thermodynamics"
+    },
+    {
+      "id": "fs-52",
+      "section": "chem",
+      "question": "Which of the following represents a violation of the second law of thermodynamics?",
+      "options": [
+        "Heat flows spontaneously from a hot object to a cold object",
+        "A refrigerator transfers heat from a cold space to a warm space using work input",
+        "Heat is completely converted to work with 100% efficiency in a cyclic process",
+        "The entropy of an isolated system increases during an irreversible process"
+      ],
+      "correctIndex": 2,
+      "explanation": "The second law states that heat cannot be completely converted to work in a cyclic process with 100% efficiency. Some heat must be expelled to a cold reservoir. Options A, B, and D are all consistent with the second law.",
+      "subcategory": "Thermodynamics"
+    },
+    {
+      "id": "fs-53",
+      "section": "chem",
+      "question": "An ideal gas expands isothermally and reversibly, doubling its volume. What happens to its entropy?",
+      "options": [
+        "Entropy decreases",
+        "Entropy remains constant",
+        "Entropy increases",
+        "Entropy becomes zero"
+      ],
+      "correctIndex": 2,
+      "explanation": "For an isothermal reversible expansion, ΔS = nRln(V₂/V₁). Since V₂ = 2V₁, ΔS = nRln(2) > 0. Entropy increases because the gas molecules have more available microstates at larger volume.",
+      "subcategory": "Thermodynamics"
+    },
+    {
+      "id": "fs-54",
+      "section": "chem",
+      "question": "Two point charges of +3 μC and +6 μC are separated by a distance of 0.3 m. What is the magnitude of the electrostatic force between them? (k = 9 × 10⁹ N·m²/C²)",
+      "options": [
+        "0.54 N",
+        "1.8 N",
+        "5.4 N",
+        "18 N"
+      ],
+      "correctIndex": 1,
+      "explanation": "Using Coulomb's law: F = k|q₁q₂|/r² = (9 × 10⁹)(3 × 10⁻⁶)(6 × 10⁻⁶)/(0.3)² = (9 × 10⁹)(18 × 10⁻¹²)/0.09 = 162 × 10⁻³/0.09 = 1.8 N. The force is repulsive since both charges are positive.",
+      "subcategory": "Electrostatics"
+    },
+    {
+      "id": "fs-55",
+      "section": "chem",
+      "question": "A parallel-plate capacitor has a capacitance of 4 μF and is connected to a 12 V battery. How much charge is stored on each plate?",
+      "options": [
+        "3 μC",
+        "16 μC",
+        "48 μC",
+        "144 μC"
+      ],
+      "correctIndex": 2,
+      "explanation": "Using Q = CV = (4 × 10⁻⁶)(12) = 48 × 10⁻⁶ C = 48 μC. The positive plate holds +48 μC and the negative plate holds -48 μC.",
+      "subcategory": "Electrostatics"
+    },
+    {
+      "id": "fs-56",
+      "section": "chem",
+      "question": "A wire carries a current of 5 A through a resistance of 8 Ω. What is the power dissipated in the wire?",
+      "options": [
+        "13 W",
+        "40 W",
+        "200 W",
+        "320 W"
+      ],
+      "correctIndex": 2,
+      "explanation": "Using P = I²R = (5)²(8) = 25(8) = 200 W. Alternatively, V = IR = 40 V, and P = IV = (5)(40) = 200 W. The power is dissipated as heat.",
+      "subcategory": "Circuits"
+    },
+    {
+      "id": "fs-57",
+      "section": "chem",
+      "question": "Three resistors of 2 Ω, 3 Ω, and 6 Ω are connected in parallel. What is the equivalent resistance of the combination?",
+      "options": [
+        "1 Ω",
+        "2 Ω",
+        "5.5 Ω",
+        "11 Ω"
+      ],
+      "correctIndex": 0,
+      "explanation": "For parallel resistors: 1/Req = 1/R₁ + 1/R₂ + 1/R₃ = 1/2 + 1/3 + 1/6 = 3/6 + 2/6 + 1/6 = 6/6 = 1. Therefore, Req = 1 Ω. Parallel resistance is always less than the smallest individual resistor.",
+      "subcategory": "Circuits"
+    },
+    {
+      "id": "fs-58",
+      "section": "chem",
+      "question": "A charged particle moving perpendicular to a magnetic field experiences a force. What happens to the particle's kinetic energy?",
+      "options": [
+        "It increases",
+        "It decreases",
+        "It remains constant",
+        "It becomes zero"
+      ],
+      "correctIndex": 2,
+      "explanation": "The magnetic force (F = qvB) is always perpendicular to velocity, so it does no work (W = Fd cos90° = 0). The particle moves in a circular path, but its speed and kinetic energy remain constant.",
+      "subcategory": "Magnetism"
+    },
+    {
+      "id": "fs-59",
+      "section": "chem",
+      "question": "A straight wire carrying 10 A of current is placed perpendicular to a uniform magnetic field of 0.5 T. If 2 m of the wire is within the field, what is the magnitude of the magnetic force on the wire?",
+      "options": [
+        "2.5 N",
+        "5 N",
+        "10 N",
+        "20 N"
+      ],
+      "correctIndex": 2,
+      "explanation": "Using F = BIL = (0.5)(10)(2) = 10 N. The force is perpendicular to both the current direction and the magnetic field, following the right-hand rule.",
+      "subcategory": "Magnetism"
+    },
+    {
+      "id": "fs-60",
+      "section": "chem",
+      "question": "A conducting loop is moved through a region of uniform magnetic field. Under which condition will an emf be induced in the loop?",
+      "options": [
+        "The loop moves parallel to the magnetic field lines",
+        "The loop remains stationary within the field",
+        "The magnetic flux through the loop changes",
+        "The loop has high resistance"
+      ],
+      "correctIndex": 2,
+      "explanation": "According to Faraday's law, emf is induced when magnetic flux through the loop changes (ε = -dΦ/dt). Moving parallel to field lines or remaining stationary doesn't change flux. Resistance affects current, not induced emf.",
+      "subcategory": "Magnetism"
+    },
+    {
+      "id": "fs-61",
+      "section": "chem",
+      "question": "A sound wave has a frequency of 500 Hz and travels through air at 340 m/s. What is the wavelength of this sound wave?",
+      "options": [
+        "0.68 m",
+        "1.47 m",
+        "170 m",
+        "170,000 m"
+      ],
+      "correctIndex": 0,
+      "explanation": "Using v = fλ, we get λ = v/f = 340/500 = 0.68 m. The wavelength is inversely proportional to frequency when wave speed is constant.",
+      "subcategory": "Waves & Sound"
+    },
+    {
+      "id": "fs-62",
+      "section": "chem",
+      "question": "An ambulance siren emits a frequency of 1000 Hz. As the ambulance approaches a stationary observer at high speed, what happens to the frequency heard by the observer?",
+      "options": [
+        "It decreases below 1000 Hz",
+        "It remains at 1000 Hz",
+        "It increases above 1000 Hz",
+        "It becomes zero"
+      ],
+      "correctIndex": 2,
+      "explanation": "This is the Doppler effect. When the source approaches the observer, the wavelengths are compressed, increasing the observed frequency above the emitted frequency. When receding, frequency decreases.",
+      "subcategory": "Waves & Sound"
+    },
+    {
+      "id": "fs-63",
+      "section": "chem",
+      "question": "Light travels from air (n = 1.0) into water (n = 1.33). What happens to the light's speed and wavelength?",
+      "options": [
+        "Both speed and wavelength increase",
+        "Speed decreases, wavelength increases",
+        "Both speed and wavelength decrease",
+        "Speed increases, wavelength decreases"
+      ],
+      "correctIndex": 2,
+      "explanation": "In a denser medium (higher n), light slows down: v = c/n. Since frequency remains constant and v = fλ, wavelength also decreases proportionally. Both speed and wavelength decrease.",
+      "subcategory": "Optics"
+    },
+    {
+      "id": "fs-64",
+      "section": "chem",
+      "question": "A convex lens with focal length 20 cm has an object placed 60 cm in front of it. Where is the image formed?",
+      "options": [
+        "15 cm behind the lens",
+        "30 cm behind the lens",
+        "40 cm behind the lens",
+        "60 cm behind the lens"
+      ],
+      "correctIndex": 1,
+      "explanation": "Using the thin lens equation: 1/f = 1/do + 1/di. So 1/20 = 1/60 + 1/di. Therefore, 1/di = 1/20 - 1/60 = 3/60 - 1/60 = 2/60 = 1/30, giving di = 30 cm. The image is real and inverted.",
+      "subcategory": "Optics"
+    },
+    {
+      "id": "fs-65",
+      "section": "chem",
+      "question": "Total internal reflection can occur when light travels from:",
+      "options": [
+        "Air into water",
+        "Water into air",
+        "Air into glass",
+        "Any medium into any other medium"
+      ],
+      "correctIndex": 1,
+      "explanation": "Total internal reflection occurs only when light travels from a denser medium (higher n) to a less dense medium (lower n) at an angle greater than the critical angle. Water to air satisfies this condition.",
+      "subcategory": "Optics"
+    },
+    {
+      "id": "fs-66",
+      "section": "chem",
+      "question": "A string vibrates at its fundamental frequency with a wavelength of 2.0 m. If the string is 1.0 m long, what type of wave pattern is formed?",
+      "options": [
+        "One complete wavelength",
+        "Half a wavelength",
+        "Two complete wavelengths",
+        "Quarter of a wavelength"
+      ],
+      "correctIndex": 1,
+      "explanation": "For the fundamental frequency (first harmonic) of a string fixed at both ends, the length L = λ/2. So if L = 1.0 m, then λ = 2.0 m, giving half a wavelength fitting on the string with nodes at each end.",
+      "subcategory": "Waves & Sound"
+    },
+    {
+      "id": "fs-67",
+      "section": "chem",
+      "question": "Which of the following electromagnetic waves has the highest energy per photon?",
+      "options": [
+        "Infrared",
+        "Visible light",
+        "Ultraviolet",
+        "Radio waves"
+      ],
+      "correctIndex": 2,
+      "explanation": "Photon energy E = hf = hc/λ. UV light has higher frequency (shorter wavelength) than infrared, visible, or radio waves, giving it the highest energy per photon among the choices. X-rays and gamma rays have even higher energy.",
+      "subcategory": "Optics"
+    },
+    {
+      "id": "fs-68",
+      "section": "chem",
+      "question": "A concave mirror has a focal length of 10 cm. An object is placed 5 cm in front of the mirror. What type of image is formed?",
+      "options": [
+        "Real and inverted",
+        "Real and upright",
+        "Virtual and inverted",
+        "Virtual and upright"
+      ],
+      "correctIndex": 3,
+      "explanation": "Using 1/f = 1/do + 1/di: 1/10 = 1/5 + 1/di gives 1/di = 1/10 - 1/5 = -1/10, so di = -10 cm. The negative image distance means the image is virtual (behind mirror) and upright, magnified.",
+      "subcategory": "Optics"
+    },
+    {
+      "id": "fs-69",
+      "section": "chem",
+      "question": "Two sound waves of frequencies 256 Hz and 260 Hz are played simultaneously. What is the beat frequency heard?",
+      "options": [
+        "2 Hz",
+        "4 Hz",
+        "258 Hz",
+        "516 Hz"
+      ],
+      "correctIndex": 1,
+      "explanation": "Beat frequency equals the absolute difference between the two frequencies: |f₁ - f₂| = |256 - 260| = 4 Hz. Beats create a pulsing sound with amplitude varying at this frequency.",
+      "subcategory": "Waves & Sound"
+    },
+    {
+      "id": "fs-70",
+      "section": "chem",
+      "question": "Light of wavelength 600 nm passes through a single slit and creates a diffraction pattern. If the slit width is decreased, what happens to the central maximum?",
+      "options": [
+        "It becomes narrower",
+        "It becomes wider",
+        "It remains the same width",
+        "It disappears"
+      ],
+      "correctIndex": 1,
+      "explanation": "In single-slit diffraction, the width of the central maximum is inversely proportional to the slit width (θ ∝ λ/a). Decreasing the slit width (a) increases the angular width of the central maximum, making it wider.",
+      "subcategory": "Optics"
+    },
+    {
+      "id": "fs-71",
+      "section": "chem",
+      "question": "A light ray strikes a plane mirror at an angle of 35° to the normal. What is the angle of reflection?",
+      "options": [
+        "35° to the normal",
+        "55° to the normal",
+        "35° to the mirror surface",
+        "90° to the normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "The law of reflection states that the angle of incidence equals the angle of reflection, both measured from the normal. Therefore, the angle of reflection is also 35° to the normal.",
+      "subcategory": "Optics"
+    },
+    {
+      "id": "fs-72",
+      "section": "chem",
+      "question": "An open pipe resonates at its fundamental frequency of 200 Hz. What is the frequency of the second harmonic?",
+      "options": [
+        "100 Hz",
+        "200 Hz",
+        "400 Hz",
+        "600 Hz"
+      ],
+      "correctIndex": 2,
+      "explanation": "For an open pipe, all harmonics are present: f₁, 2f₁, 3f₁, etc. The second harmonic (first overtone) is 2f₁ = 2(200) = 400 Hz. Open pipes have antinodes at both ends.",
+      "subcategory": "Waves & Sound"
+    },
+    {
+      "id": "fs-73",
+      "section": "bio",
+      "question": "At physiological pH (7.4), which amino acid would carry a net positive charge?",
+      "options": [
+        "Aspartic acid (pKa of side chain = 3.9)",
+        "Lysine (pKa of side chain = 10.5)",
+        "Glycine (no ionizable side chain)",
+        "Tyrosine (pKa of side chain = 10.1)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Lysine has a basic side chain with pKa = 10.5. At pH 7.4 (below its pKa), the side chain remains protonated and positively charged. Combined with the protonated amino group, lysine carries a net positive charge. Aspartic acid would be negatively charged at pH 7.4.",
+      "subcategory": "Amino Acids & Proteins"
+    },
+    {
+      "id": "fs-74",
+      "section": "bio",
+      "question": "Which level of protein structure is primarily stabilized by hydrogen bonds between backbone carbonyl and amino groups?",
+      "options": [
+        "Primary structure",
+        "Secondary structure",
+        "Tertiary structure",
+        "Quaternary structure"
+      ],
+      "correctIndex": 1,
+      "explanation": "Secondary structure (α-helices and β-sheets) is stabilized by hydrogen bonds between the carbonyl oxygen and amino hydrogen of the peptide backbone. Primary structure refers to the amino acid sequence, while tertiary and quaternary involve side chain interactions.",
+      "subcategory": "Amino Acids & Proteins"
+    },
+    {
+      "id": "fs-75",
+      "section": "bio",
+      "question": "A researcher performs isoelectric focusing on a protein with an isoelectric point (pI) of 5.5. At what pH will the protein migrate toward the cathode (negative electrode)?",
+      "options": [
+        "pH 3.0",
+        "pH 5.5",
+        "pH 7.0",
+        "pH 9.0"
+      ],
+      "correctIndex": 0,
+      "explanation": "At pH below its pI, a protein is protonated and carries a net positive charge, causing it to migrate toward the cathode (negative electrode). At pH 3.0, which is below the pI of 5.5, the protein will be positively charged and move toward the cathode.",
+      "subcategory": "Amino Acids & Proteins"
+    },
+    {
+      "id": "fs-76",
+      "section": "bio",
+      "question": "Which of the following amino acids contains sulfur in its side chain and can form disulfide bonds?",
+      "options": [
+        "Methionine only",
+        "Cysteine only",
+        "Both methionine and cysteine",
+        "Serine and threonine"
+      ],
+      "correctIndex": 1,
+      "explanation": "While both methionine and cysteine contain sulfur, only cysteine can form disulfide bonds (cystine) through oxidation of its thiol (-SH) group. Methionine has a thioether group that cannot form disulfide bonds. Disulfide bonds are important for protein stability.",
+      "subcategory": "Amino Acids & Proteins"
+    },
+    {
+      "id": "fs-77",
+      "section": "bio",
+      "question": "A peptide is cleaved by trypsin, which specifically cuts on the C-terminal side of lysine and arginine residues. How many fragments would result from trypsin digestion of the peptide: Ala-Lys-Gly-Arg-Phe-Leu?",
+      "options": [
+        "2 fragments",
+        "3 fragments",
+        "4 fragments",
+        "6 fragments"
+      ],
+      "correctIndex": 1,
+      "explanation": "Trypsin cleaves after Lys and Arg. The peptide has Lys at position 2 and Arg at position 4. Cleavage after these residues produces 3 fragments: (Ala-Lys), (Gly-Arg), and (Phe-Leu).",
+      "subcategory": "Amino Acids & Proteins"
+    },
+    {
+      "id": "fs-78",
+      "section": "bio",
+      "question": "Proline is unique among the 20 standard amino acids because:",
+      "options": [
+        "It is the only amino acid with an aromatic side chain",
+        "It is the only amino acid that forms a cyclic structure with its backbone",
+        "It is the only amino acid with a charged side chain at physiological pH",
+        "It is the only amino acid that can form disulfide bonds"
+      ],
+      "correctIndex": 1,
+      "explanation": "Proline's side chain forms a five-membered ring with its backbone nitrogen, making it an imino acid rather than an amino acid. This cyclic structure restricts backbone flexibility and often disrupts α-helices, creating kinks in protein structures.",
+      "subcategory": "Amino Acids & Proteins"
+    },
+    {
+      "id": "fs-79",
+      "section": "bio",
+      "question": "Which technique would be most appropriate for determining the primary structure of a protein?",
+      "options": [
+        "X-ray crystallography",
+        "NMR spectroscopy",
+        "Edman degradation or mass spectrometry",
+        "Circular dichroism spectroscopy"
+      ],
+      "correctIndex": 2,
+      "explanation": "Primary structure is the amino acid sequence. Edman degradation sequentially removes amino acids from the N-terminus, while mass spectrometry can determine peptide masses and sequences. X-ray crystallography and NMR determine 3D structure, while circular dichroism assesses secondary structure content.",
+      "subcategory": "Amino Acids & Proteins"
+    },
+    {
+      "id": "fs-80",
+      "section": "bio",
+      "question": "A protein's quaternary structure involves:",
+      "options": [
+        "The sequence of amino acids in a polypeptide chain",
+        "The formation of α-helices and β-sheets",
+        "The overall 3D shape of a single polypeptide chain",
+        "The assembly of multiple polypeptide subunits"
+      ],
+      "correctIndex": 3,
+      "explanation": "Quaternary structure refers to the arrangement of multiple polypeptide subunits in a multi-subunit protein complex (e.g., hemoglobin with 4 subunits). Primary structure is the amino acid sequence, secondary structure includes α-helices and β-sheets, and tertiary structure is the 3D folding of a single chain.",
+      "subcategory": "Amino Acids & Proteins"
     }
   ],
   "passages": [
