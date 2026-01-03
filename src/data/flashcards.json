@@ -292,9 +292,9 @@
     },
     {
       "id": "bio-9",
-      "front": "What amino acids absorb UV light at 280 nm?",
-      "back": "Aromatic amino acids:\n\nTryptophan (W): Strongest absorber\nTyrosine (Y): Moderate absorber\nPhenylalanine (F): Weak absorber\n\nUsed to:\n\u2022 Measure protein concentration (A280)\n\u2022 Track proteins in chromatography\n\u2022 Detect aromatic residues\n\nW > Y >> F in absorption strength",
-      "subcategory": "Amino Acids & Proteins"
+      "front": "Describe the process air follows in the respiratory system.",
+      "back": "1. Air enters through the nose/mouth.\n2. Passes through the pharynx and larynx.\n3. Travels down the trachea.\n4. Divides into bronchi (one for each lung).\n5. Bronchi branch into bronchioles.\n6. Ends at alveoli (air sacs) where gas exchange occurs.\n7. Oxygen diffuses into blood; CO2 diffuses out.",
+      "subcategory": "Respiratory System"
     },
     {
       "id": "bio-10",
@@ -372,7 +372,7 @@
       "id": "bio-22",
       "front": "What is the function of the nephron?",
       "back": "Functional unit of the kidney:\n\n1. Glomerulus: Filtration\n2. PCT: Reabsorption (glucose, amino acids, Na\u207a)\n3. Loop of Henle: Concentration gradient\n4. DCT: Fine-tuning (aldosterone, ADH)\n5. Collecting duct: Final concentration",
-      "subcategory": "Amino Acids & Proteins"
+      "subcategory": "Renal System"
     },
     {
       "id": "bio-23",
@@ -444,7 +444,7 @@
       "id": "bio-34",
       "front": "What are the 6 major enzyme classes?",
       "back": "1. Oxidoreductases: Redox reactions (e.g., dehydrogenases, oxidases)\n\n2. Transferases: Transfer functional groups (e.g., kinases, transaminases)\n\n3. Hydrolases: Break bonds with water (e.g., peptidases, lipases)\n\n4. Lyases: Add/remove groups to form double bonds (e.g., decarboxylases)\n\n5. Isomerases: Rearrange atoms (e.g., racemases, mutases)\n\n6. Ligases: Form bonds with ATP (e.g., DNA ligase, synthetases)",
-      "subcategory": "Digestive System"
+      "subcategory": "Protein Structure"
     },
     {
       "id": "bio-35",
@@ -456,7 +456,7 @@
       "id": "bio-36",
       "front": "What are examples of transferases?",
       "back": "Function: Transfer functional groups between molecules\n\nExamples:\n\u2022 Kinases: Transfer phosphate groups (hexokinase, protein kinases)\n\u2022 Transaminases: Transfer amino groups (ALT, AST)\n\u2022 Methyltransferases: Transfer methyl groups\n\u2022 Acyltransferases: Transfer acyl groups\n\nOften use ATP or coenzymes\n\nEC class: 2.x.x.x",
-      "subcategory": "Digestive System"
+      "subcategory": "Molecular Biology"
     },
     {
       "id": "bio-37",
@@ -468,31 +468,31 @@
       "id": "bio-38",
       "front": "What are examples of lyases?",
       "back": "Function: Add or remove groups to form/break double bonds (non-hydrolytic)\n\nExamples:\n\u2022 Decarboxylases: Remove CO\u2082 (pyruvate decarboxylase)\n\u2022 Aldolases: Aldol cleavage (fructose-1,6-bisphosphate aldolase)\n\u2022 Synthases: Form double bonds (citrate synthase)*\n\u2022 Dehydratases: Remove H\u2082O (enolase)\n\n*Note: Synthases (lyases) \u2260 Synthetases (ligases)\n\nEC class: 4.x.x.x",
-      "subcategory": "General Biology"
+      "subcategory": "Molecular Biology"
     },
     {
       "id": "bio-39",
       "front": "What are examples of isomerases?",
       "back": "Function: Rearrange atoms within a molecule\n\nExamples:\n\u2022 Racemases: Interconvert stereoisomers\n\u2022 Epimerases: Change configuration at one carbon\n\u2022 Mutases: Move functional groups (phosphoglucomutase)\n\u2022 Isomerases: Structural rearrangements (glucose-6-phosphate isomerase)\n\nNo net change in molecular formula\n\nEC class: 5.x.x.x",
-      "subcategory": "General Biology"
+      "subcategory": "Molecular Biology"
     },
     {
       "id": "bio-40",
       "front": "What are examples of ligases?",
       "back": "Function: Form bonds using ATP energy\n\nExamples:\n\u2022 Synthetases: Join molecules (aminoacyl-tRNA synthetase, ATP synthase*)\n\u2022 Carboxylases: Add CO\u2082 (pyruvate carboxylase)\n\u2022 DNA ligase: Join DNA fragments\n\u2022 RNA ligase: Join RNA fragments\n\nRequire ATP (or GTP) hydrolysis\n\n*ATP synthase is actually a special case\n\nEC class: 6.x.x.x",
-      "subcategory": "Metabolism"
+      "subcategory": "Molecular Biology"
     },
     {
       "id": "bio-41",
       "front": "What factors affect enzyme activity?",
       "back": "Temperature:\n\u2022 \u2191 temp \u2192 \u2191 rate (up to optimum ~37\u00b0C)\n\u2022 Too high \u2192 denaturation\n\npH:\n\u2022 Each enzyme has optimal pH\n\u2022 Extremes denature or change ionization\n\nSubstrate concentration:\n\u2022 Follows Michaelis-Menten kinetics\n\nEnzyme concentration:\n\u2022 Directly proportional to rate\n\nCofactors/Coenzymes:\n\u2022 Required for activity\n\nInhibitors/Activators:\n\u2022 Regulate activity",
-      "subcategory": "Protein Structure"
+      "subcategory": "Enzyme Kinetics"
     },
     {
       "id": "bio-42",
       "front": "What is allosteric regulation?",
       "back": "Binding of molecule at site other than active site changes enzyme activity\n\nPositive regulation:\n\u2022 Activator binds \u2192 \u2191 activity\n\u2022 Shifts curve left (\u2193 Km)\n\nNegative regulation:\n\u2022 Inhibitor binds \u2192 \u2193 activity\n\u2022 Shifts curve right (\u2191 Km)\n\nCooperativity:\n\u2022 Sigmoidal curve (not hyperbolic)\n\u2022 Binding of one substrate affects others\n\nExample: Hemoglobin, phosphofructokinase",
-      "subcategory": "Digestive System"
+      "subcategory": "Enzyme Kinetics"
     },
     {
       "id": "bio-43",
@@ -612,7 +612,7 @@
       "id": "bio-62",
       "front": "What is the genetic code and its properties?",
       "back": "Genetic code: 64 codons (4\u00b3) code for 20 amino acids\n\nProperties:\n\u2022 Universal (nearly all organisms use same code)\n\u2022 Degenerate/redundant (multiple codons per AA)\n\u2022 Unambiguous (each codon = only 1 AA)\n\u2022 Non-overlapping (read in triplets)\n\u2022 Wobble at 3rd position (relaxed base pairing)\n\n61 sense codons, 3 stop codons",
-      "subcategory": "Amino Acids & Proteins"
+      "subcategory": "Genetics"
     },
     {
       "id": "bio-63",
@@ -622,9 +622,9 @@
     },
     {
       "id": "bio-64",
-      "front": "What is a Punnett square and how do you use it?",
-      "back": "Tool to predict offspring genotypes from parental crosses\n\nSteps:\n1. Write one parent's alleles on top\n2. Write other parent's alleles on side\n3. Fill boxes by combining alleles\n4. Count ratios\n\nExample: Aa \u00d7 Aa\n\u2192 1 AA : 2 Aa : 1 aa (genotype)\n\u2192 3 dominant : 1 recessive (phenotype)\n\nMonohybrid: 3:1 ratio; Dihybrid: 9:3:3:1 ratio",
-      "subcategory": "Genetics"
+      "front": "What are the types of enzyme inhibition?",
+      "back": "Types of enzyme inhibition:\n\n1. Competitive inhibition:\n   - Inhibitor competes with substrate for active site\n   - Can be overcome by increasing substrate concentration\n\n2. Non-competitive inhibition:\n   - Inhibitor binds to allosteric site (not active site)\n   - Reduces enzyme activity regardless of substrate concentration\n\n3. Uncompetitive inhibition:\n   - Inhibitor binds only to enzyme-substrate complex\n   - Prevents conversion to product\n\n4. Mixed inhibition:\n   - Inhibitor can bind to either enzyme or enzyme-substrate complex\n   - Affects both binding and catalysis",
+      "subcategory": "Enzyme Inhibition"
     },
     {
       "id": "bio-65",
@@ -648,7 +648,7 @@
       "id": "bio-68",
       "front": "What is the monohybrid cross ratio?",
       "back": "Cross: Heterozygote \u00d7 Heterozygote (Aa \u00d7 Aa)\n\nGenotype ratio: 1:2:1\n\u2022 1 AA : 2 Aa : 1 aa\n\nPhenotype ratio: 3:1\n\u2022 3 dominant : 1 recessive\n\nProbabilities:\n\u2022 Dominant phenotype: 3/4 (75%)\n\u2022 Recessive phenotype: 1/4 (25%)\n\u2022 Heterozygote: 1/2 (50%)",
-      "subcategory": "General Biology"
+      "subcategory": "Genetics"
     },
     {
       "id": "bio-69",
@@ -658,9 +658,9 @@
     },
     {
       "id": "bio-70",
-      "front": "What is a test cross?",
-      "back": "Cross an unknown genotype with homozygous recessive (aa)\n\nPurpose: Determine if unknown is AA or Aa\n\nResults:\n\u2022 If all offspring dominant \u2192 unknown was AA\n\u2022 If ~50% dominant, 50% recessive \u2192 unknown was Aa\n\nExample:\n\u2022 A_ \u00d7 aa\n\u2022 If AA \u00d7 aa \u2192 all Aa (dominant)\n\u2022 If Aa \u00d7 aa \u2192 1 Aa : 1 aa",
-      "subcategory": "General Biology"
+      "front": "What is penetrance vs expressivity?",
+      "back": "Penetrance:\n\u2022 Proportion of individuals with genotype who show phenotype\n\u2022 Complete penetrance: 100% show trait\n\u2022 Incomplete penetrance: <100% show trait\n\nExpressivity:\n\u2022 Degree/severity of phenotype among individuals with same genotype\n\u2022 Variable expressivity: Different severity levels\n\nExample: BRCA1 mutation (high penetrance, variable expressivity)",
+      "subcategory": "Genetics"
     },
     {
       "id": "bio-71",
@@ -678,7 +678,7 @@
       "id": "bio-73",
       "front": "How do you use Hardy-Weinberg to calculate carrier frequency?",
       "back": "For recessive trait:\n\nGiven: Disease frequency (q\u00b2)\n1. Calculate q = \u221a(q\u00b2)\n2. Calculate p = 1 - q\n3. Carrier frequency = 2pq\n\nExample: Disease affects 1/10,000\n\u2022 q\u00b2 = 0.0001\n\u2022 q = 0.01\n\u2022 p = 0.99\n\u2022 2pq = 2(0.99)(0.01) \u2248 0.02 or 1/50\n\nCarriers much more common than affected!",
-      "subcategory": "General Biology"
+      "subcategory": "Genetics"
     },
     {
       "id": "bio-74",
@@ -688,9 +688,9 @@
     },
     {
       "id": "bio-75",
-      "front": "What causes sickle cell disease (classic MCAT example)?",
-      "back": "Single amino acid mutation in \u03b2-globin gene:\n\u2022 Position 6: Glu \u2192 Val\n\u2022 GAG \u2192 GTG (DNA)\n\u2022 Glutamic acid (polar, negative) \u2192 Valine (nonpolar)\n\nResult:\n\u2022 Abnormal hemoglobin (HbS)\n\u2022 Hydrophobic patch \u2192 aggregation\n\u2022 RBCs sickle-shaped\n\u2022 Vascular occlusion, pain, anemia\n\nInheritance: Autosomal recessive\nHeterozygote advantage: Protection from malaria",
-      "subcategory": "Amino Acids & Proteins"
+      "front": "What is mitochondrial inheritance?",
+      "back": "Mitochondrial DNA (mtDNA) inherited maternally\n\nKey points:\n\u2022 Only mothers pass mtDNA to offspring\n\u2022 Both sons and daughters inherit mtDNA\n\u2022 Mutations affect all children of affected mother\n\u2022 No paternal contribution\n\nExample diseases: Leber's hereditary optic neuropathy, mitochondrial myopathy",
+      "subcategory": "Genetics"
     },
     {
       "id": "bio-76",
@@ -702,7 +702,7 @@
       "id": "bio-77",
       "front": "Compare DNA replication, transcription, and translation enzymes",
       "back": "Replication (DNA \u2192 DNA):\n\u2022 Helicase, DNA polymerase, primase, ligase, topoisomerase\n\u2022 Needs primer, 5' \u2192 3'\n\nTranscription (DNA \u2192 RNA):\n\u2022 RNA polymerase\n\u2022 No primer needed, 5' \u2192 3'\n\nTranslation (RNA \u2192 Protein):\n\u2022 Ribosome, tRNA, aminoacyl-tRNA synthetase\n\u2022 Start codon needed\n\nAll synthesize 5' \u2192 3' (or N \u2192 C for protein)",
-      "subcategory": "Digestive System"
+      "subcategory": "Genetics"
     },
     {
       "id": "bio-78",
@@ -840,7 +840,7 @@
       "id": "bio-100",
       "front": "What is the difference between NADH and NADPH?",
       "back": "Both are electron carriers, different roles:\n\nNADH (from NAD\u207a):\n\u2022 Used in catabolism (breakdown)\n\u2022 Glycolysis, TCA cycle, \u03b2-oxidation\n\u2022 Oxidized in ETC to make ATP\n\u2022 Energy production\n\nNADPH (from NADP\u207a):\n\u2022 Used in anabolism (synthesis)\n\u2022 Fatty acid synthesis, cholesterol synthesis\n\u2022 Detoxification (glutathione, P450)\n\u2022 Reducing power for biosynthesis\n\nSource of NADPH: PPP, malic enzyme",
-      "subcategory": "Digestive System"
+      "subcategory": "Metabolism"
     },
     {
       "id": "bio-101",
@@ -858,7 +858,7 @@
       "id": "bio-103",
       "front": "What are key cofactors in metabolism?",
       "back": "Vitamin-derived cofactors:\n\nNAD\u207a/NADH: B\u2083 (niacin)\n\u2022 Glycolysis, TCA, ETC\n\nFAD/FADH\u2082: B\u2082 (riboflavin)\n\u2022 TCA, ETC, \u03b2-oxidation\n\nCoA: B\u2085 (pantothenic acid)\n\u2022 Acetyl-CoA, fatty acid metabolism\n\nTPP: B\u2081 (thiamine)\n\u2022 Pyruvate dehydrogenase, \u03b1-ketoglutarate DH\n\nBiotin: B\u2087\n\u2022 Carboxylation reactions (pyruvate carboxylase)\n\nB vitamins are essential for energy metabolism!",
-      "subcategory": "Amino Acids & Proteins"
+      "subcategory": "Metabolism"
     },
     {
       "id": "bio-104",
@@ -936,13 +936,13 @@
       "id": "bio-116",
       "front": "What is the hypothalamic-pituitary-gonadal (HPG) axis?",
       "back": "Hypothalamus:\n\u2192 GnRH (gonadotropin-releasing hormone)\n\nAnterior pituitary:\n\u2192 FSH and LH (follicle-stimulating hormone, luteinizing hormone)\n\nGonads:\n\u2192 Sex steroids (testosterone, estrogen, progesterone)\n\nNegative feedback:\n\u2022 Sex steroids \u2193 GnRH, FSH, LH\n\nMales:\n\u2022 FSH \u2192 spermatogenesis\n\u2022 LH \u2192 testosterone production\n\nFemales:\n\u2022 FSH \u2192 follicle development\n\u2022 LH \u2192 ovulation, progesterone production",
-      "subcategory": "Genetics"
+      "subcategory": "Nervous System"
     },
     {
       "id": "bio-117",
       "front": "Describe growth hormone (GH): source, type, effects",
       "back": "Source: Anterior pituitary (somatotrophs)\n\nType: Peptide hormone\n\nTrigger: GHRH (growth hormone-releasing hormone)\n\nTargets: Liver, bone, muscle, adipose\n\nDirect effects:\n\u2022 \u2191 Lipolysis\n\u2022 \u2191 Blood glucose (anti-insulin)\n\nIndirect effects (via IGF-1 from liver):\n\u2022 \u2191 Bone growth\n\u2022 \u2191 Muscle growth\n\u2022 \u2191 Protein synthesis\n\nRegulation:\n\u2022 GHRH stimulates\n\u2022 Somatostatin (GHIH) inhibits\n\u2022 Negative feedback by IGF-1",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Endocrine System"
     },
     {
       "id": "bio-118",
@@ -954,55 +954,55 @@
       "id": "bio-119",
       "front": "What hormones are released by the posterior pituitary?",
       "back": "Posterior pituitary stores and releases (made in hypothalamus):\n\nOxytocin:\n\u2022 Uterine contractions during labor\n\u2022 Milk ejection reflex\n\u2022 Social bonding\n\u2022 Positive feedback loop in labor\n\nADH (Vasopressin):\n\u2022 \u2191 Water reabsorption (collecting duct)\n\u2022 \u2191 Blood pressure (vasoconstriction at high doses)\n\u2022 Released when: dehydration, \u2193 blood volume, \u2191 osmolarity\n\u2022 Target: V2 receptors in kidney\n\nBoth are peptide hormones",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Endocrine System"
     },
     {
       "id": "bio-120",
       "front": "Describe aldosterone: source, type, target, effects",
       "back": "Source: Adrenal cortex (zona glomerulosa)\n\nType: Steroid hormone (mineralocorticoid)\n\nTrigger: Low blood pressure, angiotensin II, high K\u207a\n\nTarget: Kidney (distal tubule, collecting duct)\n\nEffects:\n\u2022 \u2191 Na\u207a reabsorption\n\u2022 \u2191 K\u207a excretion\n\u2022 \u2191 H\u207a excretion\n\u2022 \u2191 Water reabsorption (follows Na\u207a)\n\nResult: \u2191 Blood volume, \u2191 blood pressure\n\nRegulation: RAAS (renin-angiotensin-aldosterone system)",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Endocrine System"
     },
     {
       "id": "bio-121",
       "front": "What is the RAAS system?",
       "back": "Renin-Angiotensin-Aldosterone System:\n\nLow blood pressure detected:\n\u2192 Kidney releases renin\n\u2192 Renin converts angiotensinogen \u2192 angiotensin I\n\u2192 ACE (lungs) converts angiotensin I \u2192 angiotensin II\n\nAngiotensin II effects:\n\u2022 Vasoconstriction (\u2191 blood pressure)\n\u2022 Stimulates aldosterone release\n\u2022 Stimulates ADH release\n\u2022 \u2191 Thirst\n\nAldosterone:\n\u2022 \u2191 Na\u207a/water reabsorption\n\u2022 \u2191 Blood volume\n\nResult: Restored blood pressure",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Endocrine System"
     },
     {
       "id": "bio-122",
       "front": "Describe parathyroid hormone (PTH): source, target, effects",
       "back": "Source: Parathyroid glands (chief cells)\n\nType: Peptide hormone\n\nTrigger: Low blood Ca\u00b2\u207a\n\nTargets: Bone, kidney, intestine (indirect)\n\nEffects:\n\u2022 \u2191 Blood Ca\u00b2\u207a\n\u2022 \u2193 Blood phosphate\n\nMechanism:\n\u2022 Bone: \u2191 osteoclast activity (Ca\u00b2\u207a release)\n\u2022 Kidney: \u2191 Ca\u00b2\u207a reabsorption, \u2193 PO\u2084\u00b3\u207b reabsorption\n\u2022 Kidney: \u2191 Vitamin D activation\n\u2022 Intestine: \u2191 Ca\u00b2\u207a absorption (via vitamin D)\n\nOpposite of calcitonin",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Endocrine System"
     },
     {
       "id": "bio-123",
       "front": "Describe calcitonin: source, target, effects",
       "back": "Source: Thyroid gland (parafollicular C cells)\n\nType: Peptide hormone\n\nTrigger: High blood Ca\u00b2\u207a\n\nTarget: Bone\n\nEffects:\n\u2022 \u2193 Blood Ca\u00b2\u207a\n\u2022 \u2193 Osteoclast activity\n\u2022 \u2191 Ca\u00b2\u207a deposition in bone\n\nNote: Less important than PTH in humans\n\nMnemonic: Calci-TONE-in TONES down calcium\n\nOpposite of PTH",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Musculoskeletal System"
     },
     {
       "id": "bio-124",
       "front": "Compare PTH vs Calcitonin vs Vitamin D",
       "back": "PTH (\u2191 when Ca\u00b2\u207a low):\n\u2022 \u2191 Bone resorption\n\u2022 \u2191 Kidney Ca\u00b2\u207a reabsorption\n\u2022 \u2191 Vitamin D activation\n\u2022 Result: \u2191 Blood Ca\u00b2\u207a\n\nCalcitonin (\u2191 when Ca\u00b2\u207a high):\n\u2022 \u2193 Bone resorption\n\u2022 Result: \u2193 Blood Ca\u00b2\u207a\n\nVitamin D (active form: calcitriol):\n\u2022 \u2191 Intestinal Ca\u00b2\u207a absorption\n\u2022 \u2191 Bone resorption (with PTH)\n\u2022 Result: \u2191 Blood Ca\u00b2\u207a\n\nAll regulate Ca\u00b2\u207a homeostasis",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Musculoskeletal System"
     },
     {
       "id": "bio-125",
       "front": "Describe testosterone: source, type, effects",
       "back": "Source: Testes (Leydig cells)\n\nType: Steroid hormone (androgen)\n\nTrigger: LH from pituitary\n\nTargets: Multiple tissues\n\nEffects:\n\u2022 Male secondary sexual characteristics\n\u2022 Spermatogenesis (with FSH)\n\u2022 \u2191 Muscle mass\n\u2022 \u2191 Bone density\n\u2022 \u2191 Libido\n\u2022 Deepening voice\n\u2022 Facial/body hair\n\nConversion: Can be converted to:\n\u2022 DHT (dihydrotestosterone, more potent)\n\u2022 Estradiol (aromatase in adipose)",
-      "subcategory": "Genetics"
+      "subcategory": "Endocrine System"
     },
     {
       "id": "bio-126",
       "front": "Describe estrogen and progesterone: source, type, effects",
       "back": "Estrogen (estradiol):\nSource: Ovaries (follicles), adipose\nType: Steroid\nEffects:\n\u2022 Female secondary sexual characteristics\n\u2022 Endometrial growth (proliferative phase)\n\u2022 Bone density\n\u2022 LH surge (positive feedback at high levels)\n\nProgesterone:\nSource: Corpus luteum (after ovulation)\nType: Steroid\nEffects:\n\u2022 Maintains endometrium (secretory phase)\n\u2022 \u2191 Basal body temperature\n\u2022 Inhibits uterine contractions\n\u2022 Prepares for pregnancy\n\nBoth regulated by HPG axis",
-      "subcategory": "Musculoskeletal System"
+      "subcategory": "Endocrine System"
     },
     {
       "id": "bio-127",
       "front": "What are the phases of the menstrual cycle?",
       "back": "Follicular phase (Days 1-14):\n\u2022 FSH stimulates follicle development\n\u2022 Follicle produces estrogen\n\u2022 Endometrium proliferates\n\u2022 Ends with LH surge\n\nOvulation (Day 14):\n\u2022 LH surge triggers ovulation\n\u2022 Follicle releases egg\n\nLuteal phase (Days 15-28):\n\u2022 Corpus luteum forms from follicle\n\u2022 Produces progesterone (and estrogen)\n\u2022 Endometrium becomes secretory\n\u2022 If no pregnancy: corpus luteum degenerates\n\u2022 Hormone drop \u2192 menstruation\n\nMenstruation: Shedding of endometrium",
-      "subcategory": "Genetics"
+      "subcategory": "Endocrine System"
     },
     {
       "id": "bio-128",
@@ -1014,7 +1014,7 @@
       "id": "bio-129",
       "front": "What are the major hormones from the anterior pituitary?",
       "back": "Mnemonic: FLAT PEG\n\nFSH: Follicle-stimulating hormone\n\u2022 Gonads (spermatogenesis, follicle development)\n\nLH: Luteinizing hormone\n\u2022 Gonads (testosterone, ovulation, progesterone)\n\nACTH: Adrenocorticotropic hormone\n\u2022 Adrenal cortex (cortisol)\n\nTSH: Thyroid-stimulating hormone\n\u2022 Thyroid (T3/T4)\n\nProlactin:\n\u2022 Mammary glands (milk production)\n\nEndorphins:\n\u2022 Pain relief, pleasure\n\nGH: Growth hormone\n\u2022 Liver (IGF-1), bone, muscle\n\nAll peptide hormones!",
-      "subcategory": "Genetics"
+      "subcategory": "Endocrine System"
     },
     {
       "id": "bio-130",
@@ -1026,7 +1026,7 @@
       "id": "bio-131",
       "front": "Compare endocrine vs paracrine vs autocrine signaling",
       "back": "Endocrine:\n\u2022 Hormone released into bloodstream\n\u2022 Acts on distant target cells\n\u2022 Systemic effects\n\u2022 Examples: Insulin, thyroid hormones\n\nParacrine:\n\u2022 Signaling molecule acts on nearby cells\n\u2022 Local effects only\n\u2022 Examples: Histamine, growth factors, neurotransmitters (at synapse)\n\nAutocrine:\n\u2022 Cell signals itself\n\u2022 Same cell produces and responds\n\u2022 Examples: IL-2 in T cells, prostaglandins\n\nAll use receptors and signaling cascades",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Endocrine System"
     },
     {
       "id": "bio-132",
@@ -1038,43 +1038,43 @@
       "id": "bio-133",
       "front": "What are the key differences between prokaryotes and eukaryotes?",
       "back": "Prokaryotes (bacteria, archaea):\n\u2022 No nucleus (nucleoid region)\n\u2022 No membrane-bound organelles\n\u2022 Smaller ribosomes (70S: 30S + 50S)\n\u2022 Circular DNA\n\u2022 No histones (usually)\n\u2022 Cell wall (peptidoglycan in bacteria)\n\u2022 Simpler, smaller (1-10 \u03bcm)\n\nEukaryotes (animals, plants, fungi, protists):\n\u2022 Membrane-bound nucleus\n\u2022 Membrane-bound organelles\n\u2022 Larger ribosomes (80S: 40S + 60S)\n\u2022 Linear DNA with histones\n\u2022 Larger, more complex (10-100 \u03bcm)",
-      "subcategory": "Molecular Biology"
+      "subcategory": "General Biology"
     },
     {
       "id": "bio-134",
       "front": "What is the structure and function of the nucleus?",
       "back": "Structure:\n\u2022 Double membrane (nuclear envelope)\n\u2022 Nuclear pores (transport in/out)\n\u2022 Nucleolus (ribosome assembly)\n\u2022 Chromatin (DNA + histones)\n\nFunction:\n\u2022 Houses genetic material (DNA)\n\u2022 Site of transcription (DNA \u2192 RNA)\n\u2022 Site of ribosome assembly (nucleolus)\n\u2022 Protects DNA\n\nNuclear pores:\n\u2022 Allow mRNA, tRNA, ribosomes out\n\u2022 Allow transcription factors, histones in\n\nONLY in eukaryotes!",
-      "subcategory": "Molecular Biology"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-135",
       "front": "What is the structure and function of mitochondria?",
       "back": "Structure:\n\u2022 Double membrane (outer + inner)\n\u2022 Inner membrane: cristae (folds) with ETC\n\u2022 Matrix: contains TCA cycle enzymes\n\u2022 Own circular DNA (maternal inheritance)\n\u2022 Own 70S ribosomes\n\nFunction:\n\u2022 Cellular respiration\n\u2022 ATP production (oxidative phosphorylation)\n\u2022 TCA cycle (matrix)\n\u2022 ETC and ATP synthase (inner membrane)\n\nEndosymbiotic theory: Evolved from bacteria\n\nFound in ALL eukaryotic cells",
-      "subcategory": "Digestive System"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-136",
       "front": "What is the structure and function of the endoplasmic reticulum?",
       "back": "Rough ER (RER):\n\u2022 Studded with ribosomes\n\u2022 Protein synthesis and modification\n\u2022 Makes membrane proteins and secreted proteins\n\u2022 Post-translational modifications\n\nSmooth ER (SER):\n\u2022 No ribosomes\n\u2022 Lipid synthesis (phospholipids, steroids)\n\u2022 Ca\u00b2\u207a storage (sarcoplasmic reticulum in muscle)\n\u2022 Detoxification (liver)\n\u2022 Carbohydrate metabolism\n\nBoth continuous with nuclear envelope\nONLY in eukaryotes",
-      "subcategory": "Molecular Biology"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-137",
       "front": "What is the structure and function of the Golgi apparatus?",
       "back": "Structure:\n\u2022 Stacks of flattened membrane sacs (cisternae)\n\u2022 Cis face (receives from ER)\n\u2022 Trans face (ships to destinations)\n\nFunction:\n\u2022 Modifies proteins from ER\n\u2022 Glycosylation (adds sugars)\n\u2022 Sorts and packages proteins\n\u2022 Forms vesicles for transport\n\u2022 Makes lysosomes\n\nPathway: RER \u2192 Golgi \u2192 Vesicles \u2192 Destination\n\nDestinations: Plasma membrane, secretion, lysosomes",
-      "subcategory": "Molecular Biology"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-138",
       "front": "What is the structure and function of lysosomes?",
       "back": "Structure:\n\u2022 Membrane-bound vesicle\n\u2022 Contains hydrolytic enzymes (acid hydrolases)\n\u2022 Acidic interior (pH ~5)\n\nFunction:\n\u2022 Intracellular digestion\n\u2022 Break down: Damaged organelles, pathogens, macromolecules\n\u2022 Autophagy (recycle cell components)\n\u2022 Apoptosis (programmed cell death)\n\nFormation: Budded from trans-Golgi\n\nStorage diseases: Deficient lysosomal enzymes (Tay-Sachs, Gaucher)\n\nONLY in animal cells (plants use vacuoles)",
-      "subcategory": "Digestive System"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-139",
       "front": "What is the structure and function of peroxisomes?",
       "back": "Structure:\n\u2022 Single membrane-bound organelle\n\u2022 Contains oxidative enzymes\n\nFunction:\n\u2022 Break down fatty acids (\u03b2-oxidation)\n\u2022 Detoxification (alcohol, toxins)\n\u2022 H\u2082O\u2082 production and breakdown\n  - Oxidase enzymes produce H\u2082O\u2082\n  - Catalase breaks down H\u2082O\u2082 \u2192 H\u2082O + O\u2082\n\u2022 Synthesize plasmalogens (lipids)\n\nKey enzyme: Catalase (very fast, breaks down H\u2082O\u2082)\n\nFound in liver and kidney (high detox activity)",
-      "subcategory": "Digestive System"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-140",
@@ -1086,7 +1086,7 @@
       "id": "bio-141",
       "front": "What is the structure and function of the cytoskeleton?",
       "back": "Three main components:\n\nMicrofilaments (actin, 7 nm):\n\u2022 Cell shape and movement\n\u2022 Muscle contraction\n\u2022 Cytokinesis (cleavage furrow)\n\nIntermediate filaments (8-10 nm):\n\u2022 Structural support\n\u2022 Anchor organelles\n\u2022 Examples: Keratin, neurofilaments\n\nMicrotubules (tubulin, 25 nm):\n\u2022 Cell shape, intracellular transport\n\u2022 Chromosome separation (spindle fibers)\n\u2022 Cilia and flagella movement\n\u2022 Tracks for motor proteins (kinesin, dynein)\n\nONLY in eukaryotes (prokaryotes have simpler proteins)",
-      "subcategory": "Genetics"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-142",
@@ -1098,13 +1098,13 @@
       "id": "bio-143",
       "front": "What are cilia and flagella?",
       "back": "Structure:\n\u2022 9+2 arrangement: 9 doublet microtubules + 2 central\n\u2022 Basal body (9 triplets, like centriole)\n\u2022 Motor protein: Dynein (ATP-powered)\n\u2022 Plasma membrane covering\n\nCilia:\n\u2022 Short, numerous\n\u2022 Coordinated beating\n\u2022 Examples: Respiratory tract, fallopian tubes\n\nFlagella:\n\u2022 Long, few (usually 1-2)\n\u2022 Whip-like motion\n\u2022 Example: Sperm\n\nProkaryotic flagella: Different! Made of flagellin protein, rotates",
-      "subcategory": "Metabolism"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-144",
       "front": "What is the structure and function of chloroplasts?",
       "back": "Structure:\n\u2022 Double membrane (outer + inner)\n\u2022 Thylakoids: Membrane sacs (light reactions)\n\u2022 Grana: Stacks of thylakoids\n\u2022 Stroma: Fluid (Calvin cycle)\n\u2022 Own circular DNA, 70S ribosomes\n\nFunction:\n\u2022 Photosynthesis\n\u2022 Light reactions (thylakoid membrane): ATP, NADPH\n\u2022 Calvin cycle (stroma): Fixes CO\u2082 \u2192 glucose\n\nEndosymbiotic theory: Evolved from cyanobacteria\n\nONLY in plants and algae",
-      "subcategory": "Metabolism"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-145",
@@ -1128,19 +1128,19 @@
       "id": "bio-148",
       "front": "Compare passive vs active transport",
       "back": "Passive transport (no ATP):\n\u2022 Down concentration gradient\n\u2022 Simple diffusion: Small, nonpolar (O\u2082, CO\u2082)\n\u2022 Facilitated diffusion: Channels/carriers (glucose, ions)\n\u2022 Osmosis: Water movement\n\nActive transport (requires ATP):\n\u2022 Against concentration gradient\n\u2022 Primary: Direct ATP use (Na\u207a/K\u207a-ATPase)\n\u2022 Secondary: Uses gradient from primary (Na\u207a-glucose cotransporter)\n\nBulk transport:\n\u2022 Endocytosis: Into cell (phagocytosis, pinocytosis)\n\u2022 Exocytosis: Out of cell (secretion)",
-      "subcategory": "Metabolism"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-149",
       "front": "What is the Na\u207a/K\u207a-ATPase pump?",
       "back": "Function: Maintains ion gradients across plasma membrane\n\nMechanism:\n\u2022 3 Na\u207a out, 2 K\u207a in (per ATP)\n\u2022 Electrogenic (creates charge difference)\n\u2022 Primary active transport\n\nResult:\n\u2022 High K\u207a inside, high Na\u207a outside\n\u2022 Maintains resting potential (-70 mV)\n\u2022 Creates gradients for secondary active transport\n\nImportance:\n\u2022 Nerve impulses\n\u2022 Muscle contraction\n\u2022 Cell volume regulation\n\u2022 Secondary active transport\n\nUses ~30% of cell's ATP!",
-      "subcategory": "Metabolism"
+      "subcategory": "Nervous System"
     },
     {
       "id": "bio-150",
       "front": "What are the types of cell junctions?",
       "back": "Tight junctions (animals):\n\u2022 Seal cells together\n\u2022 Prevent leakage between cells\n\u2022 Example: Intestinal epithelium\n\nDesmosomes (anchoring junctions):\n\u2022 Anchor cells together\n\u2022 Provide mechanical strength\n\u2022 Intermediate filaments\n\u2022 Example: Skin, heart muscle\n\nGap junctions (animals):\n\u2022 Allow communication between cells\n\u2022 Small molecules, ions pass through\n\u2022 Connexon proteins\n\u2022 Example: Heart muscle (coordinated contraction)\n\nPlasmodesmata (plants):\n\u2022 Channels through cell walls\n\u2022 Cytoplasm continuous between cells",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Musculoskeletal System"
     },
     {
       "id": "bio-151",
@@ -1236,25 +1236,25 @@
       "id": "bio-166",
       "front": "What are viroids?",
       "back": "Viroids: Infectious RNA (NO protein coat!)\n\nStructure:\n\u2022 Small, circular ssRNA\n\u2022 No capsid, no envelope\n\u2022 200-400 nucleotides\n\nCharacteristics:\n\u2022 Smallest known infectious agents\n\u2022 Infect ONLY plants\n\u2022 Replicate using host enzymes\n\u2022 Cause disease by unknown mechanism\n\u2022 May interfere with gene regulation\n\nExamples:\n\u2022 Potato spindle tuber viroid\n\u2022 Citrus exocortis viroid\n\nDifferent from: Viruses (have protein), prions (protein only)",
-      "subcategory": "Digestive System"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-167",
       "front": "What are plasmids?",
       "back": "Plasmids: Extra-chromosomal DNA in bacteria\n\nCharacteristics:\n\u2022 Small, circular dsDNA\n\u2022 Replicate independently of chromosome\n\u2022 Not essential for survival (usually)\n\u2022 Can be transferred between bacteria\n\nTypes:\n\u2022 Resistance (R) plasmids: Antibiotic resistance genes\n\u2022 Fertility (F) plasmids: Enable conjugation\n\u2022 Virulence plasmids: Toxins, adhesion factors\n\nImportance:\n\u2022 Horizontal gene transfer\n\u2022 Antibiotic resistance spread\n\u2022 Genetic engineering (cloning vectors)\n\nConjugation: F\u207a donor \u2192 F\u207b recipient via pilus",
-      "subcategory": "Amino Acids & Proteins"
+      "subcategory": "Genetics"
     },
     {
       "id": "bio-168",
       "front": "What are transposons?",
       "back": "Transposons: \"Jumping genes\" - mobile DNA elements\n\nTypes:\n\u2022 Simple (insertion sequences): Only transposase gene\n\u2022 Complex (composite): Carry other genes (e.g., antibiotic resistance)\n\nMechanism:\n1. Transposase enzyme cuts DNA\n2. Transposon moves to new location\n3. Inserts into genome\n\nEffects:\n\u2022 Can disrupt genes\n\u2022 Cause mutations\n\u2022 Chromosomal rearrangements\n\u2022 Spread antibiotic resistance\n\nFound in: Prokaryotes and eukaryotes\n\nBarbara McClintock: Discovered in corn (Nobel Prize)",
-      "subcategory": "Digestive System"
+      "subcategory": "Genetics"
     },
     {
       "id": "bio-169",
       "front": "What are the key structures of bacterial cells?",
       "back": "Essential structures:\n\u2022 Cell wall (peptidoglycan)\n\u2022 Plasma membrane\n\u2022 Cytoplasm\n\u2022 Nucleoid (circular DNA)\n\u2022 Ribosomes (70S)\n\nAdditional structures:\n\u2022 Capsule: Polysaccharide layer (protection, virulence)\n\u2022 Flagella: Motility (flagellin protein)\n\u2022 Pili/Fimbriae: Adhesion, conjugation\n\u2022 Plasmids: Extra DNA\n\u2022 Endospores: Dormant, heat-resistant\n\nNo nucleus, no membrane-bound organelles!",
-      "subcategory": "Amino Acids & Proteins"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-170",
@@ -1272,13 +1272,13 @@
       "id": "bio-172",
       "front": "What are the phases of bacterial growth?",
       "back": "Batch culture growth curve:\n\n1. Lag phase:\n\u2022 Adaptation to environment\n\u2022 Synthesize enzymes\n\u2022 Little/no cell division\n\n2. Log (exponential) phase:\n\u2022 Rapid, constant division\n\u2022 Maximum growth rate\n\u2022 Cells most vulnerable to antibiotics\n\n3. Stationary phase:\n\u2022 Growth rate = death rate\n\u2022 Nutrient depletion\n\u2022 Waste accumulation\n\u2022 Secondary metabolites produced\n\n4. Death phase:\n\u2022 Death rate > growth rate\n\u2022 Nutrients exhausted\n\u2022 Toxic waste buildup\n\nGeneration time: Time for population to double",
-      "subcategory": "Digestive System"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-173",
       "front": "What are bacterial nutritional requirements?",
       "back": "Energy source:\n\u2022 Phototrophs: Light\n\u2022 Chemotrophs: Chemical oxidation\n\nCarbon source:\n\u2022 Autotrophs: CO\u2082\n\u2022 Heterotrophs: Organic compounds\n\nCombinations:\n\u2022 Photoautotrophs: Light + CO\u2082 (cyanobacteria)\n\u2022 Photoheterotrophs: Light + organics (some bacteria)\n\u2022 Chemoautotrophs: Chemicals + CO\u2082 (some bacteria)\n\u2022 Chemoheterotrophs: Organics for both (most bacteria, animals)\n\nOxygen requirements:\n\u2022 Obligate aerobes: Require O\u2082\n\u2022 Obligate anaerobes: Killed by O\u2082\n\u2022 Facultative anaerobes: O\u2082 preferred but not required\n\u2022 Aerotolerant: Don't use O\u2082 but tolerate it\n\u2022 Microaerophiles: Low O\u2082 required",
-      "subcategory": "Respiratory System"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-174",
@@ -1308,7 +1308,7 @@
       "id": "bio-178",
       "front": "What is quorum sensing in bacteria?",
       "back": "Quorum sensing: Cell density-dependent gene regulation\n\nMechanism:\n1. Bacteria produce signaling molecules (autoinducers)\n2. At low density: Signals diffuse away\n3. At high density: Signals accumulate\n4. Signals bind receptors\n5. Triggers gene expression changes\n\nRegulated behaviors:\n\u2022 Biofilm formation\n\u2022 Bioluminescence (Vibrio)\n\u2022 Virulence factor production\n\u2022 Sporulation\n\u2022 Antibiotic production\n\nImportance:\n\u2022 Coordinated group behavior\n\u2022 Pathogenesis\n\u2022 Potential antibiotic targets\n\nExample: Pseudomonas biofilms in cystic fibrosis",
-      "subcategory": "Genetics"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-179",
@@ -1326,13 +1326,13 @@
       "id": "bio-181",
       "front": "What are bacterial virulence factors?",
       "back": "Virulence factors: Molecules that help bacteria cause disease\n\nAdhesion factors:\n\u2022 Pili, fimbriae\n\u2022 Attach to host cells\n\nInvasion factors:\n\u2022 Enzymes that break down tissues\n\u2022 Example: Collagenase, hyaluronidase\n\nToxins:\n\u2022 Exotoxins: Secreted proteins (botulinum, diphtheria)\n\u2022 Endotoxins: LPS from Gram-negative cell wall\n\nImmune evasion:\n\u2022 Capsule (prevents phagocytosis)\n\u2022 Protein A (binds antibodies backwards)\n\u2022 Antigenic variation\n\nSiderophores:\n\u2022 Scavenge iron from host\n\nBiofilm formation:\n\u2022 Protection from antibiotics/immunity",
-      "subcategory": "Digestive System"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-182",
       "front": "Compare exotoxins vs endotoxins",
       "back": "Exotoxins (secreted):\n\u2022 Proteins\n\u2022 Both Gram-positive and Gram-negative\n\u2022 Heat-labile (destroyed by heat)\n\u2022 Highly toxic (small amounts)\n\u2022 Specific effects\n\u2022 Can be converted to toxoids (vaccines)\n\u2022 Examples: Botulinum, tetanus, diphtheria, cholera\n\nEndotoxins (cell wall component):\n\u2022 Lipopolysaccharide (LPS)\n\u2022 Gram-negative ONLY\n\u2022 Heat-stable\n\u2022 Less toxic (large amounts needed)\n\u2022 General effects (fever, shock)\n\u2022 No toxoid possible\n\u2022 Released when bacteria die\n\u2022 Triggers massive immune response (septic shock)",
-      "subcategory": "Genetics"
+      "subcategory": "Cell Biology"
     },
     {
       "id": "bio-183",
@@ -1350,13 +1350,13 @@
       "id": "bio-185",
       "front": "What is the A band, and in what tissues do they appear?",
       "back": "The A band is a dark region in striated muscle fibers, primarily composed of thick myosin filaments and overlapping thin actin filaments. It appears in skeletal and cardiac muscle tissues and gives the striated appearance.",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Musculoskeletal System"
     },
     {
       "id": "bio-186",
       "front": "What is the I band, and in what tissues do they appear?",
       "back": "The I band is a light region in striated muscle fibers, primarily composed of thin actin filaments. It appears in skeletal and cardiac muscle tissues and contributes to the striated appearance.",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Musculoskeletal System"
     },
     {
       "id": "bio-187",
@@ -1380,7 +1380,7 @@
       "id": "bio-190",
       "front": "What is the sliding filament theory?",
       "back": "The sliding filament theory explains muscle contraction as the process where thin actin filaments slide past thick myosin filaments, resulting in the shortening of the sarcomere. During contraction, myosin heads bind to actin, forming cross-bridges, and pull the actin filaments toward the center of the sarcomere through a series of power strokes fueled by ATP hydrolysis.",
-      "subcategory": "Metabolism"
+      "subcategory": "Musculoskeletal System"
     },
     {
       "id": "bio-191",
@@ -1410,19 +1410,19 @@
       "id": "bio-195",
       "front": "What is the nephron and its components?",
       "back": "The nephron is the functional unit of the kidney responsible for filtering blood and forming urine. It consists of several components:\n\n1. Glomerulus: A network of capillaries where blood filtration occurs.\n2. Bowman's capsule: A cup-like structure that surrounds the glomerulus and collects the filtrate.\n3. Proximal convoluted tubule: The first segment of the nephron where reabsorption of water, ions, and nutrients occurs.\n4. Loop of Henle: A U-shaped segment that concentrates urine by reabsorbing water and salts.\n5. Distal convoluted tubule: The segment where further reabsorption and secretion take place, regulated by hormones.\n6. Collecting duct: The final segment that collects urine from multiple nephrons and transports it to the renal pelvis.",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Renal System"
     },
     {
       "id": "bio-196",
       "front": "What is acetylcholine and its function throughout the body?",
       "back": "Acetylcholine is a neurotransmitter that plays a crucial role in the nervous system. It is involved in transmitting signals between nerve cells and muscles, as well as within the brain. Functions of acetylcholine include:\n\n1. Muscle contraction: Acetylcholine is released at the neuromuscular junction, binding to receptors on muscle cells and triggering contraction.\n2. Autonomic nervous system: It regulates involuntary functions such as heart rate, digestion, and respiratory rate by acting on smooth and cardiac muscles.\n3. Cognitive function: Acetylcholine is important for attention, learning, and memory, with deficits linked to Alzheimer's disease.",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Nervous System"
     },
     {
       "id": "bio-197",
       "front": "What are the main types of muscle tissue?",
       "back": "The main types of muscle tissue are:\n\n1. Skeletal muscle: Voluntary muscle attached to bones, responsible for body movement. It is striated and multinucleated.\n2. Cardiac muscle: Involuntary muscle found in the heart, responsible for pumping blood. It is striated and has intercalated discs for synchronized contraction.\n3. Smooth muscle: Involuntary muscle found in walls of hollow organs (e.g., intestines, blood vessels). It is non-striated and controls functions like digestion and blood flow.",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Musculoskeletal System"
     },
     {
       "id": "bio-198",
@@ -1434,13 +1434,13 @@
       "id": "bio-199",
       "front": "What is the adrenal medulla and its function?",
       "back": "The adrenal medulla is the inner part of the adrenal glands, located on top of the kidneys. It produces and secretes catecholamines, primarily adrenaline (epinephrine) and norepinephrine, in response to stress. These hormones prepare the body for 'fight or flight' responses by increasing heart rate, blood pressure, and energy availability.",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Renal System"
     },
     {
       "id": "bio-200",
       "front": "What is the adrenal cortex and its function?",
       "back": "The adrenal cortex is the outer layer of the adrenal glands, responsible for producing steroid hormones. It has three main zones:\n\n1. Zona glomerulosa: Produces mineralocorticoids (e.g., aldosterone) that regulate sodium and potassium balance and blood pressure.\n2. Zona fasciculata: Produces glucocorticoids (e.g., cortisol) that regulate metabolism, immune response, and stress adaptation.\n3. Zona reticularis: Produces androgens (e.g., dehydroepiandrosterone, DHEA) that contribute to secondary sexual characteristics.",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Renal System"
     },
     {
       "id": "bio-201",
@@ -1470,7 +1470,7 @@
       "id": "bio-205",
       "front": "What is aldosterone and its function?",
       "back": "Aldosterone is a steroid hormone produced by the adrenal cortex that plays a key role in regulating blood pressure and electrolyte balance. It promotes sodium reabsorption and potassium excretion in the kidneys, leading to increased blood volume and pressure. Aldosterone is part of the renin-angiotensin-aldosterone system (RAAS), which is activated in response to low blood pressure or low blood sodium levels.",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Endocrine System"
     },
     {
       "id": "bio-206",
@@ -1494,7 +1494,7 @@
       "id": "bio-209",
       "front": "What is angiotensin and recite the pathway.",
       "back": "Angiotensin is a peptide hormone that plays a key role in the regulation of blood pressure and fluid balance. The pathway begins with the release of renin from the kidneys in response to low blood pressure or low sodium levels. Renin converts angiotensinogen, a protein produced by the liver, into angiotensin I. Angiotensin I is then converted into angiotensin II by the action of angiotensin-converting enzyme (ACE), primarily in the lungs. Angiotensin II acts as a potent vasoconstrictor, increasing blood pressure, and stimulates the release of aldosterone from the adrenal glands, promoting sodium and water reabsorption in the kidneys.",
-      "subcategory": "Digestive System"
+      "subcategory": "Endocrine System"
     },
     {
       "id": "bio-210",
@@ -1506,25 +1506,25 @@
       "id": "bio-211",
       "front": "What is antidiuretic hormone (ADH) and its function?",
       "back": "Antidiuretic hormone (ADH), also known as vasopressin, is a hormone produced by the hypothalamus and released by the posterior pituitary gland. Its primary function is to regulate water balance in the body by promoting water reabsorption in the kidneys. ADH acts on the collecting ducts of the nephrons, increasing their permeability to water, which allows more water to be reabsorbed back into the bloodstream. This helps to concentrate urine and reduce water loss, thereby maintaining blood pressure and fluid balance.",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Renal System"
     },
     {
       "id": "bio-212",
       "front": "What is the function of the sinoatrial (SA) node?",
       "back": "The sinoatrial (SA) node, located in the right atrium of the heart, functions as the natural pacemaker. It generates electrical impulses that initiate each heartbeat, causing the atria to contract and pump blood into the ventricles. The SA node sets the rhythm and rate of the heart, typically around 60-100 beats per minute in a resting adult.",
-      "subcategory": "Genetics"
+      "subcategory": "Cardiovascular System"
     },
     {
       "id": "bio-213",
       "front": "What is the function of the atrioventricular (AV) node?",
       "back": "The atrioventricular (AV) node, located between the atria and ventricles of the heart, serves as a critical electrical relay station. It receives the electrical impulses generated by the sinoatrial (SA) node and delays them slightly before transmitting them to the bundle of His and subsequently to the Purkinje fibers. This delay allows the atria to fully contract and empty their blood into the ventricles before the ventricles contract, ensuring efficient blood flow through the heart.",
-      "subcategory": "Genetics"
+      "subcategory": "Cardiovascular System"
     },
     {
       "id": "bio-214",
       "front": "Describe the four chambers of the heart, their functions, and blood flow.",
       "back": "The heart has four chambers: the right atrium, right ventricle, left atrium, and left ventricle.\n\n1. Right Atrium: Receives deoxygenated blood from the body via the superior and inferior vena cavae. Pumps blood into the right ventricle.\n2. Right Ventricle: Pumps deoxygenated blood to the lungs via the pulmonary artery for oxygenation.\n3. Left Atrium: Receives oxygenated blood from the lungs via the pulmonary veins. Pumps blood into the left ventricle.\n4. Left Ventricle: Pumps oxygenated blood to the body via the aorta. It has the thickest walls to generate high pressure.",
-      "subcategory": "Genetics"
+      "subcategory": "Cardiovascular System"
     },
     {
       "id": "bio-215",
@@ -1536,7 +1536,7 @@
       "id": "bio-216",
       "front": "What are the divisions of the peripheral nervous system?",
       "back": "The peripheral nervous system (PNS) is divided into two main parts:\n\n1. Somatic Nervous System: Controls voluntary movements and transmits sensory information to the CNS. It innervates skeletal muscles and mediates reflexes.\n2. Autonomic Nervous System: Regulates involuntary functions (e.g., heart rate, digestion). It has two subdivisions:\n   a. Sympathetic Nervous System: Prepares the body for 'fight or flight' responses.\n   b. Parasympathetic Nervous System: Promotes 'rest and digest' activities.",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Nervous System"
     },
     {
       "id": "bio-217",
@@ -1548,7 +1548,7 @@
       "id": "bio-218",
       "front": "What are glial cells and their functions?",
       "back": "Glial cells, also known as neuroglia, are non-neuronal cells in the nervous system that provide support and protection for neurons. Their functions include:\n\n1. Astrocytes: Maintain the blood-brain barrier, provide nutrients to neurons, and regulate the extracellular environment.\n2. Oligodendrocytes: Form myelin sheaths around axons in the CNS, facilitating faster electrical signal transmission.\n3. Schwann Cells: Form myelin sheaths around axons in the PNS.\n4. Microglia: Act as immune cells in the CNS, removing debris and pathogens through phagocytosis.\n5. Ependymal Cells: Line the ventricles of the brain and produce cerebrospinal fluid (CSF).",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Nervous System"
     },
     {
       "id": "bio-219",
@@ -1578,7 +1578,7 @@
       "id": "bio-223",
       "front": "What is the role of the medulla oblongata?",
       "back": "The medulla oblongata is a part of the brainstem that controls vital autonomic functions necessary for survival. Its functions include:\n\n1. Regulating heart rate and blood pressure.\n2. Controlling respiratory rate and rhythm.\n3. Managing reflexes such as coughing, sneezing, swallowing, and vomiting.\n4. Serving as a relay station for nerve signals between the brain and spinal cord.",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Nervous System"
     },
     {
       "id": "bio-224",
@@ -1626,31 +1626,31 @@
       "id": "bio-231",
       "front": "What hormones are released by the anterior pituitary?",
       "back": "The anterior pituitary releases several key hormones that regulate various bodily functions. These hormones include:\n\n1. Adrenocorticotropic hormone (ACTH): Stimulates the adrenal glands to produce cortisol.\n2. Thyroid-stimulating hormone (TSH): Stimulates the thyroid gland to produce thyroid hormones.\n3. Luteinizing hormone (LH): Triggers ovulation and stimulates testosterone production.\n4. Follicle-stimulating hormone (FSH): Stimulates the growth of ovarian follicles and sperm production.\n5. Prolactin: Promotes milk production in breastfeeding women.\n6. Growth hormone (GH): Stimulates growth, cell reproduction, and regeneration.",
-      "subcategory": "Genetics"
+      "subcategory": "Nervous System"
     },
     {
       "id": "bio-232",
       "front": "What hormones are released by the posterior pituitary?",
       "back": "The posterior pituitary releases two main hormones:\n\n1. Antidiuretic hormone (ADH), also known as vasopressin: Regulates water balance in the body by promoting water reabsorption in the kidneys.\n2. Oxytocin: Stimulates uterine contractions during childbirth and promotes milk ejection during breastfeeding.",
-      "subcategory": "Renal System"
+      "subcategory": "Nervous System"
     },
     {
       "id": "bio-233",
       "front": "What hormones are secreted by the thyroid and parathyroid?",
       "back": "The thyroid gland secretes several key hormones, including:\n\n1. Thyroxine (T4) and Triiodothyronine (T3): Regulate metabolism, energy production, and growth.\n2. Calcitonin: Helps lower blood calcium levels by inhibiting osteoclast activity in bones.\n\nThe parathyroid glands secrete parathyroid hormone (PTH), which increases blood calcium levels by stimulating osteoclasts, increasing intestinal calcium absorption, and promoting kidney reabsorption of calcium.",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Nervous System"
     },
     {
       "id": "bio-234",
       "front": "What hormones are secreted by the adrenal cortex?",
       "back": "The adrenal cortex secretes several important hormones:\n\n1. Glucocorticoids (e.g., cortisol): Regulate metabolism, immune response, and stress adaptation.\n2. Mineralocorticoids (e.g., aldosterone): Regulate sodium and potassium balance and blood pressure.\n3. Androgens: Contribute to secondary sexual characteristics.",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Nervous System"
     },
     {
       "id": "bio-235",
       "front": "What hormones are secreted by the adrenal medulla?",
       "back": "The adrenal medulla secretes catecholamines, primarily:\n\n1. Epinephrine (adrenaline): Increases heart rate, blood pressure, and energy availability during 'fight or flight' responses.\n2. Norepinephrine (noradrenaline): Works alongside epinephrine to enhance the body's response to stress by constricting blood vessels and increasing blood flow to muscles.",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "Nervous System"
     },
     {
       "id": "bio-236",
@@ -1674,25 +1674,151 @@
       "id": "bio-239",
       "front": "What are the different phenotypes and their ratios in dihybrid crosses? What are the different scenarios that can occur? (Think like codominance, incomplete dominance, etc.)",
       "back": "In a dihybrid cross involving two traits, the phenotypic ratio of the offspring can be predicted using a Punnett square. For example, in a cross between two heterozygous individuals (AaBb x AaBb), the expected phenotypic ratio is:\n\n1. 9: Dominant for both traits (A_B_)\n2. 3: Dominant for the first trait, recessive for the second (A_bb)\n3. 3: Recessive for the first trait, dominant for the second (aaB_)\n4. 1: Recessive for both traits (aabb)\n\nThis results in a 9:3:3:1 ratio.",
-      "subcategory": "General Biology"
+      "subcategory": "Genetics"
     },
     {
       "id": "bio-240",
       "front": "What are the different types of mutations?",
       "back": "There are several types of mutations that can occur in DNA:\n\n1. Point mutations: Changes in a single nucleotide (e.g., substitution, insertion, deletion).\n2. Frameshift mutations: Insertions or deletions that shift the reading frame, altering all downstream amino acids.\n3. Silent mutations: Changes that do not affect the amino acid sequence (often due to redundancy in the genetic code).\n4. Missense mutations: Changes that result in a different amino acid being incorporated into the protein.\n5. Nonsense mutations: Changes that create a premature stop codon, leading to truncated proteins.",
-      "subcategory": "Amino Acids & Proteins"
+      "subcategory": "Genetics"
     },
     {
       "id": "bio-241",
       "front": "What are the four types of basic tissues in the human body?",
       "back": "The four basic types of tissues in the human body are:\n\n1. Epithelial tissue: Covers body surfaces and lines cavities. Functions include protection, absorption, and secretion.\n2. Connective tissue: Supports and binds other tissues. Types include loose connective tissue, dense connective tissue, adipose tissue, blood, and bone.\n3. Muscle tissue: Responsible for movement. Types include skeletal muscle (voluntary), cardiac muscle (involuntary, heart), and smooth muscle (involuntary, walls of organs).\n4. Nervous tissue: Composed of neurons and glial cells. Responsible for transmitting electrical signals and processing information.",
-      "subcategory": "Cardiovascular System"
+      "subcategory": "General Biology"
     },
     {
       "id": "bio-242",
       "front": "What are the basic steps to cell signaling?",
       "back": "Cell signaling involves several key steps:\n\n1. Reception: The target cell detects a signaling molecule (ligand) from the environment.\n2. Transduction: The signal is converted into a form that can bring about a cellular response. This often involves a series of protein modifications (e.g., phosphorylation).\n3. Response: The cell responds to the signal, which may involve changes in gene expression, enzyme activity, or cell behavior.\n4. Termination: The signal is terminated to prevent overreaction, often through the action of enzymes that degrade the signaling molecule or by removing receptors from the cell surface.",
-      "subcategory": "Digestive System"
+      "subcategory": "Molecular Biology"
+    },
+    {
+      "id": "bio-243",
+      "front": "What are the main components of the immune system?",
+      "back": "The main components of the immune system include:\n\n1. White blood cells (leukocytes): Key players in immune response, including lymphocytes (B cells and T cells) and phagocytes (e.g., macrophages).\n2. Lymphatic system: Network of vessels and nodes that transport lymph and house immune cells.\n3. Bone marrow: Produces blood cells, including immune cells.\n4. Thymus: Site of T cell maturation.\n5. Spleen: Filters blood and helps mount immune responses.\n6. Antibodies: Proteins produced by B cells that specifically target pathogens.",
+      "subcategory": "Immune System"
+    },
+    {
+      "id": "bio-244",
+      "front": "What are the two main branches of the immune system?",
+      "back": "Innate (Non-specific) Immunity:\n• First line of defense\n• Present at birth\n• Responds quickly (minutes to hours)\n• No memory\n• Components: Skin, mucus, stomach acid, phagocytes, NK cells, complement, inflammation\n\nAdaptive (Specific) Immunity:\n• Second line of defense\n• Develops after exposure\n• Slower response (days)\n• Has immunological memory\n• Components: B cells (antibodies), T cells (cell-mediated)",
+      "subcategory": "Immune System"
+    },
+    {
+      "id": "bio-245",
+      "front": "Compare B cells and T cells",
+      "back": "B Cells (Humoral Immunity):\n• Mature in bone marrow\n• Produce antibodies (immunoglobulins)\n• Target extracellular pathogens\n• Can become plasma cells or memory B cells\n• Recognize antigens directly\n\nT Cells (Cell-Mediated Immunity):\n• Mature in thymus\n• Do not produce antibodies\n• Target intracellular pathogens & infected cells\n• Types: Helper T cells (CD4+), Cytotoxic T cells (CD8+), Regulatory T cells\n• Recognize antigens presented by MHC molecules",
+      "subcategory": "Immune System"
+    },
+    {
+      "id": "bio-246",
+      "front": "What are the functions of Helper T cells (CD4+)?",
+      "back": "Helper T cells coordinate immune responses:\n\n1. Recognize antigens presented on MHC Class II (on APCs)\n2. Secrete cytokines to activate other immune cells\n3. Activate B cells → antibody production\n4. Activate cytotoxic T cells\n5. Recruit macrophages and neutrophils\n6. TH1 cells: Activate macrophages, cell-mediated immunity\n7. TH2 cells: Activate B cells, humoral immunity\n\nNote: HIV targets CD4+ cells, destroying immune function",
+      "subcategory": "Immune System"
+    },
+    {
+      "id": "bio-247",
+      "front": "What are the functions of Cytotoxic T cells (CD8+)?",
+      "back": "Cytotoxic T cells kill infected or abnormal cells:\n\n1. Recognize antigens presented on MHC Class I (on all nucleated cells)\n2. Kill virus-infected cells\n3. Kill cancer cells\n4. Destroy cells displaying foreign antigens\n5. Release perforin and granzymes:\n   • Perforin: Pokes holes in target cell membrane\n   • Granzymes: Enter cell and trigger apoptosis\n\nMust be activated by Helper T cells first",
+      "subcategory": "Immune System"
+    },
+    {
+      "id": "bio-248",
+      "front": "What is the role of MHC molecules in immunity?",
+      "back": "Major Histocompatibility Complex (MHC) presents antigens to T cells:\n\nMHC Class I:\n• Found on ALL nucleated cells\n• Presents intracellular antigens (e.g., viral proteins)\n• Recognized by CD8+ Cytotoxic T cells\n• Pathway: Proteasome → ER → MHC I → Cell surface\n\nMHC Class II:\n• Found on Antigen-Presenting Cells (APCs): Dendritic cells, macrophages, B cells\n• Presents extracellular antigens (phagocytosed)\n• Recognized by CD4+ Helper T cells\n• Pathway: Endosome → MHC II → Cell surface",
+      "subcategory": "Immune System"
+    },
+    {
+      "id": "bio-249",
+      "front": "What are the five classes of antibodies (immunoglobulins)?",
+      "back": "IgG (75% of antibodies):\n• Most abundant in blood\n• Crosses placenta (maternal immunity)\n• Neutralizes toxins, opsonizes pathogens\n• Secondary immune response\n\nIgM (10%):\n• First antibody produced (primary response)\n• Pentamer (5 units) → strong agglutination\n• Activates complement\n• Cannot cross placenta\n\nIgA (15%):\n• Found in secretions (saliva, tears, breast milk, mucus)\n• Protects mucosal surfaces\n• Prevents pathogen adhesion\n\nIgE (<1%):\n• Involved in allergic reactions\n• Binds to mast cells and basophils\n• Triggers histamine release\n• Defense against parasites\n\nIgD (<1%):\n• Found on B cell surface\n• Acts as B cell receptor\n• Function not fully understood",
+      "subcategory": "Immune System"
+    },
+    {
+      "id": "bio-250",
+      "front": "Describe the structure of an antibody",
+      "back": "Y-shaped protein with 4 polypeptide chains:\n\n• 2 Heavy chains (longer)\n• 2 Light chains (shorter)\n• Connected by disulfide bonds\n\nRegions:\nVariable (V) region:\n• Top of Y (tips of arms)\n• Antigen-binding sites (2 per antibody)\n• Determines specificity\n• Hypervariable regions (CDRs) directly contact antigen\n\nConstant (C) region:\n• Stem of Y\n• Determines antibody class (IgG, IgM, etc.)\n• Fc region: Binds to immune cells, activates complement",
+      "subcategory": "Immune System"
+    },
+    {
+      "id": "bio-251",
+      "front": "What is the complement system?",
+      "back": "Cascade of ~30 plasma proteins that enhance immune response:\n\nActivation pathways:\n1. Classical: Antibody-antigen complexes (IgG, IgM)\n2. Alternative: Directly on pathogen surfaces\n3. Lectin: Mannose-binding lectin on pathogens\n\nAll converge to form Membrane Attack Complex (MAC)\n\nFunctions:\n• Opsonization: C3b tags pathogens for phagocytosis\n• Chemotaxis: C5a attracts immune cells (inflammation)\n• Cell lysis: MAC creates pores in pathogen membrane\n• Inflammation: Increases vascular permeability",
+      "subcategory": "Immune System"
+    },
+    {
+      "id": "bio-252",
+      "front": "What are the key differences between primary and secondary immune responses?",
+      "back": "Primary Response (first exposure):\n• Lag time: 7-10 days\n• IgM produced first, then IgG\n• Lower antibody levels\n• Shorter duration\n• Symptoms often present\n• No memory cells initially\n\nSecondary Response (subsequent exposure):\n• Lag time: 1-3 days (much faster)\n• Primarily IgG (more effective)\n• Higher antibody levels (10-100x more)\n• Longer duration (months to years)\n• Often no symptoms (subclinical)\n• Memory B and T cells rapidly activated\n\nBasis of vaccination!",
+      "subcategory": "Immune System"
+    },
+    {
+      "id": "bio-253",
+      "front": "What are the four types of hypersensitivity reactions?",
+      "back": "Type I (Immediate/Anaphylactic):\n• IgE-mediated\n• Mast cell degranulation → histamine release\n• Examples: Allergies, anaphylaxis, asthma\n• Timeline: Minutes\n\nType II (Cytotoxic):\n• IgG or IgM antibodies attack cells\n• Examples: Blood transfusion reactions, hemolytic disease of newborn\n• Timeline: Hours\n\nType III (Immune Complex):\n• Antigen-antibody complexes deposit in tissues\n• Examples: Serum sickness, lupus, rheumatoid arthritis\n• Timeline: Hours to days\n\nType IV (Delayed/Cell-Mediated):\n• T cell-mediated (no antibodies)\n• Examples: TB skin test, contact dermatitis (poison ivy), graft rejection\n• Timeline: Days (24-72 hours)",
+      "subcategory": "Immune System"
+    },
+    {
+      "id": "bio-254",
+      "front": "What is the anatomy of the respiratory system from top to bottom?",
+      "back": "Upper Respiratory Tract:\n• Nose/Nasal cavity: Warms, moistens, filters air\n• Pharynx: Throat (shared with digestive system)\n• Larynx: Voice box, contains epiglottis and vocal cords\n\nLower Respiratory Tract:\n• Trachea: Windpipe, C-shaped cartilage rings\n• Bronchi: Primary (left & right), secondary, tertiary\n• Bronchioles: Smaller airways, no cartilage\n• Terminal bronchioles → Respiratory bronchioles\n• Alveolar ducts → Alveoli (gas exchange)\n\nNote: Conducting zone (no gas exchange) vs Respiratory zone (gas exchange)",
+      "subcategory": "Respiratory System"
+    },
+    {
+      "id": "bio-255",
+      "front": "What is the structure and function of alveoli?",
+      "back": "Structure:\n• ~300 million alveoli in lungs\n• Thin-walled air sacs (1 cell thick)\n• Surrounded by capillary network\n• Large surface area (~70 m²)\n• Type I pneumocytes: Gas exchange (95% of surface)\n• Type II pneumocytes: Produce surfactant (5%)\n• Alveolar macrophages: Immune defense\n\nFunction:\n• Gas exchange by diffusion\n• O₂ diffuses into blood\n• CO₂ diffuses out of blood\n• Surfactant reduces surface tension, prevents collapse",
+      "subcategory": "Respiratory System"
+    },
+    {
+      "id": "bio-256",
+      "front": "What is surfactant and why is it important?",
+      "back": "Surfactant: Lipoprotein mixture produced by Type II pneumocytes\n\nComposition:\n• ~90% phospholipids (mainly dipalmitoylphosphatidylcholine)\n• ~10% proteins (surfactant proteins A, B, C, D)\n\nFunctions:\n• Reduces surface tension in alveoli\n• Prevents alveolar collapse during exhalation\n• Increases lung compliance (easier to inflate)\n• Prevents fluid accumulation in alveoli\n\nClinical significance:\n• Premature infants lack surfactant → Infant Respiratory Distress Syndrome (IRDS)\n• Can be treated with synthetic surfactant",
+      "subcategory": "Respiratory System"
+    },
+    {
+      "id": "bio-257",
+      "front": "What are the key lung volumes and capacities?",
+      "back": "Volumes (non-overlapping):\n• Tidal Volume (TV): ~500 mL, normal breathing\n• Inspiratory Reserve Volume (IRV): ~3000 mL, extra inhalation\n• Expiratory Reserve Volume (ERV): ~1200 mL, extra exhalation\n• Residual Volume (RV): ~1200 mL, always remains (cannot be exhaled)\n\nCapacities (combinations):\n• Inspiratory Capacity (IC): TV + IRV = ~3500 mL\n• Functional Residual Capacity (FRC): ERV + RV = ~2400 mL\n• Vital Capacity (VC): TV + IRV + ERV = ~4700 mL (max exhale after max inhale)\n• Total Lung Capacity (TLC): VC + RV = ~6000 mL",
+      "subcategory": "Respiratory System"
+    },
+    {
+      "id": "bio-258",
+      "front": "What is the difference between ventilation and respiration?",
+      "back": "Ventilation (Breathing):\n• Mechanical movement of air in/out of lungs\n• Inhalation: Diaphragm contracts, external intercostals contract → ↑ thoracic volume → ↓ pressure → air flows in\n• Exhalation: Passive (at rest), muscles relax → ↓ volume → ↑ pressure → air flows out\n• Active exhalation: Internal intercostals, abdominal muscles contract\n\nRespiration:\n• Gas exchange process\n• External respiration: O₂/CO₂ exchange in lungs (alveoli ↔ blood)\n• Internal respiration: O₂/CO₂ exchange in tissues (blood ↔ cells)\n• Cellular respiration: ATP production in mitochondria",
+      "subcategory": "Respiratory System"
+    },
+    {
+      "id": "bio-259",
+      "front": "How is oxygen transported in the blood?",
+      "back": "Two forms:\n\n1. Bound to hemoglobin (98.5%):\n• Each Hb has 4 heme groups → binds 4 O₂ molecules\n• Forms oxyhemoglobin (HbO₂)\n• Cooperative binding (sigmoidal curve)\n• High affinity in lungs (high PO₂)\n• Low affinity in tissues (low PO₂)\n\n2. Dissolved in plasma (1.5%):\n• Small amount, follows Henry's Law\n• PaO₂ measures dissolved O₂\n\nFactors affecting O₂-Hb binding:\n• ↑ Temperature → ↓ affinity (right shift)\n• ↑ CO₂/↓ pH (Bohr effect) → ↓ affinity\n• ↑ 2,3-BPG → ↓ affinity\n• All promote O₂ unloading in tissues",
+      "subcategory": "Respiratory System"
+    },
+    {
+      "id": "bio-260",
+      "front": "How is carbon dioxide transported in the blood?",
+      "back": "Three forms:\n\n1. Bicarbonate ion (70%):\n• CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻\n• Catalyzed by carbonic anhydrase in RBCs\n• HCO₃⁻ transported in plasma\n• Chloride shift: HCO₃⁻ out, Cl⁻ in (maintain charge)\n\n2. Bound to hemoglobin (23%):\n• Carbaminohemoglobin (HbCO₂)\n• Binds to amino groups (not heme)\n• Deoxyhemoglobin binds CO₂ better than oxyhemoglobin\n\n3. Dissolved in plasma (7%):\n• Directly dissolved\n• PaCO₂ measures dissolved CO₂",
+      "subcategory": "Respiratory System"
+    },
+    {
+      "id": "bio-261",
+      "front": "What happens when hypervenitlation or hypoventialation occurs?",
+      "back": "Hyperventilation:\n• ↑ Breathing rate/depth\n• ↓ CO₂ levels (hypocapnia)\n• ↑ Blood pH (respiratory alkalosis)\n• Symptoms: Dizziness, tingling, fainting\n• Compensation: ↓ ventilation, renal HCO₃⁻ excretion\n\nHypoventilation:\n• ↓ Breathing rate/depth\n• ↑ CO₂ levels (hypercapnia)\n• ↓ Blood pH (respiratory acidosis)\n• Symptoms: Headache, confusion, lethargy\n• Compensation: ↑ ventilation, renal HCO₃⁻ retention\n\nBoth affect O₂ delivery and acid-base balance",
+      "subcategory": "Respiratory System"
+    },
+    {
+      "id": "bio-262",
+      "front": "What is the Haldane effect?",
+      "back": "The Haldane effect describes how O₂ affects CO₂ transport:\n\nIn Tissues:\n• O₂ unloads from Hb → forms deoxyhemoglobin\n• Deoxyhemoglobin has ↑ affinity for CO₂\n• Binds more CO₂ (as carbaminohemoglobin)\n• Deoxyhemoglobin is a better buffer (binds H⁺)\n• Result: More CO₂ picked up from tissues\n\nIn Lungs:\n• O₂ binds to Hb → forms oxyhemoglobin\n• Oxyhemoglobin has ↓ affinity for CO₂\n• Releases CO₂\n• Result: CO₂ exhaled\n\nComplement to Bohr effect: Facilitates bidirectional gas exchange",
+      "subcategory": "Respiratory System"
+    },
+    {
+      "id": "bio-263",
+      "front": "How is breathing regulated by the nervous system?",
+      "back": "Medullary Respiratory Centers (Medulla oblongata):\n• Dorsal Respiratory Group (DRG): Controls inspiration\n• Ventral Respiratory Group (VRG): Controls forced exhalation\n• Sets basic rhythm (automaticity)\n\nPontine Respiratory Centers (Pons):\n• Pneumotaxic center: Inhibits inspiration, ↑ breathing rate\n• Apneustic center: Stimulates inspiration, ↓ breathing rate\n\nChemoreceptors:\n• Central (medulla): Sensitive to ↑ CO₂/↓ pH in CSF (primary)\n• Peripheral (carotid/aortic bodies): Sensitive to ↓ O₂, ↑ CO₂, ↓ pH\n\nPrimary drive: ↑ CO₂ (not ↓ O₂!)\n\nVoluntary control: Cerebral cortex can override",
+      "subcategory": "Respiratory System"
     }
   ],
   "psych": [
