@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { AddStudySessionModal } from "@/components/AddStudySessionModal";
+import { EditStudySessionModal } from "@/components/EditStudySessionModal";
 import { supabase } from "@/lib/supabase";
 import { useToast } from "@/hooks/use-toast";
 import { 
@@ -43,6 +44,8 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("overview");
   const [isAddSessionModalOpen, setIsAddSessionModalOpen] = useState(false);
+  const [isEditSessionModalOpen, setIsEditSessionModalOpen] = useState(false);
+  const [selectedSession, setSelectedSession] = useState<StudySession | null>(null);
   const navigate = useNavigate();
   const { toast } = useToast();
 
@@ -137,6 +140,11 @@ const Dashboard = () => {
         variant: "destructive",
       });
     }
+  };
+
+  const handleEditSession = (session: StudySession) => {
+    setSelectedSession(session);
+    setIsEditSessionModalOpen(true);
   };
 
   const features = [
@@ -498,7 +506,11 @@ const Dashboard = () => {
                           <span>{session.duration}</span>
                         </div>
                       </div>
-                      <Button variant="ghost" size="sm">
+                      <Button 
+                        variant="ghost" 
+                        size="sm"
+                        onClick={() => handleEditSession(session)}
+                      >
                         Edit
                       </Button>
                     </div>
@@ -649,6 +661,14 @@ const Dashboard = () => {
           open={isAddSessionModalOpen}
           onOpenChange={setIsAddSessionModalOpen}
           onSessionAdded={refreshDashboard}
+        />
+
+        {/* Edit Study Session Modal */}
+        <EditStudySessionModal
+          open={isEditSessionModalOpen}
+          onOpenChange={setIsEditSessionModalOpen}
+          onSessionUpdated={refreshDashboard}
+          session={selectedSession}
         />
       </div>
     </PageLayout>
