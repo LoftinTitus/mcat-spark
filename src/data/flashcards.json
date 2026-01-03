@@ -1880,7 +1880,7 @@
       "id": "psych-10",
       "front": "What is shaping and chaining?",
       "back": "Shaping: Reinforcing successive approximations to desired behavior\n\u2022 Break complex behavior into steps\n\u2022 Reinforce each step closer to goal\n\u2022 Example: Teaching animal to press lever (approach \u2192 touch \u2192 press)\n\nChaining: Linking simple behaviors into complex sequence\n\u2022 Each behavior becomes cue for next\n\u2022 Backward chaining: Start with last step\n\u2022 Forward chaining: Start with first step\n\u2022 Example: Getting dressed (socks \u2192 pants \u2192 shirt)\n\nBoth used in training and behavior modification",
-      "subcategory": "General Psychology"
+      "subcategory": "Learning"
     },
     {
       "id": "psych-11",
@@ -1898,7 +1898,7 @@
       "id": "psych-13",
       "front": "What is Kohlberg's moral development theory?",
       "back": "Lawrence Kohlberg - 3 levels of moral reasoning (6 stages):\n\nPre-conventional (childhood):\n1. Punishment avoidance: Avoid punishment\n2. Self-interest: What's in it for me?\n\nConventional (adolescence/adult):\n3. Interpersonal accord: Please others, \"good boy/girl\"\n4. Law and order: Follow rules/authority\n\nPost-conventional (some adults):\n5. Social contract: Laws flexible, individual rights\n6. Universal principles: Abstract justice, human rights\n\nBased on Heinz dilemma (steal drug to save wife?)\nCriticism: Male-biased (Gilligan's care ethics)",
-      "subcategory": "Learning"
+      "subcategory": "Developmental Psychology"
     },
     {
       "id": "psych-14",
@@ -1910,7 +1910,7 @@
       "id": "psych-15",
       "front": "What are Freud's psychosexual stages?",
       "back": "Sigmund Freud - Psychosexual stages:\n\n1. Oral (0-1): Pleasure from mouth (sucking, biting)\n\u2022 Fixation: Overeating, smoking, nail-biting\n\n2. Anal (1-3): Pleasure from bowel control\n\u2022 Fixation: Anal-retentive (orderly) or anal-expulsive (messy)\n\n3. Phallic (3-6): Oedipus/Electra complex\n\u2022 Boys: Desire mother, fear father (castration anxiety)\n\u2022 Girls: Desire father, penis envy\n\u2022 Fixation: Sexual identity issues\n\n4. Latency (6-puberty): Sexual feelings dormant\n\u2022 Focus on skills, friendships\n\n5. Genital (puberty+): Mature sexual relationships\n\u2022 If earlier stages resolved, healthy sexuality\n\nFixations occur if needs unmet/over-satisfied",
-      "subcategory": "Psychological Disorders"
+      "subcategory": "Developmental Psychology"
     },
     {
       "id": "psych-16",
@@ -1928,7 +1928,7 @@
       "id": "psych-18",
       "front": "What are the Big Five personality traits?",
       "back": "Big Five (OCEAN or CANOE):\n\nOpenness:\n\u2022 Imagination, creativity, curiosity\n\u2022 Low: Practical, conventional\n\nConscientiousness:\n\u2022 Organization, responsibility, self-discipline\n\u2022 Low: Impulsive, disorganized\n\nExtraversion:\n\u2022 Sociability, assertiveness, energy\n\u2022 Low: Introverted, reserved\n\nAgreeableness:\n\u2022 Compassion, cooperation, trust\n\u2022 Low: Competitive, skeptical\n\nNeuroticism:\n\u2022 Emotional instability, anxiety, moodiness\n\u2022 Low: Calm, stable (emotional stability)\n\nMost widely accepted trait model\nFairly stable across lifespan\nGenetic and environmental influences",
-      "subcategory": "Motivation & Emotion"
+      "subcategory": "Personality"
     },
     {
       "id": "psych-19",
@@ -2012,13 +2012,13 @@
       "id": "psych-32",
       "front": "What are social norms?",
       "back": "Social norms: Rules/expectations for behavior in society\n\nTypes:\n\nFolkways:\n\u2022 Informal norms, customs\n\u2022 Minor violations (mild disapproval)\n\u2022 Example: Table manners, dress codes\n\nMores (\"mor-ays\"):\n\u2022 Important norms, moral significance\n\u2022 Violations cause strong reaction\n\u2022 Example: Theft, cheating, lying\n\nTaboos:\n\u2022 Strongest norms, forbidden behaviors\n\u2022 Severe punishment if violated\n\u2022 Example: Incest, cannibalism\n\nLaws:\n\u2022 Formal norms, codified\n\u2022 Official sanctions for violations\n\u2022 Example: Murder, assault, tax evasion\n\nSanctions: Rewards (positive) or punishments (negative) for norm compliance/violation",
-      "subcategory": "Learning"
+      "subcategory": "Social Psychology"
     },
     {
       "id": "psych-33",
       "front": "Define social roles and role conflict",
       "back": "Social role: Expected behaviors associated with a status/position\n\nRole conflict:\n\u2022 Incompatible demands from different roles\n\u2022 Example: Parent role vs employee role (child sick, big meeting)\n\nRole strain:\n\u2022 Tension within single role\n\u2022 Example: Professor must teach AND publish\n\nRole exit:\n\u2022 Disengaging from social role\n\u2022 Example: Retirement, divorce\n\nAscribed role:\n\u2022 Assigned at birth, involuntary\n\u2022 Example: Son, daughter, age, race\n\nAchieved role:\n\u2022 Earned through effort/choice\n\u2022 Example: Doctor, spouse, athlete",
-      "subcategory": "General Psychology"
+      "subcategory": "Social Psychology"
     },
     {
       "id": "psych-34",
