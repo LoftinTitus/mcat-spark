@@ -1,9 +1,15 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { PageLayout } from "@/components/PageLayout";
 import { FlashCard } from "@/components/FlashCard";
 import { SectionSelector } from "@/components/SectionSelector";
 import { ChevronLeft, ChevronRight, Shuffle } from "lucide-react";
 import { trackFlashcardReview } from "@/lib/analytics";
+import { 
+  recordFlashcardReview, 
+  getFlashcardReview,
+  DifficultyRating 
+} from "@/lib/spacedRepetition";
+import { useToast } from "@/hooks/use-toast";
 import flashcardsData from "@/data/flashcards.json";
 
 type Section = "chem" | "bio" | "psych" | "cars";
@@ -22,6 +28,8 @@ const Flashcards = () => {
   const [shuffled, setShuffled] = useState(false);
   const [isFlipped, setIsFlipped] = useState(false);
   const [reviewedCards, setReviewedCards] = useState<Set<string>>(new Set());
+  const [currentReview, setCurrentReview] = useState<any>(null);
+  const { toast } = useToast();
 
   // Get available subcategories for current section
   const subcategories = useMemo(() => {
@@ -46,6 +54,17 @@ const Flashcards = () => {
   }, [section, subcategory, shuffled]);
 
   const currentCard = cards[currentIndex];
+
+  // Load review data when card changes
+  useEffect(() => {
+    const loadReviewData = async () => {
+      if (currentCard) {
+        const review = await getFlashcardReview(currentCard.id);
+        setCurrentReview(review);
+      }
+    };
+    loadReviewData();
+  }, [currentCard]);
 
   const handleSectionChange = (newSection: Section) => {
     setSection(newSection);
@@ -73,6 +92,40 @@ const Flashcards = () => {
         currentCard.subcategory
       );
       setReviewedCards(prev => new Set([...prev, currentCard.id]));
+    }
+  };
+
+  const handleReview = async (difficulty: DifficultyRating) => {
+    if (!currentCard) return;
+
+    const success = await recordFlashcardReview(
+      currentCard.id,
+      difficulty,
+      section,
+      currentCard.subcategory || 'General'
+    );
+
+    if (success) {
+      const difficultyLabels = {
+        again: 'Again (review soon)',
+        hard: 'Hard (needs practice)',
+        good: 'Good (got it!)',
+        easy: 'Easy (mastered!)'
+      };
+
+      toast({
+        title: "Review recorded!",
+        description: difficultyLabels[difficulty],
+      });
+      
+      // Move to next card
+      handleNext();
+    } else {
+      toast({
+        title: "Error",
+        description: "Failed to record review. Please try again.",
+        variant: "destructive",
+      });
     }
   };
 
@@ -145,6 +198,11 @@ const Flashcards = () => {
             back={currentCard.back}
             isFlipped={isFlipped}
             onFlip={handleFlip}
+            showReviewButtons={true}
+            onReview={handleReview}
+            currentInterval={currentReview?.interval_days || 1}
+            easeFactor={currentReview?.ease_factor || 2.5}
+            timesReviewed={currentReview?.times_reviewed || 0}
           />
         )}
 

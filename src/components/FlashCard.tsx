@@ -81,57 +81,38 @@ export function FlashCard({
           
           {showReviewButtons && isFlipped && onReview && (
             <div className="mt-6 pt-4 border-t border-border">
-              <p className="text-xs text-muted-foreground text-center mb-3">
-                How well did you know this?
-              </p>
-              <div className="grid grid-cols-2 gap-2">
-                <Button
-                  variant="outline"
-                  size="sm"
+              <div className="flex gap-2">
+                <button
                   onClick={(e) => handleReviewClick('again', e)}
-                  className="flex flex-col h-auto py-3 hover:bg-red-50 hover:border-red-300 dark:hover:bg-red-950"
+                  className="flex-1 py-2 text-xs rounded hover:bg-accent transition-colors"
                 >
-                  <span className="font-semibold text-red-600 dark:text-red-400">Again</span>
-                  <span className="text-xs text-muted-foreground mt-1">
-                    {formatInterval(intervals.again)}
-                  </span>
-                </Button>
+                  <div className="font-medium">Again</div>
+                  <div className="text-[10px] text-muted-foreground">{formatInterval(intervals.again)}</div>
+                </button>
                 
-                <Button
-                  variant="outline"
-                  size="sm"
+                <button
                   onClick={(e) => handleReviewClick('hard', e)}
-                  className="flex flex-col h-auto py-3 hover:bg-orange-50 hover:border-orange-300 dark:hover:bg-orange-950"
+                  className="flex-1 py-2 text-xs rounded hover:bg-accent transition-colors"
                 >
-                  <span className="font-semibold text-orange-600 dark:text-orange-400">Hard</span>
-                  <span className="text-xs text-muted-foreground mt-1">
-                    {formatInterval(intervals.hard)}
-                  </span>
-                </Button>
+                  <div className="font-medium">Hard</div>
+                  <div className="text-[10px] text-muted-foreground">{formatInterval(intervals.hard)}</div>
+                </button>
                 
-                <Button
-                  variant="outline"
-                  size="sm"
+                <button
                   onClick={(e) => handleReviewClick('good', e)}
-                  className="flex flex-col h-auto py-3 hover:bg-green-50 hover:border-green-300 dark:hover:bg-green-950"
+                  className="flex-1 py-2 text-xs rounded hover:bg-accent transition-colors"
                 >
-                  <span className="font-semibold text-green-600 dark:text-green-400">Good</span>
-                  <span className="text-xs text-muted-foreground mt-1">
-                    {formatInterval(intervals.good)}
-                  </span>
-                </Button>
+                  <div className="font-medium">Good</div>
+                  <div className="text-[10px] text-muted-foreground">{formatInterval(intervals.good)}</div>
+                </button>
                 
-                <Button
-                  variant="outline"
-                  size="sm"
+                <button
                   onClick={(e) => handleReviewClick('easy', e)}
-                  className="flex flex-col h-auto py-3 hover:bg-blue-50 hover:border-blue-300 dark:hover:bg-blue-950"
+                  className="flex-1 py-2 text-xs rounded hover:bg-accent transition-colors"
                 >
-                  <span className="font-semibold text-blue-600 dark:text-blue-400">Easy</span>
-                  <span className="text-xs text-muted-foreground mt-1">
-                    {formatInterval(intervals.easy)}
-                  </span>
-                </Button>
+                  <div className="font-medium">Easy</div>
+                  <div className="text-[10px] text-muted-foreground">{formatInterval(intervals.easy)}</div>
+                </button>
               </div>
             </div>
           )}
