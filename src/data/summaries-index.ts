@@ -91,6 +91,10 @@ import bioProkaryotesVsEukaryotesContent from './summaries/bio-prokaryotes-vs-eu
 import bioProkaryotesContent from './summaries/bio-prokaryotes.md?raw';
 import bioEukaryotesContent from './summaries/bio-eukaryotes.md?raw';
 import bioPlasmaMembraneContent from './summaries/bio-plasma-membrane.md?raw';
+import bioEndoplasmicReticulumContent from './summaries/bio-endoplasmic-reticulum.md?raw';
+import bioMitochondriaContent from './summaries/bio-mitochondria.md?raw';
+import bioCellCycleMitosisContent from './summaries/bio-cell-cycle-mitosis.md?raw';
+import bioCancerContent from './summaries/bio-cancer.md?raw';
 
 // Parse content and quizzes
 const parseContent = (rawContent: string) => parseQuizFromMarkdown(rawContent);
@@ -114,6 +118,10 @@ const bioProkaryotesVsEukaryotes = parseContent(bioProkaryotesVsEukaryotesConten
 const bioProkaryotes = parseContent(bioProkaryotesContent);
 const bioEukaryotes = parseContent(bioEukaryotesContent);
 const bioPlasmaMembrane = parseContent(bioPlasmaMembraneContent);
+const bioEndoplasmicReticulum = parseContent(bioEndoplasmicReticulumContent);
+const bioMitochondria = parseContent(bioMitochondriaContent);
+const bioCellCycleMitosis = parseContent(bioCellCycleMitosisContent);
+const bioCancer = parseContent(bioCancerContent);
 
 export const summaries: Summary[] = [
   {
@@ -267,5 +275,37 @@ export const summaries: Summary[] = [
     topic: "Plasma Membrane",
     content: bioPlasmaMembrane.content,
     quiz: bioPlasmaMembrane.quiz,
+  },
+  {
+    id: "bio-endoplasmic-reticulum",
+    section: "bio",
+    subtopic: "Cell Biology",
+    topic: "Endoplasmic Reticulum (Rough & Smooth)",
+    content: bioEndoplasmicReticulum.content,
+    quiz: bioEndoplasmicReticulum.quiz,
+  },
+  {
+    id: "bio-mitochondria",
+    section: "bio",
+    subtopic: "Cell Biology",
+    topic: "Mitochondria",
+    content: bioMitochondria.content,
+    quiz: bioMitochondria.quiz,
+  },
+  {
+    id: "bio-cell-cycle-mitosis",
+    section: "bio",
+    subtopic: "Cell Biology",
+    topic: "Cell Cycle and Mitosis",
+    content: bioCellCycleMitosis.content,
+    quiz: bioCellCycleMitosis.quiz,
+  },
+  {
+    id: "bio-cancer",
+    section: "bio",
+    subtopic: "Cell Biology",
+    topic: "Cancer: Cellular and Molecular Basis",
+    content: bioCancer.content,
+    quiz: bioCancer.quiz,
   },
 ];
