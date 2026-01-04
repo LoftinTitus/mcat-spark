@@ -62,6 +62,39 @@ const Dashboard = () => {
   const [strongCategories, setStrongCategories] = useState<CategoryPerformance[]>([]);
   const [studyPlan, setStudyPlan] = useState<StudySession[]>([]);
   const [recentActivity, setRecentActivity] = useState<any[]>([]);
+  const [dailyGoals, setDailyGoals] = useState({
+    flashcardsReviewed: 0,
+    questionsAnswered: 0,
+    studyTime: 0,
+  });
+
+  const loadDailyGoals = async (userId: string) => {
+    const today = new Date().toISOString().split('T')[0];
+    
+    // Get today's flashcard reviews
+    const { data: flashcardData } = await supabase
+      .from('flashcard_reviews')
+      .select('flashcard_id')
+      .eq('user_id', userId)
+      .gte('last_review_date', today);
+    
+    // Get today's question attempts
+    const { data: questionData } = await supabase
+      .from('question_attempts')
+      .select('id, time_spent')
+      .eq('user_id', userId)
+      .gte('timestamp', today);
+    
+    // Calculate study time in hours from today's question attempts (time_spent is in seconds)
+    const totalSeconds = questionData?.reduce((sum, q) => sum + (q.time_spent || 0), 0) || 0;
+    const studyHours = totalSeconds / 3600;
+    
+    setDailyGoals({
+      flashcardsReviewed: flashcardData?.length || 0,
+      questionsAnswered: questionData?.length || 0,
+      studyTime: Math.round(studyHours * 10) / 10, // Round to 1 decimal
+    });
+  };
 
   useEffect(() => {
     // Check if user is logged in and load data
@@ -91,6 +124,10 @@ const Dashboard = () => {
       setStrongCategories(strong);
       setStudyPlan(plan);
       setRecentActivity(activity);
+      
+      // Calculate daily goals from today's activity
+      await loadDailyGoals(user.id);
+      
       setLoading(false);
     };
 
@@ -109,6 +146,30 @@ const Dashboard = () => {
     return () => subscription.unsubscribe();
   }, [navigate]);
 
+  // Refresh data when user comes back to the page
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (!document.hidden && user) {
+        // Refresh daily goals and recent activity when user returns to page
+        loadDailyGoals(user.id);
+        getRecentActivity(10).then(setRecentActivity);
+        getUserStats().then(stats => {
+          if (stats) setStudyStats(stats);
+        });
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    
+    // Also refresh when window gains focus
+    window.addEventListener('focus', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('focus', handleVisibilityChange);
+    };
+  }, [user]);
+
   const refreshDashboard = async () => {
     const [stats, weak, strong, plan, activity] = await Promise.all([
       getUserStats(),
@@ -123,6 +184,11 @@ const Dashboard = () => {
     setStrongCategories(strong);
     setStudyPlan(plan);
     setRecentActivity(activity);
+    
+    // Reload daily goals
+    if (user) {
+      await loadDailyGoals(user.id);
+    }
   };
 
   const handleSignOut = async () => {
@@ -587,29 +653,37 @@ const Dashboard = () => {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">Daily Goals</CardTitle>
+                  <CardDescription>Track your progress for today</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="space-y-2">
                     <div className="flex items-center justify-between text-sm">
                       <span>Review 20 flashcards</span>
-                      <span className="text-muted-foreground">12/20</span>
+                      <span className="text-muted-foreground">{dailyGoals.flashcardsReviewed}/20</span>
                     </div>
-                    <Progress value={60} className="h-2" />
+                    <Progress value={Math.min((dailyGoals.flashcardsReviewed / 20) * 100, 100)} className="h-2" />
                   </div>
                   <div className="space-y-2">
                     <div className="flex items-center justify-between text-sm">
                       <span>Answer 10 questions</span>
-                      <span className="text-muted-foreground">7/10</span>
+                      <span className="text-muted-foreground">{dailyGoals.questionsAnswered}/10</span>
                     </div>
-                    <Progress value={70} className="h-2" />
+                    <Progress value={Math.min((dailyGoals.questionsAnswered / 10) * 100, 100)} className="h-2" />
                   </div>
                   <div className="space-y-2">
                     <div className="flex items-center justify-between text-sm">
                       <span>Study for 2 hours</span>
-                      <span className="text-muted-foreground">1.5/2h</span>
+                      <span className="text-muted-foreground">{dailyGoals.studyTime}/2h</span>
                     </div>
-                    <Progress value={75} className="h-2" />
+                    <Progress value={Math.min((dailyGoals.studyTime / 2) * 100, 100)} className="h-2" />
                   </div>
+                  {dailyGoals.flashcardsReviewed >= 20 && dailyGoals.questionsAnswered >= 10 && dailyGoals.studyTime >= 2 && (
+                    <div className="mt-4 p-3 bg-green-500/10 border border-green-500/20 rounded-lg text-center">
+                      <p className="text-sm font-semibold text-green-700 dark:text-green-400">
+                        🎉 All daily goals completed!
+                      </p>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
 
