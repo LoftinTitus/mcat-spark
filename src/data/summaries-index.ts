@@ -81,6 +81,7 @@ import psychLearningContent from './summaries/psych-learning.md?raw';
 import psychSocialContent from './summaries/psych-social.md?raw';
 import carsStrategyContent from './summaries/cars-strategy.md?raw';
 import bioAminoAcidContent from './summaries/aminoacidstruct.md?raw';
+import bioDnaGenomeContent from './summaries/bio-dna-genome.md?raw';
 
 // Parse content and quizzes
 const parseContent = (rawContent: string) => parseQuizFromMarkdown(rawContent);
@@ -94,6 +95,7 @@ const psychLearning = parseContent(psychLearningContent);
 const psychSocial = parseContent(psychSocialContent);
 const carsStrategy = parseContent(carsStrategyContent);
 const bioAminoAcid = parseContent(bioAminoAcidContent);
+const bioDnaGenome = parseContent(bioDnaGenomeContent);
 
 export const summaries: Summary[] = [
   {
@@ -167,5 +169,13 @@ export const summaries: Summary[] = [
     topic: "Amino Acid and Protein Structure",
     content: bioAminoAcid.content,
     quiz: bioAminoAcid.quiz,
-  }
+  },
+  {
+    id: "bio-dna-genome",
+    section: "bio",
+    subtopic: "Molecular Biology",
+    topic: "DNA and Genome Structure",
+    content: bioDnaGenome.content,
+    quiz: bioDnaGenome.quiz,
+  },
 ];
