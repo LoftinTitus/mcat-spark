@@ -86,6 +86,11 @@ import bioDnaReplicationRepairContent from './summaries/bio-dna-replication-repa
 import bioTranscriptionTranslationContent from './summaries/bio-transcription-translation.md?raw';
 import bioCellSignalingGeneExpContent from './summaries/bio-cell-signaling-gene-exp.md?raw';
 import bioVirusesContent from './summaries/bio-viruses.md?raw';
+import bioSubviralParticlesContent from './summaries/bio-subviral-particles.md?raw';
+import bioProkaryotesVsEukaryotesContent from './summaries/bio-prokaryotes-vs-eukaryotes.md?raw';
+import bioProkaryotesContent from './summaries/bio-prokaryotes.md?raw';
+import bioEukaryotesContent from './summaries/bio-eukaryotes.md?raw';
+import bioPlasmaMembraneContent from './summaries/bio-plasma-membrane.md?raw';
 
 // Parse content and quizzes
 const parseContent = (rawContent: string) => parseQuizFromMarkdown(rawContent);
@@ -104,6 +109,11 @@ const bioDnaReplicationRepair = parseContent(bioDnaReplicationRepairContent);
 const bioTranscriptionTranslation = parseContent(bioTranscriptionTranslationContent);
 const bioCellSignalingGeneExp = parseContent(bioCellSignalingGeneExpContent);
 const bioViruses = parseContent(bioVirusesContent);
+const bioSubviralParticles = parseContent(bioSubviralParticlesContent);
+const bioProkaryotesVsEukaryotes = parseContent(bioProkaryotesVsEukaryotesContent);
+const bioProkaryotes = parseContent(bioProkaryotesContent);
+const bioEukaryotes = parseContent(bioEukaryotesContent);
+const bioPlasmaMembrane = parseContent(bioPlasmaMembraneContent);
 
 export const summaries: Summary[] = [
   {
@@ -217,5 +227,45 @@ export const summaries: Summary[] = [
     topic: "Viruses",
     content: bioViruses.content,
     quiz: bioViruses.quiz,
+  },
+  {
+    id: "bio-subviral-particles",
+    section: "bio",
+    subtopic: "Microbiology",
+    topic: "Subviral Particles (Prions & Viroids)",
+    content: bioSubviralParticles.content,
+    quiz: bioSubviralParticles.quiz,
+  },
+  {
+    id: "bio-prokaryotes-vs-eukaryotes",
+    section: "bio",
+    subtopic: "Cell Biology",
+    topic: "Prokaryotes vs. Eukaryotes",
+    content: bioProkaryotesVsEukaryotes.content,
+    quiz: bioProkaryotesVsEukaryotes.quiz,
+  },
+  {
+    id: "bio-prokaryotes",
+    section: "bio",
+    subtopic: "Microbiology",
+    topic: "Prokaryotes",
+    content: bioProkaryotes.content,
+    quiz: bioProkaryotes.quiz,
+  },
+  {
+    id: "bio-eukaryotes",
+    section: "bio",
+    subtopic: "Cell Biology",
+    topic: "Eukaryotes",
+    content: bioEukaryotes.content,
+    quiz: bioEukaryotes.quiz,
+  },
+  {
+    id: "bio-plasma-membrane",
+    section: "bio",
+    subtopic: "Cell Biology",
+    topic: "Plasma Membrane",
+    content: bioPlasmaMembrane.content,
+    quiz: bioPlasmaMembrane.quiz,
   },
 ];
