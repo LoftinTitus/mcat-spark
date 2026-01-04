@@ -2,7 +2,7 @@ import { useState } from "react";
 import { PageLayout } from "@/components/PageLayout";
 import { SectionBadge } from "@/components/SectionBadge";
 import { ChevronRight, ChevronLeft } from "lucide-react";
-import { summaries, type Summary } from "@/data/summaries";
+import { summaries, type Summary } from "@/data/summaries-index";
 import ReactMarkdown from "react-markdown";
 
 type Section = "chem" | "bio" | "psych" | "cars" | "all";
