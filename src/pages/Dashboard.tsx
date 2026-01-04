@@ -69,29 +69,107 @@ const Dashboard = () => {
   });
 
   const loadDailyGoals = async (userId: string) => {
-    const today = new Date().toISOString().split('T')[0];
+    // Get start of today in ISO format (00:00:00)
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const startOfToday = today.toISOString();
     
-    // Get today's flashcard reviews
-    const { data: flashcardData } = await supabase
+    // Get tomorrow's start for upper bound
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const startOfTomorrow = tomorrow.toISOString();
+    
+    console.log('Loading daily goals for date range:', { startOfToday, startOfTomorrow });
+    
+    // Get today's flashcard reviews - try multiple timestamp column names
+    let flashcardData: any[] = [];
+    
+    // Try with 'last_reviewed_at' (spaced repetition schema)
+    const { data: flashcardData1, error: flashcardError1 } = await supabase
       .from('flashcard_reviews')
-      .select('flashcard_id')
+      .select('*')
       .eq('user_id', userId)
-      .gte('last_review_date', today);
+      .gte('last_reviewed_at', startOfToday)
+      .lt('last_reviewed_at', startOfTomorrow);
     
-    // Get today's question attempts
-    const { data: questionData } = await supabase
+    if (!flashcardError1 && flashcardData1) {
+      flashcardData = flashcardData1;
+      console.log('Found flashcards using last_reviewed_at:', flashcardData.length);
+    } else {
+      // Try with 'reviewed_at' (analytics schema)
+      const { data: flashcardData2, error: flashcardError2 } = await supabase
+        .from('flashcard_reviews')
+        .select('*')
+        .eq('user_id', userId)
+        .gte('reviewed_at', startOfToday)
+        .lt('reviewed_at', startOfTomorrow);
+      
+      if (!flashcardError2 && flashcardData2) {
+        flashcardData = flashcardData2;
+        console.log('Found flashcards using reviewed_at:', flashcardData.length);
+      } else {
+        // Try with 'created_at' as fallback
+        const { data: flashcardData3, error: flashcardError3 } = await supabase
+          .from('flashcard_reviews')
+          .select('*')
+          .eq('user_id', userId)
+          .gte('created_at', startOfToday)
+          .lt('created_at', startOfTomorrow);
+        
+        if (!flashcardError3 && flashcardData3) {
+          flashcardData = flashcardData3;
+          console.log('Found flashcards using created_at:', flashcardData.length);
+        } else {
+          console.error('All flashcard queries failed:', { flashcardError1, flashcardError2, flashcardError3 });
+        }
+      }
+    }
+    
+    // Get today's question attempts - try both column names
+    let questionData: any[] = [];
+    
+    // Try with 'attempted_at' (analytics schema)
+    const { data: questionData1, error: questionError1 } = await supabase
       .from('question_attempts')
-      .select('id, time_spent')
+      .select('*')
       .eq('user_id', userId)
-      .gte('timestamp', today);
+      .gte('attempted_at', startOfToday)
+      .lt('attempted_at', startOfTomorrow);
+    
+    if (!questionError1 && questionData1) {
+      questionData = questionData1;
+      console.log('Found questions using attempted_at:', questionData.length);
+    } else {
+      // Try with 'timestamp' as fallback
+      const { data: questionData2, error: questionError2 } = await supabase
+        .from('question_attempts')
+        .select('*')
+        .eq('user_id', userId)
+        .gte('timestamp', startOfToday)
+        .lt('timestamp', startOfTomorrow);
+      
+      if (!questionError2 && questionData2) {
+        questionData = questionData2;
+        console.log('Found questions using timestamp:', questionData.length);
+      } else {
+        console.error('All question queries failed:', { questionError1, questionError2 });
+      }
+    }
     
     // Calculate study time in hours from today's question attempts (time_spent is in seconds)
-    const totalSeconds = questionData?.reduce((sum, q) => sum + (q.time_spent || 0), 0) || 0;
+    const totalSeconds = questionData.reduce((sum, q) => sum + (q.time_spent || 0), 0);
     const studyHours = totalSeconds / 3600;
     
+    console.log('Daily goals calculated:', {
+      flashcardsReviewed: flashcardData.length,
+      questionsAnswered: questionData.length,
+      studyTime: Math.round(studyHours * 10) / 10,
+      totalSeconds
+    });
+    
     setDailyGoals({
-      flashcardsReviewed: flashcardData?.length || 0,
-      questionsAnswered: questionData?.length || 0,
+      flashcardsReviewed: flashcardData.length,
+      questionsAnswered: questionData.length,
       studyTime: Math.round(studyHours * 10) / 10, // Round to 1 decimal
     });
   };
