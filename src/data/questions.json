@@ -2337,7 +2337,906 @@
   "correctIndex": 0,
   "explanation": "ELISA uses antibodies and colorimetric detection to quantify proteins or antibodies in a sample.",
   "subcategory": "Molecular Biology Techniques"
+},
+{
+  "id": "fs-168",
+  "section": "bio",
+  "question": "A patient with chronic hypertension develops left ventricular hypertrophy. Which of the following best explains the physiological adaptation?",
+  "options": [
+    "Increased preload leads to increased contractility",
+    "Increased afterload requires the ventricle to generate more force",
+    "Decreased venous return increases ventricular wall thickness",
+    "Decreased cardiac output stimulates ventricular growth"
+  ],
+  "correctIndex": 1,
+  "explanation": "Chronic hypertension increases afterload, forcing the left ventricle to work harder, resulting in hypertrophy.",
+  "subcategory": "Cardiovascular System"
+},
+{
+  "id": "fs-169",
+  "section": "bio",
+  "question": "A mutation causes a defect in the voltage-gated sodium channels of cardiac myocytes. Which phase of the cardiac action potential would be most affected?",
+  "options": [
+    "Phase 0 (rapid depolarization)",
+    "Phase 1 (initial repolarization)",
+    "Phase 2 (plateau)",
+    "Phase 3 (final repolarization)"
+  ],
+  "correctIndex": 0,
+  "explanation": "Phase 0 is driven by rapid influx of sodium through voltage-gated sodium channels.",
+  "subcategory": "Cardiovascular System"
+},
+{
+  "id": "fs-170",
+  "section": "bio",
+  "question": "A patient is given a drug that selectively dilates arterioles but not veins. What is the most likely effect on capillary hydrostatic pressure?",
+  "options": [
+    "It will increase",
+    "It will decrease",
+    "It will remain unchanged",
+    "It will fluctuate randomly"
+  ],
+  "correctIndex": 0,
+  "explanation": "Arteriole dilation increases blood flow into capillaries, raising hydrostatic pressure and promoting filtration.",
+  "subcategory": "Cardiovascular System"
+},
+{
+  "id": "fs-171",
+  "section": "bio",
+  "question": "A patient with aortic regurgitation is most likely to have which of the following findings?",
+  "options": [
+    "Decreased pulse pressure",
+    "Increased systolic and decreased diastolic pressure",
+    "Decreased systolic and increased diastolic pressure",
+    "No change in blood pressure"
+  ],
+  "correctIndex": 1,
+  "explanation": "Aortic regurgitation increases systolic pressure (more volume ejected) and decreases diastolic pressure (blood flows back into ventricle), widening pulse pressure.",
+  "subcategory": "Cardiovascular System"
+},
+{
+  "id": "fs-172",
+  "section": "bio",
+  "question": "A patient with a defect in the AV node would most likely exhibit which change on an ECG?",
+  "options": [
+    "Shortened PR interval",
+    "Prolonged PR interval",
+    "Absent QRS complex",
+    "Elevated ST segment"
+  ],
+  "correctIndex": 1,
+  "explanation": "AV node defects slow conduction from atria to ventricles, prolonging the PR interval.",
+  "subcategory": "Cardiovascular System"
+},
+{
+  "id": "fs-173",
+  "section": "bio",
+  "question": "A sudden increase in vagal tone would most likely cause which of the following?",
+  "options": [
+    "Tachycardia",
+    "Bradycardia",
+    "Increased contractility",
+    "Increased blood pressure"
+  ],
+  "correctIndex": 1,
+  "explanation": "Vagal stimulation (parasympathetic) slows the heart rate, causing bradycardia.",
+  "subcategory": "Cardiovascular System"
+},
+{
+  "id": "fs-174",
+  "section": "bio",
+  "question": "A patient with severe anemia is found to have a normal oxygen saturation but reduced oxygen content in arterial blood. What best explains this finding?",
+  "options": [
+    "Decreased hemoglobin concentration",
+    "Decreased cardiac output",
+    "Decreased alveolar ventilation",
+    "Increased tissue oxygen extraction"
+  ],
+  "correctIndex": 0,
+  "explanation": "Oxygen saturation measures percent of hemoglobin bound to oxygen; anemia lowers total hemoglobin, reducing oxygen content despite normal saturation.",
+  "subcategory": "Cardiovascular System"
+},
+{
+  "id": "fs-175",
+  "section": "bio",
+  "question": "A patient with a patent ductus arteriosus (PDA) will have abnormal blood flow between which two structures?",
+  "options": [
+    "Left atrium and left ventricle",
+    "Right atrium and right ventricle",
+    "Aorta and pulmonary artery",
+    "Pulmonary vein and aorta"
+  ],
+  "correctIndex": 2,
+  "explanation": "A PDA is an abnormal connection between the aorta and pulmonary artery, allowing blood to flow between them.",
+  "subcategory": "Cardiovascular System"
+},
+{
+  "id": "fs-176",
+  "section": "bio",
+  "question": "Which protein is directly responsible for the power stroke that causes muscle contraction in skeletal muscle?",
+  "options": [
+    "Actin",
+    "Myosin",
+    "Troponin",
+    "Tropomyosin"
+  ],
+  "correctIndex": 1,
+  "explanation": "Myosin heads bind to actin and perform the power stroke using ATP hydrolysis, causing muscle contraction.",
+  "subcategory": "Musculoskeletal System"
+},
+{
+  "id": "fs-177",
+  "section": "bio",
+  "question": "A patient with a mutation in the gene encoding collagen type I would most likely present with abnormalities in which tissue?",
+  "options": [
+    "Cartilage",
+    "Bone",
+    "Smooth muscle",
+    "Nervous tissue"
+  ],
+  "correctIndex": 1,
+  "explanation": "Type I collagen is the major structural protein in bone, tendons, and skin. Mutations cause bone fragility (e.g., osteogenesis imperfecta).",
+  "subcategory": "Musculoskeletal System"
+},
+{
+  "id": "fs-178",
+  "section": "bio",
+  "question": "Which ion is essential for triggering the release of acetylcholine at the neuromuscular junction?",
+  "options": [
+    "Sodium",
+    "Potassium",
+    "Calcium",
+    "Magnesium"
+  ],
+  "correctIndex": 2,
+  "explanation": "Calcium influx into the presynaptic terminal triggers vesicle fusion and acetylcholine release at the neuromuscular junction.",
+  "subcategory": "Musculoskeletal System"
+},
+{
+  "id": "fs-179",
+  "section": "bio",
+  "question": "Which of the following best describes the role of ATP in skeletal muscle contraction?",
+  "options": [
+    "ATP binds to actin to initiate contraction",
+    "ATP hydrolysis causes myosin head detachment from actin",
+    "ATP is required for calcium release from the sarcoplasmic reticulum",
+    "ATP is only used during muscle relaxation"
+  ],
+  "correctIndex": 1,
+  "explanation": "ATP binds to myosin, causing it to detach from actin. Hydrolysis of ATP then re-cocks the myosin head for another power stroke.",
+  "subcategory": "Musculoskeletal System"
+},
+{
+  "id": "fs-180",
+  "section": "bio",
+  "question": "Which structure in long bones is responsible for longitudinal growth during childhood and adolescence?",
+  "options": [
+    "Periosteum",
+    "Epiphyseal plate",
+    "Diaphysis",
+    "Medullary cavity"
+  ],
+  "correctIndex": 1,
+  "explanation": "The epiphyseal plate (growth plate) is a region of cartilage that allows for longitudinal bone growth until it ossifies after puberty.",
+  "subcategory": "Musculoskeletal System"
+},
+{
+  "id": "fs-181",
+  "section": "bio",
+  "question": "Which of the following would most likely result from a deficiency of vitamin D?",
+  "options": [
+    "Increased bone mineralization",
+    "Decreased intestinal calcium absorption",
+    "Increased collagen synthesis",
+    "Decreased muscle contraction"
+  ],
+  "correctIndex": 1,
+  "explanation": "Vitamin D is required for intestinal absorption of calcium. Deficiency leads to hypocalcemia and poor bone mineralization (rickets, osteomalacia).",
+  "subcategory": "Musculoskeletal System"
+},
+{
+  "id": "fs-182",
+  "section": "bio",
+  "question": "Which connective tissue attaches muscle to bone?",
+  "options": [
+    "Ligament",
+    "Tendon",
+    "Cartilage",
+    "Fascia"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tendons attach muscle to bone, while ligaments connect bone to bone.",
+  "subcategory": "Musculoskeletal System"
+},
+{
+  "id": "fs-183",
+  "section": "bio",
+  "question": "A patient with myasthenia gravis has autoantibodies against acetylcholine receptors. Which process is most directly impaired?",
+  "options": [
+    "Release of acetylcholine from motor neurons",
+    "Binding of acetylcholine to muscle cell receptors",
+    "Calcium release from the sarcoplasmic reticulum",
+    "ATP hydrolysis by myosin"
+  ],
+  "correctIndex": 1,
+  "explanation": "Myasthenia gravis impairs acetylcholine binding to its receptor on the muscle cell, reducing muscle activation and causing weakness.",
+  "subcategory": "Musculoskeletal System"
+},
+{
+  "id": "fs-184",
+  "section": "bio",
+  "question": "A patient with restrictive lung disease will most likely have which of the following findings on spirometry?",
+  "options": [
+    "Decreased total lung capacity (TLC)",
+    "Increased residual volume (RV)",
+    "Increased forced vital capacity (FVC)",
+    "Decreased respiratory rate"
+  ],
+  "correctIndex": 0,
+  "explanation": "Restrictive lung diseases decrease lung compliance, resulting in reduced TLC.",
+  "subcategory": "Respiratory System"
+},
+{
+  "id": "fs-185",
+  "section": "bio",
+  "question": "Which structure is the primary site of gas exchange in the lungs?",
+  "options": [
+    "Bronchi",
+    "Alveoli",
+    "Trachea",
+    "Terminal bronchioles"
+  ],
+  "correctIndex": 1,
+  "explanation": "Alveoli are thin-walled sacs where oxygen and carbon dioxide are exchanged between air and blood.",
+  "subcategory": "Respiratory System"
+},
+{
+  "id": "fs-186",
+  "section": "bio",
+  "question": "A rightward shift in the oxygen-hemoglobin dissociation curve is most likely caused by which of the following?",
+  "options": [
+    "Decreased temperature",
+    "Decreased 2,3-BPG",
+    "Decreased pCO₂",
+    "Increased acidity (decreased pH)"
+  ],
+  "correctIndex": 3,
+  "explanation": "Increased acidity (Bohr effect), increased temperature, and increased 2,3-BPG all shift the curve right, promoting oxygen release.",
+  "subcategory": "Respiratory System"
+},
+{
+  "id": "fs-187",
+  "section": "bio",
+  "question": "Which muscle is primarily responsible for quiet inspiration?",
+  "options": [
+    "Internal intercostals",
+    "Diaphragm",
+    "Abdominal muscles",
+    "Sternocleidomastoid"
+  ],
+  "correctIndex": 1,
+  "explanation": "The diaphragm contracts and flattens, increasing thoracic volume and drawing air into the lungs during quiet inspiration.",
+  "subcategory": "Respiratory System"
+},
+{
+  "id": "fs-188",
+  "section": "bio",
+  "question": "A patient with chronic obstructive pulmonary disease (COPD) is likely to have which of the following blood gas findings?",
+  "options": [
+    "Low pCO₂, high pO₂",
+    "High pCO₂, low pO₂",
+    "Low pCO₂, low pO₂",
+    "High pCO₂, high pO₂"
+  ],
+  "correctIndex": 1,
+  "explanation": "COPD impairs ventilation, leading to CO₂ retention (hypercapnia) and decreased oxygenation (hypoxemia).",
+  "subcategory": "Respiratory System"
+},
+{
+  "id": "fs-189",
+  "section": "bio",
+  "question": "Which of the following best describes the mechanism of CO₂ transport in the blood?",
+  "options": [
+    "Dissolved in plasma only",
+    "Bound to hemoglobin only",
+    "Converted to bicarbonate in red blood cells",
+    "Transported as carboxyhemoglobin"
+  ],
+  "correctIndex": 2,
+  "explanation": "Most CO₂ is converted to bicarbonate by carbonic anhydrase in RBCs for transport in plasma.",
+  "subcategory": "Respiratory System"
+},
+{
+  "id": "fs-190",
+  "section": "bio",
+  "question": "Which region of the brain is primarily responsible for regulating the rate and depth of breathing?",
+  "options": [
+    "Cerebellum",
+    "Medulla oblongata",
+    "Thalamus",
+    "Hypothalamus"
+  ],
+  "correctIndex": 1,
+  "explanation": "The medulla oblongata contains the respiratory centers that regulate breathing rhythm and depth.",
+  "subcategory": "Respiratory System"
+},
+{
+  "id": "fs-191",
+  "section": "bio",
+  "question": "A patient at high altitude experiences increased ventilation. What is the primary stimulus for this response?",
+  "options": [
+    "Decreased arterial pO₂",
+    "Increased arterial pCO₂",
+    "Decreased blood pH",
+    "Increased blood pressure"
+  ],
+  "correctIndex": 0,
+  "explanation": "Low arterial pO₂ at high altitude stimulates peripheral chemoreceptors, increasing ventilation.",
+  "subcategory": "Respiratory System"
+},
+{
+  "id": "fs-192",
+  "section": "bio",
+  "question": "Which ion is primarily responsible for the depolarization phase of a neuronal action potential?",
+  "options": [
+    "Potassium",
+    "Calcium",
+    "Sodium",
+    "Chloride"
+  ],
+  "correctIndex": 2,
+  "explanation": "Rapid influx of sodium ions through voltage-gated channels causes depolarization of the neuron.",
+  "subcategory": "Nervous System"
+},
+{
+  "id": "fs-193",
+  "section": "bio",
+  "question": "A patient with damage to the ventral horn of the spinal cord would most likely experience which deficit?",
+  "options": [
+    "Loss of sensory function",
+    "Loss of motor function",
+    "Loss of autonomic function",
+    "Loss of pain sensation only"
+  ],
+  "correctIndex": 1,
+  "explanation": "The ventral horn contains motor neuron cell bodies; damage causes motor deficits.",
+  "subcategory": "Nervous System"
+},
+{
+  "id": "fs-194",
+  "section": "bio",
+  "question": "Which neurotransmitter is released at the neuromuscular junction to stimulate skeletal muscle contraction?",
+  "options": [
+    "Dopamine",
+    "Acetylcholine",
+    "Glutamate",
+    "GABA"
+  ],
+  "correctIndex": 1,
+  "explanation": "Acetylcholine is released by motor neurons at the neuromuscular junction.",
+  "subcategory": "Nervous System"
+},
+{
+  "id": "fs-195",
+  "section": "bio",
+  "question": "Which structure in the brain is primarily responsible for coordination and fine motor control?",
+  "options": [
+    "Cerebrum",
+    "Cerebellum",
+    "Medulla oblongata",
+    "Thalamus"
+  ],
+  "correctIndex": 1,
+  "explanation": "The cerebellum coordinates voluntary movements and maintains balance and posture.",
+  "subcategory": "Nervous System"
+},
+{
+  "id": "fs-196",
+  "section": "bio",
+  "question": "Which glial cell forms the myelin sheath in the central nervous system?",
+  "options": [
+    "Schwann cell",
+    "Astrocyte",
+    "Oligodendrocyte",
+    "Microglia"
+  ],
+  "correctIndex": 2,
+  "explanation": "Oligodendrocytes myelinate axons in the CNS; Schwann cells do so in the PNS.",
+  "subcategory": "Nervous System"
+},
+{
+  "id": "fs-197",
+  "section": "bio",
+  "question": "A lesion in the right optic tract would result in loss of vision in which visual field?",
+  "options": [
+    "Right visual field of both eyes",
+    "Left visual field of both eyes",
+    "Right eye only",
+    "Left eye only"
+  ],
+  "correctIndex": 1,
+  "explanation": "The right optic tract carries information from the left visual field of both eyes.",
+  "subcategory": "Nervous System"
+},
+{
+  "id": "fs-198",
+  "section": "bio",
+  "question": "Which division of the autonomic nervous system is responsible for the 'fight or flight' response?",
+  "options": [
+    "Somatic nervous system",
+    "Parasympathetic nervous system",
+    "Sympathetic nervous system",
+    "Enteric nervous system"
+  ],
+  "correctIndex": 2,
+  "explanation": "The sympathetic nervous system mediates the fight or flight response.",
+  "subcategory": "Nervous System"
+},
+{
+  "id": "fs-199",
+  "section": "bio",
+  "question": "Which neurotransmitter is most directly involved in the inhibition of postsynaptic neurons in the central nervous system?",
+  "options": [
+    "Glutamate",
+    "Acetylcholine",
+    "GABA",
+    "Serotonin"
+  ],
+  "correctIndex": 2,
+  "explanation": "GABA is the main inhibitory neurotransmitter in the CNS.",
+  "subcategory": "Nervous System"
+},
+{
+  "id": "fs-200",
+  "section": "bio",
+  "question": "Which hormone is primarily responsible for triggering ovulation in the menstrual cycle?",
+  "options": [
+    "Follicle-stimulating hormone (FSH)",
+    "Luteinizing hormone (LH)",
+    "Estrogen",
+    "Progesterone"
+  ],
+  "correctIndex": 1,
+  "explanation": "A surge in LH triggers ovulation and release of the oocyte from the ovary.",
+  "subcategory": "Reproductive System"
+},
+{
+  "id": "fs-201",
+  "section": "bio",
+  "question": "Which structure in the male reproductive system is responsible for the maturation and storage of sperm?",
+  "options": [
+    "Seminiferous tubules",
+    "Epididymis",
+    "Vas deferens",
+    "Prostate gland"
+  ],
+  "correctIndex": 1,
+  "explanation": "Sperm mature and are stored in the epididymis before ejaculation.",
+  "subcategory": "Reproductive System"
+},
+{
+  "id": "fs-202",
+  "section": "bio",
+  "question": "Which cell type in the testes produces testosterone?",
+  "options": [
+    "Sertoli cells",
+    "Leydig cells",
+    "Spermatogonia",
+    "Primary spermatocytes"
+  ],
+  "correctIndex": 1,
+  "explanation": "Leydig cells, located in the interstitial tissue of the testes, produce testosterone.",
+  "subcategory": "Reproductive System"
+},
+{
+  "id": "fs-203",
+  "section": "bio",
+  "question": "Which phase of the menstrual cycle is characterized by high progesterone levels?",
+  "options": [
+    "Follicular phase",
+    "Ovulatory phase",
+    "Luteal phase",
+    "Menstrual phase"
+  ],
+  "correctIndex": 2,
+  "explanation": "The luteal phase follows ovulation and is marked by high progesterone from the corpus luteum.",
+  "subcategory": "Reproductive System"
+},
+{
+  "id": "fs-204",
+  "section": "bio",
+  "question": "Which structure is the site of fertilization in humans?",
+  "options": [
+    "Ovary",
+    "Uterus",
+    "Vagina",
+    "Fallopian tube"
+  ],
+  "correctIndex": 3,
+  "explanation": "Fertilization typically occurs in the ampulla of the fallopian tube.",
+  "subcategory": "Reproductive System"
+},
+{
+  "id": "fs-205",
+  "section": "bio",
+  "question": "Which hormone is secreted by the developing embryo to maintain the corpus luteum during early pregnancy?",
+  "options": [
+    "Human chorionic gonadotropin (hCG)",
+    "Progesterone",
+    "Estrogen",
+    "Luteinizing hormone (LH)"
+  ],
+  "correctIndex": 0,
+  "explanation": "hCG is produced by the embryo and maintains the corpus luteum, ensuring continued progesterone production.",
+  "subcategory": "Reproductive System"
+},
+{
+  "id": "fs-206",
+  "section": "bio",
+  "question": "Which process results in the formation of haploid gametes from diploid precursor cells?",
+  "options": [
+    "Mitosis",
+    "Meiosis",
+    "Fertilization",
+    "Cleavage"
+  ],
+  "correctIndex": 1,
+  "explanation": "Meiosis reduces chromosome number by half, producing haploid gametes.",
+  "subcategory": "Reproductive System"
+},
+{
+  "id": "fs-207",
+  "section": "bio",
+  "question": "Which hormone stimulates milk production in the mammary glands after childbirth?",
+  "options": [
+    "Oxytocin",
+    "Prolactin",
+    "Estrogen",
+    "Progesterone"
+  ],
+  "correctIndex": 1,
+  "explanation": "Prolactin stimulates milk production; oxytocin stimulates milk ejection.",
+  "subcategory":"Reproductive System"
+},
+{
+  "id": "fs-208",
+  "section": "bio",
+  "question": "Which part of the nephron is primarily responsible for the reabsorption of glucose?",
+  "options": [
+    "Descending limb of the loop of Henle",
+    "Proximal convoluted tubule",
+    "Distal convoluted tubule",
+    "Collecting duct"
+  ],
+  "correctIndex": 1,
+  "explanation": "Glucose is reabsorbed almost entirely in the proximal convoluted tubule via active transport.",
+  "subcategory": "Renal System"
+},
+{
+  "id": "fs-209",
+  "section": "bio",
+  "question": "Aldosterone acts on which part of the nephron to increase sodium reabsorption?",
+  "options": [
+    "Proximal convoluted tubule",
+    "Descending limb of the loop of Henle",
+    "Distal convoluted tubule and collecting duct",
+    "Glomerulus"
+  ],
+  "correctIndex": 2,
+  "explanation": "Aldosterone increases sodium reabsorption in the distal convoluted tubule and collecting duct.",
+  "subcategory": "Renal System"
+},
+{
+  "id": "fs-210",
+  "section": "bio",
+  "question": "A patient with diabetes insipidus has a deficiency of antidiuretic hormone (ADH). What is the most likely effect on urine output?",
+  "options": [
+    "Decreased urine output and concentrated urine",
+    "Increased urine output and dilute urine",
+    "Decreased urine output and dilute urine",
+    "Increased urine output and concentrated urine"
+  ],
+  "correctIndex": 1,
+  "explanation": "ADH deficiency prevents water reabsorption in the collecting duct, resulting in large volumes of dilute urine.",
+  "subcategory": "Renal System"
+},
+{
+  "id": "fs-211",
+  "section": "bio",
+  "question": "Which of the following is the primary driving force for glomerular filtration?",
+  "options": [
+    "Osmotic pressure in Bowman's capsule",
+    "Hydrostatic pressure in the glomerular capillaries",
+    "Active transport of sodium",
+    "Oncotic pressure in the peritubular capillaries"
+  ],
+  "correctIndex": 1,
+  "explanation": "Hydrostatic pressure in the glomerular capillaries pushes plasma through the filtration barrier into Bowman's capsule.",
+  "subcategory": "Renal System"
+},
+{
+  "id": "fs-212",
+  "section": "bio",
+  "question": "Which hormone is released in response to low blood pressure and stimulates the production of angiotensin II?",
+  "options": [
+    "Aldosterone",
+    "Renin",
+    "ADH",
+    "Erythropoietin"
+  ],
+  "correctIndex": 1,
+  "explanation": "Renin is released by the juxtaglomerular cells in response to low blood pressure, initiating the renin-angiotensin-aldosterone system.",
+  "subcategory": "Renal System"
+},
+{
+  "id": "fs-213",
+  "section": "bio",
+  "question": "Which of the following substances is least likely to be found in the urine of a healthy individual?",
+  "options": [
+    "Urea",
+    "Glucose",
+    "Creatinine",
+    "Sodium"
+  ],
+  "correctIndex": 1,
+  "explanation": "Glucose is almost completely reabsorbed in the proximal tubule and should not be present in the urine of healthy individuals.",
+  "subcategory": "Renal System"
+},
+{
+  "id": "fs-214",
+  "section": "bio",
+  "question": "A patient with metabolic acidosis will most likely have which renal compensation?",
+  "options": [
+    "Decreased secretion of hydrogen ions",
+    "Increased reabsorption of bicarbonate",
+    "Decreased reabsorption of bicarbonate",
+    "Increased secretion of potassium ions"
+  ],
+  "correctIndex": 1,
+  "explanation": "The kidneys compensate for metabolic acidosis by increasing bicarbonate reabsorption and hydrogen ion secretion.",
+  "subcategory": "Renal System"
+},
+{
+  "id": "fs-215",
+  "section": "bio",
+  "question": "Which cell type in the juxtaglomerular apparatus senses changes in sodium chloride concentration in the distal tubule?",
+  "options": [
+    "Podocytes",
+    "Macula densa cells",
+    "Mesangial cells",
+    "Principal cells"
+  ],
+  "correctIndex": 1,
+  "explanation": "Macula densa cells detect sodium chloride concentration and regulate renin release from juxtaglomerular cells.",
+  "subcategory": "Renal System"
+},
+{
+  "id": "fs-216",
+  "section": "bio",
+  "question": "Which enzyme is responsible for the initial chemical digestion of carbohydrates in the mouth?",
+  "options": [
+    "Pepsin",
+    "Salivary amylase",
+    "Pancreatic lipase",
+    "Trypsin"
+  ],
+  "correctIndex": 1,
+  "explanation": "Salivary amylase begins the breakdown of starches into smaller carbohydrates in the mouth.",
+  "subcategory": "Digestive System"
+},
+{
+  "id": "fs-217",
+  "section": "bio",
+  "question": "Which hormone stimulates the secretion of gastric acid from parietal cells?",
+  "options": [
+    "Secretin",
+    "Gastrin",
+    "Cholecystokinin (CCK)",
+    "Somatostatin"
+  ],
+  "correctIndex": 1,
+  "explanation": "Gastrin is released from G cells in the stomach and stimulates parietal cells to secrete HCl.",
+  "subcategory": "Digestive System"
+},
+{
+  "id": "fs-218",
+  "section": "bio",
+  "question": "Which structure is primarily responsible for nutrient absorption in the digestive tract?",
+  "options": [
+    "Stomach",
+    "Duodenum",
+    "Jejunum",
+    "Colon"
+  ],
+  "correctIndex": 2,
+  "explanation": "The jejunum is the main site of nutrient absorption in the small intestine.",
+  "subcategory": "Digestive System"
+},
+{
+  "id": "fs-219",
+  "section": "bio",
+  "question": "Which process is most directly responsible for the emulsification of dietary fats?",
+  "options": [
+    "Action of pancreatic lipase",
+    "Secretion of bile salts",
+    "Peristalsis in the stomach",
+    "Absorption in the colon"
+  ],
+  "correctIndex": 1,
+  "explanation": "Bile salts, produced by the liver and stored in the gallbladder, emulsify fats to aid digestion.",
+  "subcategory": "Digestive System"
+},
+{
+  "id": "fs-220",
+  "section": "bio",
+  "question": "A patient with a deficiency in intrinsic factor will most likely develop which condition?",
+  "options": [
+    "Iron-deficiency anemia",
+    "Pernicious anemia",
+    "Hemolytic anemia",
+    "Sickle cell anemia"
+  ],
+  "correctIndex": 1,
+  "explanation": "Intrinsic factor is required for vitamin B12 absorption; deficiency leads to pernicious anemia.",
+  "subcategory": "Digestive System"
+},
+{
+  "id": "fs-221",
+  "section": "bio",
+  "question": "Which enzyme is activated by enterokinase in the duodenum?",
+  "options": [
+    "Pepsinogen",
+    "Trypsinogen",
+    "Chymotrypsinogen",
+    "Procarboxypeptidase"
+  ],
+  "correctIndex": 1,
+  "explanation": "Enterokinase activates trypsinogen to trypsin, which then activates other pancreatic enzymes.",
+  "subcategory": "Digestive System"
+},
+{
+  "id": "fs-222",
+  "section": "bio",
+  "question": "Which of the following is absorbed directly into the blood from the small intestine without requiring micelle formation?",
+  "options": [
+    "Long-chain fatty acids",
+    "Monosaccharides",
+    "Triglycerides",
+    "Cholesterol"
+  ],
+  "correctIndex": 1,
+  "explanation": "Monosaccharides are absorbed directly into the blood; fats require micelles and chylomicrons for absorption.",
+  "subcategory": "Digestive System"
+},
+{
+  "id": "fs-223",
+  "section": "bio",
+  "question": "Which organ is primarily responsible for the synthesis of most plasma proteins, including albumin and clotting factors?",
+  "options": [
+    "Pancreas",
+    "Liver",
+    "Stomach",
+    "Small intestine"
+  ],
+  "correctIndex": 1,
+  "explanation": "The liver synthesizes most plasma proteins, including albumin and clotting factors.",
+  "subcategory": "Digestive System"
+},
+{
+  "id": "fs-224",
+  "section": "bio",
+  "question": "Which cell type is primarily responsible for the production of antibodies?",
+  "options": [
+    "Helper T cells",
+    "Cytotoxic T cells",
+    "Plasma cells",
+    "Macrophages"
+  ],
+  "correctIndex": 2,
+  "explanation": "Plasma cells, differentiated from B cells, secrete antibodies as part of the humoral immune response.",
+  "subcategory": "Immune System"
+},
+{
+  "id": "fs-225",
+  "section": "bio",
+  "question": "Which component of the immune system is responsible for presenting antigens to helper T cells?",
+  "options": [
+    "Neutrophils",
+    "Dendritic cells",
+    "Basophils",
+    "Eosinophils"
+  ],
+  "correctIndex": 1,
+  "explanation": "Dendritic cells are professional antigen-presenting cells that activate helper T cells.",
+  "subcategory": "Immune System"
+},
+{
+  "id": "fs-226",
+  "section": "bio",
+  "question": "Which class of immunoglobulin is most abundant in the blood and provides long-term protection?",
+  "options": [
+    "IgA",
+    "IgE",
+    "IgG",
+    "IgM"
+  ],
+  "correctIndex": 2,
+  "explanation": "IgG is the most abundant immunoglobulin in serum and provides long-term immunity.",
+  "subcategory": "Immune System"
+},
+{
+  "id": "fs-227",
+  "section": "bio",
+  "question": "Which process allows cytotoxic T cells to recognize and destroy virus-infected cells?",
+  "options": [
+    "Recognition of antigens presented by MHC class I molecules",
+    "Recognition of antigens presented by MHC class II molecules",
+    "Phagocytosis of pathogens",
+    "Secretion of antibodies"
+  ],
+  "correctIndex": 0,
+  "explanation": "Cytotoxic T cells recognize antigens presented by MHC class I on infected cells and induce apoptosis.",
+  "subcategory": "Immune System"
+},
+{
+  "id": "fs-228",
+  "section": "bio",
+  "question": "Which cytokine is most important for the activation and proliferation of helper T cells?",
+  "options": [
+    "Interleukin-2 (IL-2)",
+    "Interferon-gamma",
+    "Tumor necrosis factor-alpha",
+    "Interleukin-10 (IL-10)"
+  ],
+  "correctIndex": 0,
+  "explanation": "IL-2 is a key growth factor for helper T cell activation and proliferation.",
+  "subcategory": "Immune System"
+},
+{
+  "id": "fs-229",
+  "section": "bio",
+  "question": "Which complement pathway is activated by antigen-antibody complexes?",
+  "options": [
+    "Alternative pathway",
+    "Lectin pathway",
+    "Classical pathway",
+    "Intrinsic pathway"
+  ],
+  "correctIndex": 2,
+  "explanation": "The classical complement pathway is triggered by antigen-antibody complexes.",
+  "subcategory": "Immune System"
+},
+{
+  "id": "fs-230",
+  "section": "bio",
+  "question": "Which cell type is most important for mediating allergic responses?",
+  "options": [
+    "Neutrophils",
+    "Basophils",
+    "Eosinophils",
+    "Monocytes"
+  ],
+  "correctIndex": 1,
+  "explanation": "Basophils release histamine and other mediators involved in allergic reactions.",
+  "subcategory": "Immune System"
+},
+{
+  "id": "fs-231",
+  "section": "bio",
+  "question": "Which mechanism is responsible for the diversity of antibodies produced by B cells?",
+  "options": [
+    "Somatic recombination of immunoglobulin gene segments",
+    "Alternative splicing of mRNA",
+    "Post-translational modification",
+    "Gene duplication"
+  ],
+  "correctIndex": 0,
+  "explanation": "Somatic recombination of V, D, and J gene segments creates antibody diversity.",
+  "subcategory": "Immune System"
 }
+
+
+
   ],
   "passages": [
     {
