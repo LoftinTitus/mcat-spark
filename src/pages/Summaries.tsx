@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { PageLayout } from "@/components/PageLayout";
 import { SectionBadge } from "@/components/SectionBadge";
-import { ChevronRight, ChevronLeft } from "lucide-react";
+import { ChevronRight, ChevronLeft, CheckCircle2, XCircle, RefreshCw } from "lucide-react";
 import { summaries, type Summary } from "@/data/summaries-index";
 import ReactMarkdown from "react-markdown";
+import { Button } from "@/components/ui/button";
 
 type Section = "chem" | "bio" | "psych" | "cars" | "all";
 
@@ -11,6 +12,14 @@ const Summaries = () => {
   const [section, setSection] = useState<Section>("all");
   const [subtopic, setSubtopic] = useState<string>("all");
   const [selectedSummary, setSelectedSummary] = useState<Summary | null>(null);
+  
+  // Quiz state
+  const [quizStarted, setQuizStarted] = useState(false);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
+  const [showExplanation, setShowExplanation] = useState(false);
+  const [correctCount, setCorrectCount] = useState(0);
+  const [quizCompleted, setQuizCompleted] = useState(false);
 
   // Get unique subtopics for the selected section
   const availableSubtopics = section === "all"
@@ -32,6 +41,41 @@ const Summaries = () => {
 
   const handleSubtopicChange = (newSubtopic: string) => {
     setSubtopic(newSubtopic);
+  };
+
+  const handleStartQuiz = () => {
+    setQuizStarted(true);
+    setCurrentQuestionIndex(0);
+    setSelectedAnswer(null);
+    setShowExplanation(false);
+    setCorrectCount(0);
+    setQuizCompleted(false);
+  };
+
+  const handleSubmitAnswer = () => {
+    if (selectedAnswer === null || !selectedSummary?.quiz) return;
+    
+    const currentQuestion = selectedSummary.quiz[currentQuestionIndex];
+    if (selectedAnswer === currentQuestion.answerIndex) {
+      setCorrectCount(correctCount + 1);
+    }
+    setShowExplanation(true);
+  };
+
+  const handleNextQuestion = () => {
+    if (!selectedSummary?.quiz) return;
+    
+    if (currentQuestionIndex < selectedSummary.quiz.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      setSelectedAnswer(null);
+      setShowExplanation(false);
+    } else {
+      setQuizCompleted(true);
+    }
+  };
+
+  const handleRetryQuiz = () => {
+    handleStartQuiz();
   };
 
   const sections: { id: Section; label: string }[] = [
@@ -164,6 +208,134 @@ const Summaries = () => {
               </ReactMarkdown>
             </article>
           </div>
+
+          {/* Quiz Section */}
+          {selectedSummary.quiz && selectedSummary.quiz.length > 0 && (
+            <div className="bg-card border border-border rounded-2xl p-8 shadow-sm">
+              <h2 className="text-2xl font-bold font-serif mb-4 pb-2 border-b-2 border-primary/20">
+                Practice Quiz
+              </h2>
+              
+              {!quizStarted ? (
+                <div className="text-center py-8">
+                  <p className="text-muted-foreground mb-4">
+                    Test your knowledge with {selectedSummary.quiz.length} questions about this topic
+                  </p>
+                  <Button onClick={handleStartQuiz} size="lg">
+                    Start Quiz
+                  </Button>
+                </div>
+              ) : quizCompleted ? (
+                <div className="text-center py-8">
+                  <div className="mb-6">
+                    <div className="text-6xl font-bold text-primary mb-2">
+                      {correctCount}/{selectedSummary.quiz.length}
+                    </div>
+                    <p className="text-xl text-muted-foreground">
+                      {correctCount === selectedSummary.quiz.length 
+                        ? "Perfect score! 🎉" 
+                        : correctCount >= selectedSummary.quiz.length * 0.8 
+                        ? "Great job! 👏" 
+                        : correctCount >= selectedSummary.quiz.length * 0.6
+                        ? "Good effort! 👍"
+                        : "Keep studying! 📚"}
+                    </p>
+                  </div>
+                  <div className="flex gap-3 justify-center">
+                    <Button onClick={handleRetryQuiz} variant="outline">
+                      <RefreshCw className="h-4 w-4 mr-2" />
+                      Retry Quiz
+                    </Button>
+                    <Button onClick={() => setQuizStarted(false)}>
+                      Back to Lesson
+                    </Button>
+                  </div>
+                </div>
+              ) : (
+                <div className="space-y-6">
+                  {/* Progress */}
+                  <div className="flex items-center justify-between text-sm text-muted-foreground">
+                    <span>Question {currentQuestionIndex + 1} of {selectedSummary.quiz.length}</span>
+                    <span>Score: {correctCount}/{currentQuestionIndex + (showExplanation ? 1 : 0)}</span>
+                  </div>
+
+                  {/* Question */}
+                  <div className="space-y-4">
+                    <p className="text-lg font-semibold">
+                      {selectedSummary.quiz[currentQuestionIndex].question}
+                    </p>
+
+                    {/* Options */}
+                    <div className="space-y-2">
+                      {selectedSummary.quiz[currentQuestionIndex].options.map((option, index) => {
+                        const isSelected = selectedAnswer === index;
+                        const isCorrect = index === selectedSummary.quiz![currentQuestionIndex].answerIndex;
+                        const showResult = showExplanation;
+
+                        return (
+                          <button
+                            key={index}
+                            onClick={() => !showExplanation && setSelectedAnswer(index)}
+                            disabled={showExplanation}
+                            className={`w-full text-left p-4 rounded-lg border-2 transition-all ${
+                              showResult
+                                ? isCorrect
+                                  ? "border-green-500 bg-green-500/10"
+                                  : isSelected
+                                  ? "border-red-500 bg-red-500/10"
+                                  : "border-border"
+                                : isSelected
+                                ? "border-primary bg-primary/10"
+                                : "border-border hover:border-primary/50"
+                            } ${showExplanation ? "cursor-not-allowed" : "cursor-pointer"}`}
+                          >
+                            <div className="flex items-center justify-between">
+                              <span>{option}</span>
+                              {showResult && isCorrect && (
+                                <CheckCircle2 className="h-5 w-5 text-green-500" />
+                              )}
+                              {showResult && isSelected && !isCorrect && (
+                                <XCircle className="h-5 w-5 text-red-500" />
+                              )}
+                            </div>
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    {/* Explanation */}
+                    {showExplanation && (
+                      <div className="p-4 rounded-lg bg-primary/5 border border-primary/20">
+                        <p className="text-sm font-semibold mb-2">Explanation:</p>
+                        <p className="text-sm text-foreground/90">
+                          {selectedSummary.quiz[currentQuestionIndex].explanation}
+                        </p>
+                      </div>
+                    )}
+
+                    {/* Action Buttons */}
+                    <div className="flex gap-3 pt-4">
+                      {!showExplanation ? (
+                        <Button
+                          onClick={handleSubmitAnswer}
+                          disabled={selectedAnswer === null}
+                          className="flex-1"
+                        >
+                          Submit Answer
+                        </Button>
+                      ) : (
+                        <Button onClick={handleNextQuestion} className="flex-1">
+                          {currentQuestionIndex < selectedSummary.quiz.length - 1 
+                            ? "Next Question" 
+                            : "View Results"}
+                        </Button>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </PageLayout>
     );
