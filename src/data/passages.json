@@ -2,7 +2,7 @@
   "passages": [
     {
       "id": "passage-1",
-      "section": "chem",
+      "section": "bio",
       "title": "Enzyme Inhibition Analysis",
       "passage": "Researchers studied an enzyme that catalyzes the conversion of substrate X to product Y. They measured initial reaction velocities at various substrate concentrations in the presence and absence of an unknown inhibitor.\n\nIn the absence of inhibitor, the enzyme showed a Km of 2.5 mM and a Vmax of 100 μmol/min. When the inhibitor was added at a concentration of 1 mM, the apparent Km increased to  5.0 mM while Vmax remained unchanged at 100 μmol/min.\n\nThe researchers also noted that adding excess substrate could overcome the inhibitory effect, restoring the reaction rate to near-normal levels.",
       "questions": [
@@ -30,6 +30,45 @@
           ],
           "correctIndex": 1,
           "explanation": "The reaction velocity equals 50% of Vmax when [S] = Km. With the inhibitor present, the apparent Km is 5.0 mM, so 50% Vmax occurs at 5.0 mM substrate.",
+          "subcategory": "Enzyme Kinetics"
+        },
+        {
+          "id": "passage-1-q3",
+          "question": "If the inhibitor binds to the same site as the substrate, which statement is most accurate?",
+          "options": [
+            "The inhibitor and substrate cannot bind simultaneously",
+            "The inhibitor and substrate form a ternary complex",
+            "The inhibitor increases the catalytic efficiency of the enzyme",
+            "The inhibitor permanently inactivates the enzyme"
+          ],
+          "correctIndex": 0,
+          "explanation": "In competitive inhibition, the inhibitor binds to the active site, preventing substrate binding. They compete for the same binding site and cannot bind simultaneously.",
+          "subcategory": "Enzyme Kinetics"
+        },
+        {
+          "id": "passage-1-q4",
+          "question": "What would a Lineweaver-Burk plot look like for this enzyme with and without inhibitor?",
+          "options": [
+            "Same y-intercept, different x-intercepts",
+            "Same x-intercept, different y-intercepts",
+            "Both intercepts change",
+            "Parallel lines with different y-intercepts"
+          ],
+          "correctIndex": 0,
+          "explanation": "In competitive inhibition, Vmax remains constant (same y-intercept = 1/Vmax), but Km increases (different x-intercept = -1/Km). The lines intersect at the y-axis.",
+          "subcategory": "Enzyme Kinetics"
+        },
+        {
+          "id": "passage-1-q5",
+          "question": "Which experimental approach would best confirm the type of inhibition?",
+          "options": [
+            "Measure reaction velocity at a single substrate concentration",
+            "Perform a Lineweaver-Burk analysis at multiple inhibitor concentrations",
+            "Measure only Vmax in the presence of inhibitor",
+            "Test the effect of pH on enzyme activity"
+          ],
+          "correctIndex": 1,
+          "explanation": "A Lineweaver-Burk plot (double reciprocal plot) at various inhibitor concentrations provides the clearest way to distinguish between different types of inhibition by showing how Km and Vmax are affected.",
           "subcategory": "Enzyme Kinetics"
         }
       ],
@@ -66,9 +105,583 @@
           "correctIndex": 2,
           "explanation": "Using Henderson-Hasselbalch: 7.4 = 7.20 + log([HPO₄²⁻]/[H₂PO₄⁻]). So log(ratio) = 0.20, and ratio = 10^0.20 ≈ 1.58",
           "subcategory": "Acids & Bases"
+        },
+        {
+          "id": "passage-2-q3",
+          "question": "If the student accidentally added too much Na₂HPO₄, making the ratio 3:1 instead of 1.58:1, what would be the approximate pH?",
+          "options": [
+            "7.0",
+            "7.2",
+            "7.4",
+            "7.7"
+          ],
+          "correctIndex": 3,
+          "explanation": "Using Henderson-Hasselbalch: pH = 7.20 + log(3/1) = 7.20 + 0.48 = 7.68 ≈ 7.7. The higher ratio of base to acid increases the pH.",
+          "subcategory": "Acids & Bases"
+        },
+        {
+          "id": "passage-2-q4",
+          "question": "What is the predominant species of phosphate at pH 7.4?",
+          "options": [
+            "H₃PO₄",
+            "H₂PO₄⁻",
+            "HPO₄²⁻",
+            "Equal amounts of H₂PO₄⁻ and HPO₄²⁻"
+          ],
+          "correctIndex": 3,
+          "explanation": "At pH 7.4, which is close to pKa2 (7.20), the system contains roughly equal amounts of H₂PO₄⁻ and HPO₄²⁻, with HPO₄²⁻ being slightly more prevalent (ratio ~1.58:1).",
+          "subcategory": "Acids & Bases"
+        },
+        {
+          "id": "passage-2-q5",
+          "question": "Which buffer system would be most appropriate for maintaining pH at 12.0?",
+          "options": [
+            "H₃PO₄/H₂PO₄⁻ (pKa = 2.15)",
+            "H₂PO₄⁻/HPO₄²⁻ (pKa = 7.20)",
+            "HPO₄²⁻/PO₄³⁻ (pKa = 12.35)",
+            "None of these would work well"
+          ],
+          "correctIndex": 2,
+          "explanation": "The HPO₄²⁻/PO₄³⁻ buffer system with pKa = 12.35 is closest to pH 12.0, falling within the effective buffering range of pKa ± 1.",
+          "subcategory": "Acids & Bases"
+        },
+        {
+          "id": "passage-2-q6",
+          "question": "If the student needs to prepare 1 L of buffer with a total phosphate concentration of 0.1 M at pH 7.4, approximately how many moles of each component are needed?",
+          "options": [
+            "0.039 mol H₂PO₄⁻ and 0.061 mol HPO₄²⁻",
+            "0.050 mol H₂PO₄⁻ and 0.050 mol HPO₄²⁻",
+            "0.061 mol H₂PO₄⁻ and 0.039 mol HPO₄²⁻",
+            "0.070 mol H₂PO₄⁻ and 0.030 mol HPO₄²⁻"
+          ],
+          "correctIndex": 0,
+          "explanation": "With ratio [HPO₄²⁻]/[H₂PO₄⁻] = 1.58 and total = 0.1 M: [HPO₄²⁻] = 1.58x, [H₂PO₄⁻] = x, and 1.58x + x = 0.1, so x = 0.039 M. Therefore, 0.039 mol H₂PO₄⁻ and 0.061 mol HPO₄²⁻.",
+          "subcategory": "Acids & Bases"
         }
       ],
       "subcategory": "Acids & Bases"
+    },
+    {
+      "id": "passage-3",
+      "section": "psych",
+      "title": "Social Identity Theory and Intergroup Bias",
+      "passage": "Researchers conducted a study examining the relationship between social identity and intergroup behavior. Participants were randomly assigned to either a 'blue team' or 'red team' based on a trivial preference test. Following this minimal group paradigm, participants were asked to allocate points to anonymous members of both their in-group and the out-group.\n\nResults showed that participants consistently favored their in-group members, even when doing so resulted in lower absolute gains for everyone. This pattern persisted even when participants were told the team assignments were completely random. Additionally, participants rated their own team members as more trustworthy, competent, and likeable than out-group members, despite having no actual interaction with any team members.\n\nIn a follow-up condition, researchers introduced a superordinate goal that required cooperation between teams. This significantly reduced in-group bias in point allocation and improved ratings of out-group members. However, when teams were placed in direct competition for a prize, in-group favoritism and out-group derogation intensified beyond baseline levels.",
+      "questions": [
+        {
+          "id": "passage-3-q1",
+          "question": "The minimal group paradigm in this study demonstrates which concept?",
+          "options": [
+            "Social identity can form rapidly based on trivial distinctions",
+            "Group membership requires meaningful interaction",
+            "In-group bias only occurs with pre-existing prejudices",
+            "Categorization has no effect on resource allocation"
+          ],
+          "correctIndex": 0,
+          "explanation": "The minimal group paradigm shows that social identity and in-group bias can form extremely quickly based on arbitrary or trivial distinctions, even without meaningful interaction or pre-existing attitudes.",
+          "subcategory": "Social Psychology"
+        },
+        {
+          "id": "passage-3-q2",
+          "question": "Participants favoring their in-group even when it resulted in lower absolute gains best illustrates:",
+          "options": [
+            "Rational economic decision-making",
+            "Social identity taking precedence over individual gain",
+            "Loss aversion bias",
+            "Anchoring effect"
+          ],
+          "correctIndex": 1,
+          "explanation": "This behavior demonstrates that social identity concerns (maintaining positive distinctiveness for one's group) can override individual material interests, a key principle of social identity theory.",
+          "subcategory": "Social Psychology"
+        },
+        {
+          "id": "passage-3-q3",
+          "question": "The introduction of a superordinate goal most directly supports which hypothesis?",
+          "options": [
+            "Contact hypothesis",
+            "Realistic conflict theory",
+            "Social dominance theory",
+            "Just-world hypothesis"
+          ],
+          "correctIndex": 0,
+          "explanation": "The contact hypothesis (particularly Sherif's superordinate goals concept) predicts that cooperation toward shared goals reduces intergroup bias. The results directly support this by showing reduced bias with superordinate goals.",
+          "subcategory": "Social Psychology"
+        },
+        {
+          "id": "passage-3-q4",
+          "question": "The intensification of in-group favoritism during competition is most consistent with:",
+          "options": [
+            "Realistic conflict theory",
+            "Fundamental attribution error",
+            "Self-serving bias",
+            "Availability heuristic"
+          ],
+          "correctIndex": 0,
+          "explanation": "Realistic conflict theory proposes that intergroup hostility and bias increase when groups compete for limited resources. The competitive prize condition created this dynamic, intensifying in-group favoritism.",
+          "subcategory": "Social Psychology"
+        },
+        {
+          "id": "passage-3-q5",
+          "question": "Which cognitive process best explains why participants rated in-group members more positively despite no actual interaction?",
+          "options": [
+            "In-group homogeneity effect",
+            "Out-group homogeneity effect",
+            "In-group favoritism and positive distinctiveness",
+            "Confirmation bias"
+          ],
+          "correctIndex": 2,
+          "explanation": "In-group favoritism involves enhancing the positive attributes of one's own group to maintain positive social identity and distinctiveness. This occurs even without interaction, as group membership alone triggers this bias.",
+          "subcategory": "Social Psychology"
+        }
+      ],
+      "subcategory": "Social Psychology"
+    },
+    {
+      "id": "passage-4",
+      "section": "psych",
+      "title": "Cognitive Dissonance and Attitude Change",
+      "passage": "A research team investigated cognitive dissonance using a modified version of the induced compliance paradigm. University students were recruited to write counter-attitudinal essays arguing for a tuition increase they personally opposed. Participants were divided into three conditions: high payment ($50), low payment ($5), and a control group who wrote pro-attitudinal essays supporting their actual position.\n\nMeasurements of attitude toward tuition increases were taken before and after the essay writing. Results showed that the low-payment group demonstrated significantly more attitude change toward favoring tuition increases compared to both the high-payment and control groups. The high-payment group showed minimal attitude change, similar to the control group.\n\nAdditionally, participants in the low-payment condition reported higher levels of discomfort during the task and engaged in more self-justification behaviors, such as generating additional arguments supporting the tuition increase beyond what was required. Follow-up measures one week later showed that attitude changes persisted in the low-payment group, suggesting genuine internalization rather than temporary compliance.\n\nThe researchers also examined individual differences, finding that participants with higher need for cognitive consistency showed stronger attitude change effects, while those with high self-monitoring showed attenuated effects.",
+      "questions": [
+        {
+          "id": "passage-4-q1",
+          "question": "Why did the low-payment group show greater attitude change than the high-payment group?",
+          "options": [
+            "They had stronger initial attitudes against tuition increases",
+            "Insufficient external justification led to internal justification through attitude change",
+            "The lower payment made them more attentive to the task",
+            "They were more susceptible to demand characteristics"
+          ],
+          "correctIndex": 1,
+          "explanation": "According to cognitive dissonance theory, insufficient external justification ($5) creates dissonance that must be resolved through internal justification (attitude change). The $50 provided sufficient external justification, reducing the need for attitude change.",
+          "subcategory": "Social Psychology"
+        },
+        {
+          "id": "passage-4-q2",
+          "question": "The persistence of attitude change after one week most directly challenges which alternative explanation?",
+          "options": [
+            "Cognitive dissonance theory itself",
+            "That results were due to temporary compliance or demand characteristics",
+            "Self-perception theory",
+            "Elaboration likelihood model"
+          ],
+          "correctIndex": 1,
+          "explanation": "The persistence of attitude change demonstrates genuine internalization rather than temporary compliance to please the experimenter or meet perceived demands. This strengthens support for cognitive dissonance as the mechanism.",
+          "subcategory": "Social Psychology"
+        },
+        {
+          "id": "passage-4-q3",
+          "question": "Participants generating additional arguments beyond requirements in the low-payment condition exemplifies:",
+          "options": [
+            "Effort justification",
+            "Post-decisional dissonance reduction",
+            "Insufficient justification leading to rationalization",
+            "Central route processing"
+          ],
+          "correctIndex": 2,
+          "explanation": "Generating additional supportive arguments is a rationalization strategy to reduce dissonance. With insufficient external justification for their behavior, participants created internal justifications through elaborated reasoning.",
+          "subcategory": "Social Psychology"
+        },
+        {
+          "id": "passage-4-q4",
+          "question": "How would self-perception theory explain the low-payment group's attitude change?",
+          "options": [
+            "They inferred their attitude from their behavior of writing the essay",
+            "They experienced cognitive dissonance from the contradiction",
+            "They were persuaded by their own arguments",
+            "They experienced reactance against the small payment"
+          ],
+          "correctIndex": 0,
+          "explanation": "Self-perception theory proposes people infer their attitudes from observing their own behavior. Participants might conclude 'I wrote this essay for little money, so I must somewhat agree with it,' without experiencing dissonance.",
+          "subcategory": "Social Psychology"
+        },
+        {
+          "id": "passage-4-q5",
+          "question": "Why might high self-monitors show attenuated attitude change effects?",
+          "options": [
+            "They experience less cognitive dissonance overall",
+            "They are better at compartmentalizing behavior from attitudes",
+            "They have stronger initial attitudes",
+            "They are more resistant to persuasion"
+          ],
+          "correctIndex": 1,
+          "explanation": "High self-monitors are skilled at adjusting behavior to situational demands without it necessarily reflecting inner attitudes. They can write counter-attitudinal essays without experiencing as much dissonance because they view it as situational role-playing.",
+          "subcategory": "Social Psychology"
+        },
+        {
+          "id": "passage-4-q6",
+          "question": "Which condition would most likely produce the STRONGEST attitude change according to cognitive dissonance theory?",
+          "options": [
+            "High payment with high perceived choice",
+            "Low payment with low perceived choice",
+            "Low payment with high perceived choice",
+            "High payment with low perceived choice"
+          ],
+          "correctIndex": 2,
+          "explanation": "Maximum dissonance (and thus attitude change) occurs with insufficient external justification (low payment) combined with high perceived choice/responsibility. Both factors are necessary to produce strong dissonance and subsequent attitude change.",
+          "subcategory": "Social Psychology"
+        }
+      ],
+      "subcategory": "Social Psychology"
+    },
+    {
+      "id": "passage-5",
+      "section": "psych",
+      "title": "Memory Consolidation and Sleep Architecture",
+      "passage": "Recent neuroscience research has revealed complex relationships between sleep stages and different types of memory consolidation. Researchers conducted a study where participants learned two distinct tasks before sleep: a declarative memory task (word-pair associations) and a procedural memory task (mirror-tracing skill).\n\nParticipants were divided into four sleep conditions: full night sleep, REM-deprived sleep (awakened during REM periods), slow-wave sleep (SWS) deprived sleep (awakened during deep NREM sleep), and sleep deprivation. Memory performance was tested the following morning.\n\nResults revealed a double dissociation: SWS-deprived participants showed impaired declarative memory consolidation but preserved procedural memory consolidation. Conversely, REM-deprived participants demonstrated impaired procedural memory consolidation but relatively preserved declarative memory. The sleep-deprived group showed deficits in both memory types, while the full sleep group showed enhancement in both.\n\nNeuroimaging data revealed that during SWS, there was increased hippocampal-neocortical connectivity, with replay of declarative learning patterns. During REM sleep, researchers observed increased activation in motor cortex and striatal regions associated with procedural learning, along with decreased prefrontal cortex activity.\n\nInterestingly, the study also found that emotional declarative memories showed some consolidation benefit from REM sleep in addition to SWS, suggesting that emotional salience may recruit additional consolidation mechanisms. Furthermore, participants who showed more sleep spindles during stage 2 NREM sleep demonstrated better integration of new declarative information with existing semantic knowledge networks.",
+      "questions": [
+        {
+          "id": "passage-5-q1",
+          "question": "The double dissociation between sleep stages and memory types provides the strongest evidence for:",
+          "options": [
+            "All memory consolidation occurs equally across sleep stages",
+            "Different sleep stages serve specialized functions for different memory systems",
+            "REM sleep is more important than slow-wave sleep",
+            "Memory consolidation only occurs during waking periods"
+          ],
+          "correctIndex": 1,
+          "explanation": "A double dissociation (SWS affecting declarative but not procedural; REM affecting procedural but not declarative) provides strong evidence that these sleep stages serve distinct, specialized functions for different memory systems.",
+          "subcategory": "Biological Psychology"
+        },
+        {
+          "id": "passage-5-q2",
+          "question": "The increased hippocampal-neocortical connectivity during SWS most likely facilitates:",
+          "options": [
+            "Emotional regulation",
+            "Transfer of declarative memories from temporary to long-term storage",
+            "Procedural skill enhancement",
+            "REM rebound effects"
+          ],
+          "correctIndex": 1,
+          "explanation": "The hippocampus initially stores declarative memories, while the neocortex stores long-term memories. Increased connectivity during SWS with replay patterns suggests transfer and consolidation from hippocampus to neocortex for long-term storage.",
+          "subcategory": "Biological Psychology"
+        },
+        {
+          "id": "passage-5-q3",
+          "question": "Why might emotional declarative memories benefit from both SWS and REM sleep?",
+          "options": [
+            "Emotional memories are only consolidated during waking",
+            "Emotional memories recruit both hippocampal and amygdala processing",
+            "Emotional content prevents proper memory consolidation",
+            "This finding contradicts the double dissociation"
+          ],
+          "correctIndex": 1,
+          "explanation": "Emotional memories involve both hippocampal (declarative) and amygdala (emotional) processing. Since REM sleep is associated with emotional processing and limbic system activity, emotional declarative memories may benefit from consolidation during both SWS and REM.",
+          "subcategory": "Biological Psychology"
+        },
+        {
+          "id": "passage-5-q4",
+          "question": "The decreased prefrontal cortex activity during REM sleep most likely contributes to:",
+          "options": [
+            "Enhanced critical thinking during dreams",
+            "The bizarre, illogical nature of dreams",
+            "Improved memory consolidation",
+            "Prevention of sleep walking"
+          ],
+          "correctIndex": 1,
+          "explanation": "The prefrontal cortex is responsible for executive functions including logic, planning, and critical thinking. Its decreased activity during REM sleep explains why dreams often lack logical coherence and contain bizarre elements.",
+          "subcategory": "Biological Psychology"
+        },
+        {
+          "id": "passage-5-q5",
+          "question": "Sleep spindles' association with integration into semantic networks suggests they facilitate:",
+          "options": [
+            "Isolated memory storage without connections",
+            "Only procedural memory consolidation",
+            "Connecting new information with existing knowledge schemas",
+            "Forgetting of irrelevant information"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sleep spindles during stage 2 NREM appear to help integrate new declarative memories into existing semantic networks, connecting new information with prior knowledge rather than storing it in isolation.",
+          "subcategory": "Biological Psychology"
+        },
+        {
+          "id": "passage-5-q6",
+          "question": "Which finding would most strongly challenge the interpretation that SWS is specifically important for declarative memory?",
+          "options": [
+            "Discovering that SWS deprivation also impairs procedural memory",
+            "Finding that REM sleep duration correlates with declarative memory",
+            "Showing that sleep deprivation impairs all memory types",
+            "Observing individual differences in SWS amounts"
+          ],
+          "correctIndex": 0,
+          "explanation": "The specificity of SWS for declarative memory is supported by the double dissociation. If SWS deprivation also impaired procedural memory, this would eliminate the dissociation and challenge the specific role of SWS in declarative consolidation.",
+          "subcategory": "Biological Psychology"
+        },
+        {
+          "id": "passage-5-q7",
+          "question": "Based on the findings, which recommendation would be most appropriate for a student learning a new musical instrument?",
+          "options": [
+            "Stay awake all night to maximize practice time",
+            "Focus on getting adequate REM sleep for motor skill consolidation",
+            "Only worry about sleep when learning verbal information",
+            "Sleep deprivation will not affect motor skill learning"
+          ],
+          "correctIndex": 1,
+          "explanation": "Learning a musical instrument involves procedural/motor skills, which the study shows are consolidated during REM sleep. Therefore, adequate REM sleep would be most beneficial for this type of learning.",
+          "subcategory": "Biological Psychology"
+        }
+      ],
+      "subcategory": "Biological Psychology"
+    },
+    {
+      "id": "passage-6",
+      "section": "cars",
+      "title": "The Paradox of Artistic Authenticity",
+      "passage": "The concept of artistic authenticity has undergone a remarkable transformation in the age of digital reproduction. Walter Benjamin's seminal essay 'The Work of Art in the Age of Mechanical Reproduction' argued that mechanical reproduction destroys the 'aura' of an artwork—its unique presence in time and space. Yet this notion, proposed in 1935, predates the digital revolution that has fundamentally altered our relationship with art and authenticity.\n\nToday's digital artists face a peculiar paradox: their work is born digital, existing without an 'original' in the traditional sense. A digital painting has no material substrate, no brushstrokes to authenticate, no aging patina to study. Every copy is identical to every other, down to the pixel. Does this mean digital art lacks authenticity entirely, or does it demand we reimagine what authenticity means?\n\nSome scholars argue that authenticity in digital art shifts from the object to the process and intention. The artist's creative choices, the software's version, the timestamp of creation—these become the new markers of authenticity. Others contend that blockchain technology and NFTs (non-fungible tokens) restore a form of uniqueness to digital works, creating artificial scarcity in an infinitely reproducible medium.\n\nHowever, critics of NFTs point out that this manufactured scarcity is itself inauthentic—a simulation of the very properties digital art transcends. They argue that the desire to impose traditional notions of authenticity onto digital art reveals our inability to accept art forms that challenge fundamental assumptions about ownership, originality, and value. Perhaps, they suggest, digital art's lack of a singular 'authentic' version is not a deficiency but its defining characteristic—one that democratizes access and challenges the elitism inherent in traditional art markets.",
+      "questions": [
+        {
+          "id": "passage-6-q1",
+          "question": "According to the passage, Benjamin's concept of 'aura' primarily refers to:",
+          "options": [
+            "The emotional impact of viewing an artwork",
+            "An artwork's unique presence in time and space",
+            "The reputation of the artist who created the work",
+            "The monetary value assigned to original works"
+          ],
+          "correctIndex": 1,
+          "explanation": "The passage explicitly states that 'aura' refers to 'its unique presence in time and space,' distinguishing original works from reproductions.",
+          "subcategory": "Humanities"
+        },
+        {
+          "id": "passage-6-q2",
+          "question": "The author's reference to 'artificial scarcity' suggests that NFTs:",
+          "options": [
+            "Successfully restore authenticity to digital art",
+            "Create a false sense of uniqueness in infinitely reproducible works",
+            "Are the only legitimate way to value digital art",
+            "Completely solve the problem of digital art authentication"
+          ],
+          "correctIndex": 1,
+          "explanation": "The passage describes NFTs as creating 'artificial scarcity' and 'manufactured scarcity,' implying they impose false uniqueness on works that are inherently reproducible.",
+          "subcategory": "Humanities"
+        },
+        {
+          "id": "passage-6-q3",
+          "question": "Which of the following best describes the 'paradox' mentioned in the passage?",
+          "options": [
+            "Digital art is both more and less valuable than traditional art",
+            "Digital art challenges traditional concepts of authenticity while some try to impose those concepts upon it",
+            "Digital artists want their work to be unique but also widely accessible",
+            "Technology both enables and destroys artistic creativity"
+          ],
+          "correctIndex": 1,
+          "explanation": "The paradox lies in digital art fundamentally challenging traditional authenticity concepts while some (NFT advocates) attempt to impose those very concepts onto it.",
+          "subcategory": "Humanities"
+        },
+        {
+          "id": "passage-6-q4",
+          "question": "The passage suggests that critics of NFTs would most likely agree with which statement?",
+          "options": [
+            "All art must have a single authentic version",
+            "Digital art's reproducibility is a strength, not a weakness",
+            "Traditional art markets are more democratic than digital ones",
+            "Blockchain technology will eventually replace museums"
+          ],
+          "correctIndex": 1,
+          "explanation": "Critics view digital art's lack of a singular authentic version as 'not a deficiency but its defining characteristic' that 'democratizes access,' suggesting reproducibility is advantageous.",
+          "subcategory": "Humanities"
+        },
+        {
+          "id": "passage-6-q5",
+          "question": "The passage implies that the shift from 'object to process and intention' in digital art authentication represents:",
+          "options": [
+            "A fundamental reconceptualization of what makes art authentic",
+            "A temporary solution until better technology emerges",
+            "An inferior form of authentication compared to traditional methods",
+            "The complete abandonment of the concept of authenticity"
+          ],
+          "correctIndex": 0,
+          "explanation": "Shifting focus from physical object to creative process and intention represents a fundamental reimagining of authenticity for the digital age, not merely a workaround or abandonment.",
+          "subcategory": "Humanities"
+        }
+      ],
+      "subcategory": "Humanities"
+    },
+    {
+      "id": "passage-7",
+      "section": "cars",
+      "title": "The Ethics of Historical Monuments",
+      "passage": "The recent wave of monument removals has sparked intense debate about how societies should reckon with problematic historical figures. Proponents of removal argue that public monuments serve an honorific function—they don't merely record history but celebrate it. When a community erects a statue in a prominent public space, it makes a collective statement about whose legacy deserves honor and emulation. By this logic, removing monuments to Confederate generals or colonial oppressors isn't erasing history; it's ceasing to honor individuals whose primary historical significance lies in their defense of slavery or perpetration of genocide.\n\nOpponents counter that removing monuments represents a form of historical revisionism, an attempt to sanitize the past by eliminating uncomfortable reminders of our collective failings. They argue that confronting these monuments—and the complex, often troubling histories they represent—is essential for genuine historical understanding. Some suggest that rather than removal, monuments should be recontextualized through plaques or companion installations that provide fuller historical narratives.\n\nHowever, this debate often oversimplifies the nature of historical memory. Monuments are not neutral records but deliberate constructions, often erected long after the events they commemorate. Many Confederate monuments, for instance, were built during the Jim Crow era or the Civil Rights movement—not to preserve history, but to assert white supremacy during periods of racial progress. Understanding when and why monuments were built is as historically significant as understanding whom they depict.\n\nFurthermore, the preservation-versus-removal binary obscures alternative approaches. Museums can preserve removed monuments while providing critical historical context impossible in public spaces. Digital archives can document monuments without requiring their continued presence. Some communities have transformed controversial monuments through artistic interventions that challenge rather than erase their original meanings. These approaches recognize that historical memory is not static but continually renegotiated by each generation according to its evolving values and understanding.",
+      "questions": [
+        {
+          "id": "passage-7-q1",
+          "question": "According to proponents of removal, public monuments primarily serve to:",
+          "options": [
+            "Educate the public about historical events",
+            "Commemorate both positive and negative aspects of history",
+            "Honor and celebrate particular individuals or causes",
+            "Provide aesthetic beauty to public spaces"
+          ],
+          "correctIndex": 2,
+          "explanation": "The passage states that proponents view monuments as serving 'an honorific function' that 'celebrate' history and make statements about 'whose legacy deserves honor and emulation.'",
+          "subcategory": "Humanities"
+        },
+        {
+          "id": "passage-7-q2",
+          "question": "The author's discussion of when Confederate monuments were built suggests:",
+          "options": [
+            "These monuments are valuable historical artifacts",
+            "The timing of monument construction reveals political motivations",
+            "All Confederate monuments should be immediately removed",
+            "Historical accuracy is impossible to achieve in monuments"
+          ],
+          "correctIndex": 1,
+          "explanation": "The passage emphasizes that many Confederate monuments were built during Jim Crow or Civil Rights era 'to assert white supremacy during periods of racial progress,' revealing political rather than purely commemorative purposes.",
+          "subcategory": "Humanities"
+        },
+        {
+          "id": "passage-7-q3",
+          "question": "The author characterizes the 'preservation-versus-removal binary' as problematic because it:",
+          "options": [
+            "Favors removal over preservation in all cases",
+            "Ignores the fact that all monuments should be preserved",
+            "Overlooks alternative approaches to dealing with controversial monuments",
+            "Assumes that historical memory never changes"
+          ],
+          "correctIndex": 2,
+          "explanation": "The passage states the binary 'obscures alternative approaches' and then lists several options (museums, digital archives, artistic interventions) that transcend simple preservation or removal.",
+          "subcategory": "Humanities"
+        },
+        {
+          "id": "passage-7-q4",
+          "question": "Which statement would opponents of monument removal most likely support?",
+          "options": [
+            "Monuments should celebrate only morally unambiguous figures",
+            "Historical understanding requires confronting uncomfortable artifacts",
+            "Public spaces should only display contemporary artworks",
+            "Monument construction reveals nothing about historical context"
+          ],
+          "correctIndex": 1,
+          "explanation": "The passage states opponents believe 'confronting these monuments—and the complex, often troubling histories they represent—is essential for genuine historical understanding.'",
+          "subcategory": "Humanities"
+        },
+        {
+          "id": "passage-7-q5",
+          "question": "The passage's final sentence about historical memory being 'continually renegotiated' implies:",
+          "options": [
+            "Historical facts change over time",
+            "Each generation appropriately reinterprets the past according to its values",
+            "Past generations had no valid perspectives on history",
+            "Historical monuments should never be altered"
+          ],
+          "correctIndex": 1,
+          "explanation": "The passage presents continual renegotiation as natural and appropriate ('according to its evolving values and understanding'), suggesting each generation legitimately reinterprets historical memory.",
+          "subcategory": "Humanities"
+        },
+        {
+          "id": "passage-7-q6",
+          "question": "The author's attitude toward the monument debate can best be described as:",
+          "options": [
+            "Strongly advocating for immediate removal of all controversial monuments",
+            "Defending traditional approaches to monument preservation",
+            "Analyzing the complexity of the issue while suggesting nuanced alternatives",
+            "Remaining completely neutral without suggesting any position"
+          ],
+          "correctIndex": 2,
+          "explanation": "The author presents multiple perspectives, critiques oversimplifications, and advocates for 'alternative approaches,' demonstrating analytical complexity rather than simple advocacy or neutrality.",
+          "subcategory": "Humanities"
+        }
+      ],
+      "subcategory": "Humanities"
+    },
+    {
+      "id": "passage-8",
+      "section": "cars",
+      "title": "The Limits of Rational Choice Theory",
+      "passage": "Rational choice theory, a cornerstone of modern economics and political science, posits that individuals make decisions by systematically weighing costs and benefits to maximize their utility. This framework has proven remarkably useful for predicting aggregate behaviors in markets and elections. Yet behavioral economics has revealed systematic deviations from rational choice that cannot be dismissed as mere noise or exceptions.\n\nConsider the endowment effect: people consistently demand more money to give up an object they possess than they would be willing to pay to acquire it. Rationally, these values should be identical—an object's worth shouldn't depend on whether one currently owns it. Yet this effect persists across cultures and contexts, suggesting it reflects something fundamental about human psychology rather than a mere cognitive error to be corrected.\n\nDefenders of rational choice theory often respond by expanding the definition of 'rationality' to accommodate such findings. They argue that people might rationally value stability and loss aversion, or that apparent irrationalities result from imperfect information. However, this theoretical flexibility comes at a cost: as we expand 'rational' to include increasingly diverse behaviors, the theory risks becoming unfalsifiable, explaining everything while predicting nothing.\n\nMoreover, the normative dimension of rational choice theory deserves scrutiny. The theory doesn't merely describe how people make decisions—it implies how they should decide. When economic policies are designed on the assumption that rational self-interest drives behavior, we may inadvertently reshape social norms in that direction. Several studies suggest that economics training makes people more self-interested, as if learning the theory of rational self-interest becomes a self-fulfilling prophecy.\n\nPerhaps most fundamentally, rational choice theory struggles with decisions involving incommensurable values. How does one rationally weigh spending time with family against career advancement, or environmental preservation against economic growth? These decisions require comparing fundamentally different kinds of goods that resist reduction to a single utility metric. The theory's assumption that all values can be compared on a common scale may not reflect a cognitive limitation to be overcome but rather a ethical complexity to be acknowledged.\n\nThis doesn't mean abandoning rational choice frameworks entirely. They remain valuable tools, particularly for understanding strategic interactions and market dynamics. But recognizing their limits is crucial for both accurate social science and ethical policy-making. We might better view humans not as rational utility-maximizers with occasional quirks, but as complex beings whose decision-making integrates emotion, social norms, moral values, and context-dependent reasoning—only sometimes approximating the rational choice model.",
+      "questions": [
+        {
+          "id": "passage-8-q1",
+          "question": "The endowment effect challenges rational choice theory because it demonstrates that:",
+          "options": [
+            "People cannot accurately calculate costs and benefits",
+            "Valuation depends on ownership status rather than objective worth",
+            "Market prices are always incorrect",
+            "People are unwilling to engage in trade"
+          ],
+          "correctIndex": 1,
+          "explanation": "The passage explains that people 'demand more money to give up an object they possess than they would be willing to pay to acquire it,' showing valuation depends on ownership—contradicting rational theory where these should be identical.",
+          "subcategory": "Social Sciences"
+        },
+        {
+          "id": "passage-8-q2",
+          "question": "According to the passage, expanding the definition of rationality to accommodate behavioral findings is problematic because:",
+          "options": [
+            "It makes the theory too complex for practical application",
+            "It contradicts the original assumptions of the theory",
+            "It risks making the theory unfalsifiable and non-predictive",
+            "It completely invalidates all previous economic research"
+          ],
+          "correctIndex": 2,
+          "explanation": "The passage states that theoretical flexibility 'risks becoming unfalsifiable, explaining everything while predicting nothing'—a theory that can explain any behavior makes no testable predictions.",
+          "subcategory": "Social Sciences"
+        },
+        {
+          "id": "passage-8-q3",
+          "question": "The author's point about economics training making people more self-interested suggests:",
+          "options": [
+            "Economics courses should be eliminated from universities",
+            "Descriptive theories can influence the behaviors they describe",
+            "All economists are inherently selfish people",
+            "Self-interest is the most accurate model of human behavior"
+          ],
+          "correctIndex": 1,
+          "explanation": "The passage describes this as a 'self-fulfilling prophecy,' where learning the theory influences behavior to match it—demonstrating that descriptive theories can normatively shape what they claim to merely describe.",
+          "subcategory": "Social Sciences"
+        },
+        {
+          "id": "passage-8-q4",
+          "question": "The author's discussion of 'incommensurable values' implies that:",
+          "options": [
+            "All decisions can ultimately be reduced to monetary terms",
+            "People should avoid making decisions involving different types of values",
+            "Some choices involve fundamentally incomparable goods that resist unified measurement",
+            "Rational choice theory works perfectly for all types of decisions"
+          ],
+          "correctIndex": 2,
+          "explanation": "The passage states these decisions involve 'fundamentally different kinds of goods that resist reduction to a single utility metric,' arguing some values cannot be meaningfully compared on one scale.",
+          "subcategory": "Social Sciences"
+        },
+        {
+          "id": "passage-8-q5",
+          "question": "Which of the following best characterizes the author's overall stance on rational choice theory?",
+          "options": [
+            "It should be completely abandoned in favor of behavioral approaches",
+            "It is universally correct and requires no modification",
+            "It is valuable but limited, requiring recognition of its boundaries",
+            "It only applies to economic decisions, not political ones"
+          ],
+          "correctIndex": 2,
+          "explanation": "The passage concludes rational choice frameworks 'remain valuable tools' but 'recognizing their limits is crucial,' advocating for acknowledging both utility and limitations rather than wholesale acceptance or rejection.",
+          "subcategory": "Social Sciences"
+        },
+        {
+          "id": "passage-8-q6",
+          "question": "The passage suggests that rational choice theory's normative dimension is problematic because:",
+          "options": [
+            "It only describes behavior without suggesting improvements",
+            "Policies based on it may reinforce the self-interested behavior it assumes",
+            "It advocates for irrational decision-making",
+            "It ignores all economic considerations in policy-making"
+          ],
+          "correctIndex": 1,
+          "explanation": "The passage argues that designing policies assuming rational self-interest 'may inadvertently reshape social norms in that direction,' creating a feedback loop where the assumed behavior becomes actual behavior.",
+          "subcategory": "Social Sciences"
+        },
+        {
+          "id": "passage-8-q7",
+          "question": "Based on the passage, the author would most likely agree that effective social science should:",
+          "options": [
+            "Focus exclusively on mathematical models of rational behavior",
+            "Integrate multiple dimensions of human decision-making beyond utility maximization",
+            "Dismiss all findings from behavioral economics as anomalies",
+            "Avoid considering emotions or social norms in any analysis"
+          ],
+          "correctIndex": 1,
+          "explanation": "The final paragraph advocates viewing humans as 'complex beings whose decision-making integrates emotion, social norms, moral values, and context-dependent reasoning,' calling for multidimensional approaches beyond simple utility maximization.",
+          "subcategory": "Social Sciences"
+        }
+      ],
+      "subcategory": "Social Sciences"
     }
   ]
 }
