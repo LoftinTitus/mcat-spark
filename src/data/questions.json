@@ -4424,6 +4424,160 @@
     "correctIndex": 3,
     "explanation": "Enculturation is the process by which individuals learn and adopt the cultural practices of their own culture.",
     "subcategory": "Social Psychology"
+  },
+    {
+    "id": "cars-fs-1",
+    "section": "cars",
+    "question": "A literary critic argues that postmodern novels deliberately resist interpretation by employing narrative techniques that fragment causality and destabilize meaning. Which of the following would most WEAKEN this critic's position?",
+    "options": [
+      "Readers of postmodern fiction often report feeling confused or frustrated by the lack of clear narrative resolution.",
+      "Many postmodern authors have stated in interviews that their work is intended to challenge conventional reading practices.",
+      "Historical analysis reveals that fragmented narratives and ambiguous meanings appear in pre-modern literary traditions across multiple cultures.",
+      "Postmodern novels frequently contain self-referential passages that draw attention to their own constructedness as texts."
+    ],
+    "correctIndex": 2,
+    "explanation": "Option C weakens the critic's claim by suggesting that fragmentation and ambiguity are not unique to postmodern literature, thus challenging the idea that these techniques are deliberately postmodern strategies. If similar techniques existed before postmodernism, they may serve different purposes or arise from different causes than the critic suggests.",
+    "subcategory": "Humanities"
+  },
+  {
+    "id": "cars-fs-2",
+    "section": "cars",
+    "question": "An anthropologist observes that gift-giving practices in certain societies create social obligations that bind communities together, yet simultaneously generate hierarchies of status and debt. This observation best illustrates which paradox?",
+    "options": [
+      "Acts intended to promote equality may inadvertently reinforce inequality.",
+      "Cultural practices that appear irrational often serve important social functions.",
+      "Economic exchanges in traditional societies differ fundamentally from market transactions.",
+      "Symbolic gestures can have more practical significance than material exchanges."
+    ],
+    "correctIndex": 0,
+    "explanation": "The passage describes how gift-giving, which might be intended to create bonds and cohesion (equality), actually creates hierarchies and obligations (inequality). This perfectly exemplifies the paradox that egalitarian intentions can produce stratification, making option A correct.",
+    "subcategory": "Social Sciences"
+  },
+  {
+    "id": "cars-fs-3",
+    "section": "cars",
+    "question": "A philosopher contends that moral responsibility requires the existence of alternative possibilities—that is, one can only be held responsible for an action if one could have done otherwise. A neuroscientist responds that brain imaging shows decisions are determined by prior neural states, suggesting no genuine alternatives exist. The philosopher's most effective counter-argument would be to claim that:",
+    "options": [
+      "Neural determinism is irrelevant to moral responsibility, which operates at the level of conscious deliberation rather than brain states.",
+      "The neuroscientist's evidence is insufficient because correlation between neural states and decisions does not prove causation.",
+      "Moral responsibility is a social construct that serves pragmatic purposes regardless of metaphysical facts about determinism.",
+      "Even if decisions are determined, the concept of 'could have done otherwise' should be understood compatibilistically as what would have happened under different circumstances."
+    ],
+    "correctIndex": 3,
+    "explanation": "Option D provides the strongest philosophical response by reframing the concept of alternative possibilities in a way compatible with determinism (compatibilism). This directly addresses the neuroscientist's challenge while preserving the philosopher's framework for moral responsibility. Options A and C sidestep rather than counter the argument, while B makes a weak methodological objection.",
+    "subcategory": "Humanities"
+  },
+  {
+    "id": "cars-fs-4",
+    "section": "cars",
+    "question": "An economist argues that rising income inequality is economically efficient because it incentivizes innovation and productivity. A sociologist counters that extreme inequality undermines social cohesion and democratic institutions. These perspectives are fundamentally incompatible because:",
+    "options": [
+      "They prioritize different values—economic growth versus social stability.",
+      "They employ different methodologies—quantitative modeling versus qualitative analysis.",
+      "They make contradictory empirical claims about the consequences of inequality.",
+      "They operate within incommensurable paradigms that define 'efficiency' and 'welfare' differently."
+    ],
+    "correctIndex": 3,
+    "explanation": "Option D identifies the deepest level of disagreement: these scholars operate within different paradigmatic frameworks that define core concepts differently. The economist uses 'efficiency' in terms of resource allocation and output, while the sociologist implicitly redefines welfare to include social goods. This is more fundamental than mere value differences (A), methodological differences (B), or empirical disagreements (C).",
+    "subcategory": "Social Sciences"
+  },
+  {
+    "id": "cars-fs-5",
+    "section": "cars",
+    "question": "A historian argues that counterfactual reasoning—asking 'what if' about historical events—is methodologically flawed because it speculates about events that never occurred and thus cannot be verified. This objection is most vulnerable to the criticism that:",
+    "options": [
+      "All historical interpretation involves some degree of speculation about causation and significance.",
+      "Counterfactual reasoning can be constrained by evidence about what was possible given historical conditions.",
+      "The historian's own causal claims implicitly rely on counterfactual assumptions about what would have happened differently.",
+      "Many scientific disciplines productively employ counterfactual reasoning in thought experiments and modeling."
+    ],
+    "correctIndex": 2,
+    "explanation": "Option C identifies a performative contradiction in the historian's position: any claim that event X caused outcome Y implicitly assumes that without X, Y would not have occurred—this is counterfactual reasoning. Thus, the historian cannot reject counterfactuals while making causal historical claims. This is more devastating than pointing out that counterfactuals can be constrained (B) or used elsewhere (D), or that history involves speculation (A).",
+    "subcategory": "Humanities"
+  },
+  {
+    "id": "cars-fs-6",
+    "section": "cars",
+    "question": "A legal theorist proposes that punishment should be proportional to the harm caused by a crime, not to the offender's moral culpability. An opponent argues this would result in identical sentences for reckless and intentional homicide, which offends our moral intuitions. The theorist could most effectively respond by arguing that:",
+    "options": [
+      "Our moral intuitions about punishment are shaped by retributive traditions that should be critically examined rather than taken as given.",
+      "Reckless and intentional homicide may cause different types of harm when psychological effects on victims' families are considered.",
+      "The legal system should separate moral education from punishment, addressing culpability through other institutional mechanisms.",
+      "Proportionality to harm provides a more objective and measurable standard than assessments of mental states, which are inherently subjective."
+    ],
+    "correctIndex": 0,
+    "explanation": "Option A provides the strongest response by questioning the normative authority of the intuitions the opponent invokes. Rather than conceding that intuitions matter and trying to accommodate them (B, C) or changing the subject to practical considerations (D), this response challenges whether intuitions shaped by existing practices should constrain reform. This is a more fundamental defense of the theory.",
+    "subcategory": "Humanities"
+  },
+  {
+    "id": "cars-fs-7",
+    "section": "cars",
+    "question": "An art historian claims that the meaning of a painting is determined entirely by the artist's intentions at the time of creation. A critic responds that viewers inevitably interpret artworks through their own cultural contexts, which may differ radically from the artist's. The debate between these positions would be most productively advanced by considering:",
+    "options": [
+      "Whether there exist objective methods for recovering artists' historical intentions from biographical and contextual evidence.",
+      "How the concept of 'meaning' itself might encompass both authorial intent and reader response without requiring exclusive commitment to either.",
+      "Which interpretation—the artist's or the viewer's—has greater claim to authority in cases of conflict.",
+      "Whether the artist's death metaphorically or literally severs the connection between intention and meaning."
+    ],
+    "correctIndex": 1,
+    "explanation": "Option B suggests the most productive conceptual move: reconsidering whether 'meaning' must be univocal rather than multi-dimensional. This dissolves the apparent dichotomy rather than simply adjudicating between the positions (C), focusing on methodological questions (A), or invoking poetic metaphors (D). This represents genuine philosophical progress rather than mere position-taking.",
+    "subcategory": "Humanities"
+  },
+  {
+    "id": "cars-fs-8",
+    "section": "cars",
+    "question": "A political theorist argues that democratic legitimacy requires not just majority rule but also protection of minority rights that majorities cannot violate. A critic objects that this constraint on majority power is itself undemocratic, as it allows minorities to veto the will of the majority. This criticism fails to recognize that:",
+    "options": [
+      "Constitutional constraints reflect the will of a supermajority at the time of founding, and thus represent a deeper form of democratic consent.",
+      "Without protection for minorities, temporary majorities could entrench their power and prevent future democratic decision-making.",
+      "The concept of democracy encompasses not just aggregating preferences but also ensuring conditions for meaningful political participation.",
+      "Empirical evidence shows that democracies with strong minority protections are more stable than those without such protections."
+    ],
+    "correctIndex": 2,
+    "explanation": "Option C identifies the conceptual issue the critic misses: democracy is not merely procedural majoritarianism but includes substantive preconditions for democratic participation. If minorities can be silenced or excluded, the democratic process itself is undermined. This is more fundamental than historical (A), consequentialist (B), or empirical (D) responses, as it reframes what democracy means.",
+    "subcategory": "Social Sciences"
+  },
+  {
+    "id": "cars-fs-9",
+    "section": "cars",
+    "question": "A linguist argues that the Sapir-Whorf hypothesis—that language shapes thought—is unfalsifiable because any apparent counterevidence can be reinterpreted as showing that we simply haven't identified the relevant linguistic features that shape cognition. This criticism would be weakened if:",
+    "options": [
+      "Proponents of the hypothesis could specify in advance what linguistic differences would predict what cognitive differences.",
+      "Cross-cultural studies consistently found the same cognitive patterns despite significant linguistic differences.",
+      "The hypothesis could be reformulated in degrees rather than as an absolute claim about determination.",
+      "Neurological evidence showed that language processing activates the same brain regions as other forms of thought."
+    ],
+    "correctIndex": 0,
+    "explanation": "Option A directly addresses the falsifiability concern by establishing conditions under which predictions could be tested and potentially refuted. Making specific, testable predictions in advance is precisely what transforms an unfalsifiable claim into a scientific hypothesis. Options B and D provide evidence against the hypothesis but don't address unfalsifiability, while C simply reformulates the claim without addressing the methodological problem.",
+    "subcategory": "Social Sciences"
+  },
+  {
+    "id": "cars-fs-10",
+    "section": "cars",
+    "question": "A bioethicist argues that parents should not be permitted to use genetic engineering to select non-disease traits like height or intelligence in their children because this treats children as products rather than persons. This argument is most vulnerable to the objection that:",
+    "options": [
+      "Parents already make numerous decisions that profoundly shape their children's traits through environmental interventions like education and nutrition.",
+      "The distinction between disease and non-disease traits is often ambiguous and culturally contingent.",
+      "Prohibiting genetic selection for non-disease traits could exacerbate social inequalities if only wealthy families can access such technologies.",
+      "Children born through genetic selection may still develop their own identities and autonomy regardless of parental choices."
+    ],
+    "correctIndex": 0,
+    "explanation": "Option A challenges the bioethicist's premise by pointing out that parents routinely influence their children's traits through non-genetic means, suggesting that genetic selection is not fundamentally different in treating children as products. This undermines the argument's core claim. Options B, C, and D raise important considerations but do not directly refute the central ethical concern about personhood.",
+    "subcategory": "Social Sciences"
+  },
+  {
+    "id": "cars-fs-11",
+    "section": "cars",
+    "question": "A political theorist argues that the concept of justice should prioritize the needs of the most disadvantaged members of society. This view is most vulnerable to the objection that:",
+    "options": [
+      "Focusing exclusively on the disadvantaged could neglect the needs of the majority.",
+      "Justice is inherently a comparative concept that requires evaluating the relative positions of all individuals.",
+      "The needs of the disadvantaged are often in conflict with the needs of other groups.",
+      "Prioritizing the disadvantaged may lead to resentment and social division."
+    ],
+    "correctIndex": 1,
+    "explanation": "Option B highlights a key challenge to the theorist's position: justice cannot be fully understood without considering the broader social context and the relative positions of all individuals. This objection points to a potential limitation in a strictly needs-based approach to justice. Options A, C, and D raise important concerns but do not directly address the conceptual issue raised by B.",
+    "subcategory": "Social Sciences"
   }
 ]
 }
