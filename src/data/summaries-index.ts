@@ -82,6 +82,10 @@ import psychSocialContent from './summaries/psych-social.md?raw';
 import carsStrategyContent from './summaries/cars-strategy.md?raw';
 import bioAminoAcidContent from './summaries/aminoacidstruct.md?raw';
 import bioDnaGenomeContent from './summaries/bio-dna-genome.md?raw';
+import bioDnaReplicationRepairContent from './summaries/bio-dna-replication-repair.md?raw';
+import bioTranscriptionTranslationContent from './summaries/bio-transcription-translation.md?raw';
+import bioCellSignalingGeneExpContent from './summaries/bio-cell-signaling-gene-exp.md?raw';
+import bioVirusesContent from './summaries/bio-viruses.md?raw';
 
 // Parse content and quizzes
 const parseContent = (rawContent: string) => parseQuizFromMarkdown(rawContent);
@@ -96,6 +100,10 @@ const psychSocial = parseContent(psychSocialContent);
 const carsStrategy = parseContent(carsStrategyContent);
 const bioAminoAcid = parseContent(bioAminoAcidContent);
 const bioDnaGenome = parseContent(bioDnaGenomeContent);
+const bioDnaReplicationRepair = parseContent(bioDnaReplicationRepairContent);
+const bioTranscriptionTranslation = parseContent(bioTranscriptionTranslationContent);
+const bioCellSignalingGeneExp = parseContent(bioCellSignalingGeneExpContent);
+const bioViruses = parseContent(bioVirusesContent);
 
 export const summaries: Summary[] = [
   {
@@ -177,5 +185,37 @@ export const summaries: Summary[] = [
     topic: "DNA and Genome Structure",
     content: bioDnaGenome.content,
     quiz: bioDnaGenome.quiz,
+  },
+  {
+    id: "bio-dna-replication-repair",
+    section: "bio",
+    subtopic: "Molecular Biology",
+    topic: "DNA Replication and Repair",
+    content: bioDnaReplicationRepair.content,
+    quiz: bioDnaReplicationRepair.quiz,
+  },
+  {
+    id: "bio-transcription-translation",
+    section: "bio",
+    subtopic: "Molecular Biology",
+    topic: "Transcription and Translation",
+    content: bioTranscriptionTranslation.content,
+    quiz: bioTranscriptionTranslation.quiz,
+  },
+  {
+    id: "bio-cell-signaling-gene-exp",
+    section: "bio",
+    subtopic: "Molecular Biology",
+    topic: "Cell Signaling and Gene Expression",
+    content: bioCellSignalingGeneExp.content,
+    quiz: bioCellSignalingGeneExp.quiz,
+  },
+  {
+    id: "bio-viruses",
+    section: "bio",
+    subtopic: "Microbiology",
+    topic: "Viruses",
+    content: bioViruses.content,
+    quiz: bioViruses.quiz,
   },
 ];
