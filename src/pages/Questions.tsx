@@ -2,9 +2,10 @@ import { useState, useMemo } from "react";
 import { PageLayout } from "@/components/PageLayout";
 import { QuestionCard } from "@/components/QuestionCard";
 import { SectionBadge } from "@/components/SectionBadge";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Shuffle } from "lucide-react";
 import { trackQuestionAttempt } from "@/lib/analytics";
 import questionsData from "@/data/questions.json";
+import passagesData from "@/data/passages.json";
 
 type QuestionMode = "freestanding" | "passages";
 
@@ -45,9 +46,10 @@ const Questions = () => {
     "all" | "chem" | "bio" | "psych" | "cars"
   >("all");
   const [selectedSubcategory, setSelectedSubcategory] = useState<string>("all");
+  const [shuffled, setShuffled] = useState(false);
 
   const freestandingQuestions = questionsData.freestanding as FreestandingQuestion[];
-  const passages = questionsData.passages as Passage[];
+  const passages = passagesData.passages as Passage[];
 
   // Get available subcategories for current mode and section
   const availableSubcategories = useMemo(() => {
@@ -75,8 +77,13 @@ const Questions = () => {
       filtered = filtered.filter((q) => q.subcategory === selectedSubcategory);
     }
     
+    // Shuffle if needed
+    if (shuffled) {
+      return [...filtered].sort(() => Math.random() - 0.5);
+    }
+    
     return filtered;
-  }, [selectedSection, selectedSubcategory, freestandingQuestions]);
+  }, [selectedSection, selectedSubcategory, freestandingQuestions, shuffled]);
 
   const filteredPassages = useMemo(() => {
     let filtered = selectedSection === "all"
@@ -87,8 +94,13 @@ const Questions = () => {
       filtered = filtered.filter((p) => p.subcategory === selectedSubcategory);
     }
     
+    // Shuffle if needed
+    if (shuffled) {
+      return [...filtered].sort(() => Math.random() - 0.5);
+    }
+    
     return filtered;
-  }, [selectedSection, selectedSubcategory, passages]);
+  }, [selectedSection, selectedSubcategory, passages, shuffled]);
 
   const currentFreestanding = filteredFreestandingQuestions[freestandingIndex];
   const currentPassage = filteredPassages[passageIndex];
@@ -145,6 +157,13 @@ const Questions = () => {
     setPassageQuestionIndex(0);
   };
 
+  const handleShuffle = () => {
+    setShuffled(!shuffled);
+    setFreestandingIndex(0);
+    setPassageIndex(0);
+    setPassageQuestionIndex(0);
+  };
+
   return (
     <PageLayout title="Question Bank" subtitle="Practice MCAT-style questions">
       <div className="max-w-5xl mx-auto space-y-6">
@@ -176,9 +195,22 @@ const Questions = () => {
 
           {/* Section Filter */}
           <div className="space-y-2">
-            <label className="text-sm font-medium text-muted-foreground">
-              Section Filter
-            </label>
+            <div className="flex items-center justify-between">
+              <label className="text-sm font-medium text-muted-foreground">
+                Section Filter
+              </label>
+              <button
+                onClick={handleShuffle}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
+                  shuffled
+                    ? "border-primary bg-primary text-primary-foreground"
+                    : "border-border hover:border-muted-foreground"
+                }`}
+              >
+                <Shuffle className="h-4 w-4" />
+                <span>Shuffle</span>
+              </button>
+            </div>
             <div className="flex flex-wrap gap-2">
               {[
                 { label: "All", value: "all" },
