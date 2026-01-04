@@ -131,8 +131,8 @@ export const summaries: Summary[] = [
   {
     id: "bio-genetics",
     section: "bio",
-    subtopic: "Molecular Biology",
-    topic: "Genetics Essentials",
+    subtopic: "Genetics",
+    topic: "Mendelian Genetics",
     content: bioGenetics.content,
     quiz: bioGenetics.quiz,
   },
