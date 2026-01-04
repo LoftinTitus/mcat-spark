@@ -1567,7 +1567,777 @@
       "correctIndex": 2,
       "explanation": "Loss of 3' to 5' exonuclease activity eliminates proofreading capability, increasing the error rate from ~1/10⁷ to ~1/10⁵ per base pair. This would cause accumulation of mutations. The polymerase could still synthesize DNA but without error correction. Such mutations occur in mismatch repair deficiency diseases like Lynch syndrome.",
       "subcategory": "DNA Replication"
-    }
+    },
+    {
+  "id": "fs-113",
+  "section": "bio",
+  "question": "What does the Michaelis constant (Km) represent in enzyme kinetics?",
+  "options": [
+    "The maximum velocity of the reaction",
+    "The substrate concentration at half-maximal velocity",
+    "The enzyme concentration",
+    "The turnover number"
+  ],
+  "correctIndex": 1,
+  "explanation": "Km is the substrate concentration at which the reaction rate is half of Vmax.",
+  "subcategory": "Enzyme Kinetics"
+},
+{
+  "id": "fs-114",
+  "section": "bio",
+  "question": "Which type of inhibitor increases the apparent Km but does not affect Vmax?",
+  "options": [
+    "Non-competitive inhibitor",
+    "Uncompetitive inhibitor",
+    "Competitive inhibitor",
+    "Irreversible inhibitor"
+  ],
+  "correctIndex": 2,
+  "explanation": "Competitive inhibitors increase Km but do not change Vmax.",
+  "subcategory": "Enzyme Kinetics"
+},
+{
+  "id": "fs-115",
+  "section": "bio",
+  "question": "If an enzyme-catalyzed reaction has a Vmax of 200 μmol/min and the enzyme concentration is doubled, what happens to Vmax?",
+  "options": [
+    "It is halved",
+    "It remains the same",
+    "It doubles",
+    "It decreases to zero"
+  ],
+  "correctIndex": 2,
+  "explanation": "Vmax is directly proportional to enzyme concentration, so doubling enzyme doubles Vmax.",
+  "subcategory": "Enzyme Kinetics"
+},
+{
+  "id": "fs-116",
+  "section": "bio",
+  "question": "Which plot is commonly used to determine Km and Vmax from experimental data?",
+  "options": [
+    "Arrhenius plot",
+    "Lineweaver-Burk plot",
+    "Henderson-Hasselbalch plot",
+    "Van't Hoff plot"
+  ],
+  "correctIndex": 1,
+  "explanation": "The Lineweaver-Burk plot (double reciprocal) is used to determine Km and Vmax.",
+  "subcategory": "Enzyme Kinetics"
+},
+{
+  "id": "fs-117",
+  "section": "bio",
+  "question": "A non-competitive inhibitor affects which of the following?",
+  "options": [
+    "Km only",
+    "Vmax only",
+    "Both Km and Vmax",
+    "Neither Km nor Vmax"
+  ],
+  "correctIndex": 1,
+  "explanation": "Non-competitive inhibitors decrease Vmax but do not affect Km.",
+  "subcategory": "Enzyme Kinetics"
+},
+{
+  "id": "fs-118",
+  "section": "bio",
+  "question": "What is the effect of an uncompetitive inhibitor on Km and Vmax?",
+  "options": [
+    "Both Km and Vmax increase",
+    "Km increases, Vmax decreases",
+    "Both Km and Vmax decrease",
+    "Km decreases, Vmax increases"
+  ],
+  "correctIndex": 2,
+  "explanation": "Uncompetitive inhibitors decrease both Km and Vmax.",
+  "subcategory": "Enzyme Kinetics"
+},
+{
+  "id": "fs-119",
+  "section": "bio",
+  "question": "Which of the following best describes the effect of temperature on enzyme-catalyzed reactions?",
+  "options": [
+    "Rate always increases with temperature",
+    "Rate decreases with temperature",
+    "Rate increases up to an optimum, then decreases",
+    "Rate is independent of temperature"
+  ],
+  "correctIndex": 2,
+  "explanation": "Enzyme activity increases with temperature up to an optimum, then decreases due to denaturation.",
+  "subcategory": "Enzyme Kinetics"
+},
+{
+  "id": "fs-120",
+  "section": "bio",
+  "question": "Which parameter is most useful for comparing the efficiency of different enzymes?",
+  "options": [
+    "Km",
+    "Vmax",
+    "kcat/Km",
+    "Enzyme concentration"
+  ],
+  "correctIndex": 2,
+  "explanation": "kcat/Km is the specificity constant and best reflects enzyme efficiency.",
+  "subcategory": "Enzyme Kinetics"
+},
+{
+  "id": "fs-121",
+  "section": "bio",
+  "question": "A patient presents with polyuria, polydipsia, and hypernatremia. Laboratory tests reveal low levels of antidiuretic hormone (ADH). Which part of the nephron will be most affected by this deficiency?",
+  "options": [
+    "Proximal convoluted tubule",
+    "Descending limb of the loop of Henle",
+    "Collecting duct",
+    "Glomerulus"
+  ],
+  "correctIndex": 2,
+  "explanation": "ADH acts on the collecting duct to increase water reabsorption. Deficiency leads to decreased water reabsorption and dilute urine.",
+  "subcategory": "Endocrine System"
+},
+{
+  "id": "fs-122",
+  "section": "bio",
+  "question": "A tumor secreting excess ACTH would most likely result in which of the following laboratory findings?",
+  "options": [
+    "Low cortisol, high aldosterone",
+    "High cortisol, low aldosterone",
+    "High cortisol, high aldosterone",
+    "Low cortisol, low aldosterone"
+  ],
+  "correctIndex": 2,
+  "explanation": "ACTH stimulates the adrenal cortex to produce both cortisol and aldosterone, so both would be elevated.",
+  "subcategory": "Endocrine System"
+},
+{
+  "id": "fs-123",
+  "section": "bio",
+  "question": "A patient with a mutation in the insulin receptor gene has normal insulin levels but persistent hyperglycemia. Which process is most directly impaired?",
+  "options": [
+    "Glycogenolysis in the liver",
+    "Glucose uptake in muscle and adipose tissue",
+    "Gluconeogenesis in the liver",
+    "Lipolysis in adipose tissue"
+  ],
+  "correctIndex": 1,
+  "explanation": "Insulin promotes glucose uptake in muscle and adipose tissue via GLUT4. A defective receptor impairs this process.",
+  "subcategory": "Endocrine System"
+},
+{
+  "id": "fs-124",
+  "section": "bio",
+  "question": "Which of the following would most likely be observed in a patient with Graves’ disease?",
+  "options": [
+    "Decreased TSH, increased T3/T4",
+    "Increased TSH, decreased T3/T4",
+    "Decreased TSH, decreased T3/T4",
+    "Increased TSH, increased T3/T4"
+  ],
+  "correctIndex": 0,
+  "explanation": "Graves’ disease is an autoimmune hyperthyroidism. High T3/T4 suppresses TSH via negative feedback.",
+  "subcategory": "Endocrine System"
+},
+{
+  "id": "fs-125",
+  "section": "bio",
+  "question": "A patient with congenital 21-hydroxylase deficiency will most likely present with which hormonal profile?",
+  "options": [
+    "Low cortisol, low aldosterone, high androgens",
+    "High cortisol, high aldosterone, low androgens",
+    "Low cortisol, high aldosterone, low androgens",
+    "High cortisol, low aldosterone, high androgens"
+  ],
+  "correctIndex": 0,
+  "explanation": "21-hydroxylase deficiency impairs synthesis of cortisol and aldosterone, shunting precursors to androgen production.",
+  "subcategory": "Endocrine System"
+},
+{
+  "id": "fs-126",
+  "section": "bio",
+  "question": "Which hormone is synthesized as a preprohormone and undergoes post-translational modification before secretion?",
+  "options": [
+    "Cortisol",
+    "Thyroxine (T4)",
+    "Insulin",
+    "Testosterone"
+  ],
+  "correctIndex": 2,
+  "explanation": "Insulin is synthesized as preproinsulin, then processed to proinsulin and finally insulin before secretion.",
+  "subcategory": "Endocrine System"
+},
+{
+  "id": "fs-127",
+  "section": "bio",
+  "question": "A patient with a pituitary adenoma secreting excess prolactin may experience which of the following?",
+  "options": [
+    "Infertility due to inhibition of GnRH",
+    "Hypertension due to increased aldosterone",
+    "Hyperglycemia due to increased cortisol",
+    "Goiter due to increased TSH"
+  ],
+  "correctIndex": 0,
+  "explanation": "Excess prolactin inhibits GnRH, leading to decreased FSH/LH and infertility.",
+  "subcategory": "Endocrine System"
+},
+{
+  "id": "fs-128",
+  "section": "bio",
+  "question": "Which of the following hormones exerts its effects primarily through a cell surface receptor and second messenger system?",
+  "options": [
+    "Cortisol",
+    "Thyroid hormone",
+    "Insulin",
+    "Testosterone"
+  ],
+  "correctIndex": 2,
+  "explanation": "Insulin binds to a cell surface receptor and activates a second messenger cascade. Steroid and thyroid hormones act via intracellular receptors.",
+  "subcategory": "Endocrine System"
+},
+{
+  "id": "fs-129",
+  "section": "bio",
+  "question": "Which evolutionary force is most likely responsible for the fixation of a neutral mutation in a small population?",
+  "options": [
+    "Natural selection",
+    "Genetic drift",
+    "Gene flow",
+    "Non-random mating"
+  ],
+  "correctIndex": 1,
+  "explanation": "Genetic drift can cause random fixation of alleles, especially in small populations, regardless of fitness.",
+  "subcategory": "Evolution"
+},
+{
+  "id": "fs-130",
+  "section": "bio",
+  "question": "A population of beetles is separated by a river, and over generations, the two groups develop distinct coloration and mating behaviors. This is an example of:",
+  "options": [
+    "Sympatric speciation",
+    "Allopatric speciation",
+    "Artificial selection",
+    "Convergent evolution"
+  ],
+  "correctIndex": 1,
+  "explanation": "Physical separation leads to allopatric speciation due to geographic isolation.",
+  "subcategory": "Evolution"
+},
+{
+  "id": "fs-131",
+  "section": "bio",
+  "question": "Which of the following best describes the founder effect?",
+  "options": [
+    "Loss of genetic variation due to a population bottleneck",
+    "Introduction of new alleles by migration",
+    "Genetic differences in a new population established by a small number of individuals",
+    "Selection for traits that increase reproductive success"
+  ],
+  "correctIndex": 2,
+  "explanation": "The founder effect occurs when a small group establishes a new population, leading to reduced genetic diversity.",
+  "subcategory": "Evolution"
+},
+{
+  "id": "fs-132",
+  "section": "bio",
+  "question": "Which scenario best illustrates stabilizing selection?",
+  "options": [
+    "Birds with very short or very long beaks are less successful than those with intermediate beak length.",
+    "Moths with dark coloration are favored in polluted environments.",
+    "Fish with larger fins outcompete those with smaller fins.",
+    "Flowers with extreme colors attract more pollinators."
+  ],
+  "correctIndex": 0,
+  "explanation": "Stabilizing selection favors intermediate phenotypes and selects against extremes.",
+  "subcategory": "Evolution"
+},
+{
+  "id": "fs-133",
+  "section": "bio",
+  "question": "Which of the following is NOT a requirement for Hardy-Weinberg equilibrium?",
+  "options": [
+    "Large population size",
+    "No mutation",
+    "Random mating",
+    "Natural selection"
+  ],
+  "correctIndex": 3,
+  "explanation": "Hardy-Weinberg equilibrium requires no natural selection; selection disrupts allele frequencies.",
+  "subcategory": "Evolution"
+},
+{
+  "id": "fs-134",
+  "section": "bio",
+  "question": "Homologous structures in different species are evidence for:",
+  "options": [
+    "Convergent evolution",
+    "Common ancestry",
+    "Genetic drift",
+    "Artificial selection"
+  ],
+  "correctIndex": 1,
+  "explanation": "Homologous structures indicate descent from a common ancestor.",
+  "subcategory": "Evolution"
+},
+{
+  "id": "fs-135",
+  "section": "bio",
+  "question": "Which evolutionary process increases genetic variation within a population?",
+  "options": [
+    "Directional selection",
+    "Mutation",
+    "Genetic drift",
+    "Stabilizing selection"
+  ],
+  "correctIndex": 1,
+  "explanation": "Mutation introduces new alleles and increases genetic variation.",
+  "subcategory": "Evolution"
+},
+{
+  "id": "fs-136",
+  "section": "bio",
+  "question": "A trait that increases an organism’s fitness in one environment but decreases it in another is an example of:",
+  "options": [
+    "Pleiotropy",
+    "Genetic drift",
+    "Antagonistic selection",
+    "Gene flow"
+  ],
+  "correctIndex": 2,
+  "explanation": "Antagonistic selection occurs when a trait is beneficial in one context but harmful in another.",
+  "subcategory": "Evolution"
+},
+{
+  "id": "fs-137",
+  "section": "bio",
+  "question": "Which of the following mechanisms allows a single gene to produce multiple protein isoforms in eukaryotes?",
+  "options": [
+    "Alternative splicing",
+    "DNA methylation",
+    "Histone acetylation",
+    "RNA interference"
+  ],
+  "correctIndex": 0,
+  "explanation": "Alternative splicing joins different combinations of exons, allowing one gene to produce multiple protein isoforms.",
+  "subcategory": "Gene Expression"
+},
+{
+  "id": "fs-138",
+  "section": "bio",
+  "question": "A transcription factor binds to an enhancer region located far upstream of a gene. How does this affect gene expression?",
+  "options": [
+    "It blocks RNA polymerase binding",
+    "It increases transcription by facilitating RNA polymerase recruitment",
+    "It causes mRNA degradation",
+    "It prevents ribosome assembly"
+  ],
+  "correctIndex": 1,
+  "explanation": "Enhancers increase transcription by helping recruit RNA polymerase and other transcription machinery, even when located far from the gene.",
+  "subcategory": "Gene Expression"
+},
+{
+  "id": "fs-139",
+  "section": "bio",
+  "question": "Which of the following is a direct effect of DNA methylation at gene promoter regions?",
+  "options": [
+    "Increased gene expression",
+    "Decreased gene expression",
+    "Increased mRNA stability",
+    "Enhanced translation"
+  ],
+  "correctIndex": 1,
+  "explanation": "DNA methylation at promoter regions represses gene transcription, leading to decreased gene expression.",
+  "subcategory": "Gene Expression"
+},
+{
+  "id": "fs-140",
+  "section": "bio",
+  "question": "A cell receives a signal via a G protein-coupled receptor (GPCR) that activates adenylyl cyclase. What is the immediate result?",
+  "options": [
+    "Decrease in cAMP levels",
+    "Increase in cAMP levels",
+    "Activation of phospholipase C",
+    "Direct activation of transcription factors"
+  ],
+  "correctIndex": 1,
+  "explanation": "Adenylyl cyclase converts ATP to cAMP, increasing cAMP levels, which then activates downstream signaling pathways.",
+  "subcategory": "Gene Expression"
+},
+{
+  "id": "fs-141",
+  "section": "bio",
+  "question": "Which protein is responsible for unwinding chromatin to allow transcription machinery access to DNA?",
+  "options": [
+    "DNA polymerase",
+    "Histone acetyltransferase",
+    "RNA polymerase II",
+    "Topoisomerase"
+  ],
+  "correctIndex": 1,
+  "explanation": "Histone acetyltransferases add acetyl groups to histones, loosening chromatin structure and increasing gene accessibility for transcription.",
+  "subcategory": "Gene Expression"
+},
+{
+  "id": "fs-142",
+  "section": "bio",
+  "question": "A cell signaling pathway activates a transcription factor that binds to the promoter of a gene and increases its transcription. This is an example of:",
+  "options": [
+    "Post-translational modification",
+    "Transcriptional regulation",
+    "Epigenetic silencing",
+    "RNA editing"
+  ],
+  "correctIndex": 1,
+  "explanation": "Transcriptional regulation involves factors that increase or decrease gene transcription by interacting with DNA regulatory elements.",
+  "subcategory": "Gene Expression"
+},
+{
+  "id": "fs-143",
+  "section": "bio",
+  "question": "MicroRNAs (miRNAs) regulate gene expression primarily by:",
+  "options": [
+    "Promoting DNA methylation",
+    "Blocking translation or degrading target mRNAs",
+    "Increasing ribosome binding",
+    "Activating transcription factors"
+  ],
+  "correctIndex": 1,
+  "explanation": "miRNAs bind to complementary sequences in mRNAs, leading to translational repression or mRNA degradation.",
+  "subcategory": "Gene Expression"
+},
+{
+  "id": "fs-144",
+  "section": "bio",
+  "question": "A cell exposed to a growth factor activates the MAP kinase pathway, resulting in increased expression of cyclin D. What is the role of cyclin D in the cell cycle?",
+  "options": [
+    "Initiates DNA replication during S phase",
+    "Promotes progression through G1 phase",
+    "Triggers mitosis",
+    "Activates apoptosis"
+  ],
+  "correctIndex": 1,
+  "explanation": "Cyclin D promotes progression through the G1 phase of the cell cycle, preparing the cell for DNA replication.",
+  "subcategory": "Gene Expression"
+},
+{
+  "id": "fs-145",
+  "section": "bio",
+  "question": "A woman who is a carrier for an X-linked recessive disorder and a man who is unaffected have a son. What is the probability that the son will be affected?",
+  "options": [
+    "0%",
+    "25%",
+    "50%",
+    "100%"
+  ],
+  "correctIndex": 2,
+  "explanation": "The mother has one affected X and one normal X; the father provides a Y. Sons inherit their X from their mother, so there is a 50% chance the son will inherit the affected X and be affected.",
+  "subcategory": "Genetics"
+},
+{
+  "id": "fs-146",
+  "section": "bio",
+  "question": "A population is in Hardy-Weinberg equilibrium. If the frequency of the recessive allele (q) is 0.2, what percentage of the population is expected to be homozygous dominant?",
+  "options": [
+    "16%",
+    "36%",
+    "64%",
+    "80%"
+  ],
+  "correctIndex": 2,
+  "explanation": "p + q = 1, so p = 0.8. Homozygous dominant = p² = 0.64 = 64%.",
+  "subcategory": "Genetics"
+},
+{
+  "id": "fs-147",
+  "section": "bio",
+  "question": "A genetic disorder is inherited in an autosomal dominant fashion. What is the probability that a child will inherit the disorder if one parent is heterozygous and the other is homozygous recessive?",
+  "options": [
+    "0%",
+    "25%",
+    "50%",
+    "100%"
+  ],
+  "correctIndex": 2,
+  "explanation": "Heterozygous parent (Aa) × homozygous recessive (aa): 50% chance of Aa (affected), 50% chance of aa (unaffected).",
+  "subcategory": "Genetics"
+},
+{
+  "id": "fs-148",
+  "section": "bio",
+  "question": "A woman with blood type AB and a man with blood type O have a child. What are the possible blood types of their child?",
+  "options": [
+    "A only",
+    "B only",
+    "A or B",
+    "A, B, or AB"
+  ],
+  "correctIndex": 2,
+  "explanation": "Mother: IAIB; Father: ii. Child can inherit IAi (type A) or IBi (type B).",
+  "subcategory": "Genetics"
+},
+{
+  "id": "fs-149",
+  "section": "bio",
+  "question": "A geneticist observes that two genes are inherited together more often than expected by chance. What is the most likely explanation?",
+  "options": [
+    "The genes are on different chromosomes",
+    "The genes are linked and located close together on the same chromosome",
+    "The genes undergo independent assortment",
+    "The genes are subject to random mutation"
+  ],
+  "correctIndex": 1,
+  "explanation": "Genes that are physically close on the same chromosome are linked and tend to be inherited together.",
+  "subcategory": "Genetics"
+},
+{
+  "id": "fs-150",
+  "section": "bio",
+  "question": "A pedigree shows a trait that skips generations and affects males more than females. What is the most likely mode of inheritance?",
+  "options": [
+    "Autosomal dominant",
+    "Autosomal recessive",
+    "X-linked recessive",
+    "Mitochondrial"
+  ],
+  "correctIndex": 2,
+  "explanation": "X-linked recessive traits often skip generations and affect males (who have only one X) more than females.",
+  "subcategory": "Genetics"
+},
+{
+  "id": "fs-151",
+  "section": "bio",
+  "question": "A cross between two heterozygous individuals for a single gene (Aa × Aa) produces offspring. What is the expected genotypic ratio?",
+  "options": [
+    "1:1",
+    "1:2:1",
+    "3:1",
+    "2:1"
+  ],
+  "correctIndex": 1,
+  "explanation": "Aa × Aa yields 1 AA : 2 Aa : 1 aa (genotypic ratio 1:2:1).",
+  "subcategory": "Genetics"
+},
+{
+  "id": "fs-152",
+  "section": "bio",
+  "question": "A child is born with a genetic disorder caused by a deletion of several genes on chromosome 15. This is an example of:",
+  "options": [
+    "Point mutation",
+    "Frameshift mutation",
+    "Chromosomal aberration",
+    "Epigenetic modification"
+  ],
+  "correctIndex": 2,
+  "explanation": "A deletion of several genes is a chromosomal aberration, not a point or frameshift mutation.",
+  "subcategory": "Genetics"
+},
+{
+  "id": "fs-153",
+  "section": "bio",
+  "question": "Which enzyme catalyzes the rate-limiting step of the pentose phosphate pathway?",
+  "options": [
+    "Hexokinase",
+    "Glucose-6-phosphate dehydrogenase",
+    "Phosphofructokinase-1",
+    "Pyruvate kinase"
+  ],
+  "correctIndex": 1,
+  "explanation": "Glucose-6-phosphate dehydrogenase is the rate-limiting enzyme of the pentose phosphate pathway.",
+  "subcategory": "Metabolism"
+},
+{
+  "id": "fs-154",
+  "section": "bio",
+  "question": "During prolonged fasting, which process is primarily responsible for maintaining blood glucose levels?",
+  "options": [
+    "Glycogenolysis",
+    "Gluconeogenesis",
+    "Glycolysis",
+    "Lipolysis"
+  ],
+  "correctIndex": 1,
+  "explanation": "Gluconeogenesis synthesizes glucose from non-carbohydrate sources during prolonged fasting.",
+  "subcategory": "Metabolism"
+},
+{
+  "id": "fs-155",
+  "section": "bio",
+  "question": "Which molecule is the direct electron donor to complex I of the electron transport chain?",
+  "options": [
+    "FADH₂",
+    "NADH",
+    "ATP",
+    "Coenzyme Q"
+  ],
+  "correctIndex": 1,
+  "explanation": "NADH donates electrons to complex I (NADH dehydrogenase) in the electron transport chain.",
+  "subcategory": "Metabolism"
+},
+{
+  "id": "fs-156",
+  "section": "bio",
+  "question": "Which metabolic pathway occurs exclusively in the cytoplasm?",
+  "options": [
+    "Citric acid cycle",
+    "Fatty acid β-oxidation",
+    "Glycolysis",
+    "Electron transport chain"
+  ],
+  "correctIndex": 2,
+  "explanation": "Glycolysis occurs entirely in the cytoplasm; the other pathways are mitochondrial.",
+  "subcategory": "Metabolism"
+},
+{
+  "id": "fs-157",
+  "section": "bio",
+  "question": "Which hormone stimulates lipolysis in adipose tissue during fasting?",
+  "options": [
+    "Insulin",
+    "Glucagon",
+    "Growth hormone",
+    "Thyroid hormone"
+  ],
+  "correctIndex": 1,
+  "explanation": "Glucagon stimulates lipolysis and mobilizes fatty acids during fasting.",
+  "subcategory": "Metabolism"
+},
+{
+  "id": "fs-158",
+  "section": "bio",
+  "question": "Which of the following is a product of anaerobic glycolysis in human muscle cells?",
+  "options": [
+    "Pyruvate",
+    "Lactate",
+    "Acetyl-CoA",
+    "Ethanol"
+  ],
+  "correctIndex": 1,
+  "explanation": "Anaerobic glycolysis produces lactate from pyruvate in human muscle cells.",
+  "subcategory": "Metabolism"
+},
+{
+  "id": "fs-159",
+  "section": "bio",
+  "question": "Which enzyme is activated by insulin to promote glycogen synthesis?",
+  "options": [
+    "Glycogen phosphorylase",
+    "Glycogen synthase",
+    "Phosphorylase kinase",
+    "Glucose-6-phosphatase"
+  ],
+  "correctIndex": 1,
+  "explanation": "Insulin activates glycogen synthase, promoting glycogen synthesis in liver and muscle.",
+  "subcategory": "Metabolism"
+},
+{
+  "id": "fs-160",
+  "section": "bio",
+  "question": "Which process generates the most ATP per molecule of glucose under aerobic conditions?",
+  "options": [
+    "Glycolysis",
+    "Citric acid cycle",
+    "Electron transport chain and oxidative phosphorylation",
+    "Pentose phosphate pathway"
+  ],
+  "correctIndex": 2,
+  "explanation": "The electron transport chain and oxidative phosphorylation generate the majority of ATP from glucose aerobically.",
+  "subcategory": "Metabolism"
+},
+{
+  "id": "fs-161",
+  "section": "bio",
+  "question": "Which metabolic pathway is primarily responsible for producing NADPH for biosynthetic reactions?",
+  "options": [
+    "Glycolysis",
+    "Citric acid cycle",
+    "Pentose phosphate pathway",
+    "Fatty acid β-oxidation"
+  ],
+  "correctIndex": 2,
+  "explanation": "The pentose phosphate pathway generates NADPH, which is used in biosynthesis and antioxidant defense.",
+  "subcategory": "Metabolism"
+},
+{
+  "id": "fs-162",
+  "section": "bio",
+  "question": "Which technique is used to quantify the amount of a specific mRNA in a sample?",
+  "options": [
+    "Western blot",
+    "Northern blot",
+    "Southern blot",
+    "PCR"
+  ],
+  "correctIndex": 1,
+  "explanation": "Northern blotting detects and quantifies specific RNA (usually mRNA) using a labeled probe after gel electrophoresis.",
+  "subcategory": "Molecular Biology Techniques"
+},
+{
+  "id": "fs-163",
+  "section": "bio",
+  "question": "Which technique is used to detect and quantify specific proteins in a sample?",
+  "options": [
+    "Southern blot",
+    "Northern blot",
+    "Western blot",
+    "ELISA"
+  ],
+  "correctIndex": 2,
+  "explanation": "Western blotting uses antibodies to detect specific proteins separated by gel electrophoresis.",
+  "subcategory": "Molecular Biology Techniques"
+},
+{
+  "id": "fs-164",
+  "section": "bio",
+  "question": "Which technique amplifies a specific DNA sequence using cycles of heating and cooling?",
+  "options": [
+    "Gel electrophoresis",
+    "Polymerase chain reaction (PCR)",
+    "ELISA",
+    "Sanger sequencing"
+  ],
+  "correctIndex": 1,
+  "explanation": "PCR uses repeated cycles of denaturation, annealing, and extension to amplify DNA.",
+  "subcategory": "Molecular Biology Techniques"
+},
+{
+  "id": "fs-165",
+  "section": "bio",
+  "question": "Which technique is used to separate DNA fragments by size?",
+  "options": [
+    "Gel electrophoresis",
+    "ELISA",
+    "Western blot",
+    "PCR"
+  ],
+  "correctIndex": 0,
+  "explanation": "Gel electrophoresis separates DNA (or RNA/protein) fragments by size using an electric field.",
+  "subcategory": "Molecular Biology Techniques"
+},
+{
+  "id": "fs-166",
+  "section": "bio",
+  "question": "Which technique is used to determine the nucleotide sequence of DNA?",
+  "options": [
+    "ELISA",
+    "Sanger sequencing",
+    "PCR",
+    "Northern blot"
+  ],
+  "correctIndex": 1,
+  "explanation": "Sanger sequencing uses chain-terminating nucleotides to determine the sequence of DNA.",
+  "subcategory": "Molecular Biology Techniques"
+},
+{
+  "id": "fs-167",
+  "section": "bio",
+  "question": "Which technique is used to detect and quantify proteins or antibodies using antigen-antibody interactions and a color change?",
+  "options": [
+    "ELISA",
+    "PCR",
+    "Southern blot",
+    "Gel electrophoresis"
+  ],
+  "correctIndex": 0,
+  "explanation": "ELISA uses antibodies and colorimetric detection to quantify proteins or antibodies in a sample.",
+  "subcategory": "Molecular Biology Techniques"
+}
   ],
   "passages": [
     {
