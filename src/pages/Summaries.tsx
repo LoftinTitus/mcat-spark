@@ -9,12 +9,30 @@ type Section = "chem" | "bio" | "psych" | "cars" | "all";
 
 const Summaries = () => {
   const [section, setSection] = useState<Section>("all");
+  const [subtopic, setSubtopic] = useState<string>("all");
   const [selectedSummary, setSelectedSummary] = useState<Summary | null>(null);
 
-  const filteredSummaries =
-    section === "all"
-      ? summaries
-      : summaries.filter((s) => s.section === section);
+  // Get unique subtopics for the selected section
+  const availableSubtopics = section === "all"
+    ? Array.from(new Set(summaries.map(s => s.subtopic))).sort()
+    : Array.from(new Set(summaries.filter(s => s.section === section).map(s => s.subtopic))).sort();
+
+  // Filter summaries by section and subtopic
+  const filteredSummaries = summaries.filter(s => {
+    const matchesSection = section === "all" || s.section === section;
+    const matchesSubtopic = subtopic === "all" || s.subtopic === subtopic;
+    return matchesSection && matchesSubtopic;
+  });
+
+  // Reset subtopic when section changes
+  const handleSectionChange = (newSection: Section) => {
+    setSection(newSection);
+    setSubtopic("all");
+  };
+
+  const handleSubtopicChange = (newSubtopic: string) => {
+    setSubtopic(newSubtopic);
+  };
 
   const sections: { id: Section; label: string }[] = [
     { id: "all", label: "All" },
@@ -38,8 +56,11 @@ const Summaries = () => {
 
           {/* Header Section */}
           <div className="mb-8">
-            <div className="mb-3">
+            <div className="mb-3 flex items-center gap-2 flex-wrap">
               <SectionBadge section={selectedSummary.section} />
+              <span className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">
+                {selectedSummary.subtopic}
+              </span>
             </div>
             <h1 className="text-3xl font-bold font-serif mb-2">
               {selectedSummary.topic}
@@ -150,22 +171,59 @@ const Summaries = () => {
 
   return (
     <PageLayout title="Quick Review" subtitle="High-yield topic summaries">
-      <div className="max-w-4xl mx-auto space-y-8">
+      <div className="max-w-5xl mx-auto space-y-6">
         {/* Section Filter */}
-        <div className="flex flex-wrap gap-3 justify-center">
-          {sections.map((s) => (
+        <div className="space-y-2">
+          <label className="text-sm font-medium text-muted-foreground">
+            Section Filter
+          </label>
+          <div className="flex flex-wrap gap-2">
+            {sections.map((s) => (
+              <button
+                key={s.id}
+                onClick={() => handleSectionChange(s.id)}
+                className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
+                  section === s.id
+                    ? "border-primary bg-primary text-primary-foreground"
+                    : "border-border hover:border-muted-foreground"
+                }`}
+              >
+                {s.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Subtopic Filter */}
+        <div className="space-y-2">
+          <label className="text-sm font-medium text-muted-foreground">
+            Topic Filter
+          </label>
+          <div className="flex flex-wrap gap-2">
             <button
-              key={s.id}
-              onClick={() => setSection(s.id)}
-              className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all ${
-                section === s.id
-                  ? "bg-primary text-primary-foreground shadow-md scale-105"
-                  : "bg-card border-2 border-border hover:border-primary/50 hover:scale-105"
+              onClick={() => handleSubtopicChange("all")}
+              className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
+                subtopic === "all"
+                  ? "border-primary bg-primary text-primary-foreground"
+                  : "border-border hover:border-muted-foreground"
               }`}
             >
-              {s.label}
+              All Topics
             </button>
-          ))}
+            {availableSubtopics.map((st) => (
+              <button
+                key={st}
+                onClick={() => handleSubtopicChange(st)}
+                className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
+                  subtopic === st
+                    ? "border-primary bg-primary text-primary-foreground"
+                    : "border-border hover:border-muted-foreground"
+                }`}
+              >
+                {st}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Summary Grid */}
@@ -181,10 +239,15 @@ const Summaries = () => {
               
               <div className="flex items-start justify-between gap-3">
                 <div className="flex-1 min-w-0">
-                  <SectionBadge 
-                    section={summary.section} 
-                    className="text-xs px-3 py-1 mb-3" 
-                  />
+                  <div className="flex items-center gap-2 mb-3 flex-wrap">
+                    <SectionBadge 
+                      section={summary.section} 
+                      className="text-xs px-3 py-1" 
+                    />
+                    <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded">
+                      {summary.subtopic}
+                    </span>
+                  </div>
                   <h3 className="font-bold text-lg mb-1 line-clamp-2 group-hover:text-primary transition-colors">
                     {summary.topic}
                   </h3>
@@ -201,10 +264,10 @@ const Summaries = () => {
         {filteredSummaries.length === 0 && (
           <div className="text-center py-16">
             <p className="text-muted-foreground text-lg mb-2">
-              No summaries found for this section
+              No summaries found for this selection
             </p>
             <p className="text-sm text-muted-foreground">
-              Try selecting a different section above
+              Try selecting different filters above
             </p>
           </div>
         )}

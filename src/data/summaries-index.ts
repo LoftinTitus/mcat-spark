@@ -1,7 +1,8 @@
 export interface Summary {
   id: string;
   section: "chem" | "bio" | "psych" | "cars";
-  topic: string;
+  subtopic: string; // Broader category (e.g., "General Chemistry", "Biochemistry")
+  topic: string; // Specific topic name
   content: string;
 }
 
@@ -19,48 +20,56 @@ export const summaries: Summary[] = [
   {
     id: "chem-acids-bases",
     section: "chem",
+    subtopic: "General Chemistry",
     topic: "Acids and Bases",
     content: chemAcidsBasesContent,
   },
   {
     id: "chem-thermodynamics",
     section: "chem",
+    subtopic: "General Chemistry",
     topic: "Thermodynamics",
     content: chemThermodynamicsContent,
   },
   {
     id: "chem-physics-summary",
     section: "chem",
+    subtopic: "Physics",
     topic: "Physics/Chemistry Summary Equations",
     content: chemPhysicsEquationsContent,
   },
   {
     id: "bio-cell-respiration",
     section: "bio",
+    subtopic: "Biochemistry",
     topic: "Cellular Respiration",
     content: bioCellRespirationContent,
   },
   {
     id: "bio-genetics",
     section: "bio",
+    subtopic: "Molecular Biology",
     topic: "Genetics Essentials",
     content: bioGeneticsContent,
   },
   {
     id: "psych-learning",
     section: "psych",
+    subtopic: "Behavioral Sciences",
     topic: "Learning and Memory",
     content: psychLearningContent,
   },
   {
     id: "psych-social",
     section: "psych",
+    subtopic: "Social Sciences",
     topic: "Social Psychology",
     content: psychSocialContent,
   },
   {
     id: "cars-strategy",
     section: "cars",
+    subtopic: "Test Strategy",
     topic: "CARS Strategy Guide",
     content: carsStrategyContent,
   },
