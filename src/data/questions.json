@@ -3233,16 +3233,1205 @@
   "correctIndex": 0,
   "explanation": "Somatic recombination of V, D, and J gene segments creates antibody diversity.",
   "subcategory": "Immune System"
-}
-
-
-
+},
+{
+  "id": "fs-232",
+  "section": "bio",
+  "question": "Which type of immunity is provided by antibodies produced by B cells?",
+  "options": [
+    "Cell-mediated immunity",
+    "Humoral immunity",
+    "Innate immunity",
+    "Passive immunity"
   ],
+  "correctIndex": 1,
+  "explanation": "Humoral immunity is mediated by antibodies produced by B cells, which bind to pathogens and neutralize them.",
+  "subcategory": "Immune System"
+},
+{
+  "id": "fs-233",
+  "section": "bio",
+  "question": "Which type of T cell is primarily responsible for killing infected or cancerous cells?",
+  "options": [
+    "Helper T cells",
+    "Cytotoxic T cells",
+    "Regulatory T cells",
+    "Memory T cells"
+  ],
+  "correctIndex": 1,
+  "explanation": "Cytotoxic T cells (CD8+ T cells) directly kill infected or cancerous cells by recognizing specific antigens.",
+  "subcategory": "Immune System"
+},
+{
+  "id": "fs-234",
+  "section": "bio",
+  "question": "Which of the following is NOT a function of antibodies?",
+  "options": [
+    "Neutralization of toxins",
+    "Opsonization of pathogens",
+    "Activation of complement system",
+    "Direct destruction of pathogens"
+  ],
+  "correctIndex": 3,
+  "explanation": "Antibodies do not directly destroy pathogens; they mark them for destruction by other immune cells.",
+  "subcategory": "Immune System"
+  },
+  {
+  "id": "fs-235",
+  "section": "bio",
+  "question": "Which type of vaccine contains live attenuated pathogens?",
+  "options": [
+    "Inactivated vaccine",
+    "Subunit vaccine",
+    "Toxoid vaccine",
+    "Live attenuated vaccine"
+  ],
+  "correctIndex": 3,
+  "explanation": "Live attenuated vaccines contain weakened forms of the pathogen that can still replicate but do not cause disease.",
+  "subcategory": "Immune System"
+  },
+    {
+    "id": "fs-232",
+    "section": "psych",
+    "question": "Which type of memory is most susceptible to interference and decay over time?",
+    "options": [
+      "Procedural memory",
+      "Semantic memory",
+      "Episodic memory",
+      "Sensory memory"
+    ],
+    "correctIndex": 2,
+    "explanation": "Episodic memory, which involves personal experiences and events, is highly susceptible to interference and decay compared to procedural and semantic memory.",
+    "subcategory": "Cognition & Memory"
+  },
+  {
+    "id": "fs-233",
+    "section": "psych",
+    "question": "Damage to the hippocampus would most likely impair which cognitive function?",
+    "options": [
+      "Formation of new long-term memories",
+      "Retrieval of procedural skills",
+      "Short-term memory capacity",
+      "Language comprehension"
+    ],
+    "correctIndex": 0,
+    "explanation": "The hippocampus is critical for the formation of new long-term declarative memories; damage impairs this ability.",
+    "subcategory": "Cognition & Memory"
+  },
+  {
+    "id": "fs-234",
+    "section": "psych",
+    "question": "Which phenomenon describes the tendency to better recall items at the beginning and end of a list?",
+    "options": [
+      "Priming effect",
+      "Serial position effect",
+      "Recency effect only",
+      "Chunking"
+    ],
+    "correctIndex": 1,
+    "explanation": "The serial position effect includes both the primacy (beginning) and recency (end) effects in memory recall.",
+    "subcategory": "Cognition & Memory"
+  },
+  {
+    "id": "fs-235",
+    "section": "psych",
+    "question": "Which type of memory is typically preserved in patients with anterograde amnesia?",
+    "options": [
+      "Formation of new episodic memories",
+      "Retrieval of old semantic memories",
+      "Acquisition of new procedural skills",
+      "Formation of new semantic memories"
+    ],
+    "correctIndex": 2,
+    "explanation": "Procedural memory (skills and habits) is often preserved in anterograde amnesia, while formation of new episodic and semantic memories is impaired.",
+    "subcategory": "Cognition & Memory"
+  },
+  {
+    "id": "fs-236",
+    "section": "psych",
+    "question": "Which cognitive bias involves the tendency to search for, interpret, and remember information that confirms one's preexisting beliefs?",
+    "options": [
+      "Anchoring bias",
+      "Confirmation bias",
+      "Availability heuristic",
+      "Representativeness heuristic"
+    ],
+    "correctIndex": 1,
+    "explanation": "Confirmation bias is the tendency to favor information that confirms existing beliefs and ignore contradictory evidence.",
+    "subcategory": "Cognition & Memory"
+  },
+  {
+    "id": "fs-237",
+    "section": "psych",
+    "question": "Which process involves organizing information into meaningful units to improve short-term memory capacity?",
+    "options": [
+      "Encoding",
+      "Retrieval",
+      "Chunking",
+      "Priming"
+    ],
+    "correctIndex": 2,
+    "explanation": "Chunking organizes information into larger, meaningful units, increasing the amount that can be held in short-term memory.",
+    "subcategory": "Cognition & Memory"
+  },
+  {
+    "id": "fs-238",
+    "section": "psych",
+    "question": "Which phenomenon describes the inability to retrieve information due to the presence of similar competing memories?",
+    "options": [
+      "Proactive interference",
+      "Retroactive interference",
+      "Priming",
+      "Rehearsal"
+    ],
+    "correctIndex": 1,
+    "explanation": "Retroactive interference occurs when new information interferes with the retrieval of previously learned information.",
+    "subcategory": "Cognition & Memory"
+  },
+  {
+    "id": "fs-239",
+    "section": "psych",
+    "question": "Which brain region is most closely associated with working memory and executive function?",
+    "options": [
+      "Amygdala",
+      "Prefrontal cortex",
+      "Cerebellum",
+      "Occipital lobe"
+    ],
+    "correctIndex": 1,
+    "explanation": "The prefrontal cortex is essential for working memory, executive function, and decision-making.",
+    "subcategory": "Cognition & Memory"
+  },
+    {
+    "id": "fs-240",
+    "section": "psych",
+    "question": "According to Piaget, which stage is characterized by the development of object permanence?",
+    "options": [
+      "Sensorimotor stage",
+      "Preoperational stage",
+      "Concrete operational stage",
+      "Formal operational stage"
+    ],
+    "correctIndex": 0,
+    "explanation": "Object permanence develops during the sensorimotor stage (birth to ~2 years).",
+    "subcategory": "Developmental Psychology"
+  },
+  {
+    "id": "fs-241",
+    "section": "psych",
+    "question": "Which concept refers to a child's ability to understand that others have thoughts, feelings, and perspectives different from their own?",
+    "options": [
+      "Egocentrism",
+      "Theory of mind",
+      "Conservation",
+      "Assimilation"
+    ],
+    "correctIndex": 1,
+    "explanation": "Theory of mind is the understanding that others have mental states different from one's own.",
+    "subcategory": "Developmental Psychology"
+  },
+  {
+    "id": "fs-242",
+    "section": "psych",
+    "question": "According to Erikson, which psychosocial crisis is faced during adolescence?",
+    "options": [
+      "Trust vs. mistrust",
+      "Autonomy vs. shame and doubt",
+      "Identity vs. role confusion",
+      "Intimacy vs. isolation"
+    ],
+    "correctIndex": 2,
+    "explanation": "Adolescents face the crisis of identity vs. role confusion, developing a sense of self.",
+    "subcategory": "Developmental Psychology"
+  },
+  {
+    "id": "fs-243",
+    "section": "psych",
+    "question": "Which attachment style is characterized by a child who is distressed when the caregiver leaves but is easily comforted upon return?",
+    "options": [
+      "Secure attachment",
+      "Avoidant attachment",
+      "Ambivalent attachment",
+      "Disorganized attachment"
+    ],
+    "correctIndex": 0,
+    "explanation": "Securely attached children are distressed by separation but quickly comforted when the caregiver returns.",
+    "subcategory": "Developmental Psychology"
+  },
+  {
+    "id": "fs-244",
+    "section": "psych",
+    "question": "Which term describes the process by which children learn the norms, values, and behaviors appropriate to their society?",
+    "options": [
+      "Accommodation",
+      "Socialization",
+      "Scaffolding",
+      "Conservation"
+    ],
+    "correctIndex": 1,
+    "explanation": "Socialization is the process of learning societal norms and values.",
+    "subcategory": "Developmental Psychology"
+  },
+  {
+    "id": "fs-245",
+    "section": "psych",
+    "question": "Which developmental milestone is typically achieved during the concrete operational stage?",
+    "options": [
+      "Abstract reasoning",
+      "Object permanence",
+      "Conservation of mass and volume",
+      "Egocentrism"
+    ],
+    "correctIndex": 2,
+    "explanation": "Children in the concrete operational stage (~7-11 years) understand conservation of mass and volume.",
+    "subcategory": "Developmental Psychology"
+  },
+  {
+    "id": "fs-246",
+    "section": "psych",
+    "question": "Which theorist is most closely associated with the concept of the 'zone of proximal development'?",
+    "options": [
+      "Jean Piaget",
+      "Sigmund Freud",
+      "Lev Vygotsky",
+      "Erik Erikson"
+    ],
+    "correctIndex": 2,
+    "explanation": "Lev Vygotsky proposed the zone of proximal development, describing tasks a child can perform with guidance.",
+    "subcategory": "Developmental Psychology"
+  },
+  {
+    "id": "fs-247",
+    "section": "psych",
+    "question": "Which cognitive bias refers to the tendency to search for, interpret, and remember information in a way that confirms one's preexisting beliefs?",
+    "options": [
+      "Confirmation bias",
+      "Anchoring bias",
+      "Hindsight bias",
+      "Self-serving bias"
+    ],
+    "correctIndex": 0,
+    "explanation": "Confirmation bias is the tendency to favor information that confirms existing beliefs.",
+    "subcategory": "Cognition & Memory"
+  },
+  {
+    "id": "fs-248",
+    "section": "psych",
+    "question": "What is the term for the inability to retrieve information from memory, often experienced as a 'tip of the tongue' phenomenon?",
+    "options": [
+      "Proactive interference",
+      "Retroactive interference",
+      "Blocking",
+      "Amnesia"
+    ],
+    "correctIndex": 2,
+    "explanation": "Blocking occurs when information is temporarily inaccessible, often experienced as a tip-of-the-tongue phenomenon.",
+    "subcategory": "Cognition & Memory"
+  },
+  {
+    "id": "fs-249",
+    "section": "psych",
+    "question": "Which type of long-term memory is responsible for storing information about how to perform tasks and skills?",
+    "options": [
+      "Episodic memory",
+      "Semantic memory",
+      "Procedural memory",
+      "Working memory"
+    ],
+    "correctIndex": 2,
+    "explanation": "Procedural memory is a type of long-term memory involved in the learning of skills and tasks.",
+    "subcategory": "Cognition & Memory"
+  },
+  {
+    "id": "fs-250",
+    "section": "psych",
+    "question": "What is the term for the process of strengthening a memory trace through rehearsal or retrieval?",
+    "options": [
+      "Consolidation",
+      "Encoding",
+      "Storage",
+      "Retrieval"
+    ],
+    "correctIndex": 0,
+    "explanation": "Consolidation is the process of stabilizing a memory trace after initial acquisition.",
+    "subcategory": "Cognition & Memory"
+  },
+    {
+    "id": "fs-251",
+    "section": "psych",
+    "question": "Which type of learning occurs when an organism associates a neutral stimulus with an unconditioned stimulus to produce a conditioned response?",
+    "options": [
+      "Operant conditioning",
+      "Classical conditioning",
+      "Observational learning",
+      "Latent learning"
+    ],
+    "correctIndex": 1,
+    "explanation": "Classical conditioning involves pairing a neutral stimulus with an unconditioned stimulus until the neutral stimulus elicits a conditioned response.",
+    "subcategory": "Learning & Conditioning"
+  },
+  {
+    "id": "fs-252",
+    "section": "psych",
+    "question": "In operant conditioning, which schedule of reinforcement produces the highest rate of responding and is most resistant to extinction?",
+    "options": [
+      "Fixed interval",
+      "Fixed ratio",
+      "Variable interval",
+      "Variable ratio"
+    ],
+    "correctIndex": 3,
+    "explanation": "Variable ratio schedules (e.g., gambling) produce high response rates and are most resistant to extinction.",
+    "subcategory": "Learning & Conditioning"
+  },
+  {
+    "id": "fs-253",
+    "section": "psych",
+    "question": "A child observes an adult being rewarded for aggressive behavior and later imitates that behavior. This is an example of:",
+    "options": [
+      "Classical conditioning",
+      "Operant conditioning",
+      "Observational learning",
+      "Habituation"
+    ],
+    "correctIndex": 2,
+    "explanation": "Observational learning (social learning) occurs when behavior is acquired by watching others, especially if the model is rewarded.",
+    "subcategory": "Learning & Conditioning"
+  },
+  {
+    "id": "fs-254",
+    "section": "psych",
+    "question": "Which phenomenon describes the gradual decrease in response to a repeated benign stimulus?",
+    "options": [
+      "Sensitization",
+      "Habituation",
+      "Extinction",
+      "Generalization"
+    ],
+    "correctIndex": 1,
+    "explanation": "Habituation is the process by which repeated exposure to a benign stimulus leads to decreased responsiveness.",
+    "subcategory": "Learning & Conditioning"
+  },
+  {
+    "id": "fs-255",
+    "section": "psych",
+    "question": "In classical conditioning, what is the term for the reappearance of a previously extinguished conditioned response after a rest period?",
+    "options": [
+      "Spontaneous recovery",
+      "Generalization",
+      "Discrimination",
+      "Acquisition"
+    ],
+    "correctIndex": 0,
+    "explanation": "Spontaneous recovery is the sudden reappearance of a conditioned response after extinction and a period of rest.",
+    "subcategory": "Learning & Conditioning"
+  },
+  {
+    "id": "fs-256",
+    "section": "psych",
+    "question": "Which process involves learning to distinguish between similar stimuli and only responding to the conditioned stimulus?",
+    "options": [
+      "Generalization",
+      "Discrimination",
+      "Extinction",
+      "Habituation"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discrimination is learning to respond only to the specific conditioned stimulus and not to similar stimuli.",
+    "subcategory": "Learning & Conditioning"
+  },
+  {
+    "id": "fs-257",
+    "section": "psych",
+    "question": "A rat receives a mild shock every time it presses a lever. As a result, the rat stops pressing the lever. This is an example of:",
+    "options": [
+      "Positive reinforcement",
+      "Negative reinforcement",
+      "Positive punishment",
+      "Negative punishment"
+    ],
+    "correctIndex": 2,
+    "explanation": "Positive punishment involves presenting an aversive stimulus (shock) to decrease a behavior (lever pressing).",
+    "subcategory": "Learning & Conditioning"
+  },
+    {
+    "id": "fs-258",
+    "section": "psych",
+    "question": "According to the Yerkes-Dodson law, optimal performance on a task is most likely achieved at which level of arousal?",
+    "options": [
+      "Very low arousal",
+      "Moderate arousal",
+      "Very high arousal",
+      "Arousal level is unrelated to performance"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Yerkes-Dodson law states that performance is best at moderate levels of arousal; too little or too much arousal impairs performance.",
+    "subcategory": "Motivation & Emotion"
+  },
+  {
+    "id": "fs-259",
+    "section": "psych",
+    "question": "Which theory of motivation emphasizes the role of physiological needs in driving behavior?",
+    "options": [
+      "Drive reduction theory",
+      "Incentive theory",
+      "Cognitive dissonance theory",
+      "Self-determination theory"
+    ],
+    "correctIndex": 0,
+    "explanation": "Drive reduction theory posits that physiological needs create drives that motivate behavior to restore homeostasis.",
+    "subcategory": "Motivation & Emotion"
+  },
+  {
+    "id": "fs-260",
+    "section": "psych",
+    "question": "Which brain structure is most closely associated with the experience of fear?",
+    "options": [
+      "Hippocampus",
+      "Amygdala",
+      "Prefrontal cortex",
+      "Thalamus"
+    ],
+    "correctIndex": 1,
+    "explanation": "The amygdala is critical for processing emotions, especially fear and threat detection.",
+    "subcategory": "Motivation & Emotion"
+  },
+  {
+    "id": "fs-261",
+    "section": "psych",
+    "question": "Which theory of emotion proposes that physiological arousal and cognitive interpretation occur simultaneously to produce emotional experience?",
+    "options": [
+      "James-Lange theory",
+      "Cannon-Bard theory",
+      "Schachter-Singer theory",
+      "Facial feedback hypothesis"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Cannon-Bard theory states that physiological arousal and emotional experience occur simultaneously and independently.",
+    "subcategory": "Motivation & Emotion"
+  },
+  {
+    "id": "fs-262",
+    "section": "psych",
+    "question": "Which hormone is most directly associated with the body's acute stress response?",
+    "options": [
+      "Cortisol",
+      "Epinephrine",
+      "Oxytocin",
+      "Insulin"
+    ],
+    "correctIndex": 1,
+    "explanation": "Epinephrine (adrenaline) is released from the adrenal medulla during acute stress, triggering the fight-or-flight response.",
+    "subcategory": "Motivation & Emotion"
+  },
+  {
+    "id": "fs-263",
+    "section": "psych",
+    "question": "Which concept describes the tendency to attribute one's own success to internal factors and failures to external factors?",
+    "options": [
+      "Fundamental attribution error",
+      "Self-serving bias",
+      "Actor-observer bias",
+      "Just-world hypothesis"
+    ],
+    "correctIndex": 1,
+    "explanation": "Self-serving bias is the tendency to attribute successes to oneself and failures to outside factors.",
+    "subcategory": "Motivation & Emotion"
+  },
+  {
+    "id": "fs-264",
+    "section": "psych",
+    "question": "Which theory of motivation focuses on the pursuit of goals and the satisfaction of psychological needs for autonomy, competence, and relatedness?",
+    "options": [
+      "Drive reduction theory",
+      "Self-determination theory",
+      "Incentive theory",
+      "Maslow's hierarchy of needs"
+    ],
+    "correctIndex": 1,
+    "explanation": "Self-determination theory emphasizes intrinsic motivation and the fulfillment of autonomy, competence, and relatedness.",
+    "subcategory": "Motivation & Emotion"
+  },
+    {
+    "id": "fs-265",
+    "section": "psych",
+    "question": "Which personality theory emphasizes unconscious drives and childhood experiences as determinants of behavior?",
+    "options": [
+      "Trait theory",
+      "Humanistic theory",
+      "Psychoanalytic theory",
+      "Social cognitive theory"
+    ],
+    "correctIndex": 2,
+    "explanation": "Psychoanalytic theory, developed by Freud, focuses on unconscious motives and early childhood experiences.",
+    "subcategory": "Personality"
+  },
+  {
+    "id": "fs-266",
+    "section": "psych",
+    "question": "Which of the following is NOT one of the Big Five personality traits?",
+    "options": [
+      "Openness",
+      "Conscientiousness",
+      "Agreeableness",
+      "Self-efficacy"
+    ],
+    "correctIndex": 3,
+    "explanation": "Self-efficacy is not a Big Five trait; the five are openness, conscientiousness, extraversion, agreeableness, and neuroticism.",
+    "subcategory": "Personality"
+  },
+  {
+    "id": "fs-267",
+    "section": "psych",
+    "question": "According to Maslow's hierarchy of needs, which need must be satisfied before self-actualization can be achieved?",
+    "options": [
+      "Esteem needs",
+      "Physiological needs",
+      "Self-actualization needs",
+      "Cognitive needs"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physiological needs (food, water, shelter) must be met before higher-level needs like self-actualization.",
+    "subcategory": "Personality"
+  },
+  {
+    "id": "fs-268",
+    "section": "psych",
+    "question": "Which theorist is most closely associated with the concept of the 'locus of control'?",
+    "options": [
+      "Carl Rogers",
+      "Sigmund Freud",
+      "Julian Rotter",
+      "Abraham Maslow"
+    ],
+    "correctIndex": 2,
+    "explanation": "Julian Rotter developed the concept of locus of control, describing whether individuals attribute outcomes to internal or external factors.",
+    "subcategory": "Personality"
+  },
+  {
+    "id": "fs-269",
+    "section": "psych",
+    "question": "Which personality theory emphasizes personal growth, free will, and self-concept?",
+    "options": [
+      "Humanistic theory",
+      "Trait theory",
+      "Psychoanalytic theory",
+      "Behaviorist theory"
+    ],
+    "correctIndex": 0,
+    "explanation": "Humanistic theory, associated with Carl Rogers and Abraham Maslow, focuses on self-actualization and personal growth.",
+    "subcategory": "Personality"
+  },
+  {
+    "id": "fs-270",
+    "section": "psych",
+    "question": "Which concept describes the tendency to behave consistently across different situations?",
+    "options": [
+      "Reciprocal determinism",
+      "Trait consistency",
+      "Self-actualization",
+      "Projection"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trait consistency refers to the idea that personality traits lead to stable behavior patterns across situations.",
+    "subcategory": "Personality"
+  },
+  {
+    "id": "fs-271",
+    "section": "psych",
+    "question": "According to Bandura's social cognitive theory, which factor is most important in shaping personality?",
+    "options": [
+      "Unconscious motives",
+      "Reinforcement history",
+      "Observational learning",
+      "Self-actualization"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bandura emphasized observational learning and reciprocal interactions between behavior, cognition, and environment.",
+    "subcategory": "Personality"
+  },
+    {
+    "id": "fs-272",
+    "section": "psych",
+    "question": "Which disorder is characterized by persistent, intrusive thoughts and repetitive behaviors performed to reduce anxiety?",
+    "options": [
+      "Generalized anxiety disorder",
+      "Obsessive-compulsive disorder",
+      "Panic disorder",
+      "Major depressive disorder"
+    ],
+    "correctIndex": 1,
+    "explanation": "Obsessive-compulsive disorder involves obsessions (intrusive thoughts) and compulsions (repetitive behaviors).",
+    "subcategory": "Psychological Disorders"
+  },
+  {
+    "id": "fs-273",
+    "section": "psych",
+    "question": "Which neurotransmitter is most commonly associated with the pathophysiology of schizophrenia?",
+    "options": [
+      "Serotonin",
+      "Acetylcholine",
+      "Dopamine",
+      "GABA"
+    ],
+    "correctIndex": 2,
+    "explanation": "Dopamine dysregulation is strongly implicated in schizophrenia, especially in the mesolimbic pathway.",
+    "subcategory": "Psychological Disorders"
+  },
+  {
+    "id": "fs-274",
+    "section": "psych",
+    "question": "A patient presents with alternating periods of elevated mood and depression. Which diagnosis is most likely?",
+    "options": [
+      "Major depressive disorder",
+      "Bipolar disorder",
+      "Generalized anxiety disorder",
+      "Schizophrenia"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bipolar disorder is characterized by episodes of mania/hypomania and depression.",
+    "subcategory": "Psychological Disorders"
+  },
+  {
+    "id": "fs-275",
+    "section": "psych",
+    "question": "Which disorder is characterized by excessive fear of social situations and avoidance of social interactions?",
+    "options": [
+      "Panic disorder",
+      "Social anxiety disorder",
+      "Specific phobia",
+      "Post-traumatic stress disorder"
+    ],
+    "correctIndex": 1,
+    "explanation": "Social anxiety disorder involves intense fear and avoidance of social or performance situations.",
+    "subcategory": "Psychological Disorders"
+  },
+  {
+    "id": "fs-276",
+    "section": "psych",
+    "question": "Which symptom is most characteristic of dissociative identity disorder?",
+    "options": [
+      "Hallucinations",
+      "Multiple distinct personalities",
+      "Obsessions",
+      "Compulsions"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dissociative identity disorder involves the presence of two or more distinct personality states.",
+    "subcategory": "Psychological Disorders"
+  },
+  {
+    "id": "fs-277",
+    "section": "psych",
+    "question": "Which disorder is characterized by chronic feelings of sadness, loss of interest, and impaired daily functioning for at least two weeks?",
+    "options": [
+      "Major depressive disorder",
+      "Persistent depressive disorder",
+      "Bipolar disorder",
+      "Generalized anxiety disorder"
+    ],
+    "correctIndex": 0,
+    "explanation": "Major depressive disorder requires at least two weeks of depressed mood and loss of interest, with functional impairment.",
+    "subcategory": "Psychological Disorders"
+  },
+  {
+    "id": "fs-278",
+    "section": "psych",
+    "question": "Which personality disorder is characterized by instability in relationships, self-image, and emotions, often with impulsive behavior?",
+    "options": [
+      "Antisocial personality disorder",
+      "Borderline personality disorder",
+      "Narcissistic personality disorder",
+      "Obsessive-compulsive personality disorder"
+    ],
+    "correctIndex": 1,
+    "explanation": "Borderline personality disorder involves instability in relationships, self-image, and affect, with impulsivity.",
+    "subcategory": "Psychological Disorders"
+  },
+    {
+    "id": "fs-279",
+    "section": "psych",
+    "question": "Which sensory receptor type is primarily responsible for detecting changes in light intensity in the retina?",
+    "options": [
+      "Rods",
+      "Cones",
+      "Olfactory receptors",
+      "Hair cells"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rods are highly sensitive to changes in light intensity and are responsible for vision in low-light conditions.",
+    "subcategory": "Sensation & Perception"
+  },
+  {
+    "id": "fs-280",
+    "section": "psych",
+    "question": "Which phenomenon describes the ability to focus on one auditory stimulus while filtering out others in a noisy environment?",
+    "options": [
+      "Sensory adaptation",
+      "Cocktail party effect",
+      "Signal detection",
+      "Feature detection"
+    ],
+    "correctIndex": 1,
+    "explanation": "The cocktail party effect refers to selective attention to a particular stimulus (e.g., a voice) among background noise.",
+    "subcategory": "Sensation & Perception"
+  },
+  {
+    "id": "fs-281",
+    "section": "psych",
+    "question": "Which structure in the ear is responsible for transducing sound waves into neural signals?",
+    "options": [
+      "Tympanic membrane",
+      "Cochlea",
+      "Ossicles",
+      "Semicircular canals"
+    ],
+    "correctIndex": 1,
+    "explanation": "The cochlea contains hair cells that transduce mechanical sound vibrations into electrical signals sent to the brain.",
+    "subcategory": "Sensation & Perception"
+  },
+  {
+    "id": "fs-282",
+    "section": "psych",
+    "question": "Which Gestalt principle explains why we perceive objects as grouped together when they are close to each other?",
+    "options": [
+      "Similarity",
+      "Proximity",
+      "Closure",
+      "Continuity"
+    ],
+    "correctIndex": 1,
+    "explanation": "The principle of proximity states that objects near each other are perceived as belonging to the same group.",
+    "subcategory": "Sensation & Perception"
+  },
+  {
+    "id": "fs-283",
+    "section": "psych",
+    "question": "Which concept describes the minimum stimulus intensity required for detection 50% of the time?",
+    "options": [
+      "Absolute threshold",
+      "Difference threshold",
+      "Sensory adaptation",
+      "Weber's law"
+    ],
+    "correctIndex": 0,
+    "explanation": "The absolute threshold is the minimum intensity at which a stimulus is detected half the time.",
+    "subcategory": "Sensation & Perception"
+  },
+  {
+    "id": "fs-284",
+    "section": "psych",
+    "question": "Which theory explains color vision as the result of three types of cones sensitive to different wavelengths?",
+    "options": [
+      "Opponent-process theory",
+      "Trichromatic theory",
+      "Place theory",
+      "Frequency theory"
+    ],
+    "correctIndex": 1,
+    "explanation": "The trichromatic theory states that color vision is based on three cone types sensitive to red, green, and blue wavelengths.",
+    "subcategory": "Sensation & Perception"
+  },
+  {
+    "id": "fs-285",
+    "section": "psych",
+    "question": "Which phenomenon describes the decreased sensitivity to a constant stimulus over time?",
+    "options": [
+      "Sensory adaptation",
+      "Habituation",
+      "Signal detection",
+      "Priming"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sensory adaptation is the process by which sensory receptors become less responsive to unchanging stimuli.",
+    "subcategory": "Sensation & Perception"
+  },
+  {
+    "id": "fs-286",
+    "section": "psych",
+    "question": "Which part of the brain is primarily responsible for processing visual information?",
+    "options": [
+      "Temporal lobe",
+      "Parietal lobe",
+      "Occipital lobe",
+      "Frontal lobe"
+    ],
+    "correctIndex": 2,
+    "explanation": "The occipital lobe is the main center for visual processing in the brain.",
+    "subcategory": "Sensation & Perception"
+  },
+  {
+    "id": "fs-287",
+    "section": "psych",
+    "question": "Which depth cue relies on the slight difference in images between the two eyes to perceive depth?",
+    "options": [
+      "Monocular cue",
+      "Binocular cue",
+      "Linear perspective",
+      "Texture gradient"
+    ],
+    "correctIndex": 1,
+    "explanation": "Binocular cues, such as retinal disparity, use the differences between the two eyes' views to perceive depth.",
+    "subcategory": "Sensation & Perception"
+  },
+    {
+    "id": "fs-286",
+    "section": "psych",
+    "question": "Which phenomenon describes the tendency for individuals to exert less effort when working in a group compared to when working alone?",
+    "options": [
+      "Group polarization",
+      "Social loafing",
+      "Deindividuation",
+      "Groupthink"
+    ],
+    "correctIndex": 1,
+    "explanation": "Social loafing is the reduction in individual effort when people work in groups.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-287",
+    "section": "psych",
+    "question": "Which concept refers to the tendency to attribute others' behavior to internal characteristics while underestimating situational factors?",
+    "options": [
+      "Self-serving bias",
+      "Fundamental attribution error",
+      "Actor-observer bias",
+      "Just-world hypothesis"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fundamental attribution error is the tendency to overemphasize dispositional factors and underestimate situational influences.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-288",
+    "section": "psych",
+    "question": "Which experiment demonstrated the power of social roles and situational pressures in influencing behavior?",
+    "options": [
+      "Milgram obedience study",
+      "Stanford prison experiment",
+      "Asch conformity experiment",
+      "Bobo doll experiment"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Stanford prison experiment showed how assigned roles and environment can dramatically affect behavior.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-289",
+    "section": "psych",
+    "question": "Which phenomenon describes the tendency for group decisions to become more extreme than the initial inclinations of its members?",
+    "options": [
+      "Groupthink",
+      "Social facilitation",
+      "Group polarization",
+      "Deindividuation"
+    ],
+    "correctIndex": 2,
+    "explanation": "Group polarization is the tendency for group discussion to amplify the group's prevailing attitudes.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-290",
+    "section": "psych",
+    "question": "Which term describes the discomfort experienced when holding conflicting beliefs or behaviors?",
+    "options": [
+      "Cognitive dissonance",
+      "Social facilitation",
+      "Conformity",
+      "Obedience"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cognitive dissonance is the psychological discomfort from holding contradictory beliefs or engaging in conflicting behaviors.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-291",
+    "section": "psych",
+    "question": "Which concept refers to the tendency to perform better on simple tasks and worse on complex tasks in the presence of others?",
+    "options": [
+      "Social facilitation",
+      "Social loafing",
+      "Groupthink",
+      "Group polarization"
+    ],
+    "correctIndex": 0,
+    "explanation": "Social facilitation is the improved performance on simple tasks and impaired performance on complex tasks when others are present.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-292",
+    "section": "psych",
+    "question": "Which term describes the loss of self-awareness and individual accountability in group situations?",
+    "options": [
+      "Deindividuation",
+      "Conformity",
+      "Obedience",
+      "Social loafing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Deindividuation occurs when individuals in a group lose self-awareness and feel less accountable for their actions.",
+    "subcategory": "Social Psychology"
+  },
+    {
+    "id": "fs-293",
+    "section": "psych",
+    "question": "Which sociological perspective focuses on the functions and contributions of social institutions to societal stability?",
+    "options": [
+      "Conflict theory",
+      "Symbolic interactionism",
+      "Structural functionalism",
+      "Social constructionism"
+    ],
+    "correctIndex": 2,
+    "explanation": "Structural functionalism examines how social institutions fulfill necessary functions to maintain social order.",
+    "subcategory": "Sociology"
+  },
+  {
+    "id": "fs-294",
+    "section": "psych",
+    "question": "Which concept describes the process by which individuals learn and internalize the values, beliefs, and norms of their culture?",
+    "options": [
+      "Socialization",
+      "Role strain",
+      "Social mobility",
+      "Cultural lag"
+    ],
+    "correctIndex": 0,
+    "explanation": "Socialization is the lifelong process of learning and internalizing cultural norms and values.",
+    "subcategory": "Sociology"
+  },
+  {
+    "id": "fs-295",
+    "section": "psych",
+    "question": "Which theory emphasizes power differentials and competition for resources as driving forces in society?",
+    "options": [
+      "Symbolic interactionism",
+      "Conflict theory",
+      "Structural functionalism",
+      "Rational choice theory"
+    ],
+    "correctIndex": 1,
+    "explanation": "Conflict theory focuses on inequality, power struggles, and competition for resources.",
+    "subcategory": "Sociology"
+  },
+  {
+    "id": "fs-296",
+    "section": "psych",
+    "question": "Which concept refers to the expected behaviors, obligations, and privileges attached to a particular social status?",
+    "options": [
+      "Role",
+      "Norm",
+      "Value",
+      "Culture"
+    ],
+    "correctIndex": 0,
+    "explanation": "A role is the set of expected behaviors and responsibilities associated with a social status.",
+    "subcategory": "Sociology"
+  },
+  {
+    "id": "fs-297",
+    "section": "psych",
+    "question": "Which term describes the movement of individuals or groups within a social hierarchy?",
+    "options": [
+      "Socialization",
+      "Social mobility",
+      "Role conflict",
+      "Cultural diffusion"
+    ],
+    "correctIndex": 1,
+    "explanation": "Social mobility refers to changes in social position within a hierarchy.",
+    "subcategory": "Sociology"
+  },
+  {
+    "id": "fs-298",
+    "section": "psych",
+    "question": "Which concept describes the tendency for social relationships to be formed between individuals who are similar in social characteristics?",
+    "options": [
+      "Homophily",
+      "Social capital",
+      "Role strain",
+      "Cultural lag"
+    ],
+    "correctIndex": 0,
+    "explanation": "Homophily is the tendency for people to associate with others who are similar to themselves.",
+    "subcategory": "Sociology"
+  },
+  {
+    "id": "fs-299",
+    "section": "psych",
+    "question": "Which sociological theory focuses on the meanings and interpretations individuals attach to symbols and interactions?",
+    "options": [
+      "Structural functionalism",
+      "Conflict theory",
+      "Symbolic interactionism",
+      "Social constructionism"
+    ],
+    "correctIndex": 2,
+    "explanation": "Symbolic interactionism examines how individuals create and interpret symbolic meanings in social interactions.",
+    "subcategory": "Sociology"
+  },
+
+  {
+    "id": "fs-300",
+    "section": "psych",
+    "question": "Which term describes the loss of self-awareness and individual accountability in group situations?",
+    "options": [
+      "Deindividuation",
+      "Conformity",
+      "Obedience",
+      "Social loafing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Deindividuation occurs when individuals in a group lose self-awareness and feel less accountable for their actions.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-301",
+    "section": "psych",
+    "question": "Which phenomenon occurs when individuals exert less effort in a group setting compared to when they are working alone?",
+    "options": [
+      "Social facilitation",
+      "Social loafing",
+      "Groupthink",
+      "Deindividuation"
+    ],
+    "correctIndex": 1,
+    "explanation": "Social loafing refers to the tendency for individuals to put forth less effort when working in a group than when working alone.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-302",
+    "section": "psych",
+    "question": "Which term refers to the tendency for group members to prioritize consensus and harmony over critical evaluation of ideas?",
+    "options": [
+      "Groupthink",
+      "Deindividuation",
+      "Social facilitation",
+      "Social loafing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Groupthink is a psychological phenomenon where the desire for group cohesion leads to poor decision-making.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-303",
+    "section": "psych",
+    "question": "Which concept describes the enhancement of individual performance when working in the presence of others?",
+    "options": [
+      "Social facilitation",
+      "Social loafing",
+      "Group polarization",
+      "Deindividuation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Social facilitation refers to the tendency for people to perform better on simple tasks when in the presence of others.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-304",
+    "section": "psych",
+    "question": "Which term describes the process by which individuals adopt the behaviors, attitudes, and values of a group?",
+    "options": [
+      "Conformity",
+      "Compliance",
+      "Obedience",
+      "Socialization"
+    ],
+    "correctIndex": 0,
+    "explanation": "Conformity is the act of matching attitudes, beliefs, and behaviors to group norms.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-305",
+    "section": "psych",
+    "question": "Which phenomenon occurs when individuals change their behavior to align with the requests or demands of others?",
+    "options": [
+      "Conformity",
+      "Compliance",
+      "Obedience",
+      "Socialization"
+    ],
+    "correctIndex": 1,
+    "explanation": "Compliance involves changing one's behavior in response to a direct request from another person.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-306",
+    "section": "psych",
+    "question": "Which term refers to the act of following direct commands or orders from an authority figure?",
+    "options": [
+      "Conformity",
+      "Compliance",
+      "Obedience",
+      "Socialization"
+    ],
+    "correctIndex": 2,
+    "explanation": "Obedience is the act of following orders or commands from an authority figure.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-307",
+    "section": "psych",
+    "question": "Which concept describes the process by which individuals learn and internalize the norms and values of their culture?",
+    "options": [
+      "Socialization",
+      "Acculturation",
+      "Assimilation",
+      "Enculturation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Socialization is the lifelong process through which individuals learn and adopt the norms and values of their culture.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-308",
+    "section": "psych",
+    "question": "Which term refers to the process of adapting to a new culture while retaining elements of one's original culture?",
+    "options": [
+      "Socialization",
+      "Acculturation",
+      "Assimilation",
+      "Enculturation"
+    ],
+    "correctIndex": 1,
+    "explanation": "Acculturation is the process of cultural change and adaptation that occurs when individuals from one culture come into contact with another culture.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-309",
+    "section": "psych",
+    "question": "Which concept describes the process by which individuals adopt the cultural norms of a dominant or host culture?",
+    "options": [
+      "Socialization",
+      "Acculturation",
+      "Assimilation",
+      "Enculturation"
+    ],
+    "correctIndex": 2,
+    "explanation": "Assimilation is the process by which individuals or groups adopt the cultural norms of a dominant or host culture, often losing their original cultural identity.",
+    "subcategory": "Social Psychology"
+  },
+  {
+    "id": "fs-310",
+    "section": "psych",
+    "question": "Which term refers to the process of learning and adopting the cultural practices of one's own culture?",
+    "options": [
+      "Socialization",
+      "Acculturation",
+      "Assimilation",
+      "Enculturation"
+    ],
+    "correctIndex": 3,
+    "explanation": "Enculturation is the process by which individuals learn and adopt the cultural practices of their own culture.",
+    "subcategory": "Social Psychology"
+  }
+
+],
   "passages": [
     {
       "id": "passage-1",
-      "section": "bio",
-      "title": "Enzyme Kinetics Study",
+      "section": "chem",
+      "title": "Enzyme Inhibition Analysis",
       "passage": "Researchers studied an enzyme that catalyzes the conversion of substrate X to product Y. They measured initial reaction velocities at various substrate concentrations in the presence and absence of an unknown inhibitor.\n\nIn the absence of inhibitor, the enzyme showed a Km of 2.5 mM and a Vmax of 100 μmol/min. When the inhibitor was added at a concentration of 1 mM, the apparent Km increased to  5.0 mM while Vmax remained unchanged at 100 μmol/min.\n\nThe researchers also noted that adding excess substrate could overcome the inhibitory effect, restoring the reaction rate to near-normal levels.",
       "questions": [
         {
