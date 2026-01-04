@@ -1119,6 +1119,454 @@
       "correctIndex": 3,
       "explanation": "Quaternary structure refers to the arrangement of multiple polypeptide subunits in a multi-subunit protein complex (e.g., hemoglobin with 4 subunits). Primary structure is the amino acid sequence, secondary structure includes α-helices and β-sheets, and tertiary structure is the 3D folding of a single chain.",
       "subcategory": "Amino Acids & Proteins"
+    },
+    {
+      "id": "fs-81",
+      "section": "bio",
+      "question": "Lactose intolerance results from a deficiency in lactase, which normally cleaves lactose into glucose and galactose. What type of glycosidic bond does lactase hydrolyze?",
+      "options": [
+        "α-1,4 glycosidic bond",
+        "β-1,4 glycosidic bond",
+        "α-1,6 glycosidic bond",
+        "β-1,6 glycosidic bond"
+      ],
+      "correctIndex": 1,
+      "explanation": "Lactose is composed of galactose and glucose linked by a β-1,4 glycosidic bond. Lactase specifically hydrolyzes this β-1,4 linkage. Without sufficient lactase, lactose cannot be digested, leading to lactose intolerance symptoms.",
+      "subcategory": "Carbohydrates"
+    },
+    {
+      "id": "fs-82",
+      "section": "bio",
+      "question": "A researcher treats cells with tunicamycin, which inhibits N-linked glycosylation. Which organelle's function would be most directly affected?",
+      "options": [
+        "Mitochondria",
+        "Peroxisome",
+        "Endoplasmic reticulum",
+        "Lysosome"
+      ],
+      "correctIndex": 2,
+      "explanation": "N-linked glycosylation occurs in the endoplasmic reticulum (ER), where oligosaccharides are attached to asparagine residues of nascent proteins. Tunicamycin blocks the first step of this process, directly affecting ER function and protein folding. Further modifications occur in the Golgi.",
+      "subcategory": "Carbohydrates"
+    },
+    {
+      "id": "fs-83",
+      "section": "bio",
+      "question": "Which structural feature explains why humans can digest starch but not cellulose, despite both being glucose polymers?",
+      "options": [
+        "Starch has a lower molecular weight than cellulose",
+        "Starch contains α-glycosidic bonds, while cellulose contains β-glycosidic bonds",
+        "Starch is branched, while cellulose is linear",
+        "Starch is hydrophilic, while cellulose is hydrophobic"
+      ],
+      "correctIndex": 1,
+      "explanation": "Humans possess α-amylase and other enzymes that can hydrolyze α-1,4 and α-1,6 glycosidic bonds in starch, but lack cellulase enzymes to break β-1,4 glycosidic bonds in cellulose. The β-configuration creates a rigid, linear structure resistant to human digestive enzymes.",
+      "subcategory": "Carbohydrates"
+    },
+    {
+      "id": "fs-84",
+      "section": "bio",
+      "question": "During the fed state, excess glucose is stored as glycogen in the liver and muscle. What is the primary purpose of the α-1,6 branching in glycogen structure?",
+      "options": [
+        "To increase water solubility and prevent precipitation",
+        "To allow faster mobilization by increasing the number of terminal residues",
+        "To prevent degradation by glycogen phosphorylase",
+        "To enable transport across cell membranes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Branching creates multiple non-reducing ends where glycogen phosphorylase can simultaneously act, allowing rapid glucose mobilization during energy demands. While branching also increases solubility, the primary functional advantage is the exponential increase in sites for simultaneous degradation and synthesis.",
+      "subcategory": "Carbohydrates"
+    },
+    {
+      "id": "fs-85",
+      "section": "bio",
+      "question": "A monosaccharide is classified as a D-sugar if:",
+      "options": [
+        "It rotates plane-polarized light to the right (dextrorotatory)",
+        "The hydroxyl group on the penultimate carbon is on the right in a Fischer projection",
+        "It forms a ring structure with the hydroxyl group pointing upward",
+        "It has the same configuration as D-glucose at all chiral centers"
+      ],
+      "correctIndex": 1,
+      "explanation": "D/L designation is based on the configuration of the chiral center farthest from the carbonyl group (penultimate carbon). If the -OH is on the right in Fischer projection, it's a D-sugar. This is unrelated to optical rotation (+/- or d/l), which describes a different property.",
+      "subcategory": "Carbohydrates"
+    },
+    {
+      "id": "fs-86",
+      "section": "bio",
+      "question": "Glucose and mannose are epimers that differ only at C-2. In a physiological context, which enzyme would most likely distinguish between these two sugars?",
+      "options": [
+        "Hexokinase, which phosphorylates both equally",
+        "A specific glucose transporter (GLUT), which has stereospecific binding",
+        "Aldolase, which cleaves fructose-1,6-bisphosphate",
+        "Glycogen synthase, which polymerizes glucose residues"
+      ],
+      "correctIndex": 1,
+      "explanation": "GLUT transporters have stereospecific binding sites that recognize the precise 3D configuration of glucose. Even a single stereochemical difference (as in epimers) significantly affects binding affinity. Hexokinase has broad specificity, while aldolase and glycogen synthase work with different substrates/contexts.",
+      "subcategory": "Carbohydrates"
+    },
+    {
+      "id": "fs-87",
+      "section": "bio",
+      "question": "Reducing sugars can be oxidized by Benedict's reagent, producing a color change. Which of the following would NOT give a positive Benedict's test?",
+      "options": [
+        "Glucose",
+        "Fructose",
+        "Maltose",
+        "Sucrose"
+      ],
+      "correctIndex": 3,
+      "explanation": "Sucrose is a non-reducing sugar because the glycosidic bond (α-1,2) connects the anomeric carbons of both glucose and fructose, preventing the formation of free aldehyde or ketone groups needed for reduction. Glucose, fructose, and maltose all have free or potentially free anomeric carbons.",
+      "subcategory": "Carbohydrates"
+    },
+    {
+      "id": "fs-88",
+      "section": "bio",
+      "question": "Glycoproteins on the cell surface often contain sialic acid residues at their terminal positions. The presence of sialic acid primarily affects:",
+      "options": [
+        "The protein's ability to fold properly in the ER",
+        "The glycoprotein's charge and recognition by lectins",
+        "The rate of protein synthesis in ribosomes",
+        "The protein's hydrophobic interactions within membranes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sialic acid (N-acetylneuraminic acid) carries a negative charge at physiological pH, affecting the cell surface charge and serving as recognition signals for lectins and other carbohydrate-binding proteins. This is crucial for cell-cell recognition, immune function, and preventing protein degradation.",
+      "subcategory": "Carbohydrates"
+    },
+    {
+      "id": "fs-89",
+      "section": "bio",
+      "question": "A cell is treated with colchicine, which prevents microtubule polymerization. Which cellular process would be most directly affected?",
+      "options": [
+        "DNA replication in S phase",
+        "Chromosome segregation during mitosis",
+        "Synthesis of membrane proteins in the ER",
+        "ATP production in mitochondria"
+      ],
+      "correctIndex": 1,
+      "explanation": "Colchicine disrupts microtubules, which form the mitotic spindle essential for chromosome segregation during mitosis. Without functional spindle fibers, chromosomes cannot properly align and separate, arresting cells in metaphase. This is why colchicine is used in cancer treatment and karyotyping.",
+      "subcategory": "Cell Biology"
+    },
+    {
+      "id": "fs-90",
+      "section": "bio",
+      "question": "Proteins destined for secretion contain a signal sequence that directs them to the endoplasmic reticulum. At what stage is this signal sequence recognized?",
+      "options": [
+        "After the complete protein is synthesized in the cytoplasm",
+        "During translation, as the protein emerges from the ribosome",
+        "After the protein is folded in the cytoplasm",
+        "Only after post-translational modifications are complete"
+      ],
+      "correctIndex": 1,
+      "explanation": "The signal recognition particle (SRP) recognizes the signal sequence as it emerges from the ribosome during translation, halting synthesis temporarily. The ribosome-SRP complex then docks at the ER membrane, allowing co-translational translocation. This ensures secretory proteins enter the ER lumen during synthesis.",
+      "subcategory": "Cell Biology"
+    },
+    {
+      "id": "fs-91",
+      "section": "bio",
+      "question": "A researcher observes that a mutation in a lysosomal enzyme causes the enzyme to be secreted from the cell instead of being targeted to lysosomes. What is the most likely defect?",
+      "options": [
+        "The enzyme lacks a signal sequence for ER entry",
+        "The enzyme is not properly folded in the ER",
+        "The enzyme lacks mannose-6-phosphate tags",
+        "The enzyme cannot bind to ribosomes"
+      ],
+      "correctIndex": 2,
+      "explanation": "Lysosomal enzymes are tagged with mannose-6-phosphate (M6P) in the Golgi, which is recognized by M6P receptors that target them to lysosomes. Without M6P tags, the enzyme follows the default secretory pathway and is released from the cell. This occurs in I-cell disease (inclusion cell disease).",
+      "subcategory": "Cell Biology"
+    },
+    {
+      "id": "fs-92",
+      "section": "bio",
+      "question": "During which phase of mitosis do sister chromatids separate and move to opposite poles of the cell?",
+      "options": [
+        "Prophase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
+      "correctIndex": 2,
+      "explanation": "Anaphase is characterized by the separation of sister chromatids at the centromere and their migration to opposite poles via spindle fiber shortening. Prophase involves chromosome condensation, metaphase involves alignment at the metaphase plate, and telophase involves nuclear envelope reformation.",
+      "subcategory": "Cell Biology"
+    },
+    {
+      "id": "fs-93",
+      "section": "bio",
+      "question": "Gap junctions allow direct cytoplasmic communication between adjacent cells. Which molecules can typically pass through gap junctions?",
+      "options": [
+        "Large proteins like antibodies",
+        "Small ions and metabolites like Ca²⁺ and cAMP",
+        "mRNA molecules for protein synthesis",
+        "Membrane phospholipids"
+      ],
+      "correctIndex": 1,
+      "explanation": "Gap junctions allow passage of small molecules (typically <1000 Da) including ions (Ca²⁺, K⁺), second messengers (cAMP, IP₃), and small metabolites. Large proteins, nucleic acids, and membrane components cannot pass through. This enables electrical and metabolic coupling between cells.",
+      "subcategory": "Cell Biology"
+    },
+    {
+      "id": "fs-94",
+      "section": "bio",
+      "question": "The sodium-potassium pump (Na⁺/K⁺-ATPase) transports 3 Na⁺ out and 2 K⁺ into the cell per ATP hydrolyzed. This pump is best classified as:",
+      "options": [
+        "A channel protein mediating facilitated diffusion",
+        "A symporter using secondary active transport",
+        "An antiporter using primary active transport",
+        "A uniporter using passive transport"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Na⁺/K⁺-ATPase is an antiporter (exchanges different ions in opposite directions) that uses primary active transport (directly uses ATP). It transports both ions against their concentration gradients, maintaining the electrochemical gradient essential for nerve impulses, muscle contraction, and secondary active transport.",
+      "subcategory": "Cell Biology"
+    },
+    {
+      "id": "fs-95",
+      "section": "bio",
+      "question": "A cell contains abundant rough ER, a well-developed Golgi apparatus, and numerous secretory vesicles. This cell is most likely a:",
+      "options": [
+        "Adipocyte specialized for lipid storage",
+        "Pancreatic β-cell secreting insulin",
+        "Red blood cell transporting oxygen",
+        "Skeletal muscle cell generating force"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cells with extensive rough ER, Golgi, and secretory vesicles are specialized for protein synthesis and secretion. Pancreatic β-cells produce and secrete insulin (a protein hormone) and exhibit these features. Adipocytes store lipids, RBCs lack organelles, and muscle cells have abundant mitochondria and contractile proteins.",
+      "subcategory": "Cell Biology"
+    },
+    {
+      "id": "fs-96",
+      "section": "bio",
+      "question": "Apoptosis differs from necrosis in that apoptosis:",
+      "options": [
+        "Results from external injury and causes inflammation",
+        "Is a regulated process involving caspase activation and minimal inflammation",
+        "Causes cell swelling and membrane rupture",
+        "Occurs only in response to infection"
+      ],
+      "correctIndex": 1,
+      "explanation": "Apoptosis is programmed cell death involving caspase activation, DNA fragmentation, cell shrinkage, and formation of apoptotic bodies that are phagocytosed without inflammation. Necrosis is uncontrolled cell death from injury, causing cell swelling, membrane rupture, and inflammation. Apoptosis is essential for development and homeostasis.",
+      "subcategory": "Cell Biology"
+    },
+    {
+      "id": "fs-97",
+      "section": "bio",
+      "question": "During DNA replication, the leading strand is synthesized continuously while the lagging strand is synthesized discontinuously. This difference exists because:",
+      "options": [
+        "DNA polymerase can only add nucleotides in the 5' to 3' direction",
+        "The leading strand template is more stable than the lagging strand template",
+        "Different DNA polymerases are used for each strand",
+        "Only the leading strand requires RNA primers"
+      ],
+      "correctIndex": 0,
+      "explanation": "DNA polymerase can only add nucleotides in the 5' to 3' direction. Since the two strands are antiparallel, the leading strand (3' to 5' template) can be synthesized continuously toward the replication fork, while the lagging strand (5' to 3' template) must be synthesized in fragments (Okazaki fragments) away from the fork.",
+      "subcategory": "DNA & RNA"
+    },
+    {
+      "id": "fs-98",
+      "section": "bio",
+      "question": "A researcher treats DNA with bisulfite, which converts unmethylated cytosine to uracil but leaves methylated cytosine unchanged. This technique is primarily used to study:",
+      "options": [
+        "Point mutations in protein-coding genes",
+        "DNA methylation patterns and epigenetic modifications",
+        "The rate of DNA replication",
+        "The structure of RNA secondary structures"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bisulfite sequencing is a gold-standard method for analyzing DNA methylation patterns. After bisulfite treatment, unmethylated cytosines appear as thymine in sequencing, while methylated cytosines remain as cytosine. This allows mapping of CpG methylation, which is crucial for understanding gene regulation and epigenetic inheritance.",
+      "subcategory": "DNA & RNA"
+    },
+    {
+      "id": "fs-99",
+      "section": "bio",
+      "question": "Telomerase activity is high in germ cells and cancer cells but low in most somatic cells. Telomerase functions to:",
+      "options": [
+        "Repair double-strand breaks in DNA",
+        "Remove RNA primers during replication",
+        "Extend the 3' ends of chromosomes by adding repetitive sequences",
+        "Proofread newly synthesized DNA for errors"
+      ],
+      "correctIndex": 2,
+      "explanation": "Telomerase is a reverse transcriptase that adds repetitive sequences (TTAGGG in humans) to the 3' ends of chromosomes, solving the end-replication problem. Without telomerase, telomeres shorten with each division. High telomerase activity allows germ cells and cancer cells to divide indefinitely, while its absence in somatic cells limits their replicative lifespan.",
+      "subcategory": "DNA & RNA"
+    },
+    {
+      "id": "fs-100",
+      "section": "bio",
+      "question": "Alternative splicing of pre-mRNA allows:",
+      "options": [
+        "One gene to produce multiple protein variants",
+        "DNA to be replicated more quickly",
+        "The removal of introns to occur in the nucleus only",
+        "Increased stability of mRNA in the cytoplasm"
+      ],
+      "correctIndex": 0,
+      "explanation": "Alternative splicing allows different combinations of exons to be joined together from the same pre-mRNA, producing multiple protein isoforms from a single gene. This greatly expands proteomic diversity—humans have ~20,000 genes but >100,000 proteins. It's regulated in tissue-specific and developmental-specific manners.",
+      "subcategory": "DNA & RNA"
+    },
+    {
+      "id": "fs-101",
+      "section": "bio",
+      "question": "RNA interference (RNAi) using small interfering RNAs (siRNAs) leads to gene silencing by:",
+      "options": [
+        "Binding to DNA and preventing transcription",
+        "Degrading complementary mRNA molecules",
+        "Inhibiting ribosome assembly on mRNA",
+        "Promoting methylation of histone proteins"
+      ],
+      "correctIndex": 1,
+      "explanation": "In RNAi, siRNAs (21-23 nucleotides) are incorporated into the RNA-induced silencing complex (RISC), which uses the siRNA as a guide to find and cleave complementary mRNA molecules. This post-transcriptional gene silencing mechanism is used naturally for defense and regulation, and therapeutically for gene knockdown.",
+      "subcategory": "DNA & RNA"
+    },
+    {
+      "id": "fs-102",
+      "section": "bio",
+      "question": "The wobble hypothesis explains why:",
+      "options": [
+        "Multiple codons can specify the same amino acid",
+        "DNA strands can separate during replication",
+        "Proteins can have multiple conformations",
+        "Some mutations are silent while others are not"
+      ],
+      "correctIndex": 0,
+      "explanation": "The wobble hypothesis states that the third position of the codon (3' end) can form non-Watson-Crick base pairs with the first position of the anticodon (5' end), allowing one tRNA to recognize multiple codons. This explains degeneracy of the genetic code—why multiple codons specify the same amino acid (e.g., UCU, UCC, UCA, UCG all code for serine).",
+      "subcategory": "DNA & RNA"
+    },
+    {
+      "id": "fs-103",
+      "section": "bio",
+      "question": "In eukaryotes, which RNA polymerase is responsible for transcribing genes encoding ribosomal RNA (rRNA)?",
+      "options": [
+        "RNA polymerase I",
+        "RNA polymerase II",
+        "RNA polymerase III",
+        "RNA polymerase IV"
+      ],
+      "correctIndex": 0,
+      "explanation": "Eukaryotes have three RNA polymerases with distinct roles: RNA Pol I transcribes most rRNA genes (18S, 28S, 5.8S); RNA Pol II transcribes mRNA, most non-coding RNAs, and snRNAs; RNA Pol III transcribes tRNA, 5S rRNA, and other small RNAs. RNA Pol I products are the most abundant cellular RNAs.",
+      "subcategory": "DNA & RNA"
+    },
+    {
+      "id": "fs-104",
+      "section": "bio",
+      "question": "A mutation in a splice site causes an intron to be retained in the mature mRNA. What is the most likely consequence?",
+      "options": [
+        "The mutation will have no effect since introns don't code for protein",
+        "The protein will be longer but functional",
+        "A frameshift or premature stop codon will likely result in a nonfunctional protein",
+        "The mRNA will be translated more efficiently"
+      ],
+      "correctIndex": 2,
+      "explanation": "Retained introns typically contain stop codons and/or cause frameshift mutations since introns are not in-frame with exons. This usually results in premature termination, producing a truncated, nonfunctional protein. The abnormal mRNA may also be degraded by nonsense-mediated decay (NMD). Such mutations can cause genetic diseases.",
+      "subcategory": "DNA & RNA"
+    },
+    {
+      "id": "fs-105",
+      "section": "bio",
+      "question": "Helicase unwinds the DNA double helix during replication. Which enzyme prevents the rewinding of separated DNA strands and relieves tension ahead of the replication fork?",
+      "options": [
+        "DNA ligase",
+        "Single-strand binding proteins (SSB) and topoisomerase",
+        "Primase",
+        "DNA polymerase III"
+      ],
+      "correctIndex": 1,
+      "explanation": "Single-strand binding proteins (SSB) bind to separated DNA strands to prevent them from re-annealing. Topoisomerase (specifically DNA gyrase in prokaryotes) relieves the tension and supercoiling ahead of the replication fork by making transient breaks in the DNA. Both are essential for efficient replication.",
+      "subcategory": "DNA Replication"
+    },
+    {
+      "id": "fs-106",
+      "section": "bio",
+      "question": "During DNA replication in eukaryotes, Okazaki fragments on the lagging strand are typically:",
+      "options": [
+        "1000-2000 nucleotides long and joined by DNA ligase after primer removal",
+        "100-200 nucleotides long and joined by DNA ligase after primer removal",
+        "Synthesized continuously without primers",
+        "Only formed during DNA repair, not normal replication"
+      ],
+      "correctIndex": 1,
+      "explanation": "In eukaryotes, Okazaki fragments are 100-200 nucleotides long (1000-2000 in prokaryotes). Each fragment requires an RNA primer, which is removed by RNase H or FEN1. DNA polymerase δ fills the gaps, and DNA ligase I seals the nicks to create a continuous strand.",
+      "subcategory": "DNA Replication"
+    },
+    {
+      "id": "fs-107",
+      "section": "bio",
+      "question": "DNA polymerase III has 3' to 5' exonuclease activity. This activity allows the enzyme to:",
+      "options": [
+        "Synthesize DNA in the reverse direction",
+        "Remove RNA primers from Okazaki fragments",
+        "Proofread and remove incorrectly paired nucleotides",
+        "Unwind the DNA double helix"
+      ],
+      "correctIndex": 2,
+      "explanation": "The 3' to 5' exonuclease activity provides proofreading capability. When DNA polymerase incorporates an incorrect nucleotide, it can reverse direction, remove the mismatched base, and then resume synthesis in the correct 5' to 3' direction. This reduces the error rate from ~1/10⁵ to ~1/10⁷ per base.",
+      "subcategory": "DNA Replication"
+    },
+    {
+      "id": "fs-108",
+      "section": "bio",
+      "question": "Why does DNA replication require an RNA primer rather than beginning DNA synthesis de novo?",
+      "options": [
+        "DNA polymerase requires a 3'-OH group to add nucleotides and cannot initiate synthesis",
+        "RNA primers are more stable than DNA primers",
+        "DNA polymerase can only recognize RNA sequences",
+        "RNA primers prevent mutations during replication"
+      ],
+      "correctIndex": 0,
+      "explanation": "DNA polymerases can only extend existing nucleotide chains—they require a free 3'-OH group to add new nucleotides. Primase synthesizes short RNA primers (~10 nucleotides) that provide this 3'-OH group. DNA polymerase then extends from the primer. This is why primase is essential for both leading and lagging strand synthesis.",
+      "subcategory": "DNA Replication"
+    },
+    {
+      "id": "fs-109",
+      "section": "bio",
+      "question": "Replication of linear eukaryotic chromosomes presents the 'end-replication problem.' Which statement best describes this problem?",
+      "options": [
+        "The 5' ends of linear chromosomes cannot be fully replicated after primer removal",
+        "Telomeres prevent DNA polymerase from accessing chromosome ends",
+        "Linear chromosomes replicate more slowly than circular chromosomes",
+        "DNA ligase cannot seal the ends of linear chromosomes"
+      ],
+      "correctIndex": 0,
+      "explanation": "When the terminal RNA primer on the lagging strand is removed, DNA polymerase cannot fill the gap because it requires a 3'-OH to extend from. This results in progressive shortening of the 5' end with each replication cycle. Telomerase solves this in germ cells and stem cells by adding repetitive sequences to the 3' overhang.",
+      "subcategory": "DNA Replication"
+    },
+    {
+      "id": "fs-110",
+      "section": "bio",
+      "question": "In E. coli, the origin of replication (oriC) is recognized and bound by which protein to initiate DNA replication?",
+      "options": [
+        "Helicase",
+        "DnaA protein",
+        "DNA polymerase I",
+        "RNA polymerase"
+      ],
+      "correctIndex": 1,
+      "explanation": "DnaA protein recognizes and binds to specific sequences in oriC, causing localized DNA unwinding. This recruits helicase (DnaB in E. coli), which further unwinds the DNA. DnaA binding is the committed step that initiates replication. Eukaryotes use the origin recognition complex (ORC) instead.",
+      "subcategory": "DNA Replication"
+    },
+    {
+      "id": "fs-111",
+      "section": "bio",
+      "question": "During DNA replication, which enzyme is responsible for removing RNA primers and replacing them with DNA in eukaryotes?",
+      "options": [
+        "DNA polymerase α",
+        "DNA polymerase δ along with RNase H or FEN1",
+        "DNA ligase",
+        "Primase"
+      ],
+      "correctIndex": 1,
+      "explanation": "RNase H or FEN1 (flap endonuclease 1) removes RNA primers from Okazaki fragments. DNA polymerase δ then fills in the gaps with DNA. Finally, DNA ligase I seals the nick between adjacent Okazaki fragments. This primer removal and replacement is essential for creating a continuous DNA strand.",
+      "subcategory": "DNA Replication"
+    },
+    {
+      "id": "fs-112",
+      "section": "bio",
+      "question": "A mutation in DNA polymerase removes its 3' to 5' exonuclease activity but preserves its polymerase activity. The most significant consequence would be:",
+      "options": [
+        "Inability to synthesize DNA",
+        "Inability to remove RNA primers",
+        "Dramatically increased mutation rate due to loss of proofreading",
+        "Faster DNA replication with no other effects"
+      ],
+      "correctIndex": 2,
+      "explanation": "Loss of 3' to 5' exonuclease activity eliminates proofreading capability, increasing the error rate from ~1/10⁷ to ~1/10⁵ per base pair. This would cause accumulation of mutations. The polymerase could still synthesize DNA but without error correction. Such mutations occur in mismatch repair deficiency diseases like Lynch syndrome.",
+      "subcategory": "DNA Replication"
     }
   ],
   "passages": [
@@ -1126,7 +1574,7 @@
       "id": "passage-1",
       "section": "bio",
       "title": "Enzyme Kinetics Study",
-      "passage": "Researchers studied an enzyme that catalyzes the conversion of substrate X to product Y. They measured initial reaction velocities at various substrate concentrations in the presence and absence of an unknown inhibitor.\n\nIn the absence of inhibitor, the enzyme showed a Km of 2.5 mM and a Vmax of 100 μmol/min. When the inhibitor was added at a concentration of 1 mM, the apparent Km increased to 5.0 mM while Vmax remained unchanged at 100 μmol/min.\n\nThe researchers also noted that adding excess substrate could overcome the inhibitory effect, restoring the reaction rate to near-normal levels.",
+      "passage": "Researchers studied an enzyme that catalyzes the conversion of substrate X to product Y. They measured initial reaction velocities at various substrate concentrations in the presence and absence of an unknown inhibitor.\n\nIn the absence of inhibitor, the enzyme showed a Km of 2.5 mM and a Vmax of 100 μmol/min. When the inhibitor was added at a concentration of 1 mM, the apparent Km increased to  5.0 mM while Vmax remained unchanged at 100 μmol/min.\n\nThe researchers also noted that adding excess substrate could overcome the inhibitory effect, restoring the reaction rate to near-normal levels.",
       "questions": [
         {
           "id": "passage-1-q1",
