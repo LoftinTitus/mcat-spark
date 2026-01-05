@@ -129,6 +129,18 @@ import bioMaleReproductiveSystemContent from './summaries/bio-male-reproductive-
 import bioSpermatogenesisOogenesisContent from './summaries/bio-spermatogenesis-oogenesis.md?raw';
 import bioFemaleReproductiveSystemContent from './summaries/bio-female-reproductive-system.md?raw';
 import bioFetalDevelopmentContent from './summaries/bio-fetal-development.md?raw';
+import psychSocialInstitutionsContent from './summaries/psych-social-institutions.md?raw';
+import psychSociologicalTheoriesContent from './summaries/psych-sociological-theories.md?raw';
+import psychCultureContent from './summaries/psych-culture.md?raw';
+import psychSelfConceptContent from './summaries/psych-self-concept.md?raw';
+import psychSocialInteractionContent from './summaries/psych-social-interaction.md?raw';
+import psychPersonalityContent from './summaries/psych-personality.md?raw';
+import psychMotivationContent from './summaries/psych-motivation.md?raw';
+import psychEmotionContent from './summaries/psych-emotion.md?raw';
+import psychAttitudeContent from './summaries/psych-attitude.md?raw';
+import psychPsychologicalDisordersContent from './summaries/psych-psychological-disorders.md?raw';
+import psychStressContent from './summaries/psych-stress.md?raw';
+import psychNeurobiologyOfDisordersContent from './summaries/psych-neurobiology-of-disorders.md?raw';
 
 // Parse content and quizzes
 const parseContent = (rawContent: string) => parseQuizFromMarkdown(rawContent);
@@ -190,6 +202,19 @@ const bioMaleReproductiveSystem = parseContent(bioMaleReproductiveSystemContent)
 const bioSpermatogenesisOogenesis = parseContent(bioSpermatogenesisOogenesisContent);
 const bioFemaleReproductiveSystem = parseContent(bioFemaleReproductiveSystemContent);
 const bioFetalDevelopment = parseContent(bioFetalDevelopmentContent);
+const psychSocialInstitutions = parseContent(psychSocialInstitutionsContent);
+const psychSociologicalTheories = parseContent(psychSociologicalTheoriesContent);
+const psychCulture = parseContent(psychCultureContent);
+const psychSelfConcept = parseContent(psychSelfConceptContent);
+const psychSocialInteraction = parseContent(psychSocialInteractionContent);
+const psychPersonality = parseContent(psychPersonalityContent);
+const psychMotivation = parseContent(psychMotivationContent);
+const psychEmotion = parseContent(psychEmotionContent);
+const psychAttitude = parseContent(psychAttitudeContent);
+const psychPsychologicalDisorders = parseContent(psychPsychologicalDisordersContent);
+const psychStress = parseContent(psychStressContent);
+const psychNeurobiologyOfDisorders = parseContent(psychNeurobiologyOfDisordersContent);
+
 
 export const summaries: Summary[] = [
   {
@@ -647,5 +672,101 @@ export const summaries: Summary[] = [
     topic: "Fetal Development",
     content: bioFetalDevelopment.content,
     quiz: bioFetalDevelopment.quiz,
+  },
+  {
+    id: "psych-social-institutions",
+    section: "psych",
+    subtopic: "Social Sciences",
+    topic: "Social Institutions",
+    content: psychSocialInstitutions.content,
+    quiz: psychSocialInstitutions.quiz,
+  },
+  {
+    id: "psych-sociological-theories",
+    section: "psych",
+    subtopic: "Social Sciences",
+    topic: "Sociological Theories",
+    content: psychSociologicalTheories.content,
+    quiz: psychSociologicalTheories.quiz,
+  },
+  {
+    id: "psych-culture",
+    section: "psych",
+    subtopic: "Social Sciences",
+    topic: "Culture",
+    content: psychCulture.content,
+    quiz: psychCulture.quiz,
+  },
+  {
+    id: "psych-self-concept",
+    section: "psych",
+    subtopic: "Social Sciences",
+    topic: "Self Concept",
+    content: psychSelfConcept.content,
+    quiz: psychSelfConcept.quiz,
+  },
+  {
+    id: "psych-social-interaction",
+    section: "psych",
+    subtopic: "Social Sciences",
+    topic: "Social Interaction",
+    content: psychSocialInteraction.content,
+    quiz: psychSocialInteraction.quiz,
+  },
+  {
+    id: "psych-personality",
+    section: "psych",
+    subtopic: "Personality",
+    topic: "Personality",
+    content: psychPersonality.content,
+    quiz: psychPersonality.quiz,
+  },
+  {
+    id: "psych-motivation",
+    section: "psych",
+    subtopic: "Motivation and Emotion",
+    topic: "Motivation",
+    content: psychMotivation.content,
+    quiz: psychMotivation.quiz,
+  },
+  {
+    id: "psych-emotion",
+    section: "psych",
+    subtopic: "Motivation and Emotion",
+    topic: "Emotion",
+    content: psychEmotion.content,
+    quiz: psychEmotion.quiz,
+  },
+  {
+    id: "psych-attitude",
+    section: "psych",
+    subtopic: "Motivation and Emotion",
+    topic: "Attitude",
+    content: psychAttitude.content,
+    quiz: psychAttitude.quiz,
+  },
+  {
+    id: "psych-psychological-disorders",
+    section: "psych",
+    subtopic: "Psychological Disorders",
+    topic: "Psychological Disorders",
+    content: psychPsychologicalDisorders.content,
+    quiz: psychPsychologicalDisorders.quiz,
+  },
+  {
+    id: "psych-stress",
+    section: "psych",
+    subtopic: "Motivation and Emotion",
+    topic: "Stress",
+    content: psychStress.content,
+    quiz: psychStress.quiz,
+  },
+  {
+    id: "psych-neurobiology-of-disorders",
+    section: "psych",
+    subtopic: "Psychological Disorders",
+    topic: "Neurobiology of Psychological Disorders",
+    content: psychNeurobiologyOfDisorders.content,
+    quiz: psychNeurobiologyOfDisorders.quiz,
   }
 ];
