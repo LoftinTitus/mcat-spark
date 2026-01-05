@@ -102,6 +102,14 @@ import bioInheritancePatternsContent from './summaries/bio-inheritance-patterns.
 import bioPopulationGeneticsContent from './summaries/bio-population-genetics.md?raw';
 import bioNeuronsContent from './summaries/bio-neurons.md?raw';
 import bioSynapticTransmissionContent from './summaries/bio-synaptic-transmission.md?raw';
+import bioNervousSystemOrganizationContent from './summaries/bio-nervous-system-organization.md?raw';
+import bioBrainSpinalCordContent from './summaries/bio-brain-spinal-cord.md?raw';
+import bioPeripheralNervousSystemContent from './summaries/bio-peripheral-nervous-system.md?raw';
+import bioHormonesContent from './summaries/bio-hormones.md?raw';
+import bioHeartContent from './summaries/bio-heart.md?raw';
+import bioBloodContent from './summaries/bio-blood.md?raw';
+import bioLymphaticSystemContent from './summaries/bio-lymphatic-system.md?raw';
+import bioImmuneSystemContent from './summaries/bio-immune-system.md?raw';
 
 // Parse content and quizzes
 const parseContent = (rawContent: string) => parseQuizFromMarkdown(rawContent);
@@ -136,6 +144,14 @@ const bioInheritancePatterns = parseContent(bioInheritancePatternsContent);
 const bioPopulationGenetics = parseContent(bioPopulationGeneticsContent);
 const bioNeurons = parseContent(bioNeuronsContent);
 const bioSynapticTransmission = parseContent(bioSynapticTransmissionContent);
+const bioNervousSystemOrganization = parseContent(bioNervousSystemOrganizationContent);
+const bioBrainSpinalCord = parseContent(bioBrainSpinalCordContent);
+const bioPeripheralNervousSystem = parseContent(bioPeripheralNervousSystemContent);
+const bioHormones = parseContent(bioHormonesContent);
+const bioHeart = parseContent(bioHeartContent);
+const bioBlood = parseContent(bioBloodContent);
+const bioLymphaticSystem = parseContent(bioLymphaticSystemContent);
+const bioImmuneSystem = parseContent(bioImmuneSystemContent);
 
 export const summaries: Summary[] = [
   {
@@ -377,5 +393,69 @@ export const summaries: Summary[] = [
     topic: "Synaptic Transmission",
     content: bioSynapticTransmission.content,
     quiz: bioSynapticTransmission.quiz,
+  },
+  {
+    id: "bio-nervous-system-organization",
+    section: "bio",
+    subtopic: "Nervous System",
+    topic: "Organization of the Nervous System",
+    content: bioNervousSystemOrganization.content,
+    quiz: bioNervousSystemOrganization.quiz,
+  },
+  {
+    id: "bio-brain-spinal-cord",
+    section: "bio",
+    subtopic: "Nervous System",
+    topic: "Brain and Spinal Cord: Structure and Function",
+    content: bioBrainSpinalCord.content,
+    quiz: bioBrainSpinalCord.quiz,
+  },
+  {
+    id: "bio-peripheral-nervous-system",
+    section: "bio",
+    subtopic: "Nervous System",
+    topic: "Peripheral Nervous System: Structure and Function",
+    content: bioPeripheralNervousSystem.content,
+    quiz: bioPeripheralNervousSystem.quiz,
+  },
+  {
+    id: "bio-hormones",
+    section: "bio",
+    subtopic: "Endocrine System",
+    topic: "Hormones: Types, Mechanisms, and Disorders",
+    content: bioHormones.content,
+    quiz: bioHormones.quiz,
+  },
+  {
+    id: "bio-heart",
+    section: "bio",
+    subtopic: "Cardiovascular System",
+    topic: "The Heart: Structure, Function, and MCAT Relevance",
+    content: bioHeart.content,
+    quiz: bioHeart.quiz,
+  },
+  {
+    id: "bio-blood",
+    section: "bio",
+    subtopic: "Cardiovascular System",
+    topic: "Blood",
+    content: bioBlood.content,
+    quiz: bioBlood.quiz,
+  },
+  {
+    id: "bio-lymphatic-system",
+    section: "bio",
+    subtopic: "Immunology",
+    topic: "Lymphatic System",
+    content: bioLymphaticSystem.content,
+    quiz: bioLymphaticSystem.quiz,
+  },
+  {
+    id: "bio-immune-system",
+    section: "bio",
+    subtopic: "Immunology",
+    topic: "Immune System",
+    content: bioImmuneSystem.content,
+    quiz: bioImmuneSystem.quiz,
   },
 ];
