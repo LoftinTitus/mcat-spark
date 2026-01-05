@@ -141,6 +141,9 @@ import psychAttitudeContent from './summaries/psych-attitude.md?raw';
 import psychPsychologicalDisordersContent from './summaries/psych-psychological-disorders.md?raw';
 import psychStressContent from './summaries/psych-stress.md?raw';
 import psychNeurobiologyOfDisordersContent from './summaries/psych-neurobiology-of-disorders.md?raw';
+import psychPerceptionContent from './summaries/psych-perception.md?raw';
+import psychAttentionContent from './summaries/psych-attention.md?raw';
+import psychConsciousnessContent from './summaries/psych-consciousness.md?raw';
 
 // Parse content and quizzes
 const parseContent = (rawContent: string) => parseQuizFromMarkdown(rawContent);
@@ -214,6 +217,9 @@ const psychAttitude = parseContent(psychAttitudeContent);
 const psychPsychologicalDisorders = parseContent(psychPsychologicalDisordersContent);
 const psychStress = parseContent(psychStressContent);
 const psychNeurobiologyOfDisorders = parseContent(psychNeurobiologyOfDisordersContent);
+const psychPerception = parseContent(psychPerceptionContent);
+const psychAttention = parseContent(psychAttentionContent);
+const psychConsciousness = parseContent(psychConsciousnessContent);
 
 
 export const summaries: Summary[] = [
@@ -768,5 +774,29 @@ export const summaries: Summary[] = [
     topic: "Neurobiology of Psychological Disorders",
     content: psychNeurobiologyOfDisorders.content,
     quiz: psychNeurobiologyOfDisorders.quiz,
+  },
+  {
+    id: "psych-perception",
+    section: "psych",
+    subtopic: "Sensation and Perception",
+    topic: "Perception",
+    content: psychPerception.content,
+    quiz: psychPerception.quiz,
+  },
+  {
+    id: "psych-attention",
+    section: "psych",
+    subtopic: "Sensation and Perception",
+    topic: "Attention",
+    content: psychAttention.content,
+    quiz: psychAttention.quiz,
+  },
+  {
+    id: "psych-consciousness",
+    section: "psych",
+    subtopic: "Sensation and Perception",
+    topic: "Consciousness",
+    content: psychConsciousness.content,
+    quiz: psychConsciousness.quiz,
   }
 ];
