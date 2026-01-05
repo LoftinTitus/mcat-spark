@@ -110,6 +110,17 @@ import bioHeartContent from './summaries/bio-heart.md?raw';
 import bioBloodContent from './summaries/bio-blood.md?raw';
 import bioLymphaticSystemContent from './summaries/bio-lymphatic-system.md?raw';
 import bioImmuneSystemContent from './summaries/bio-immune-system.md?raw';
+import bioNephronContent from './summaries/bio-nephron.md?raw';
+import bioRenalRegulationContent from './summaries/bio-renal-regulation.md?raw';
+import bioExcretoryOverviewContent from './summaries/bio-excretory-overview.md?raw';
+import bioDigestiveSystemContent from './summaries/bio-digestive-system.md?raw';
+import bioVitaminsMineralsContent from './summaries/bio-vitamins-minerals.md?raw';
+import bioSkeletalTissueContent from './summaries/bio-skeletal-tissue.md?raw';
+import bioCardiacMuscleContent from './summaries/bio-cardiac-muscle.md?raw';
+import bioSmoothMuscleContent from './summaries/bio-smooth-muscle.md?raw';
+import bioConnectiveTissueContent from './summaries/bio-connective-tissue.md?raw';
+import bioBonesContent from './summaries/bio-bones.md?raw';
+import bioJointsTendonsContent from './summaries/bio-joints-tendons.md?raw';
 
 // Parse content and quizzes
 const parseContent = (rawContent: string) => parseQuizFromMarkdown(rawContent);
@@ -152,6 +163,17 @@ const bioHeart = parseContent(bioHeartContent);
 const bioBlood = parseContent(bioBloodContent);
 const bioLymphaticSystem = parseContent(bioLymphaticSystemContent);
 const bioImmuneSystem = parseContent(bioImmuneSystemContent);
+const bioNephron = parseContent(bioNephronContent);
+const bioRenalRegulation = parseContent(bioRenalRegulationContent);
+const bioExcretoryOverview = parseContent(bioExcretoryOverviewContent);
+const bioDigestiveSystem = parseContent(bioDigestiveSystemContent);
+const bioVitaminsMinerals = parseContent(bioVitaminsMineralsContent);
+const bioSkeletalTissue = parseContent(bioSkeletalTissueContent);
+const bioCardiacMuscle = parseContent(bioCardiacMuscleContent);
+const bioSmoothMuscle = parseContent(bioSmoothMuscleContent);
+const bioConnectiveTissue = parseContent(bioConnectiveTissueContent);
+const bioBones = parseContent(bioBonesContent);
+const bioJointsTendons = parseContent(bioJointsTendonsContent);
 
 export const summaries: Summary[] = [
   {
@@ -458,4 +480,92 @@ export const summaries: Summary[] = [
     content: bioImmuneSystem.content,
     quiz: bioImmuneSystem.quiz,
   },
+  {
+    id: "bio-nephron",
+    section: "bio",
+    subtopic: "Renal System",
+    topic: "Nephrons",
+    content: bioNephron.content,
+    quiz: bioNephron.quiz,
+  },
+  {
+    id: "bio-renal-regulation",
+    section: "bio",
+    subtopic: "Renal System",
+    topic: "Renal Regulation of Blood Flow, Pressure, and pH",
+    content: bioRenalRegulation.content,
+    quiz: bioRenalRegulation.quiz,
+  },
+  {
+    id: "bio-excretory-overview",
+    section: "bio",
+    subtopic: "Renal System",
+    topic: "Overview of the Excretory System",
+    content: bioExcretoryOverview.content,
+    quiz: bioExcretoryOverview.quiz,
+  },
+  {
+    id: "bio-digestive-system",
+    section: "bio",
+    subtopic: "Renal System",
+    topic: "Digestive System",
+    content: bioDigestiveSystem.content,
+    quiz: bioDigestiveSystem.quiz,
+  },
+  {
+    id: "bio-vitamins-minerals",
+    section: "bio",
+    subtopic: "Renal System",
+    topic: "Vitamins and Minerals",
+    content: bioVitaminsMinerals.content,
+    quiz: bioVitaminsMinerals.quiz,
+  },
+  {
+    id: "bio-skeletal-tissue",
+    section: "bio",
+    subtopic: "Musculoskeletal System",
+    topic: "Skeletal Tissue",
+    content: bioSkeletalTissue.content,
+    quiz: bioSkeletalTissue.quiz,
+  },
+  {
+    id: "bio-cardiac-muscle",
+    section: "bio",
+    subtopic: "Musculoskeletal System",
+    topic: "Cardiac Muscle",
+    content: bioCardiacMuscle.content,
+    quiz: bioCardiacMuscle.quiz,
+  },
+  {
+    id: "bio-smooth-muscle",
+    section: "bio",
+    subtopic: "Musculoskeletal System",
+    topic: "Smooth Muscle",
+    content: bioSmoothMuscle.content,
+    quiz: bioSmoothMuscle.quiz,
+  },
+  {
+    id: "bio-connective-tissue",
+    section: "bio",
+    subtopic: "Musculoskeletal System",
+    topic: "Connective Tissue",
+    content: bioConnectiveTissue.content,
+    quiz: bioConnectiveTissue.quiz,
+  },
+  {
+    id: "bio-bones",
+    section: "bio",
+    subtopic: "Musculoskeletal System",
+    topic: "Bones Overview",
+    content: bioBones.content,
+    quiz: bioBones.quiz,
+  },
+  {
+    id: "bio-joints-tendons",
+    section: "bio",
+    subtopic: "Musculoskeletal System",
+    topic: "Joints and Tendons: Structure and Function",
+    content: bioJointsTendons.content,
+    quiz: bioJointsTendons.quiz,
+  }
 ];
