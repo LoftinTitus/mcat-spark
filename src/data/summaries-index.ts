@@ -121,6 +121,14 @@ import bioSmoothMuscleContent from './summaries/bio-smooth-muscle.md?raw';
 import bioConnectiveTissueContent from './summaries/bio-connective-tissue.md?raw';
 import bioBonesContent from './summaries/bio-bones.md?raw';
 import bioJointsTendonsContent from './summaries/bio-joints-tendons.md?raw';
+import bioRespiratorySystemContent from './summaries/bio-respiratory-system.md?raw';
+import bioRespiratoryThermoPhContent from './summaries/bio-respiratory-thermo-ph.md?raw';
+import bioSkinThermalRegulationContent from './summaries/bio-skin-thermal-regulation.md?raw';
+import bioSkinLayersContent from './summaries/bio-skin-layers.md?raw';
+import bioMaleReproductiveSystemContent from './summaries/bio-male-reproductive-system.md?raw';
+import bioSpermatogenesisOogenesisContent from './summaries/bio-spermatogenesis-oogenesis.md?raw';
+import bioFemaleReproductiveSystemContent from './summaries/bio-female-reproductive-system.md?raw';
+import bioFetalDevelopmentContent from './summaries/bio-fetal-development.md?raw';
 
 // Parse content and quizzes
 const parseContent = (rawContent: string) => parseQuizFromMarkdown(rawContent);
@@ -174,6 +182,14 @@ const bioSmoothMuscle = parseContent(bioSmoothMuscleContent);
 const bioConnectiveTissue = parseContent(bioConnectiveTissueContent);
 const bioBones = parseContent(bioBonesContent);
 const bioJointsTendons = parseContent(bioJointsTendonsContent);
+const bioRespiratorySystem = parseContent(bioRespiratorySystemContent);
+const bioRespiratoryThermoPh = parseContent(bioRespiratoryThermoPhContent);
+const bioSkinThermalRegulation = parseContent(bioSkinThermalRegulationContent);
+const bioSkinLayers = parseContent(bioSkinLayersContent);
+const bioMaleReproductiveSystem = parseContent(bioMaleReproductiveSystemContent);
+const bioSpermatogenesisOogenesis = parseContent(bioSpermatogenesisOogenesisContent);
+const bioFemaleReproductiveSystem = parseContent(bioFemaleReproductiveSystemContent);
+const bioFetalDevelopment = parseContent(bioFetalDevelopmentContent);
 
 export const summaries: Summary[] = [
   {
@@ -567,5 +583,69 @@ export const summaries: Summary[] = [
     topic: "Joints and Tendons: Structure and Function",
     content: bioJointsTendons.content,
     quiz: bioJointsTendons.quiz,
+  },
+  {
+    id: "bio-respiratory-system",
+    section: "bio",
+    subtopic: "Respiratory System",
+    topic: "Respiratory System",
+    content: bioRespiratorySystem.content,
+    quiz: bioRespiratorySystem.quiz,
+  },
+  {
+    id: "bio-respiratory-thermo-ph",
+    section: "bio",
+    subtopic: "Respiratory System",
+    topic: "Thermoregulation and pH Regulation in the Respiratory System",
+    content: bioRespiratoryThermoPh.content,
+    quiz: bioRespiratoryThermoPh.quiz,
+  },
+  {
+    id: "bio-skin-thermal-regulation",
+    section: "bio",
+    subtopic: "Integumentary System",
+    topic: "Thermal Regulation by the Skin",
+    content: bioSkinThermalRegulation.content,
+    quiz: bioSkinThermalRegulation.quiz,
+  },
+  {
+    id: "bio-skin-layers",
+    section: "bio",
+    subtopic: "Integumentary System",
+    topic: "Layers of the Skin",
+    content: bioSkinLayers.content,
+    quiz: bioSkinLayers.quiz,
+  },
+  {
+    id: "bio-male-reproductive-system",
+    section: "bio",
+    subtopic: "Reproductive System",
+    topic: "Male Reproductive System",
+    content: bioMaleReproductiveSystem.content,
+    quiz: bioMaleReproductiveSystem.quiz,
+  },
+  {
+    id: "bio-spermatogenesis-oogenesis",
+    section: "bio",
+    subtopic: "Reproductive System",
+    topic: "Spermatogenesis and Oogenesis",
+    content: bioSpermatogenesisOogenesis.content,
+    quiz: bioSpermatogenesisOogenesis.quiz,
+  },
+  {
+    id: "bio-female-reproductive-system",
+    section: "bio",
+    subtopic: "Reproductive System",
+    topic: "Female Reproductive System",
+    content: bioFemaleReproductiveSystem.content,
+    quiz: bioFemaleReproductiveSystem.quiz,
+  },
+  {
+    id: "bio-fetal-development",
+    section: "bio",
+    subtopic: "Reproductive System",
+    topic: "Fetal Development",
+    content: bioFetalDevelopment.content,
+    quiz: bioFetalDevelopment.quiz,
   }
 ];
