@@ -95,6 +95,13 @@ import bioEndoplasmicReticulumContent from './summaries/bio-endoplasmic-reticulu
 import bioMitochondriaContent from './summaries/bio-mitochondria.md?raw';
 import bioCellCycleMitosisContent from './summaries/bio-cell-cycle-mitosis.md?raw';
 import bioCancerContent from './summaries/bio-cancer.md?raw';
+import bioMeiosisContent from './summaries/bio-meiosis.md?raw';
+import bioMeiosisVsMitosisContent from './summaries/bio-meiosis-vs-mitosis.md?raw';
+import bioGeneticLinkageContent from './summaries/bio-genetic-linkage.md?raw';
+import bioInheritancePatternsContent from './summaries/bio-inheritance-patterns.md?raw';
+import bioPopulationGeneticsContent from './summaries/bio-population-genetics.md?raw';
+import bioNeuronsContent from './summaries/bio-neurons.md?raw';
+import bioSynapticTransmissionContent from './summaries/bio-synaptic-transmission.md?raw';
 
 // Parse content and quizzes
 const parseContent = (rawContent: string) => parseQuizFromMarkdown(rawContent);
@@ -122,6 +129,13 @@ const bioEndoplasmicReticulum = parseContent(bioEndoplasmicReticulumContent);
 const bioMitochondria = parseContent(bioMitochondriaContent);
 const bioCellCycleMitosis = parseContent(bioCellCycleMitosisContent);
 const bioCancer = parseContent(bioCancerContent);
+const bioMeiosis = parseContent(bioMeiosisContent);
+const bioMeiosisVsMitosis = parseContent(bioMeiosisVsMitosisContent);
+const bioGeneticLinkage = parseContent(bioGeneticLinkageContent);
+const bioInheritancePatterns = parseContent(bioInheritancePatternsContent);
+const bioPopulationGenetics = parseContent(bioPopulationGeneticsContent);
+const bioNeurons = parseContent(bioNeuronsContent);
+const bioSynapticTransmission = parseContent(bioSynapticTransmissionContent);
 
 export const summaries: Summary[] = [
   {
@@ -307,5 +321,61 @@ export const summaries: Summary[] = [
     topic: "Cancer: Cellular and Molecular Basis",
     content: bioCancer.content,
     quiz: bioCancer.quiz,
+  },
+  {
+    id: "bio-meiosis",
+    section: "bio",
+    subtopic: "Cell Biology",
+    topic: "Meiosis",
+    content: bioMeiosis.content,
+    quiz: bioMeiosis.quiz,
+  },
+  {
+    id: "bio-meiosis-vs-mitosis",
+    section: "bio",
+    subtopic: "Cell Biology",
+    topic: "Meiosis vs. Mitosis",
+    content: bioMeiosisVsMitosis.content,
+    quiz: bioMeiosisVsMitosis.quiz,
+  },
+  {
+    id: "bio-genetic-linkage",
+    section: "bio",
+    subtopic: "Genetics",
+    topic: "Genetic Linkage",
+    content: bioGeneticLinkage.content,
+    quiz: bioGeneticLinkage.quiz,
+  },
+  {
+    id: "bio-inheritance-patterns",
+    section: "bio",
+    subtopic: "Genetics",
+    topic: "Inheritance Patterns",
+    content: bioInheritancePatterns.content,
+    quiz: bioInheritancePatterns.quiz,
+  },
+  {
+    id: "bio-population-genetics",
+    section: "bio",
+    subtopic: "Genetics",
+    topic: "Population Genetics & 5 Fingers of Evolution",
+    content: bioPopulationGenetics.content,
+    quiz: bioPopulationGenetics.quiz,
+  },
+  {
+    id: "bio-neurons",
+    section: "bio",
+    subtopic: "Nervous System",
+    topic: "Neurons: Types, Structure, and Function",
+    content: bioNeurons.content,
+    quiz: bioNeurons.quiz,
+  },
+  {
+    id: "bio-synaptic-transmission",
+    section: "bio",
+    subtopic: "Nervous System",
+    topic: "Synaptic Transmission",
+    content: bioSynapticTransmission.content,
+    quiz: bioSynapticTransmission.quiz,
   },
 ];
