@@ -682,6 +682,185 @@
         }
       ],
       "subcategory": "Social Sciences"
+    },
+    {
+      "id": "passage-cvd-1",
+      "section": "bio",
+      "title": "Atherosclerosis and Cardiovascular Disease",
+      "passage": "Atherosclerosis is a chronic condition characterized by the buildup of plaques within arterial walls. These plaques consist of lipids, cholesterol, calcium, and cellular debris, and they form in response to endothelial injury and inflammation. Over time, plaque growth narrows the arterial lumen, reducing blood flow and increasing the risk of ischemia. If a plaque ruptures, it can trigger the formation of a thrombus (blood clot), which may completely block the artery, leading to myocardial infarction (heart attack) or stroke. Risk factors for atherosclerosis include hypertension, hyperlipidemia, smoking, diabetes, and genetic predisposition. Treatments focus on lifestyle modification, medications (statins, antihypertensives, antiplatelets), and, in severe cases, surgical interventions such as angioplasty or bypass grafting.",
+      "questions": [
+        {
+          "id": "passage-cvd-1-q1",
+          "question": "What is the primary component of atherosclerotic plaques?",
+          "options": ["Lipids and cholesterol", "Red blood cells", "Platelets", "Glucose"],
+          "correctIndex": 0,
+          "explanation": "Plaques are mainly composed of lipids, cholesterol, calcium, and cellular debris.",
+          "subcategory": "Cardiovascular System"
+        },
+        {
+          "id": "passage-cvd-1-q2",
+          "question": "Which event most directly leads to myocardial infarction?",
+          "options": ["Plaque formation", "Plaque rupture and thrombus formation", "Hypertension", "Smoking"],
+          "correctIndex": 1,
+          "explanation": "Plaque rupture can trigger a blood clot that blocks the artery, causing a heart attack.",
+          "subcategory": "Cardiovascular System"
+        },
+        {
+          "id": "passage-cvd-1-q3",
+          "question": "Which risk factor is NOT directly associated with atherosclerosis?",
+          "options": ["Diabetes", "Smoking", "Low blood pressure", "Hyperlipidemia"],
+          "correctIndex": 2,
+          "explanation": "Low blood pressure is not a risk factor; hypertension is.",
+          "subcategory": "Cardiovascular System"
+        },
+        {
+          "id": "passage-cvd-1-q4",
+          "question": "What is the main consequence of arterial lumen narrowing?",
+          "options": ["Increased blood flow", "Reduced blood flow and ischemia", "Decreased blood pressure", "Improved oxygen delivery"],
+          "correctIndex": 1,
+          "explanation": "Narrowing reduces blood flow, increasing the risk of tissue ischemia.",
+          "subcategory": "Cardiovascular System"
+        },
+        {
+          "id": "passage-cvd-1-q5",
+          "question": "Which medication is commonly used to lower cholesterol in atherosclerosis?",
+          "options": ["Statins", "Beta-blockers", "Diuretics", "ACE inhibitors"],
+          "correctIndex": 0,
+          "explanation": "Statins are prescribed to lower cholesterol and reduce plaque formation.",
+          "subcategory": "Cardiovascular System"
+        },
+        {
+          "id": "passage-cvd-1-q6",
+          "question": "What surgical procedure can restore blood flow in severe atherosclerosis?",
+          "options": ["Angioplasty", "Appendectomy", "Lobectomy", "Splenectomy"],
+          "correctIndex": 0,
+          "explanation": "Angioplasty opens narrowed arteries; bypass grafting is another option.",
+          "subcategory": "Cardiovascular System"
+        },
+        {
+          "id": "passage-cvd-1-q7",
+          "question": "Why is inflammation important in the development of atherosclerosis?",
+          "options": ["It prevents plaque formation", "It triggers endothelial injury and promotes plaque growth", "It increases blood pressure", "It dissolves clots"],
+          "correctIndex": 1,
+          "explanation": "Inflammation damages the endothelium and promotes the buildup of plaques.",
+          "subcategory": "Cardiovascular System"
+        }
+      ],
+      "subcategory": "Cardiovascular System"
+    },
+    {
+      "id": "passage-nephron-1",
+      "section": "bio",
+      "title": "Nephron Structure and Function in the Kidney",
+      "passage": "The nephron is the functional unit of the kidney, responsible for filtering blood and forming urine. Each nephron consists of a renal corpuscle (glomerulus and Bowman's capsule) and a renal tubule (proximal tubule, loop of Henle, distal tubule, and collecting duct). Filtration occurs at the glomerulus, where water and solutes pass into Bowman's capsule. The proximal tubule reabsorbs most nutrients, ions, and water. The loop of Henle creates a concentration gradient in the medulla, allowing for water reabsorption. The distal tubule fine-tunes ion balance, and the collecting duct adjusts water reabsorption under hormonal control (ADH, aldosterone). Nephrons regulate blood volume, pressure, and composition, and dysfunction can lead to kidney disease.",
+      "questions": [
+        {
+          "id": "passage-nephron-1-q1",
+          "question": "What is the primary site of blood filtration in the nephron?",
+          "options": ["Loop of Henle", "Glomerulus", "Distal tubule", "Collecting duct"],
+          "correctIndex": 1,
+          "explanation": "Filtration occurs at the glomerulus within the renal corpuscle.",
+          "subcategory": "Renal System"
+        },
+        {
+          "id": "passage-nephron-1-q2",
+          "question": "Which nephron segment reabsorbs most nutrients and ions?",
+          "options": ["Proximal tubule", "Distal tubule", "Loop of Henle", "Bowman's capsule"],
+          "correctIndex": 0,
+          "explanation": "The proximal tubule reabsorbs the majority of filtered nutrients and ions.",
+          "subcategory": "Renal System"
+        },
+        {
+          "id": "passage-nephron-1-q3",
+          "question": "What is the main function of the loop of Henle?",
+          "options": ["Filtration", "Concentration gradient formation", "Hormone secretion", "Acid-base balance"],
+          "correctIndex": 1,
+          "explanation": "The loop of Henle establishes a medullary concentration gradient for water reabsorption.",
+          "subcategory": "Renal System"
+        },
+        {
+          "id": "passage-nephron-1-q4",
+          "question": "Which hormone increases water reabsorption in the collecting duct?",
+          "options": ["Aldosterone", "ADH (vasopressin)", "Insulin", "Cortisol"],
+          "correctIndex": 1,
+          "explanation": "ADH increases water permeability in the collecting duct, concentrating urine.",
+          "subcategory": "Renal System"
+        },
+        {
+          "id": "passage-nephron-1-q5",
+          "question": "What can result from nephron dysfunction?",
+          "options": ["Hypertension", "Edema", "Electrolyte imbalance", "All of the above"],
+          "correctIndex": 3,
+          "explanation": "Nephron dysfunction can cause hypertension, edema, and electrolyte disturbances.",
+          "subcategory": "Renal System"
+        }
+      ],
+      "subcategory": "Renal System"
+    },
+    {
+      "id": "passage-geneexp-1",
+      "section": "bio",
+      "title": "Experimental Analysis of Gene Expression and Cell Signaling",
+      "passage": "Researchers investigated how the growth factor EGF (epidermal growth factor) influences gene expression in cultured human cells. Cells were divided into three groups: untreated control, EGF-treated, and EGF-treated with a specific inhibitor of the MAPK signaling pathway. After 2 hours, researchers measured mRNA levels of the immediate-early gene FOS using quantitative PCR. Results showed that EGF treatment increased FOS mRNA 8-fold compared to control, while EGF + MAPK inhibitor resulted in only a 1.2-fold increase. Western blot analysis confirmed increased phosphorylation of ERK (a MAPK pathway protein) in EGF-treated cells, but not in the inhibitor group. The team also performed a luciferase reporter assay using the FOS promoter, finding that EGF strongly activated transcription, but this effect was blocked by the MAPK inhibitor. Additional experiments with siRNA knockdown of the EGF receptor abolished both ERK phosphorylation and FOS induction.",
+      "questions": [
+        {
+          "id": "passage-geneexp-1-q1",
+          "question": "What is the primary experimental variable manipulated in this study?",
+          "options": ["EGF treatment", "Cell type", "Temperature", "Serum concentration"],
+          "correctIndex": 0,
+          "explanation": "The main variable is whether cells are treated with EGF, EGF + inhibitor, or left untreated.",
+          "subcategory": "Gene Expression & Cell Signaling"
+        },
+        {
+          "id": "passage-geneexp-1-q2",
+          "question": "Which result best supports the role of the MAPK pathway in FOS gene induction?",
+          "options": ["EGF increases FOS mRNA", "MAPK inhibitor blocks EGF-induced FOS expression", "EGF increases ERK phosphorylation", "siRNA knockdown of EGF receptor abolishes FOS induction"],
+          "correctIndex": 1,
+          "explanation": "Blocking the MAPK pathway prevents EGF-induced FOS expression, showing MAPK is required for this effect.",
+          "subcategory": "Gene Expression & Cell Signaling"
+        },
+        {
+          "id": "passage-geneexp-1-q3",
+          "question": "What is the function of the luciferase reporter assay in this experiment?",
+          "options": ["Measure protein synthesis", "Assess transcriptional activation of the FOS promoter", "Detect ERK phosphorylation", "Quantify mRNA stability"],
+          "correctIndex": 1,
+          "explanation": "The luciferase assay measures transcriptional activation by quantifying promoter-driven luciferase expression.",
+          "subcategory": "Gene Expression & Cell Signaling"
+        },
+        {
+          "id": "passage-geneexp-1-q4",
+          "question": "Why did researchers use siRNA knockdown of the EGF receptor?",
+          "options": ["To increase ERK phosphorylation", "To block EGF signaling at the receptor level", "To enhance FOS mRNA expression", "To inhibit MAPK directly"],
+          "correctIndex": 1,
+          "explanation": "siRNA knockdown of the EGF receptor prevents EGF from activating downstream signaling, confirming the pathway's specificity.",
+          "subcategory": "Gene Expression & Cell Signaling"
+        },
+        {
+          "id": "passage-geneexp-1-q5",
+          "question": "Which conclusion is best supported by the data?",
+          "options": ["EGF induces FOS expression via the MAPK pathway", "EGF acts independently of cell signaling", "MAPK inhibitor increases FOS expression", "FOS expression is unaffected by EGF"],
+          "correctIndex": 0,
+          "explanation": "EGF increases FOS expression, but this effect is blocked by MAPK inhibition, supporting a MAPK-dependent mechanism.",
+          "subcategory": "Gene Expression & Cell Signaling"
+        },
+        {
+          "id": "passage-geneexp-1-q6",
+          "question": "What is the role of ERK phosphorylation in this study?",
+          "options": ["It marks activation of the MAPK pathway", "It inhibits FOS transcription", "It degrades EGF receptor", "It blocks mRNA synthesis"],
+          "correctIndex": 0,
+          "explanation": "Phosphorylation of ERK is a hallmark of MAPK pathway activation, linking EGF signaling to gene expression changes.",
+          "subcategory": "Gene Expression & Cell Signaling"
+        },
+        {
+          "id": "passage-geneexp-1-q7",
+          "question": "If a mutation prevented FOS promoter binding by transcription factors downstream of MAPK, what would be the expected result?",
+          "options": ["EGF would still induce FOS mRNA", "MAPK inhibitor would increase FOS expression", "EGF would fail to induce FOS transcription", "ERK phosphorylation would be abolished"],
+          "correctIndex": 2,
+          "explanation": "If transcription factors cannot bind the FOS promoter, EGF signaling cannot induce FOS transcription, even if upstream signaling is intact.",
+          "subcategory": "Gene Expression & Cell Signaling"
+        }
+      ],
+      "subcategory": "Molecular Biology"
     }
   ]
 }
