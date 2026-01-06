@@ -861,6 +861,104 @@
         }
       ],
       "subcategory": "Molecular Biology"
+    },
+    {
+      "id": "passage-virus-1",
+      "section": "bio",
+      "title": "Viral Replication and Host Cell Response",
+      "passage": "Researchers investigated the replication cycle of an RNA virus in cultured human cells. Cells were infected with the virus and divided into three groups: untreated control, treated with a protease inhibitor, and treated with an RNA polymerase inhibitor. Viral RNA levels were measured by qPCR at 2, 6, and 12 hours post-infection. The protease inhibitor group showed normal viral RNA levels at 2 hours but a plateau at 6 and 12 hours, while the RNA polymerase inhibitor group showed minimal viral RNA at all time points. Western blot analysis revealed that viral protein synthesis was blocked in both treatment groups. Additionally, cell viability assays showed increased cell death in the untreated group compared to both inhibitor groups.",
+      "questions": [
+        {
+          "id": "passage-virus-1-q1",
+          "question": "What is the primary role of the protease inhibitor in this experiment?",
+          "options": ["Block viral entry", "Prevent viral protein processing", "Inhibit viral RNA synthesis", "Increase cell death"],
+          "correctIndex": 1,
+          "explanation": "Protease inhibitors block the processing of viral polyproteins, preventing maturation of functional viral proteins.",
+          "subcategory": "Virology"
+        },
+        {
+          "id": "passage-virus-1-q2",
+          "question": "Why did the RNA polymerase inhibitor group show minimal viral RNA at all time points?",
+          "options": ["It blocked viral entry", "It prevented viral RNA synthesis", "It degraded host cell RNA", "It increased cell death"],
+          "correctIndex": 1,
+          "explanation": "RNA polymerase inhibitors prevent the synthesis of new viral RNA genomes, resulting in low viral RNA levels.",
+          "subcategory": "Virology"
+        },
+        {
+          "id": "passage-virus-1-q3",
+          "question": "What does the plateau in viral RNA levels in the protease inhibitor group suggest?",
+          "options": ["Viral replication is unaffected", "Viral entry is blocked", "Viral replication is halted after initial synthesis", "Host cell RNA is degraded"],
+          "correctIndex": 2,
+          "explanation": "Protease inhibition allows initial viral RNA synthesis but blocks further replication due to lack of functional proteins.",
+          "subcategory": "Virology"
+        },
+        {
+          "id": "passage-virus-1-q4",
+          "question": "Which assay best demonstrates the effect of viral infection on cell survival?",
+          "options": ["qPCR for viral RNA", "Western blot for viral proteins", "Cell viability assay", "RNA polymerase activity assay"],
+          "correctIndex": 2,
+          "explanation": "Cell viability assays directly measure the impact of viral infection and treatment on cell survival.",
+          "subcategory": "Virology"
+        },
+        {
+          "id": "passage-virus-1-q5",
+          "question": "What conclusion can be drawn about the effectiveness of the two inhibitors?",
+          "options": ["Both inhibitors block viral entry", "Protease inhibitor blocks protein processing, RNA polymerase inhibitor blocks genome replication", "Only the protease inhibitor is effective", "Neither inhibitor affects viral replication"],
+          "correctIndex": 1,
+          "explanation": "The protease inhibitor blocks protein processing, while the RNA polymerase inhibitor blocks genome replication; both reduce viral replication and cell death.",
+          "subcategory": "Virology"
+        }
+      ],
+      "subcategory": "Microbiology"
+    },
+    {
+      "id": "passage-thermo-1",
+      "section": "chem",
+      "title": "Thermodynamics of Protein Folding",
+      "passage": "A team of biochemists studied the thermodynamics of protein folding using a purified enzyme. They measured the enzyme's activity at different temperatures and in the presence of chemical denaturants. Differential scanning calorimetry (DSC) was used to determine the melting temperature (Tm) and enthalpy change (ΔH) of unfolding. The enzyme showed a Tm of 55°C and a ΔH of 250 kJ/mol. Addition of urea decreased Tm to 40°C and reduced ΔH to 150 kJ/mol. The researchers also calculated the Gibbs free energy change (ΔG) for folding at 25°C, finding it to be -30 kJ/mol under native conditions and +10 kJ/mol with urea. Enzyme activity assays confirmed that only the native, folded protein was catalytically active.",
+      "questions": [
+        {
+          "id": "passage-thermo-1-q1",
+          "question": "What does a negative ΔG for protein folding indicate?",
+          "options": ["Folding is nonspontaneous", "Folding is spontaneous", "Protein is denatured", "Enzyme is inactive"],
+          "correctIndex": 1,
+          "explanation": "A negative Gibbs free energy change means the folding process is thermodynamically favorable and occurs spontaneously.",
+          "subcategory": "Thermodynamics"
+        },
+        {
+          "id": "passage-thermo-1-q2",
+          "question": "How does urea affect the thermodynamics of protein folding?",
+          "options": ["Increases Tm and ΔH", "Decreases Tm and ΔH", "Has no effect on folding", "Makes folding more spontaneous"],
+          "correctIndex": 1,
+          "explanation": "Urea destabilizes the protein, lowering the melting temperature and enthalpy change, making unfolding easier.",
+          "subcategory": "Thermodynamics"
+        },
+        {
+          "id": "passage-thermo-1-q3",
+          "question": "What is the significance of the enzyme being active only in its folded state?",
+          "options": ["Denatured protein is more active", "Folding is required for catalytic function", "Unfolded protein binds substrate better", "Enzyme activity is independent of structure"],
+          "correctIndex": 1,
+          "explanation": "Proper folding is necessary for the enzyme's active site to form and function.",
+          "subcategory": "Thermodynamics"
+        },
+        {
+          "id": "passage-thermo-1-q4",
+          "question": "What does a decrease in Tm upon addition of urea suggest about protein stability?",
+          "options": ["Protein is more stable", "Protein is less stable", "Protein is unaffected", "Protein is more active"],
+          "correctIndex": 1,
+          "explanation": "A lower melting temperature means the protein unfolds more easily, indicating reduced stability.",
+          "subcategory": "Thermodynamics"
+        },
+        {
+          "id": "passage-thermo-1-q5",
+          "question": "If ΔG for folding becomes positive in the presence of urea, what does this mean?",
+          "options": ["Folding is spontaneous", "Unfolding is favored", "Protein remains folded", "Enzyme activity increases"],
+          "correctIndex": 1,
+          "explanation": "A positive ΔG means folding is nonspontaneous and the protein will tend to unfold in the presence of urea.",
+          "subcategory": "Thermodynamics"
+        }
+      ],
+      "subcategory": "Thermodynamics"
     }
   ]
 }
