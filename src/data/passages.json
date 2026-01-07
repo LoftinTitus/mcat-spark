@@ -959,6 +959,104 @@
         }
       ],
       "subcategory": "Thermodynamics"
+    },
+    {
+      "id": "passage-evolution-1",
+      "section": "bio",
+      "title": "Experimental Evidence for Evolutionary Mechanisms",
+      "passage": "Researchers studied a population of bacteria exposed to a novel antibiotic over 30 generations. Initially, 99% of the population was sensitive, and 1% carried a mutation conferring resistance. The population was cultured in antibiotic-containing media, and the frequency of resistant bacteria was measured every 5 generations. By generation 10, resistant bacteria comprised 20% of the population; by generation 20, 75%; and by generation 30, 98%. Whole-genome sequencing revealed additional mutations in metabolic genes in the resistant population. In a control group grown without antibiotic, the frequency of resistance remained at 1%.",
+      "questions": [
+        {
+          "id": "passage-evolution-1-q1",
+          "question": "What evolutionary mechanism is primarily responsible for the increase in resistant bacteria?",
+          "options": ["Natural selection", "Genetic drift", "Gene flow", "Mutation"],
+          "correctIndex": 0,
+          "explanation": "The antibiotic acts as a selective pressure, favoring bacteria with resistance mutations (natural selection).",
+          "subcategory": "Evolution"
+        },
+        {
+          "id": "passage-evolution-1-q2",
+          "question": "Why did the frequency of resistance remain at 1% in the control group?",
+          "options": ["No selective pressure was present", "Mutation rate was higher", "Genetic drift eliminated resistance", "Gene flow introduced new alleles"],
+          "correctIndex": 0,
+          "explanation": "Without antibiotic, there was no selective advantage for resistance, so its frequency did not increase.",
+          "subcategory": "Evolution"
+        },
+        {
+          "id": "passage-evolution-1-q3",
+          "question": "What is the most likely explanation for the additional mutations found in metabolic genes?",
+          "options": ["They are random mutations that may confer further adaptation", "They are caused by the antibiotic directly", "They are always harmful", "They are evidence of gene flow"],
+          "correctIndex": 0,
+          "explanation": "Random mutations can arise and may provide further adaptation to the environment.",
+          "subcategory": "Evolution"
+        },
+        {
+          "id": "passage-evolution-1-q4",
+          "question": "If the experiment were repeated with a larger initial population, what would you expect regarding the speed of resistance increase?",
+          "options": ["It would likely increase due to more resistant individuals present", "It would decrease", "It would remain unchanged", "It would depend only on mutation rate"],
+          "correctIndex": 0,
+          "explanation": "A larger initial population increases the absolute number of resistant individuals, accelerating the spread under selection.",
+          "subcategory": "Evolution"
+        },
+        {
+          "id": "passage-evolution-1-q5",
+          "question": "What does this experiment best illustrate about evolution?",
+          "options": ["Evolution can be observed in real time in microbial populations", "Evolution only occurs over millions of years", "Mutations always decrease fitness", "Natural selection cannot be studied experimentally"],
+          "correctIndex": 0,
+          "explanation": "Microbial populations allow direct observation of evolutionary change and natural selection in the lab.",
+          "subcategory": "Evolution"
+        }
+      ],
+      "subcategory": "Evolution"
+    },
+    {
+      "id": "passage-electrochem-1",
+      "section": "chem",
+      "title": "Electrochemical Cell Experiment and Data Analysis",
+      "passage": "A team of chemists constructed a galvanic cell using a zinc electrode in 1.0 M ZnSO4 and a copper electrode in 1.0 M CuSO4. The standard reduction potentials are: Zn2+ + 2e- → Zn(s): -0.76 V; Cu2+ + 2e- → Cu(s): +0.34 V. The cell was connected to a voltmeter and the initial cell potential was measured at 1.10 V. The team then varied the concentration of Cu2+ to 0.10 M while keeping Zn2+ at 1.0 M, and the cell potential dropped to 0.94 V. When the Zn2+ concentration was decreased to 0.010 M (Cu2+ at 1.0 M), the cell potential increased to 1.26 V. After running the cell for 2 hours, the mass of the zinc electrode decreased by 0.065 g, and the mass of the copper electrode increased by 0.065 g.",
+      "questions": [
+        {
+          "id": "passage-electrochem-1-q1",
+          "question": "What is the balanced overall reaction for the galvanic cell?",
+          "options": ["Zn(s) + Cu2+(aq) → Zn2+(aq) + Cu(s)", "Cu(s) + Zn2+(aq) → Cu2+(aq) + Zn(s)", "Zn2+(aq) + Cu2+(aq) → Zn(s) + Cu(s)", "Zn(s) + Cu(s) → Zn2+(aq) + Cu2+(aq)"],
+          "correctIndex": 0,
+          "explanation": "Zinc is oxidized (anode), copper is reduced (cathode): Zn(s) + Cu2+(aq) → Zn2+(aq) + Cu(s).",
+          "subcategory": "Electrochemistry"
+        },
+        {
+          "id": "passage-electrochem-1-q2",
+          "question": "Why did the cell potential decrease when [Cu2+] was lowered to 0.10 M?",
+          "options": ["The reaction became nonspontaneous", "The driving force for Cu2+ reduction decreased", "The Zn electrode was consumed", "The standard reduction potential changed"],
+          "correctIndex": 1,
+          "explanation": "Lower [Cu2+] reduces the cathode's ability to accept electrons, decreasing cell potential (Nernst equation).",
+          "subcategory": "Electrochemistry"
+        },
+        {
+          "id": "passage-electrochem-1-q3",
+          "question": "What is the purpose of measuring the mass change of the electrodes?",
+          "options": ["To confirm the stoichiometry of the redox reaction", "To measure the cell's resistance", "To determine the standard reduction potential", "To calculate the cell's internal energy"],
+          "correctIndex": 0,
+          "explanation": "The mass change confirms the transfer of electrons and the stoichiometry of the redox process.",
+          "subcategory": "Electrochemistry"
+        },
+        {
+          "id": "passage-electrochem-1-q4",
+          "question": "When [Zn2+] was decreased to 0.010 M, why did the cell potential increase?",
+          "options": ["The anode reaction was favored, increasing electron flow", "The cathode was consumed", "The cell became nonspontaneous", "The Nernst equation predicts a lower potential"],
+          "correctIndex": 0,
+          "explanation": "Lower [Zn2+] shifts the equilibrium, favoring Zn oxidation and increasing cell potential (Nernst equation).",
+          "subcategory": "Electrochemistry"
+        },
+        {
+          "id": "passage-electrochem-1-q5",
+          "question": "How many moles of electrons were transferred during the 2-hour experiment? (Zn: 0.065 g lost, molar mass = 65.4 g/mol)",
+          "options": ["0.0010 mol", "0.0020 mol", "0.0050 mol", "0.0100 mol"],
+          "correctIndex": 1,
+          "explanation": "0.065 g Zn / 65.4 g/mol = 0.000994 mol Zn. Each Zn atom loses 2 electrons, so 0.00199 mol e- transferred (≈0.0020 mol).",
+          "subcategory": "Electrochemistry"
+        }
+      ],
+      "subcategory": "Electrochemistry"
     }
   ]
 }
