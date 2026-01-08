@@ -1057,6 +1057,193 @@
         }
       ],
       "subcategory": "Electrochemistry"
+    },
+    {
+      "id": "passage-cars-humanities-1",
+      "section": "cars",
+      "title": "The Role of Literature in Shaping Moral Imagination",
+      "passage": "Throughout history, literature has played a pivotal role in shaping the moral imagination of societies. From the ancient epics of Homer to the novels of the 19th century, stories have provided readers with opportunities to inhabit perspectives radically different from their own. Philosopher Martha Nussbaum argues that literature cultivates empathy by inviting readers to experience the inner lives of others, fostering a sense of shared humanity. Critics, however, contend that literature can also reinforce social prejudices, as readers may identify only with characters who resemble themselves or who embody prevailing cultural norms.\n\nIn the 20th century, the rise of postcolonial literature challenged dominant narratives by centering voices previously marginalized or silenced. Works by authors such as Chinua Achebe and Toni Morrison exposed the limitations of a literary canon shaped by colonial and Eurocentric values. These writers demonstrated that literature is not merely a mirror reflecting society, but a tool for questioning, resisting, and reimagining it.\n\nToday, debates continue about the role of literature in education. Some advocate for a curriculum focused on canonical texts, arguing that they provide a foundation for cultural literacy. Others call for a more inclusive approach, emphasizing the importance of diverse voices and experiences. Underlying these debates is a fundamental question: does literature have the power to change hearts and minds, or does it simply reflect the values its readers already hold?",
+      "questions": [
+        {
+          "id": "passage-cars-humanities-1-q1",
+          "question": "According to the passage, Nussbaum believes literature's primary moral function is to:",
+          "options": [
+            "Transmit factual knowledge",
+            "Cultivate empathy by inhabiting others' perspectives",
+            "Reinforce cultural norms",
+            "Promote national identity"
+          ],
+          "correctIndex": 1,
+          "explanation": "Nussbaum argues that literature fosters empathy by allowing readers to experience the inner lives of others.",
+          "subcategory": "Humanities"
+        },
+        {
+          "id": "passage-cars-humanities-1-q2",
+          "question": "The passage suggests that postcolonial literature primarily serves to:",
+          "options": [
+            "Reinforce the traditional literary canon",
+            "Challenge dominant cultural narratives",
+            "Discourage empathy",
+            "Promote only Eurocentric values"
+          ],
+          "correctIndex": 1,
+          "explanation": "Postcolonial literature is described as challenging dominant, Eurocentric narratives and centering marginalized voices.",
+          "subcategory": "Humanities"
+        },
+        {
+          "id": "passage-cars-humanities-1-q3",
+          "question": "Which of the following best describes the 'fundamental question' underlying current debates about literature in education?",
+          "options": [
+            "Whether literature should be taught at all",
+            "If literature can change values or merely reflects them",
+            "How to increase book sales",
+            "Whether only ancient texts should be read"
+          ],
+          "correctIndex": 1,
+          "explanation": "The passage states the core question is whether literature changes hearts and minds or simply reflects existing values.",
+          "subcategory": "Humanities"
+        },
+        {
+          "id": "passage-cars-humanities-1-q4",
+          "question": "The author mentions Achebe and Morrison primarily to illustrate:",
+          "options": [
+            "The decline of literary quality in the 20th century",
+            "The importance of postcolonial voices in literature",
+            "The universal appeal of the literary canon",
+            "The irrelevance of literature to social change"
+          ],
+          "correctIndex": 1,
+          "explanation": "Achebe and Morrison are cited as examples of authors who challenged the limitations of a Eurocentric canon.",
+          "subcategory": "Humanities"
+        },
+        {
+          "id": "passage-cars-humanities-1-q5",
+          "question": "According to critics mentioned in the passage, literature can reinforce prejudice when:",
+          "options": [
+            "Readers identify only with characters like themselves",
+            "Books are too long",
+            "Stories are set in the past",
+            "Authors use complex language"
+          ],
+          "correctIndex": 0,
+          "explanation": "The passage notes that critics worry literature can reinforce prejudice if readers only identify with similar characters.",
+          "subcategory": "Humanities"
+        },
+        {
+          "id": "passage-cars-humanities-1-q6",
+          "question": "The passage's overall attitude toward literature's social role can best be described as:",
+          "options": [
+            "Uncritically celebratory",
+            "Nuanced and analytical",
+            "Dismissive of literature's impact",
+            "Entirely skeptical"
+          ],
+          "correctIndex": 1,
+          "explanation": "The passage presents multiple perspectives and acknowledges both the power and limitations of literature, showing a nuanced view.",
+          "subcategory": "Humanities"
+        }
+      ],
+      "subcategory": "Humanities"
+    },
+    {
+      "id": "passage-bio-bloodcells-1",
+      "section": "bio",
+      "title": "Clinical Case: Interpreting Blood Cell Counts in a Sick Patient",
+      "passage": "A 42-year-old woman presents to the emergency department with fever, fatigue, and easy bruising. Physical examination reveals pallor and scattered petechiae. Laboratory tests show the following complete blood count (CBC):\n\nHemoglobin: 7.8 g/dL (normal: 12-16)\nWhite blood cells (WBC): 1,200/μL (normal: 4,000-11,000)\nPlatelets: 18,000/μL (normal: 150,000-400,000)\n\nA peripheral blood smear shows numerous immature blast cells. The patient reports a recent history of frequent infections and nosebleeds. Bone marrow biopsy reveals hypercellularity with >20% blasts.\n\nThe hematology team suspects acute leukemia and initiates further diagnostic testing, including flow cytometry and cytogenetic analysis. The patient is started on empiric broad-spectrum antibiotics and receives a platelet transfusion. Over the next week, her WBC count rises to 30,000/μL, with most cells identified as blasts. She develops shortness of breath and mild gum bleeding. Chemotherapy is initiated after confirmation of the diagnosis.",
+      "questions": [
+        {
+          "id": "passage-bio-bloodcells-1-q1",
+          "question": "Which laboratory finding is most consistent with the patient's initial presentation?",
+          "options": [
+            "Low hemoglobin, low WBC, low platelets",
+            "High hemoglobin, high WBC, high platelets",
+            "Normal hemoglobin, low WBC, high platelets",
+            "Low hemoglobin, normal WBC, normal platelets"
+          ],
+          "correctIndex": 0,
+          "explanation": "The CBC shows pancytopenia: low hemoglobin, low WBC, and low platelets, consistent with bone marrow failure.",
+          "subcategory": "Hematology"
+        },
+        {
+          "id": "passage-bio-bloodcells-1-q2",
+          "question": "The presence of numerous immature blast cells on the blood smear suggests:",
+          "options": [
+            "Chronic infection",
+            "Acute leukemia",
+            "Iron deficiency anemia",
+            "Autoimmune thrombocytopenia"
+          ],
+          "correctIndex": 1,
+          "explanation": "Blasts in peripheral blood are characteristic of acute leukemia.",
+          "subcategory": "Hematology"
+        },
+        {
+          "id": "passage-bio-bloodcells-1-q3",
+          "question": "Which symptom is most likely due to thrombocytopenia?",
+          "options": [
+            "Fatigue",
+            "Fever",
+            "Petechiae and gum bleeding",
+            "Shortness of breath"
+          ],
+          "correctIndex": 2,
+          "explanation": "Low platelets cause bleeding symptoms such as petechiae, gum bleeding, and easy bruising.",
+          "subcategory": "Hematology"
+        },
+        {
+          "id": "passage-bio-bloodcells-1-q4",
+          "question": "Why was the patient started on broad-spectrum antibiotics?",
+          "options": [
+            "To treat anemia",
+            "To prevent infection due to neutropenia",
+            "To increase platelet count",
+            "To reduce blast cells"
+          ],
+          "correctIndex": 1,
+          "explanation": "Severe neutropenia (low WBC) increases infection risk, so empiric antibiotics are started.",
+          "subcategory": "Hematology"
+        },
+        {
+          "id": "passage-bio-bloodcells-1-q5",
+          "question": "The rise in WBC count to 30,000/μL with most cells as blasts after one week most likely indicates:",
+          "options": [
+            "Recovery from infection",
+            "Progression of leukemia",
+            "Response to antibiotics",
+            "Platelet recovery"
+          ],
+          "correctIndex": 1,
+          "explanation": "A rising WBC count composed mainly of blasts indicates worsening leukemia, not recovery.",
+          "subcategory": "Hematology"
+        },
+        {
+          "id": "passage-bio-bloodcells-1-q6",
+          "question": "What is the most likely cause of the patient's shortness of breath?",
+          "options": [
+            "Anemia due to low hemoglobin",
+            "High platelet count",
+            "Infection",
+            "Chemotherapy side effect"
+          ],
+          "correctIndex": 0,
+          "explanation": "Low hemoglobin reduces oxygen-carrying capacity, causing fatigue and shortness of breath.",
+          "subcategory": "Hematology"
+        },
+        {
+          "id": "passage-bio-bloodcells-1-q7",
+          "question": "Which finding on bone marrow biopsy supports the diagnosis of acute leukemia?",
+          "options": [
+            ">20% blasts",
+            "Low cellularity",
+            "Normal maturation of all cell lines",
+            "Increased megakaryocytes only"
+          ],
+          "correctIndex": 0,
+          "explanation": ">20% blasts in the bone marrow is a diagnostic criterion for acute leukemia.",
+          "subcategory": "Hematology"
+        }
+      ],
+      "subcategory": "Hematology"
     }
   ]
 }
