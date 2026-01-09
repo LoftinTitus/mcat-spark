@@ -1244,6 +1244,101 @@
         }
       ],
       "subcategory": "Hematology"
+    },
+    {
+      "id": "passage-psych-neurodev-1",
+      "section": "psych",
+      "title": "Neurodevelopmental Disorders: Diagnosis and Research Findings",
+      "passage": "A team of psychologists and neuroscientists conducted a study on children aged 6-12 diagnosed with various neurodevelopmental disorders, including autism spectrum disorder (ASD), attention-deficit/hyperactivity disorder (ADHD), and specific learning disorders. The study involved behavioral assessments, parent interviews, and neuroimaging.\n\nChildren with ASD showed marked deficits in social communication and restricted, repetitive behaviors. Functional MRI revealed reduced activation in the fusiform face area during facial recognition tasks. In contrast, children with ADHD demonstrated high levels of inattention and impulsivity, with neuroimaging showing decreased activity in the prefrontal cortex during tasks requiring sustained attention. Children with specific learning disorders (such as dyslexia) exhibited normal intelligence but had persistent difficulties in reading or math, with brain scans indicating atypical activation in language-related regions.\n\nThe study also examined the effects of early intervention. Children who received targeted behavioral therapy before age 7 showed greater improvements in adaptive functioning and academic performance compared to those who began intervention later. Researchers noted that comorbidity was common, with many children meeting criteria for more than one disorder. Genetic analysis revealed several risk alleles associated with neurodevelopmental disorders, but no single gene was sufficient to cause any disorder on its own.",
+      "questions": [
+        {
+          "question": "Which brain region showed reduced activation in children with ASD during facial recognition tasks?",
+          "options": ["Prefrontal cortex", "Fusiform face area", "Broca's area", "Amygdala"],
+          "correctIndex": 1,
+          "explanation": "The fusiform face area is involved in facial recognition and is often underactive in individuals with ASD.",
+          "subcategory": "Neurodevelopmental Disorders"
+        },
+        {
+          "question": "What was the primary neuroimaging finding in children with ADHD?",
+          "options": ["Increased activity in the occipital lobe", "Decreased activity in the prefrontal cortex", "Hyperactivity in the hippocampus", "Reduced activation in the cerebellum"],
+          "correctIndex": 1,
+          "explanation": "ADHD is associated with decreased prefrontal cortex activity, which is important for attention and impulse control.",
+          "subcategory": "Neurodevelopmental Disorders"
+        },
+        {
+          "question": "Which statement best describes specific learning disorders as observed in the study?",
+          "options": ["They are associated with intellectual disability", "They involve persistent difficulties in reading or math despite normal intelligence", "They are always comorbid with ASD", "They are caused by a single gene mutation"],
+          "correctIndex": 1,
+          "explanation": "Specific learning disorders involve difficulties in academic skills despite normal intelligence.",
+          "subcategory": "Neurodevelopmental Disorders"
+        },
+        {
+          "question": "What was the effect of early intervention in the study?",
+          "options": ["No effect on outcomes", "Greater improvements in adaptive functioning and academics", "Increased comorbidity", "Worsened behavioral symptoms"],
+          "correctIndex": 1,
+          "explanation": "Early intervention led to better adaptive and academic outcomes.",
+          "subcategory": "Neurodevelopmental Disorders"
+        },
+        {
+          "question": "What did the genetic analysis in the study reveal?",
+          "options": ["A single gene causes all neurodevelopmental disorders", "No genetic factors were found", "Multiple risk alleles contribute, but no single gene is sufficient", "Genetics play no role in these disorders"],
+          "correctIndex": 2,
+          "explanation": "Multiple genetic risk factors contribute, but no single gene is determinative.",
+          "subcategory": "Neurodevelopmental Disorders"
+        }
+      ],
+      "subcategory": "Neurodevelopmental Disorders"
+    },
+    {
+      "id": "passage-chem-carboxylderiv-1",
+      "section": "chem",
+      "title": "Carboxylic Acid Derivatives: Reactivity and Laboratory Applications",
+      "passage": "A group of organic chemists investigated the reactivity of several carboxylic acid derivatives—acid chlorides, esters, amides, and anhydrides—using a series of nucleophilic acyl substitution reactions. In one experiment, they compared the rates of hydrolysis for each derivative in aqueous solution. Acid chlorides hydrolyzed rapidly, producing a vigorous release of HCl gas, while esters and amides hydrolyzed much more slowly, requiring either acidic or basic catalysis.\n\nThe team also synthesized aspirin (acetylsalicylic acid) by reacting salicylic acid with acetic anhydride in the presence of an acid catalyst. Purity was confirmed by melting point analysis and IR spectroscopy, which showed a strong ester C=O stretch. In another experiment, they converted a primary amine to an amide using an acid chloride, observing the evolution of heat and formation of a white precipitate.\n\nTo test reactivity, the chemists treated each derivative with sodium methoxide. Acid chlorides and anhydrides reacted quickly to form methyl esters, while esters reacted more slowly, and amides were largely unreactive. The researchers concluded that the reactivity order for nucleophilic acyl substitution is: acid chloride > anhydride > ester > amide.",
+      "questions": [
+        {
+          "question": "Which carboxylic acid derivative hydrolyzed most rapidly in aqueous solution?",
+          "options": ["Ester", "Amide", "Acid chloride", "Anhydride"],
+          "correctIndex": 2,
+          "explanation": "Acid chlorides are highly reactive and hydrolyze rapidly, releasing HCl.",
+          "subcategory": "Carboxylic Acid Derivatives"
+        },
+        {
+          "question": "What laboratory technique confirmed the purity of synthesized aspirin?",
+          "options": ["TLC", "Melting point analysis and IR spectroscopy", "NMR only", "Mass spectrometry only"],
+          "correctIndex": 1,
+          "explanation": "Melting point and IR spectroscopy are standard for confirming purity and functional groups.",
+          "subcategory": "Carboxylic Acid Derivatives"
+        },
+        {
+          "question": "What was observed when a primary amine was reacted with an acid chloride?",
+          "options": ["No reaction occurred", "A white precipitate formed and heat was released", "A gas was evolved with no precipitate", "The solution turned blue"],
+          "correctIndex": 1,
+          "explanation": "Amide formation from acid chloride and amine is exothermic and produces a precipitate.",
+          "subcategory": "Carboxylic Acid Derivatives"
+        },
+        {
+          "question": "Which order correctly ranks the reactivity of carboxylic acid derivatives in nucleophilic acyl substitution?",
+          "options": ["Amide > ester > anhydride > acid chloride", "Ester > amide > acid chloride > anhydride", "Acid chloride > anhydride > ester > amide", "Anhydride > acid chloride > amide > ester"],
+          "correctIndex": 2,
+          "explanation": "The correct order is acid chloride > anhydride > ester > amide.",
+          "subcategory": "Carboxylic Acid Derivatives"
+        },
+        {
+          "question": "Which functional group is responsible for the strong IR absorption in aspirin?",
+          "options": ["Alcohol O-H", "Ester C=O", "Aromatic C-H", "Amide N-H"],
+          "correctIndex": 1,
+          "explanation": "The ester carbonyl (C=O) group gives a strong IR absorption.",
+          "subcategory": "Carboxylic Acid Derivatives"
+        },
+        {
+          "question": "Why are amides less reactive than esters in nucleophilic acyl substitution?",
+          "options": ["Amides have more resonance stabilization and poorer leaving groups", "Esters are more basic", "Amides are more acidic", "Esters have stronger hydrogen bonding"],
+          "correctIndex": 0,
+          "explanation": "Amides are stabilized by resonance and the amide anion is a poor leaving group.",
+          "subcategory": "Carboxylic Acid Derivatives"
+        }
+      ],
+      "subcategory": "Organic Chemistry"
     }
   ]
 }
