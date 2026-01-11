@@ -1413,6 +1413,87 @@
         }
       ],
       "subcategory": "Mechanics"
+    },
+    {
+      "id": "passage-bio-ischemia-cv-1",
+      "section": "bio",
+      "title": "Ischemia and Cardiovascular Risk: Clinical and Experimental Insights",
+      "passage": "A multicenter study investigated the relationship between ischemia and cardiovascular risk in adults aged 40-70. Ischemia, defined as insufficient blood flow to tissues, was most commonly observed in the heart (myocardial ischemia) and brain (cerebral ischemia). Patients with chronic hypertension, diabetes, and hyperlipidemia were found to have a higher incidence of ischemic events.\n\nResearchers performed stress tests and measured biomarkers such as troponin and lactate in patients with suspected myocardial ischemia. Imaging studies (echocardiography and MRI) revealed areas of reduced perfusion and tissue damage. Lifestyle factors, including smoking and sedentary behavior, were strongly associated with increased cardiovascular risk.\n\nThe study also examined the effects of early intervention. Patients who received antiplatelet therapy and statins after an ischemic event had lower rates of subsequent heart attacks and strokes. Genetic analysis identified several polymorphisms linked to increased susceptibility to ischemia, but environmental factors played a larger role in most cases.",
+      "questions": [
+        {
+          "question": "What is the primary definition of ischemia?",
+          "options": ["Excessive blood flow to tissues", "Insufficient blood flow to tissues", "High blood pressure", "Abnormal heart rhythm"],
+          "correctIndex": 1,
+          "explanation": "Ischemia refers to inadequate blood supply to tissues, leading to oxygen deprivation.",
+          "subcategory": "Cardiovascular Risk"
+        },
+        {
+          "question": "Which organ is most commonly affected by ischemia in this study?",
+          "options": ["Liver", "Heart", "Kidney", "Pancreas"],
+          "correctIndex": 1,
+          "explanation": "Myocardial (heart) ischemia is a leading cause of cardiovascular events.",
+          "subcategory": "Cardiovascular Risk"
+        },
+        {
+          "question": "Which biomarker is commonly measured to assess myocardial ischemia?",
+          "options": ["Troponin", "Hemoglobin", "Glucose", "Creatinine"],
+          "correctIndex": 0,
+          "explanation": "Troponin is a sensitive marker for heart muscle damage due to ischemia.",
+          "subcategory": "Cardiovascular Risk"
+        },
+        {
+          "question": "What lifestyle factor was most strongly associated with increased cardiovascular risk?",
+          "options": ["High fruit intake", "Smoking", "Regular exercise", "Low salt diet"],
+          "correctIndex": 1,
+          "explanation": "Smoking is a major modifiable risk factor for cardiovascular disease and ischemia.",
+          "subcategory": "Cardiovascular Risk"
+        },
+        {
+          "question": "What intervention reduced the rate of subsequent heart attacks and strokes after an ischemic event?",
+          "options": ["Antiplatelet therapy and statins", "Vitamin supplements", "High-protein diet", "Physical therapy alone"],
+          "correctIndex": 0,
+          "explanation": "Antiplatelet drugs and statins are proven to reduce recurrent cardiovascular events after ischemia.",
+          "subcategory": "Cardiovascular Risk"
+        }
+      ],
+      "subcategory": "Cardiovascular System"
+    },
+    {
+      "id": "passage-psych-obesity-society-1",
+      "section": "psych",
+      "title": "Obesity and Society: Psychological and Social Perspectives",
+      "passage": "A cross-sectional study examined the psychological and social factors contributing to obesity in adolescents and adults. Researchers found that individuals with obesity often experienced higher rates of depression, anxiety, and social isolation. Surveys revealed that weight stigma and discrimination were common, affecting self-esteem and motivation to seek medical care.\n\nThe study also explored the role of socioeconomic status, noting that lower-income groups had higher obesity rates due to limited access to healthy foods and safe environments for physical activity. Media portrayals of body image were found to influence eating behaviors and self-perception, with exposure to unrealistic standards linked to disordered eating.\n\nInterventions such as cognitive-behavioral therapy (CBT) and community support programs improved psychological well-being and promoted healthier lifestyle choices. Researchers emphasized the importance of addressing both individual and societal factors to effectively reduce obesity rates.",
+      "questions": [
+        {
+          "question": "Which psychological condition was found to be more common in individuals with obesity?",
+          "options": ["Schizophrenia", "Depression", "Bipolar disorder", "Obsessive-compulsive disorder"],
+          "correctIndex": 1,
+          "explanation": "Depression is frequently associated with obesity, impacting quality of life and motivation.",
+          "subcategory": "Obesity & Society"
+        },
+        {
+          "question": "How does weight stigma affect individuals with obesity?",
+          "options": ["It increases self-esteem", "It reduces motivation to seek care", "It improves social relationships", "It has no effect"],
+          "correctIndex": 1,
+          "explanation": "Weight stigma and discrimination can lower self-esteem and discourage individuals from seeking medical help.",
+          "subcategory": "Obesity & Society"
+        },
+        {
+          "question": "What socioeconomic factor was linked to higher obesity rates?",
+          "options": ["High income", "Low income", "Access to private gyms", "Urban living only"],
+          "correctIndex": 1,
+          "explanation": "Lower-income groups often face barriers to healthy food and safe exercise environments, increasing obesity risk.",
+          "subcategory": "Obesity & Society"
+        },
+        {
+          "question": "Which intervention improved psychological well-being and promoted healthier choices?",
+          "options": ["Cognitive-behavioral therapy and community support", "Strict dieting alone", "Medication only", "Social media challenges"],
+          "correctIndex": 0,
+          "explanation": "CBT and community programs address psychological and social factors, supporting healthier behaviors.",
+          "subcategory": "Obesity & Society"
+        }
+      ],
+      "subcategory": "Sociology"
     }
   ]
 }
