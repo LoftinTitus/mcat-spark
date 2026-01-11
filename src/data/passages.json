@@ -1339,6 +1339,80 @@
         }
       ],
       "subcategory": "Organic Chemistry"
+    },
+    {
+      "id": "passage-chem-chromatography-1",
+      "section": "chem",
+      "title": "Chromatography Techniques in Chemical Analysis",
+      "passage": "A research team used chromatography to separate and analyze a mixture of amino acids. They first performed thin-layer chromatography (TLC) using a silica plate and a polar solvent. The amino acids migrated different distances, producing distinct spots after visualization with ninhydrin. The team calculated Rf values for each spot. Next, they used column chromatography to purify a target compound from a reaction mixture, collecting fractions and monitoring purity by UV absorbance. Finally, they compared the efficiency of gas chromatography (GC) and high-performance liquid chromatography (HPLC) for separating volatile and non-volatile compounds, respectively.\n\nThe researchers noted that the choice of stationary and mobile phases, as well as the polarity of analytes, greatly affected separation. They also observed that increasing the flow rate in HPLC reduced separation quality, while temperature programming improved resolution in GC.",
+      "questions": [
+        {
+          "question": "What is the primary purpose of using ninhydrin in TLC of amino acids?",
+          "options": ["To increase migration distance", "To visualize colorless spots", "To change the polarity of the plate", "To act as a mobile phase"],
+          "correctIndex": 1,
+          "explanation": "Ninhydrin reacts with amino acids to produce colored spots, making them visible on the TLC plate.",
+          "subcategory": "Chromatography"
+        },
+        {
+          "question": "Which factor most directly affects the Rf value in TLC?",
+          "options": ["The thickness of the plate", "The polarity of the solvent and analyte", "The wavelength of UV light", "The temperature of the room"],
+          "correctIndex": 1,
+          "explanation": "Rf value depends on the relative polarity of the analyte and the solvent system.",
+          "subcategory": "Chromatography"
+        },
+        {
+          "question": "Why did increasing the flow rate in HPLC reduce separation quality?",
+          "options": ["It increased the resolution", "It caused compounds to elute too quickly for effective separation", "It improved detection sensitivity", "It had no effect"],
+          "correctIndex": 1,
+          "explanation": "Higher flow rates reduce the time analytes interact with the stationary phase, decreasing separation.",
+          "subcategory": "Chromatography"
+        },
+        {
+          "question": "What is the main advantage of temperature programming in gas chromatography?",
+          "options": ["It decreases detector sensitivity", "It improves resolution of compounds with different volatilities", "It increases the polarity of the stationary phase", "It prevents sample injection"],
+          "correctIndex": 1,
+          "explanation": "Temperature programming allows better separation of compounds with a wide range of boiling points.",
+          "subcategory": "Chromatography"
+        }
+      ],
+      "subcategory": "Chemistry Techniques"
+    },
+    {
+      "id": "passage-phys-rotaccel-1",
+      "section": "phys",
+      "title": "Rotational Acceleration in Physics Experiments",
+      "passage": "Physics students investigated rotational acceleration using a solid disk mounted on a low-friction axle. They applied a constant torque by hanging a mass from a string wrapped around the disk's edge. The angular acceleration was measured using a motion sensor. By varying the mass and the radius at which the force was applied, they observed changes in angular acceleration.\n\nThe students also compared the rotational inertia of a solid disk and a ring of equal mass and radius. They found that, for the same applied torque, the ring had a lower angular acceleration due to its greater moment of inertia. In a final experiment, they released the disk from rest and measured its angular velocity over time, confirming a linear relationship between torque and angular acceleration as predicted by Newton's second law for rotation.",
+      "questions": [
+        {
+          "question": "What variable did the students change to observe its effect on angular acceleration?",
+          "options": ["The color of the disk", "The mass and radius where force was applied", "The temperature of the room", "The type of motion sensor used"],
+          "correctIndex": 1,
+          "explanation": "Changing the mass and the radius at which force is applied changes the torque and thus the angular acceleration.",
+          "subcategory": "Rotational Motion"
+        },
+        {
+          "question": "Why did the ring have a lower angular acceleration than the disk for the same torque?",
+          "options": ["The ring had less mass", "The ring had a greater moment of inertia", "The disk was spinning faster", "The ring was made of a different material"],
+          "correctIndex": 1,
+          "explanation": "A ring has a greater moment of inertia than a solid disk of the same mass and radius, so it accelerates more slowly for the same torque.",
+          "subcategory": "Rotational Motion"
+        },
+        {
+          "question": "What relationship did the students confirm between torque and angular acceleration?",
+          "options": ["No relationship", "Torque is inversely proportional to angular acceleration", "Torque is directly proportional to angular acceleration", "Torque is proportional to angular velocity squared"],
+          "correctIndex": 2,
+          "explanation": "Newton's second law for rotation states that torque = moment of inertia × angular acceleration (τ = Iα).",
+          "subcategory": "Rotational Motion"
+        },
+        {
+          "question": "How did the students measure angular acceleration in their experiment?",
+          "options": ["With a thermometer", "By timing the fall of the mass", "Using a motion sensor to track angular velocity over time", "By measuring the disk's temperature"],
+          "correctIndex": 2,
+          "explanation": "A motion sensor was used to measure angular velocity, from which angular acceleration was determined.",
+          "subcategory": "Rotational Motion"
+        }
+      ],
+      "subcategory": "Mechanics"
     }
   ]
 }
