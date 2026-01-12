@@ -1494,6 +1494,141 @@
         }
       ],
       "subcategory": "Sociology"
+    },
+    {
+      "id": "passage-epigenetics-1",
+      "section": "bio",
+      "title": "Epigenetic Regulation of Gene Expression",
+      "passage": "A team of molecular biologists investigated how environmental factors influence gene expression through epigenetic mechanisms. They exposed cultured human cells to a nutrient-rich medium and a nutrient-poor medium for 48 hours. In the nutrient-poor group, DNA methylation at the promoter region of the IGF2 gene increased, while histone acetylation at the same locus decreased. Quantitative PCR showed a 70% reduction in IGF2 mRNA in the nutrient-poor group compared to controls. Treatment with a DNA methyltransferase inhibitor restored IGF2 expression to near-normal levels. The researchers also performed a chromatin immunoprecipitation (ChIP) assay, confirming reduced binding of RNA polymerase II to the IGF2 promoter in nutrient-poor conditions. Further analysis revealed that these epigenetic changes were reversible after returning cells to nutrient-rich conditions for 24 hours.",
+      "questions": [
+        {
+          "id": "passage-epigenetics-1-q1",
+          "question": "What epigenetic change was observed at the IGF2 promoter in nutrient-poor conditions?",
+          "options": [
+            "Increased DNA methylation",
+            "Decreased DNA methylation",
+            "Increased histone acetylation",
+            "Decreased histone acetylation"
+          ],
+          "correctIndex": 0,
+          "explanation": "The passage states that DNA methylation at the IGF2 promoter region increased in the nutrient-poor group.",
+          "subcategory": "Epigenetics"
+        },
+        {
+          "id": "passage-epigenetics-1-q2",
+          "question": "How did treatment with a DNA methyltransferase inhibitor affect IGF2 expression?",
+          "options": [
+            "Increased IGF2 expression",
+            "Decreased IGF2 expression",
+            "No effect on IGF2 expression",
+            "Varied effect depending on nutrient conditions"
+          ],
+          "correctIndex": 0,
+          "explanation": "The inhibitor restored IGF2 expression to near-normal levels, suggesting that methylation was repressing its expression.",
+          "subcategory": "Epigenetics"
+        },
+        {
+          "id": "passage-epigenetics-1-q3",
+          "question": "What does a reduction in RNA polymerase II binding to the IGF2 promoter indicate?",
+          "options": [
+            "Increased transcriptional activity",
+            "Decreased transcriptional activity",
+            "No change in transcriptional activity",
+            "Increased mRNA stability"
+          ],
+          "correctIndex": 1,
+          "explanation": "Reduced RNA polymerase II binding suggests that the gene is less actively transcribed into mRNA.",
+          "subcategory": "Epigenetics"
+        },
+        {
+          "id": "passage-epigenetics-1-q4",
+          "question": "What was the effect of returning cells to nutrient-rich conditions?",
+          "options": [
+            "Permanent gene activation",
+            "Reversal of epigenetic changes",
+            "Enhanced gene silencing",
+            "No effect on gene expression"
+          ],
+          "correctIndex": 1,
+          "explanation": "The passage mentions that the epigenetic changes were reversible after returning to nutrient-rich conditions.",
+          "subcategory": "Epigenetics"
+        }
+      ],
+      "subcategory": "Genetics"
+    },
+    {
+      "id": "passage-phys-torque-1",
+      "section": "phys",
+      "title": "Experimental Analysis of Torque and Rotational Equilibrium",
+      "passage": "Physics students designed an experiment to study torque and rotational equilibrium using a uniform meter stick balanced on a fulcrum. They suspended masses at various positions along the stick and measured the resulting angular displacement. When a 200 g mass was placed 30 cm to the left of the fulcrum and a 300 g mass was placed 20 cm to the right, the stick remained balanced. The students then replaced the 300 g mass with a 400 g mass at 15 cm to the right, causing the stick to rotate clockwise. They calculated the net torque and determined the direction of rotation. In a follow-up, they attached a force sensor to the left end of the stick and measured the force required to maintain equilibrium when the fulcrum was shifted 10 cm to the right of center. The experiment demonstrated the principles of torque, lever arm, and the conditions for rotational equilibrium.",
+      "questions": [
+        {
+          "id": "passage-phys-torque-1-q1",
+          "question": "What was the purpose of suspending masses at various positions along the meter stick?",
+          "options": [
+            "To change the mass of the meter stick",
+            "To measure the gravitational force on the stick",
+            "To study the effect of lever arm length on torque",
+            "To determine the center of mass of the stick"
+          ],
+          "correctIndex": 2,
+          "explanation": "Varying the position of the masses changes the lever arm length, allowing the students to study its effect on torque and rotational equilibrium.",
+          "subcategory": "Torque"
+        },
+        {
+          "id": "passage-phys-torque-1-q2",
+          "question": "Why did the stick remain balanced with a 200 g mass at 30 cm and a 300 g mass at 20 cm from the fulcrum?",
+          "options": [
+            "The torques were equal and opposite, canceling each other",
+            "The 200 g mass was too far from the fulcrum",
+            "The 300 g mass was not heavy enough",
+            "The stick was not actually balanced"
+          ],
+          "correctIndex": 0,
+          "explanation": "For the stick to remain balanced, the clockwise and counterclockwise torques must be equal. This occurs when the product of mass and distance from the fulcrum is the same on both sides.",
+          "subcategory": "Torque"
+        },
+        {
+          "id": "passage-phys-torque-1-q3",
+          "question": "What does a net torque calculation involve?",
+          "options": [
+            "Adding up all the masses on the stick",
+            "Measuring the angle of rotation",
+            "Calculating the sum of clockwise and counterclockwise torques",
+            "Determining the frictional force at the fulcrum"
+          ],
+          "correctIndex": 2,
+          "explanation": "Net torque is the sum of all individual torques acting on the system, taking into account their direction (clockwise or counterclockwise).",
+          "subcategory": "Torque"
+        },
+        {
+          "id": "passage-phys-torque-1-q4",
+          "question": "How does shifting the fulcrum affect the torque required to maintain equilibrium?",
+          "options": [
+            "It increases the torque due to a longer lever arm for the applied force",
+            "It decreases the torque as less force is needed",
+            "It has no effect on the required torque",
+            "It reverses the direction of the required torque"
+          ],
+          "correctIndex": 0,
+          "explanation": "Shifting the fulcrum changes the lever arm length for the applied force, affecting the torque needed to balance the moments around the fulcrum.",
+          "subcategory": "Torque"
+        },
+        {
+          "id": "passage-phys-torque-1-q5",
+          "question": "What principle explains the observed rotational equilibrium in the students' experiment?",
+          "options": [
+            "Newton's first law of motion",
+            "Newton's second law of motion for rotation",
+            "The law of conservation of energy",
+            "The law of universal gravitation"
+          ],
+          "correctIndex": 1,
+          "explanation": "Newton's second law for rotation states that the torque applied to an object is equal to the moment of inertia times the angular acceleration (τ = Iα). Rotational equilibrium occurs when the net torque is zero, resulting in no angular acceleration.",
+          "subcategory": "Torque"
+        }
+      ],
+      "subcategory": "Mechanics"
     }
   ]
 }
