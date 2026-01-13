@@ -1629,6 +1629,132 @@
         }
       ],
       "subcategory": "Mechanics"
+    },
+    {
+      "id": "passage-resp-asthma-1",
+      "section": "bio",
+      "title": "Asthma: Pathophysiology and Clinical Features",
+      "passage": "Asthma is a chronic inflammatory disorder of the airways characterized by episodes of reversible bronchoconstriction, airway hyperresponsiveness, and mucus overproduction. Common triggers include allergens, respiratory infections, exercise, and cold air. During an asthma attack, smooth muscle contraction and inflammation narrow the bronchi, leading to symptoms such as wheezing, shortness of breath, chest tightness, and coughing. Pulmonary function tests typically show decreased FEV1 (forced expiratory volume in 1 second) that improves after administration of a bronchodilator. Long-term management focuses on reducing airway inflammation with inhaled corticosteroids and avoiding triggers, while acute attacks are treated with short-acting beta-agonists. Severe, untreated asthma can lead to hypoxemia and, rarely, respiratory failure.",
+      "questions": [
+        {
+          "question": "Which of the following best describes the underlying pathophysiology of asthma?",
+          "options": [
+            "Chronic inflammation and reversible airway obstruction",
+            "Destruction of alveolar walls",
+            "Loss of surfactant production",
+            "Permanent fibrosis of the bronchioles"
+          ],
+          "correctIndex": 0,
+          "explanation": "Asthma is defined by chronic airway inflammation and reversible bronchoconstriction, not permanent structural damage.",
+          "subcategory": "Respiratory System"
+        },
+        {
+          "question": "A patient with asthma experiences wheezing and shortness of breath after exposure to pollen. Which physiological change is most likely occurring?",
+          "options": [
+            "Bronchial smooth muscle contraction",
+            "Decreased mucus secretion",
+            "Increased alveolar ventilation",
+            "Collapse of the trachea"
+          ],
+          "correctIndex": 0,
+          "explanation": "Exposure to triggers causes bronchial smooth muscle contraction and airway narrowing, leading to symptoms.",
+          "subcategory": "Respiratory System"
+        },
+        {
+          "question": "Which test result is most characteristic of an acute asthma attack?",
+          "options": [
+            "Decreased FEV1 that improves with bronchodilator",
+            "Increased total lung capacity with no change after bronchodilator",
+            "Decreased residual volume",
+            "Normal FEV1/FVC ratio"
+          ],
+          "correctIndex": 0,
+          "explanation": "Asthma causes a reversible decrease in FEV1, which improves after bronchodilator use.",
+          "subcategory": "Respiratory System"
+        },
+        {
+          "question": "What is the primary goal of long-term asthma management?",
+          "options": [
+            "Reduce airway inflammation and prevent exacerbations",
+            "Increase mucus production",
+            "Induce permanent airway remodeling",
+            "Suppress immune function entirely"
+          ],
+          "correctIndex": 0,
+          "explanation": "Long-term asthma management aims to control inflammation and prevent attacks, not to induce permanent changes or suppress the immune system completely.",
+          "subcategory": "Respiratory System"
+        }
+      ],
+      "subcategory": "Respiratory System"
+    },
+    {
+      "id": "passage-neuro-alzheimers-1",
+      "section": "bio",
+      "title": "Alzheimer's Disease: Mechanisms and Clinical Manifestations",
+      "passage": "Alzheimer's disease is a progressive neurodegenerative disorder and the most common cause of dementia in older adults. It is characterized by memory loss, cognitive decline, and behavioral changes. Pathologically, Alzheimer's involves the accumulation of beta-amyloid plaques and neurofibrillary tangles composed of hyperphosphorylated tau protein in the brain. These changes disrupt neuronal communication and lead to synaptic loss and brain atrophy, especially in the hippocampus and cortex. Risk factors include advanced age, family history, and certain genetic mutations (such as APOE ε4 allele). Diagnosis is clinical, supported by neuroimaging and biomarkers. There is no cure, but medications such as cholinesterase inhibitors can temporarily improve symptoms. Research is ongoing into disease-modifying therapies.",
+      "questions": [
+        {
+          "question": "Which pathological finding is most characteristic of Alzheimer's disease?",
+          "options": [
+            "Beta-amyloid plaques and neurofibrillary tangles",
+            "Lewy bodies in the substantia nigra",
+            "Demyelination of peripheral nerves",
+            "Loss of lower motor neurons"
+          ],
+          "correctIndex": 0,
+          "explanation": "Alzheimer's is defined by the presence of beta-amyloid plaques and neurofibrillary tangles in the brain.",
+          "subcategory": "Nervous System"
+        },
+        {
+          "question": "Which brain region is most affected early in Alzheimer's disease?",
+          "options": [
+            "Hippocampus",
+            "Cerebellum",
+            "Medulla oblongata",
+            "Spinal cord"
+          ],
+          "correctIndex": 0,
+          "explanation": "The hippocampus, critical for memory formation, is one of the first regions affected in Alzheimer's disease.",
+          "subcategory": "Nervous System"
+        },
+        {
+          "question": "A 75-year-old woman presents with progressive memory loss and difficulty performing daily tasks. Which risk factor is most strongly associated with her condition?",
+          "options": [
+            "Advanced age",
+            "High blood pressure",
+            "Vitamin B12 deficiency",
+            "History of head trauma"
+          ],
+          "correctIndex": 0,
+          "explanation": "Advanced age is the greatest risk factor for developing Alzheimer's disease.",
+          "subcategory": "Nervous System"
+        },
+        {
+          "question": "Which of the following best describes the current treatment options for Alzheimer's disease?",
+          "options": [
+            "Medications can temporarily improve symptoms but do not cure the disease",
+            "Antibiotics can reverse the disease process",
+            "Surgical removal of plaques is curative",
+            "Gene therapy is the standard of care"
+          ],
+          "correctIndex": 0,
+          "explanation": "Current treatments provide symptomatic relief but do not halt or reverse disease progression.",
+          "subcategory": "Nervous System"
+        },
+        {
+          "question": "Which protein is abnormally phosphorylated in Alzheimer's disease, forming neurofibrillary tangles?",
+          "options": [
+            "Tau",
+            "Alpha-synuclein",
+            "Huntingtin",
+            "Prion"
+          ],
+          "correctIndex": 0,
+          "explanation": "Neurofibrillary tangles in Alzheimer's are composed of hyperphosphorylated tau protein.",
+          "subcategory": "Nervous System"
+        }
+      ],
+      "subcategory": "Nervous System"
     }
   ]
 }
