@@ -1755,6 +1755,132 @@
         }
       ],
       "subcategory": "Nervous System"
+    },
+    {
+      "id": "passage-cars-jfk-1",
+      "section": "cars",
+      "title": "John F. Kennedy and the Rhetoric of American Idealism",
+      "passage": "John F. Kennedy, the 35th President of the United States, is remembered for his eloquent speeches and his ability to inspire a sense of national purpose. In his 1961 inaugural address, Kennedy famously urged Americans to 'ask not what your country can do for you—ask what you can do for your country.' This call to civic responsibility reflected the broader themes of idealism and collective action that characterized his presidency. Kennedy's administration promoted ambitious initiatives such as the Peace Corps, the space race, and civil rights legislation. However, his presidency was also marked by Cold War tensions, including the Cuban Missile Crisis and the escalation of U.S. involvement in Vietnam. Kennedy's assassination in 1963 shocked the nation and contributed to the enduring mystique surrounding his legacy. Debates continue about the substance of his achievements versus the power of his rhetoric, and whether his presidency represented a turning point in American history or a continuation of existing trends.",
+      "questions": [
+        {
+          "question": "According to the passage, which theme was most prominent in Kennedy's inaugural address?",
+          "options": [
+            "Civic responsibility and collective action",
+            "Economic deregulation",
+            "Isolationism in foreign policy",
+            "Technological skepticism"
+          ],
+          "correctIndex": 0,
+          "explanation": "Kennedy's address emphasized civic responsibility and the importance of contributing to the nation.",
+          "subcategory": "Humanities"
+        },
+        {
+          "question": "Which of the following was NOT mentioned as an initiative promoted by Kennedy's administration?",
+          "options": [
+            "Universal healthcare reform",
+            "The Peace Corps",
+            "The space race",
+            "Civil rights legislation"
+          ],
+          "correctIndex": 0,
+          "explanation": "Universal healthcare reform was not listed among Kennedy's major initiatives in the passage.",
+          "subcategory": "Humanities"
+        },
+        {
+          "question": "The passage suggests that debates about Kennedy's legacy focus on:",
+          "options": [
+            "The contrast between his rhetoric and his actual achievements",
+            "His lack of involvement in foreign affairs",
+            "His opposition to civil rights",
+            "His scientific background"
+          ],
+          "correctIndex": 0,
+          "explanation": "The passage notes ongoing debates about whether Kennedy's presidency was defined more by rhetoric or by substantive accomplishments.",
+          "subcategory": "Humanities"
+        },
+        {
+          "question": "Which event is described as contributing to the 'enduring mystique' of Kennedy's legacy?",
+          "options": [
+            "His assassination in 1963",
+            "The signing of the Civil Rights Act",
+            "The Apollo 11 moon landing",
+            "The end of the Vietnam War"
+          ],
+          "correctIndex": 0,
+          "explanation": "Kennedy's assassination is cited as a key factor in the lasting fascination with his presidency.",
+          "subcategory": "Humanities"
+        }
+      ],
+      "subcategory": "Humanities"
+    },
+    {
+      "id": "passage-bio-proteinfolding-1",
+      "section": "bio",
+      "title": "Protein Folding: Thermodynamics and Experimental Data",
+      "passage": "A team of biochemists investigated the folding of a small globular protein using spectroscopic and calorimetric techniques. They measured the protein's activity and structure at different temperatures and in the presence of a chemical denaturant (urea). At 25°C in native conditions, the protein was fully folded and catalytically active. As the temperature increased, the fraction of unfolded protein increased, with a melting temperature (Tm) of 52°C. Differential scanning calorimetry revealed an enthalpy change (ΔH) of 220 kJ/mol for unfolding. In the presence of 6 M urea at 25°C, the protein was completely unfolded and inactive. The Gibbs free energy change (ΔG) for folding at 25°C was -28 kJ/mol in native buffer and +8 kJ/mol with urea. Circular dichroism spectroscopy confirmed loss of secondary structure in denaturing conditions. The researchers concluded that protein folding is a cooperative, thermodynamically driven process sensitive to temperature and chemical environment.",
+      "questions": [
+        {
+          "question": "What does a negative ΔG for protein folding at 25°C indicate?",
+          "options": [
+            "Folding is spontaneous under these conditions",
+            "Folding requires input of energy",
+            "The protein is completely unfolded",
+            "The process is at equilibrium"
+          ],
+          "correctIndex": 0,
+          "explanation": "A negative Gibbs free energy change means the folding process is thermodynamically favorable and occurs spontaneously.",
+          "subcategory": "Protein Structure"
+        },
+        {
+          "question": "What experimental result supports the conclusion that the protein is unfolded in 6 M urea at 25°C?",
+          "options": [
+            "Loss of secondary structure by circular dichroism",
+            "Increased catalytic activity",
+            "Higher melting temperature (Tm)",
+            "Negative ΔG for folding"
+          ],
+          "correctIndex": 0,
+          "explanation": "Circular dichroism spectroscopy showed loss of secondary structure, indicating the protein is unfolded in urea.",
+          "subcategory": "Protein Structure"
+        },
+        {
+          "question": "How does the melting temperature (Tm) relate to protein stability?",
+          "options": [
+            "Higher Tm indicates greater thermal stability",
+            "Lower Tm means the protein is more stable",
+            "Tm is unrelated to stability",
+            "Tm only applies to enzymes"
+          ],
+          "correctIndex": 0,
+          "explanation": "A higher melting temperature means the protein remains folded at higher temperatures, indicating greater stability.",
+          "subcategory": "Protein Structure"
+        },
+        {
+          "question": "What is the effect of urea on the Gibbs free energy change (ΔG) for folding?",
+          "options": [
+            "ΔG becomes positive, making folding unfavorable",
+            "ΔG becomes more negative, favoring folding",
+            "ΔG is unchanged",
+            "ΔG is not defined in the presence of urea"
+          ],
+          "correctIndex": 0,
+          "explanation": "In the presence of urea, ΔG for folding is positive, so folding is not spontaneous and the protein is unfolded.",
+          "subcategory": "Protein Structure"
+        },
+        {
+          "question": "Which experimental technique was used to measure the enthalpy change (ΔH) of unfolding?",
+          "options": [
+            "Differential scanning calorimetry",
+            "X-ray crystallography",
+            "Mass spectrometry",
+            "Gel electrophoresis"
+          ],
+          "correctIndex": 0,
+          "explanation": "Differential scanning calorimetry (DSC) is used to measure enthalpy changes during protein unfolding.",
+          "subcategory": "Protein Structure"
+        }
+      ],
+      "subcategory": "Molecular Biology"
     }
   ]
 }
