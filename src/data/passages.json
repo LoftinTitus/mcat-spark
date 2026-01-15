@@ -1881,6 +1881,132 @@
         }
       ],
       "subcategory": "Molecular Biology"
+    },
+    {
+      "id": "passage-chem-membranes-forces-1",
+      "section": "chem",
+      "title": "Membranes and Molecular Forces in Chemistry",
+      "passage": "A research team studied the chemical and physical forces that govern the structure and function of biological membranes. Cell membranes are composed primarily of a phospholipid bilayer, with embedded proteins and cholesterol. The hydrophobic effect drives the self-assembly of phospholipids, as their nonpolar tails avoid water while polar heads interact with the aqueous environment. Van der Waals forces stabilize the packing of lipid tails, while hydrogen bonds and ionic interactions occur between polar head groups and surrounding water or ions. Membrane fluidity is influenced by temperature, cholesterol content, and the degree of saturation of fatty acid tails. The team measured membrane permeability to small molecules and found that nonpolar molecules crossed easily, while ions and polar molecules required transport proteins. They also observed that increasing cholesterol decreased membrane permeability but increased mechanical stability.",
+      "questions": [
+        {
+          "question": "Which force is primarily responsible for the self-assembly of the phospholipid bilayer in water?",
+          "options": [
+            "Hydrophobic effect",
+            "Covalent bonding",
+            "Disulfide bridges",
+            "Peptide bond formation"
+          ],
+          "correctIndex": 0,
+          "explanation": "The hydrophobic effect drives phospholipids to form bilayers, with tails avoiding water and heads facing outward.",
+          "subcategory": "Membranes & Forces"
+        },
+        {
+          "question": "How does cholesterol affect membrane properties, according to the passage?",
+          "options": [
+            "Decreases permeability and increases stability",
+            "Increases permeability and decreases stability",
+            "Has no effect on fluidity",
+            "Removes all proteins from the membrane"
+          ],
+          "correctIndex": 0,
+          "explanation": "Cholesterol decreases permeability to small molecules and increases the mechanical stability of the membrane.",
+          "subcategory": "Membranes & Forces"
+        },
+        {
+          "question": "Which type of molecule crosses the lipid bilayer most easily without a transport protein?",
+          "options": [
+            "Nonpolar molecules",
+            "Ions",
+            "Large polar molecules",
+            "Proteins"
+          ],
+          "correctIndex": 0,
+          "explanation": "Nonpolar molecules can diffuse through the hydrophobic core of the membrane, while ions and polar molecules require transport proteins.",
+          "subcategory": "Membranes & Forces"
+        },
+        {
+          "question": "What role do van der Waals forces play in membrane structure?",
+          "options": [
+            "Stabilize packing of lipid tails",
+            "Form covalent bonds between phospholipids",
+            "Transport ions across the membrane",
+            "Hydrolyze ATP for energy"
+          ],
+          "correctIndex": 0,
+          "explanation": "Van der Waals forces help stabilize the close packing of hydrophobic lipid tails in the membrane interior.",
+          "subcategory": "Membranes & Forces"
+        }
+      ],
+      "subcategory": "Mechanics"
+    },
+    {
+      "id": "passage-psych-learning-1",
+      "section": "psych",
+      "title": "Learning: Mechanisms and Experimental Findings",
+      "passage": "Psychologists conducted a series of experiments to investigate different forms of learning in humans and animals. In classical conditioning, a neutral stimulus (bell) was paired with an unconditioned stimulus (food), eventually eliciting a conditioned response (salivation) in dogs. In operant conditioning, rats learned to press a lever for food rewards, with reinforcement schedules affecting the rate of learning and extinction. Observational learning was demonstrated when children imitated adult behaviors after watching them, even without direct reinforcement. The researchers also studied cognitive learning, finding that humans could solve problems using insight rather than trial-and-error. Neuroimaging revealed that different brain regions were activated during various learning tasks, including the amygdala for fear conditioning and the prefrontal cortex for planning and problem-solving.",
+      "questions": [
+        {
+          "question": "Which type of learning involves associating a neutral stimulus with an unconditioned stimulus to produce a response?",
+          "options": [
+            "Classical conditioning",
+            "Operant conditioning",
+            "Observational learning",
+            "Latent learning"
+          ],
+          "correctIndex": 0,
+          "explanation": "Classical conditioning pairs a neutral stimulus with an unconditioned stimulus to elicit a conditioned response.",
+          "subcategory": "Learning"
+        },
+        {
+          "question": "In operant conditioning, what effect do reinforcement schedules have?",
+          "options": [
+            "They influence the rate of learning and extinction",
+            "They determine the strength of a conditioned stimulus",
+            "They prevent observational learning",
+            "They only apply to classical conditioning"
+          ],
+          "correctIndex": 0,
+          "explanation": "Reinforcement schedules (fixed, variable, etc.) affect how quickly behaviors are learned and how resistant they are to extinction.",
+          "subcategory": "Learning"
+        },
+        {
+          "question": "Which finding best illustrates observational learning?",
+          "options": [
+            "Children imitating adult behaviors after watching them",
+            "Rats pressing a lever for food",
+            "Dogs salivating to a bell",
+            "Humans solving problems by trial-and-error"
+          ],
+          "correctIndex": 0,
+          "explanation": "Observational learning occurs when individuals learn by watching others, as in the case of children imitating adults.",
+          "subcategory": "Learning"
+        },
+        {
+          "question": "Which brain region is most associated with fear conditioning, according to the passage?",
+          "options": [
+            "Amygdala",
+            "Cerebellum",
+            "Occipital lobe",
+            "Hippocampus"
+          ],
+          "correctIndex": 0,
+          "explanation": "The amygdala is involved in emotional learning, especially fear conditioning.",
+          "subcategory": "Learning"
+        },
+        {
+          "question": "What distinguishes cognitive learning from other forms described in the passage?",
+          "options": [
+            "It involves problem-solving and insight rather than just association or imitation",
+            "It requires direct reinforcement",
+            "It is only observed in animals",
+            "It depends solely on trial-and-error"
+          ],
+          "correctIndex": 0,
+          "explanation": "Cognitive learning involves mental processes such as insight and planning, not just associations or reinforcement.",
+          "subcategory": "Learning"
+        }
+      ],
+      "subcategory": "Learning"
     }
   ]
 }
