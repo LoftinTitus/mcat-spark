@@ -2007,6 +2007,63 @@
         }
       ],
       "subcategory": "Learning"
+    },
+    {
+      "id": "passage-bio-endocrine-1",
+      "section": "bio",
+      "title": "Endocrine System: Hormone Regulation and Experimental Data",
+      "passage": "Researchers investigated the regulation of blood glucose by the endocrine system in a group of healthy volunteers. Participants fasted overnight, and baseline blood glucose and insulin levels were measured. After consuming a standardized glucose drink, blood samples were collected every 30 minutes for 2 hours. Data showed that blood glucose peaked at 30 minutes (mean: 150 mg/dL) and returned to baseline (mean: 90 mg/dL) by 120 minutes. Insulin levels rose sharply after glucose ingestion, peaking at 60 minutes (mean: 60 μU/mL) before declining. In a follow-up experiment, participants received an injection of somatostatin, a hormone that inhibits insulin secretion. In this group, blood glucose remained elevated (mean: 140 mg/dL at 120 minutes) and insulin levels were significantly lower than controls. The researchers concluded that insulin is essential for glucose homeostasis and that somatostatin disrupts this regulation by inhibiting insulin release.",
+      "questions": [
+        {
+          "question": "What was the effect of the glucose drink on blood glucose and insulin levels in healthy volunteers?",
+          "options": [
+            "Both blood glucose and insulin increased, then returned to baseline over 2 hours",
+            "Blood glucose decreased while insulin increased",
+            "Insulin remained constant while glucose increased",
+            "Both glucose and insulin decreased below baseline"
+          ],
+          "correctIndex": 0,
+          "explanation": "After glucose ingestion, both blood glucose and insulin levels rose and then returned to baseline as homeostasis was restored.",
+          "subcategory": "Endocrine System"
+        },
+        {
+          "question": "What was the effect of somatostatin injection on glucose regulation?",
+          "options": [
+            "Blood glucose remained elevated and insulin was suppressed",
+            "Both glucose and insulin increased more than in controls",
+            "Insulin increased but glucose decreased rapidly",
+            "Somatostatin had no effect on glucose or insulin levels"
+          ],
+          "correctIndex": 0,
+          "explanation": "Somatostatin inhibits insulin secretion, resulting in higher blood glucose and lower insulin compared to controls.",
+          "subcategory": "Endocrine System"
+        },
+        {
+          "question": "At what time point did blood glucose peak after the glucose drink, according to the data?",
+          "options": [
+            "30 minutes",
+            "60 minutes",
+            "90 minutes",
+            "120 minutes"
+          ],
+          "correctIndex": 0,
+          "explanation": "Blood glucose peaked at 30 minutes post-glucose ingestion in the experiment.",
+          "subcategory": "Endocrine System"
+        },
+        {
+          "question": "What conclusion did the researchers draw about the role of insulin in glucose homeostasis?",
+          "options": [
+            "Insulin is essential for returning blood glucose to baseline after a meal",
+            "Insulin has no effect on blood glucose levels",
+            "Insulin only acts during fasting",
+            "Insulin is inhibited by glucose"
+          ],
+          "correctIndex": 0,
+          "explanation": "The experiment showed that insulin is necessary for lowering blood glucose after a meal, maintaining homeostasis.",
+          "subcategory": "Endocrine System"
+        }
+      ],
+      "subcategory": "Endocrine System"
     }
   ]
 }
